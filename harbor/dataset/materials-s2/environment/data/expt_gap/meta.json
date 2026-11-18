@@ -1,0 +1,9 @@
+{
+ "id": "expt_gap",
+ "source": "matbench_expt_gap",
+ "task": "regression",
+ "units": "eV",
+ "n_public": 3440,
+ "n_hidden": 1164,
+ "metric": "MAE"
+}

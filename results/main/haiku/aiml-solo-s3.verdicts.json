@@ -1,0 +1,188 @@
+{
+ "run_id": "run-d6e07172",
+ "model": "haiku",
+ "task": "aiml-solo-s3",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 2,
+  "R_frontier": 2,
+  "C_collaborative": 0,
+  "submitted_credited": 3,
+  "duplicates": 0,
+  "best_gain": {
+   "cifar10": 0.1767,
+   "agnews": 0.0909
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 1
+  }
+ },
+ "rewards": {
+  "score": 0.2857142857142857,
+  "R_replicated": 2.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 2.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.1338,
+  "auditor_pending": 0.0,
+  "submitted_credited": 3.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 1.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.0346,
+  "model_calls": 28.0,
+  "experiments": 18.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.017,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.918,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 316.6
+ },
+ "claims": [
+  {
+   "id": "findin-7a1c6784",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "ResNet-9-style CNN with flip TTA beats the 6% CIFAR-10 reference",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0047, 95% CI [-0.0090, -0.0000], needed below -0.0012",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0553,
+    "b": 0.06,
+    "diff": -0.004700000000000015,
+    "ci95": [
+     -0.00900250000000001,
+     -1.4741541320972842e-17
+    ],
+    "min_effect": 0.0012,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-819337a4",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "60-epoch ResNet-9-style CNN with flip TTA beats the 6% CIFAR-10 reference more clearly",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0106, 95% CI [-0.0151, -0.0061], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0494,
+    "b": 0.06,
+    "diff": -0.010600000000000014,
+    "ci95": [
+     -0.015102500000000007,
+     -0.006100000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-4489bfba",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LinearSVC on word 1-3gram + char 2-5gram TF-IDF beats TF-IDF + LR on AG News",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0079, 95% CI [-0.0114, -0.0042], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07894736842105263,
+    "b": 0.0868421052631579,
+    "diff": -0.007894736842105263,
+    "ci95": [
+     -0.011447368421052631,
+     -0.004210526315789474
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "note-94a578f4",
+   "kind": "note",
+   "agent": "founder",
+   "title": "AG News margin depends on the TF-IDF+LR comparator; feature sweep found no further gain",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "note-ed444bc6",
+   "kind": "note",
+   "agent": "founder",
+   "title": "AG News 5-fold CV: SVC beats default TF-IDF+LR in every fold, but the README comparator is about 8%",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  }
+ ]
+}

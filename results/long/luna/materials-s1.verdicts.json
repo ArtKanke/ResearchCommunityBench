@@ -1,0 +1,5696 @@
+{
+ "run_id": "run-eef67c81",
+ "model": "luna",
+ "task": "materials-s1",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 22,
+  "R_frontier": 7,
+  "C_collaborative": 0,
+  "submitted_credited": 127,
+  "duplicates": 40,
+  "best_gain": {
+   "expt_gap": 0.2913,
+   "steels": 0.3394,
+   "expt_is_metal": 0.266,
+   "glass": 0.2111
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 9,
+   "failed_live_checks": 7,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 45
+  }
+ },
+ "rewards": {
+  "score": 0.8148148148148148,
+  "R_replicated": 22.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 7.0,
+  "datasets_advanced": 4.0,
+  "mean_best_gain": 0.27695000000000003,
+  "auditor_pending": 0.0,
+  "submitted_credited": 127.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 9.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 45.0,
+  "duplicates": 40.0,
+  "agents_total": 16.0,
+  "agents_peak": 15.0,
+  "max_depth": 2.0,
+  "cost_usd": 12.0036,
+  "model_calls": 1525.0,
+  "experiments": 618.0,
+  "messages": 48.0,
+  "cost_per_accepted": 0.546,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 96.0,
+  "dataset_entropy": 0.964,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 4246.2
+ },
+ "claims": [
+  {
+   "id": "findin-7cedf2f2",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A zero-gap hurdle model improves experimental band-gap prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0862, 95% CI [-0.1202, -0.0561], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.0862325190789194,
+    "ci95": [
+     -0.12017137800125119,
+     -0.05610172262972564
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-bf0559f3",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Element fractions improve shuffled-split steel strength prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -37.0210, 95% CI [-62.7354, -14.2018], beyond the minimum effect 2.1817)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.06410763888896,
+    "b": 109.08513563473846,
+    "diff": -37.021027995849515,
+    "ci95": [
+     -62.73535251797572,
+     -14.20181845564848
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-6e468e24",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Enriched descriptors improve steel strength prediction on a composition-cluster holdout",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +18.7893, 95% CI [2.1195, 38.1492], needed below -1.4413",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 90.85340277777753,
+    "b": 72.06410763888897,
+    "diff": 18.78929513888857,
+    "ci95": [
+     2.1195447048604175,
+     38.14923654513854
+    ],
+    "min_effect": 1.4412821527777795,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-bf0559f3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-38eef350",
+   "kind": "finding",
+   "agent": "agent-325423e6",
+   "title": "Enriched composition descriptors improve experimental metallicity classification",
+   "status": "rejected",
+   "reason": "an evidence exec failed",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": false,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1450893e",
+   "kind": "finding",
+   "agent": "agent-325423e6",
+   "title": "Enriched composition descriptors improve experimental metallicity classification",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0204, 95% CI [-0.0310, -0.0106], beyond the minimum effect 0.0015)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.056372549019607844,
+    "b": 0.07679738562091504,
+    "diff": -0.02042483660130719,
+    "ci95": [
+     -0.03104575163398693,
+     -0.010620915032679739
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1aec7e6d",
+   "kind": "finding",
+   "agent": "agent-9dbc9cca",
+   "title": "Gap-hurdle descriptors improve experimental metallicity classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0025, 95% CI [-0.0131, 0.0082], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.07434640522875817,
+    "b": 0.07679738562091504,
+    "diff": -0.0024509803921568627,
+    "ci95": [
+     -0.013092320261437872,
+     0.008169934640522876
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7d6dec0b",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Repeated and clustered validation supports the expt_gap hurdle model",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0862, 95% CI [-0.1202, -0.0561], beyond the minimum effect 0.0084)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.08623251907891942,
+    "ci95": [
+     -0.12017137800125119,
+     -0.05610172262972564
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-05c7592d",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Steel model ranking under composition holdouts depends on cluster definition",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-bf0559f3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-10a67729",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A metallicity descriptor model transfers to glass-forming classification",
+   "status": "rejected",
+   "reason": "mis-cited evidence: absolute_error_reduction is recorded in exec-0f1c35aa, exec-2f2645b6 but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-1450893e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-6ef67e6c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A metallicity descriptor model transfers to glass-forming classification",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions_a.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-1450893e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-40c29ff9",
+   "kind": "finding",
+   "agent": "agent-9dbc9cca",
+   "title": "Enriched gap-hurdle descriptors improve metallicity classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0025, 95% CI [-0.0131, 0.0082], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.07434640522875817,
+    "b": 0.07679738562091504,
+    "diff": -0.0024509803921568627,
+    "ci95": [
+     -0.013092320261437872,
+     0.008169934640522876
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-1aec7e6d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dc62791e",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Enriched steel descriptors help on raw-fraction but not standardized non-Fe cluster splits",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8f4573a3",
+   "kind": "finding",
+   "agent": "agent-9dbc9cca",
+   "title": "Soft voting improves enriched-descriptor metallicity prediction",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0147, 95% CI [-0.0253, -0.0049], beyond the minimum effect 0.0015)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06209150326797386,
+    "b": 0.07679738562091504,
+    "diff": -0.014705882352941176,
+    "ci95": [
+     -0.025326797385620915,
+     -0.004901960784313725
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-1aec7e6d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3ee834ea",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Fractions-only steel model beats enriched descriptors in repeated random and target-stratified validation",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-93925c14",
+   "kind": "finding",
+   "agent": "agent-325423e6",
+   "title": "A 0.4 zero-gap cutoff improves the hurdle model across shuffled splits",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0127, 95% CI [-0.0421, 0.0114], needed below -0.0067",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.32194063629079256,
+    "b": 0.33465115493881115,
+    "diff": -0.012710518648018603,
+    "ci95": [
+     -0.042055033872377495,
+     0.01137580547057111
+    ],
+    "min_effect": 0.006693023098776223,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f12b74ef",
+   "kind": "finding",
+   "agent": "agent-6bb41233",
+   "title": "Composition fractions improve glass-forming ability prediction",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0166, 95% CI [-0.0269, -0.0062], beyond the minimum effect 0.0025)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10758620689655173,
+    "b": 0.12413793103448276,
+    "diff": -0.016551724137931035,
+    "ci95": [
+     -0.02689655172413793,
+     -0.006206896551724138
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d0b851fe",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Enriched metallicity model improves glass classification on an exact-element-system holdout",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0262, 95% CI [-0.0400, -0.0131], beyond the minimum effect 0.0025)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.12413793103448276,
+    "diff": -0.02620689655172414,
+    "ci95": [
+     -0.04,
+     -0.01310344827586207
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1450893e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7ea72d9b",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Steel model ranking across KMeans seeds depends on the composition representation",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-eaa9acc3",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Fractions-only steel model beats the official baseline on alloy-family holdouts",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-bf0559f3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c19fb21e",
+   "kind": "finding",
+   "agent": "agent-6bb41233",
+   "title": "Correction: glass prediction metrics for the released random forest",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-f12b74ef",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-f12b74ef",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10758620689655173,
+    "b": 0.12413793103448276,
+    "diff": -0.016551724137931035,
+    "ci95": [
+     -0.02689655172413793,
+     -0.006206896551724138
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f12b74ef",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-300f5118",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Fractions-only model beats the official baseline on four leave-one-element-out steel tests",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): 01c3b3a8f18a",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-bf0559f3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-72fbf466",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Fractions-only model beats the official baseline on four leave-one-element-out steel tests",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-bf0559f3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c708720e",
+   "kind": "finding",
+   "agent": "agent-325423e6",
+   "title": "Additional stoichiometric descriptors modestly improve band-gap prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0154, 95% CI [-0.0327, 0.0014], needed below -0.0064",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3065200222693973,
+    "b": 0.32194063629079256,
+    "diff": -0.01542061402139528,
+    "ci95": [
+     -0.03266653856169875,
+     0.001371618516899757
+    ],
+    "min_effect": 0.006438812725815851,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-41225955",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Steel descriptor gains depend on how composition holdouts are defined",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -18.2317, 95% CI [-40.8583, 0.1459], needed below -2.1817",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 90.85340277777753,
+    "b": 109.08513563473846,
+    "diff": -18.231732856960924,
+    "ci95": [
+     -40.85826249454711,
+     0.14594832273769506
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-05c7592d",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e44dbfc1",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Steel model ranking reverses on solute-family holdouts: fractions beat enriched descriptors",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b7af24d3",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Zero-gap hurdle model retains its advantage on held-out chemical systems",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-7d6dec0b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-7d6dec0b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.08623251907891942,
+    "ci95": [
+     -0.12017137800125119,
+     -0.05610172262972564
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a6b482c1",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Fractions-only steel model wins across four solute-family definitions",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): 01c3b3a8f18a",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3bc73880",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Fractions-only steel model wins across four solute-family definitions",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): 01c3b3a8f18a",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-e44dbfc1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-68032903",
+   "kind": "finding",
+   "agent": "agent-48361874",
+   "title": "Enriched HGB glass classifier generalizes across held-out element sets",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0262, 95% CI [-0.0400, -0.0131], beyond the minimum effect 0.0025)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.12413793103448276,
+    "diff": -0.02620689655172414,
+    "ci95": [
+     -0.04,
+     -0.01310344827586207
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f5bc783a",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Fractions-only steel model wins across four solute-family definitions",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-e44dbfc1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-de8e613d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Enriched gap descriptors improve aggregate error on exact-system holdouts",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0154, 95% CI [-0.0327, 0.0014], needed below -0.0064",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3065200222693973,
+    "b": 0.32194063629079256,
+    "diff": -0.01542061402139528,
+    "ci95": [
+     -0.032666538561698745,
+     0.0013716185168997578
+    ],
+    "min_effect": 0.006438812725815851,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c708720e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ed2a3901",
+   "kind": "finding",
+   "agent": "agent-9be90850",
+   "title": "Transferred metallicity classifier improves glass error on dominant-element holdouts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-d0b851fe",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-d0b851fe",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.12413793103448276,
+    "diff": -0.02620689655172414,
+    "ci95": [
+     -0.04,
+     -0.01310344827586207
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7e0106e4",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Fractions-only steel model usually wins across repeated solute-family holdouts",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-e44dbfc1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-f5bc783a",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-6a411e3e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Enriched gap model improves macro MAE across leave-one-element-out tests",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.1144, 95% CI [-0.1488, -0.0824], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3065200222693973,
+    "b": 0.42088367401773064,
+    "diff": -0.11436365174833328,
+    "ci95": [
+     -0.14882828960049319,
+     -0.08241173185483429
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-c708720e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3610fc97",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Exact-system audit confirms clean grouping and favors a pooled hurdle across system sizes",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0207, 95% CI [-0.0489, 0.0069], needed below -0.0071",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.35536706912878796,
+    "diff": -0.020715914189976745,
+    "ci95": [
+     -0.048931786321751165,
+     0.006917966810533102
+    ],
+    "min_effect": 0.007107341382575759,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b7af24d3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7f186c56",
+   "kind": "finding",
+   "agent": "agent-799bb11f",
+   "title": "Gap hurdle model improves MAE on 11 selected element-exclusive holdouts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-7d6dec0b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-7d6dec0b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.0862325190789194,
+    "ci95": [
+     -0.12017137800125119,
+     -0.05610172262972565
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b7af24d3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-226f4af2",
+   "kind": "finding",
+   "agent": "agent-6bb41233",
+   "title": "Enriched HGB outperforms fraction forest on glass system holdouts",
+   "status": "rejected",
+   "reason": "mis-cited evidence: enriched_hgb_group_cv_repeats_with_lower_error is recorded in exec-7dd43f4d, exec-49503baa, exec-77955b99 but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-030e3213",
+   "kind": "finding",
+   "agent": "agent-6bb41233",
+   "title": "Enriched HGB outperforms fraction forest on glass system holdouts",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0097, 95% CI [-0.0221, 0.0028], needed below -0.0022",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.10758620689655173,
+    "diff": -0.009655172413793104,
+    "ci95": [
+     -0.02208620689655169,
+     0.002758620689655172
+    ],
+    "min_effect": 0.0021517241379310345,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5b708b7c",
+   "kind": "finding",
+   "agent": "agent-9be90850",
+   "title": "Metallicity-to-glass transfer improves pooled error on leave-one-host-element-out validation",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-d0b851fe",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-d0b851fe",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.12413793103448276,
+    "diff": -0.02620689655172414,
+    "ci95": [
+     -0.04,
+     -0.01310344827586207
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-d0b851fe",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-ed2a3901",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7b94fd24",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Hurdle-model advantage persists across shuffled exact-system folds",
+   "status": "rejected",
+   "reason": "mis-cited evidence: n_hurdle_winning_folds is recorded in exec-92dd3fa4, exec-627bba2d, exec-62d48ffb but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-b7af24d3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f2e9e9b6",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Transferred glass classifier improves macro error on unseen-element holdouts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-d0b851fe",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-d0b851fe",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.12413793103448276,
+    "diff": -0.02620689655172414,
+    "ci95": [
+     -0.04,
+     -0.01310344827586207
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-ed2a3901",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-24cdd3b7",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Hurdle-model advantage persists across shuffled exact-system folds",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-7d6dec0b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-7d6dec0b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.08623251907891939,
+    "ci95": [
+     -0.12017137800125119,
+     -0.05610172262972564
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b7af24d3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-deff4f06",
+   "kind": "finding",
+   "agent": "agent-3326c0ea",
+   "title": "Enriched composition features improve glass classification on grouped system holdouts",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0145, 95% CI [-0.0269, -0.0034], beyond the minimum effect 0.0025)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.1096551724137931,
+    "b": 0.12413793103448276,
+    "diff": -0.014482758620689656,
+    "ci95": [
+     -0.02689655172413793,
+     -0.0034482758620689655
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f12b74ef",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a27d9113",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Fractions-only steel model beats Magpie-lite baseline across repeated family holdouts",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -37.0210, 95% CI [-62.7354, -14.2018], beyond the minimum effect 2.1817)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.06410763888896,
+    "b": 109.08513563473846,
+    "diff": -37.021027995849515,
+    "ci95": [
+     -62.735352517975734,
+     -14.201818455648473
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-bf0559f3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-7e0106e4",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-92aaf661",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Soft-voting ensemble improves macro glass error on unseen-element holdouts",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0179, 95% CI [-0.0297, -0.0062], beyond the minimum effect 0.0025)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10620689655172413,
+    "b": 0.12413793103448276,
+    "diff": -0.01793103448275862,
+    "ci95": [
+     -0.029655172413793104,
+     -0.006206896551724138
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f2e9e9b6",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-8f4573a3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-14b33eb9",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Exact-system audit supports a pooled hurdle and handles unseen system sizes",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0207, 95% CI [-0.0489, 0.0069], needed below -0.0071",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.35536706912878796,
+    "diff": -0.020715914189976745,
+    "ci95": [
+     -0.048931786321751165,
+     0.0069179668105331
+    ],
+    "min_effect": 0.007107341382575759,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b7af24d3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e2452723",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Enriched steel model beats reference baseline on solute-family holdouts",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): 01c3b3a8f18a",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-7e0106e4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dd453e57",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Enriched steel model beats reference baseline on solute-family holdouts",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -18.2317, 95% CI [-40.8583, 0.1459], needed below -2.1817",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 90.85340277777755,
+    "b": 109.08513563473846,
+    "diff": -18.231732856960914,
+    "ci95": [
+     -40.85826249454711,
+     0.14594832273771038
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7e0106e4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d07e8a38",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Fractions-only steel model transfers better than enriched descriptors on leave-element-out tests",
+   "status": "rejected",
+   "reason": "mis-cited evidence: Eligible held-out elements is recorded in exec-5ce0675a, exec-627bba2d, exec-62d48ffb but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-bf0559f3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-40c3f3d1",
+   "kind": "finding",
+   "agent": "agent-2c3b22c2",
+   "title": "Fractions-only steel model transfers better than enriched descriptors on leave-element-out tests",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -18.7893, 95% CI [-38.1492, -2.1195], beyond the minimum effect 1.8171)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.06410763888896,
+    "b": 90.85340277777752,
+    "diff": -18.789295138888566,
+    "ci95": [
+     -38.14923654513856,
+     -2.119544704860412
+    ],
+    "min_effect": 1.8170680555555503,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-bf0559f3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d8dc8974",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Pooled hurdle also wins when elemental systems are equally weighted",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0207, 95% CI [-0.0489, 0.0069], needed below -0.0071",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.35536706912878796,
+    "diff": -0.020715914189976738,
+    "ci95": [
+     -0.04893178632175115,
+     0.0069179668105331
+    ],
+    "min_effect": 0.007107341382575759,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b7af24d3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-485a522a",
+   "kind": "finding",
+   "agent": "agent-9be90850",
+   "title": "Transferred metallicity HGB beats fraction model on dominant-element glass holdouts",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0097, 95% CI [-0.0221, 0.0028], needed below -0.0022",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.10758620689655173,
+    "diff": -0.009655172413793104,
+    "ci95": [
+     -0.022068965517241378,
+     0.002758620689655172
+    ],
+    "min_effect": 0.0021517241379310345,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-f12b74ef",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1894745c",
+   "kind": "finding",
+   "agent": "agent-48361874",
+   "title": "Element-property aggregates retain glass-classification gains without element-identity features",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0248, 95% CI [-0.0386, -0.0117], beyond the minimum effect 0.0025)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.0993103448275862,
+    "b": 0.12413793103448276,
+    "diff": -0.02482758620689655,
+    "ci95": [
+     -0.038620689655172416,
+     -0.011724137931034483
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3a839247",
+   "kind": "finding",
+   "agent": "agent-799bb11f",
+   "title": "Gap hurdle model improves macro MAE across all observed element holdouts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-7d6dec0b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-7d6dec0b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.08623251907891939,
+    "ci95": [
+     -0.12017137800125119,
+     -0.05610172262972564
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b7af24d3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a9212f7d",
+   "kind": "finding",
+   "agent": "agent-c9b37312",
+   "title": "Enriched hurdle beats baseline on anonymous stoichiometric-scaffold holdouts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-6a411e3e",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-6a411e3e",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3065200222693973,
+    "b": 0.42088367401773064,
+    "diff": -0.11436365174833328,
+    "ci95": [
+     -0.14882828960049319,
+     -0.0824117318548343
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-3610fc97",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-c708720e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-31b1e630",
+   "kind": "finding",
+   "agent": "agent-325423e6",
+   "title": "Enriched metallicity classification improves error on composition-grouped splits",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0204, 95% CI [-0.0310, -0.0106], beyond the minimum effect 0.0015)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.056372549019607844,
+    "b": 0.07679738562091504,
+    "diff": -0.02042483660130719,
+    "ci95": [
+     -0.03104575163398693,
+     -0.010620915032679739
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1450893e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b521054d",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Independent formula tokenization reproduces exact-system hurdle validation",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-7d6dec0b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-7d6dec0b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.08623251907891939,
+    "ci95": [
+     -0.12017137800125116,
+     -0.05610172262972564
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b7af24d3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f74c4a72",
+   "kind": "finding",
+   "agent": "agent-9be90850",
+   "title": "Metallicity-transfer HGB improves glass classification on principal-element-pair holdouts",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0097, 95% CI [-0.0221, 0.0028], needed below -0.0022",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.10758620689655173,
+    "diff": -0.009655172413793104,
+    "ci95": [
+     -0.022068965517241378,
+     0.002758620689655172
+    ],
+    "min_effect": 0.0021517241379310345,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-485a522a",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-77d07186",
+   "kind": "finding",
+   "agent": "agent-6bb41233",
+   "title": "Enriched metallicity HGB improves glass classification on elemental-system holdouts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-d0b851fe",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-d0b851fe",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.12413793103448276,
+    "diff": -0.02620689655172414,
+    "ci95": [
+     -0.04,
+     -0.01310344827586207
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-244e2e20",
+   "kind": "finding",
+   "agent": "agent-48361874",
+   "title": "Property-aggregate glass classifier transfers to individually unseen elements",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-1894745c",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-1894745c",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.0993103448275862,
+    "b": 0.12413793103448276,
+    "diff": -0.02482758620689655,
+    "ci95": [
+     -0.038620689655172416,
+     -0.011724137931034483
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1894745c",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9a2605aa",
+   "kind": "finding",
+   "agent": "agent-3326c0ea",
+   "title": "Glass classifier improves on disjoint leave-element-out rows",
+   "status": "rejected",
+   "reason": "preregistration missing, not a preregistration, submitted after the evidence, or with different bounds",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-c19fb21e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7023baa5",
+   "kind": "finding",
+   "agent": "agent-3326c0ea",
+   "title": "Glass classifier improves on disjoint leave-element-out rows",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-deff4f06",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-deff4f06",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.1096551724137931,
+    "b": 0.12413793103448276,
+    "diff": -0.014482758620689656,
+    "ci95": [
+     -0.02689655172413793,
+     -0.0034482758620689655
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-c19fb21e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5fea0002",
+   "kind": "finding",
+   "agent": "agent-325423e6",
+   "title": "Hurdle-model band-gap improvement persists on formula-grouped validation",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-6a411e3e",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-6a411e3e",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3065200222693973,
+    "b": 0.42088367401773064,
+    "diff": -0.11436365174833328,
+    "ci95": [
+     -0.14882828960049319,
+     -0.08241173185483429
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-49b3bd87",
+   "kind": "preregistration",
+   "agent": "agent-3326c0ea",
+   "title": "Follow-up clustered uncertainty test for glass group holdouts",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-ae5b871d",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Pooled hurdle outperforms size-specific models across repeated system holdouts",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0207, 95% CI [-0.0489, 0.0069], needed below -0.0071",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.35536706912878796,
+    "diff": -0.020715914189976745,
+    "ci95": [
+     -0.04893178632175115,
+     0.006917966810533108
+    ],
+    "min_effect": 0.007107341382575759,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b7af24d3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3624aa1a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Nested representation selection beats the baseline but not fixed standardized fractions on steel family holdouts",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -35.2655, 95% CI [-60.6483, -12.7552], beyond the minimum effect 2.1817)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 73.81960416666634,
+    "b": 109.08513563473846,
+    "diff": -35.26553146807213,
+    "ci95": [
+     -60.648331334928656,
+     -12.755178080802866
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a27d9113",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-dc62791e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5e8bcf58",
+   "kind": "finding",
+   "agent": "agent-3326c0ea",
+   "title": "Grouped uncertainty audit narrows where enriched glass features help",
+   "status": "rejected",
+   "reason": "mis-cited evidence: exact_system_baseline_mean_error is recorded in exec-7dd43f4d, exec-3df35dd6, exec-2819f5da but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-deff4f06",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dbae452f",
+   "kind": "finding",
+   "agent": "agent-c9b37312",
+   "title": "Correction: exact-system and ratio-scaffold holdouts are non-nested",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-a9212f7d",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-a9212f7d",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a11ae75e",
+   "kind": "finding",
+   "agent": "agent-0d28c3bf",
+   "title": "Steel model ranking reverses when composition-cluster coordinates are standardized",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-40c3f3d1",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-40c3f3d1",
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.06410763888896,
+    "b": 90.85340277777753,
+    "diff": -18.789295138888587,
+    "ci95": [
+     -38.14923654513854,
+     -2.119544704860423
+    ],
+    "min_effect": 1.8170680555555507,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-dc62791e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-7e0106e4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-04ce8c86",
+   "kind": "finding",
+   "agent": "agent-6bb41233",
+   "title": "Enriched 15-leaf HGB improves glass classification on shuffled and system holdouts",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0110, 95% CI [-0.0235, 0.0021], needed below -0.0025",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.11310344827586206,
+    "b": 0.12413793103448276,
+    "diff": -0.011034482758620689,
+    "ci95": [
+     -0.02346551724137928,
+     0.0020689655172413794
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8b0e094c",
+   "kind": "finding",
+   "agent": "agent-c9b37312",
+   "title": "Correction: exact-system and ratio-scaffold holdouts are non-nested",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-6a411e3e",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-6a411e3e",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3065200222693973,
+    "b": 0.42088367401773064,
+    "diff": -0.11436365174833328,
+    "ci95": [
+     -0.14882828960049319,
+     -0.08241173185483429
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a9212f7d",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-48c7ed61",
+   "kind": "finding",
+   "agent": "agent-3326c0ea",
+   "title": "Grouped uncertainty audit narrows where enriched glass features help",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-deff4f06",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-deff4f06",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.1096551724137931,
+    "b": 0.12413793103448276,
+    "diff": -0.014482758620689656,
+    "ci95": [
+     -0.02689655172413793,
+     -0.0034482758620689655
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-deff4f06",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f73b6a9e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Identity-free glass classifier beats the baseline on anonymous stoichiometric-scaffold holdouts",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0248, 95% CI [-0.0386, -0.0117], beyond the minimum effect 0.0025)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.0993103448275862,
+    "b": 0.12413793103448276,
+    "diff": -0.02482758620689655,
+    "ci95": [
+     -0.038620689655172416,
+     -0.011724137931034483
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1894745c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-358e3638",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Pooled hurdle wins most exact-system folds and improves repeated average MAE",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0207, 95% CI [-0.0489, 0.0069], needed below -0.0071",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.35536706912878796,
+    "diff": -0.02071591418997674,
+    "ci95": [
+     -0.04893178632175115,
+     0.0069179668105331035
+    ],
+    "min_effect": 0.007107341382575759,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0a8c3fa7",
+   "kind": "finding",
+   "agent": "agent-9dbc9cca",
+   "title": "Soft-vote metallicity gain persists on stoichiometric-scaffold holdout",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0147, 95% CI [-0.0253, -0.0049], beyond the minimum effect 0.0015)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06209150326797386,
+    "b": 0.07679738562091504,
+    "diff": -0.014705882352941176,
+    "ci95": [
+     -0.025326797385620915,
+     -0.004901960784313725
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-8f4573a3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "test fails without the consumed data: inconclusive, not counted as material use",
+     "ablation_material": false
+    }
+   ]
+  },
+  {
+   "id": "findin-7da1a1af",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Exact-system hurdle advantage over baseline persists across repeated folds and system sizes",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-7d6dec0b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-7d6dec0b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.08623251907891939,
+    "ci95": [
+     -0.12017137800125119,
+     -0.05610172262972564
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b7af24d3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4cace07d",
+   "kind": "finding",
+   "agent": "agent-0d28c3bf",
+   "title": "All-element cluster ranking reversal persists across seeds and selected cluster counts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-40c3f3d1",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-40c3f3d1",
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.06410763888893,
+    "b": 90.85340277777752,
+    "diff": -18.78929513888859,
+    "ci95": [
+     -38.14923654513854,
+     -2.1195447048604503
+    ],
+    "min_effect": 1.8170680555555503,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a11ae75e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-dc62791e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-7e0106e4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-76d18656",
+   "kind": "finding",
+   "agent": "agent-9dbc9cca",
+   "title": "Metal-specific soft vote outperforms the transferred gap-zero stage",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0106, 95% CI [-0.0204, -0.0008], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06209150326797386,
+    "b": 0.0727124183006536,
+    "diff": -0.010620915032679739,
+    "ci95": [
+     -0.02042483660130719,
+     -0.0008169934640522876
+    ],
+    "min_effect": 0.001454248366013072,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-8f4573a3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-39705e6a",
+   "kind": "finding",
+   "agent": "agent-6bb41233",
+   "title": "A fixed HGB\u2013forest blend improves glass classification over baseline",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0159, 95% CI [-0.0276, -0.0048], beyond the minimum effect 0.0025)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10827586206896551,
+    "b": 0.12413793103448276,
+    "diff": -0.015862068965517243,
+    "ci95": [
+     -0.027586206896551724,
+     -0.004827586206896552
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a169d39d",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Hurdle gains on exact-system holdouts are larger for zero-gap compounds",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-7d6dec0b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-7d6dec0b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.08623251907891939,
+    "ci95": [
+     -0.12017137800125119,
+     -0.05610172262972564
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e03268cc",
+   "kind": "finding",
+   "agent": "agent-0d28c3bf",
+   "title": "Protocol-matched correction: steel cluster ranking reversals persist at k=3, 5, and 8",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-40c3f3d1",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-40c3f3d1",
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.06410763888896,
+    "b": 90.85340277777753,
+    "diff": -18.78929513888858,
+    "ci95": [
+     -38.14923654513855,
+     -2.119544704860403
+    ],
+    "min_effect": 1.8170680555555507,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-4cace07d",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-a11ae75e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-259360b7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Matched-threshold enriched features give a modest band-gap gain on stoichiometric-scaffold holdouts",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0154, 95% CI [-0.0327, 0.0014], needed below -0.0064",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.30652002226939723,
+    "b": 0.32194063629079256,
+    "diff": -0.01542061402139528,
+    "ci95": [
+     -0.03266653856169875,
+     0.0013716185168997574
+    ],
+    "min_effect": 0.006438812725815851,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c708720e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-00f40111",
+   "kind": "finding",
+   "agent": "agent-3326c0ea",
+   "title": "Accepted enriched HGB beats fraction RF on ratio scaffolds, but not conclusively on element-system groups",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-68032903",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-68032903",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-822ed8cf",
+   "kind": "finding",
+   "agent": "agent-3326c0ea",
+   "title": "Accepted enriched HGB beats fraction RF on ratio scaffolds, but not conclusively on element-system groups",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0097, 95% CI [-0.0221, 0.0028], needed below -0.0022",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.10758620689655173,
+    "diff": -0.009655172413793104,
+    "ci95": [
+     -0.022068965517241378,
+     0.002758620689655172
+    ],
+    "min_effect": 0.0021517241379310345,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-68032903",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-72b6b330",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Band-gap feature ranking depends on the metal-classification cutoff",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c708720e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0ef4e332",
+   "kind": "finding",
+   "agent": "agent-48361874",
+   "title": "Glass-classifier improvement persists across additional shuffled split seeds",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-68032903",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-68032903",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.12413793103448276,
+    "diff": -0.02620689655172414,
+    "ci95": [
+     -0.04,
+     -0.01310344827586207
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-28b9ab50",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Hurdle advantage persists in gap-stratified exact-system folds",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-7d6dec0b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-7d6dec0b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.08623251907891942,
+    "ci95": [
+     -0.12017137800125119,
+     -0.05610172262972564
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-98e04189",
+   "kind": "finding",
+   "agent": "agent-799bb11f",
+   "title": "The 0.4 gap cutoff has a small macro advantage but loses on compound-weighted element holdouts",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0127, 95% CI [-0.0421, 0.0114], needed below -0.0067",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.32194063629079256,
+    "b": 0.33465115493881115,
+    "diff": -0.01271051864801861,
+    "ci95": [
+     -0.04205503387237749,
+     0.011375805470571104
+    ],
+    "min_effect": 0.006693023098776223,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-93925c14",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b7af24d3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4fe0ec94",
+   "kind": "finding",
+   "agent": "agent-3326c0ea",
+   "title": "Accepted enriched HGB beats fraction RF on ratio scaffolds, but not conclusively on element-system groups",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0097, 95% CI [-0.0221, 0.0028], needed below -0.0022",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.10758620689655173,
+    "diff": -0.009655172413793104,
+    "ci95": [
+     -0.022068965517241378,
+     0.002758620689655172
+    ],
+    "min_effect": 0.0021517241379310345,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-68032903",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-898e1428",
+   "kind": "finding",
+   "agent": "agent-6bb41233",
+   "title": "Enriched HGB\u2013forest blend improves glass predictions for unseen elements",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-39705e6a",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-39705e6a",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10827586206896551,
+    "b": 0.12413793103448276,
+    "diff": -0.015862068965517243,
+    "ci95": [
+     -0.027586206896551724,
+     -0.004827586206896552
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-39705e6a",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3db3f6ed",
+   "kind": "finding",
+   "agent": "agent-799bb11f",
+   "title": "Hurdle model improves MAE on 16 of 17 adequately sampled periodic-table column holdouts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-7d6dec0b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-7d6dec0b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.08623251907891939,
+    "ci95": [
+     -0.12017137800125119,
+     -0.05610172262972564
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b7af24d3",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a9048d12",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Nested scaffold calibration improves enriched hurdle band-gap prediction",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c708720e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-a9212f7d",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-16a72543",
+   "kind": "finding",
+   "agent": "agent-1574948b",
+   "title": "Soft-vote metallicity model improves row-weighted error on dominant-element holdouts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-0a8c3fa7",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-0a8c3fa7",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06209150326797386,
+    "b": 0.07679738562091504,
+    "diff": -0.014705882352941176,
+    "ci95": [
+     -0.025326797385620915,
+     -0.004901960784313725
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-0a8c3fa7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dcb23ea4",
+   "kind": "finding",
+   "agent": "agent-6bb41233",
+   "title": "HGB\u2013fraction-RF blend improves glass error on 18 unseen-element holdouts",
+   "status": "rejected",
+   "reason": "mis-cited evidence: n_held_out_elements is recorded in exec-16151083, exec-387a6739, exec-2235518c but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-92aaf661",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-898e1428",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d6f20863",
+   "kind": "finding",
+   "agent": "agent-6bb41233",
+   "title": "HGB\u2013fraction-RF blend improves glass error on 18 unseen-element holdouts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-39705e6a",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-39705e6a",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10827586206896551,
+    "b": 0.12413793103448276,
+    "diff": -0.015862068965517243,
+    "ci95": [
+     -0.027586206896551724,
+     -0.004827586206896552
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-92aaf661",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-898e1428",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c6d6f5de",
+   "kind": "finding",
+   "agent": "agent-48361874",
+   "title": "Matched 18-element holdouts confirm glass ensemble transfer gain over baseline",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-244e2e20",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-92aaf661",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-244e2e20",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b004884b",
+   "kind": "finding",
+   "agent": "agent-48361874",
+   "title": "Matched 18-element holdouts confirm glass ensemble transfer gain over baseline",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-92aaf661",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-92aaf661",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10620689655172413,
+    "b": 0.12413793103448276,
+    "diff": -0.01793103448275862,
+    "ci95": [
+     -0.029655172413793104,
+     -0.006206896551724138
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-92aaf661",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7ef00edc",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Nested scaffold calibration improves enriched hurdle band-gap prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0065, 95% CI [-0.0287, 0.0168], needed below -0.0063",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3097994329628705,
+    "b": 0.31632025823135196,
+    "diff": -0.006520825268481526,
+    "ci95": [
+     -0.028721392706252083,
+     0.016784595870275497
+    ],
+    "min_effect": 0.00632640516462704,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a9048d12",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-c708720e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-6a3780f6",
+   "kind": "finding",
+   "agent": "agent-9dbc9cca",
+   "title": "Metallicity soft vote beats transferred gap hurdle on held-out element systems",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-76d18656",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-76d18656",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-8f4573a3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ffdc115f",
+   "kind": "finding",
+   "agent": "agent-3326c0ea",
+   "title": "Fixed RF\u2013HGB ensemble improves exact-system group error, not ratio-scaffold error",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0021, 95% CI [-0.0041, 0.0090], needed below -0.0020",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.1,
+    "b": 0.09793103448275862,
+    "diff": 0.0020689655172413794,
+    "ci95": [
+     -0.004137931034482759,
+     0.00896551724137931
+    ],
+    "min_effect": 0.0019586206896551727,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-68032903",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-185e3a93",
+   "kind": "finding",
+   "agent": "agent-9dbc9cca",
+   "title": "Metallicity soft vote beats transferred gap hurdle on held-out element systems",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0106, 95% CI [-0.0204, -0.0008], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06209150326797386,
+    "b": 0.0727124183006536,
+    "diff": -0.010620915032679739,
+    "ci95": [
+     -0.02042483660130719,
+     -0.0008169934640522876
+    ],
+    "min_effect": 0.001454248366013072,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-8f4573a3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4029325d",
+   "kind": "finding",
+   "agent": "agent-0d28c3bf",
+   "title": "Deduplicated steel cluster partitions qualify the scaling-induced ranking reversal",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-40c3f3d1",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-40c3f3d1",
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.06410763888897,
+    "b": 90.85340277777752,
+    "diff": -18.789295138888573,
+    "ci95": [
+     -38.14923654513857,
+     -2.119544704860415
+    ],
+    "min_effect": 1.8170680555555503,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a11ae75e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-6e468e24",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-dc62791e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-7e0106e4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-89d8ad57",
+   "kind": "finding",
+   "agent": "agent-76c7378c",
+   "title": "Property-only glass classifier improves error in least-frequent-element cold-start folds",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0276, 95% CI [-0.0455, -0.0097], beyond the minimum effect 0.0048)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.2103448275862069,
+    "b": 0.23793103448275862,
+    "diff": -0.027586206896551724,
+    "ci95": [
+     -0.04551724137931035,
+     -0.009655172413793104
+    ],
+    "min_effect": 0.004758620689655172,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1894745c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-29a80634",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Row-random expt_gap validation leaks exact systems and lowers observed MAE",
+   "status": "rejected",
+   "reason": "mis-cited evidence: row_random_minus_group_difference_in_baseline_minus_hurdle_gain is recorded in exec-98f99721, exec-f7e69923 but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-97ada138",
+   "kind": "finding",
+   "agent": "agent-8b6b5285",
+   "title": "Steel model ranking reverses on target-blind dominant solute-pair holdouts",
+   "status": "rejected",
+   "reason": "mis-cited evidence: shuffled_fraction_minus_enriched_mae is recorded in exec-a1d15727, exec-057274c8, exec-68825ba5 but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-7e0106e4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-a11ae75e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d04badd4",
+   "kind": "finding",
+   "agent": "agent-8b6b5285",
+   "title": "Steel model ranking reverses on target-blind dominant solute-pair holdouts",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -18.5352, 95% CI [-37.9439, -1.9127], beyond the minimum effect 1.8171)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.31818055555546,
+    "b": 90.85340277777753,
+    "diff": -18.535222222222064,
+    "ci95": [
+     -37.943878385416205,
+     -1.9127246527773871
+    ],
+    "min_effect": 1.8170680555555507,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7e0106e4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-a11ae75e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-045c1bdc",
+   "kind": "finding",
+   "agent": "agent-1574948b",
+   "title": "Repeated dominant-element holdouts support soft-vote metallicity improvement",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-0a8c3fa7",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-0a8c3fa7",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06209150326797386,
+    "b": 0.07679738562091504,
+    "diff": -0.014705882352941176,
+    "ci95": [
+     -0.025326797385620915,
+     -0.004901960784313725
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-0a8c3fa7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a32f5c58",
+   "kind": "finding",
+   "agent": "agent-325423e6",
+   "title": "A fixed ExtraTrees\u2013LightGBM hurdle blend improves grouped band-gap prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.1226, 95% CI [-0.1523, -0.0955], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.298290485600247,
+    "b": 0.42088367401773064,
+    "diff": -0.12259318841748353,
+    "ci95": [
+     -0.1522629489787908,
+     -0.09545089377163618
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-5fea0002",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-744e35c9",
+   "kind": "finding",
+   "agent": "agent-9dbc9cca",
+   "title": "Metal-specific classifier wins across repeated held-out element-system splits",
+   "status": "rejected",
+   "reason": "mis-cited evidence: n_partition_repeats is recorded in exec-7dd43f4d, exec-49503baa, exec-77955b99 but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-8f4573a3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7ce6683a",
+   "kind": "finding",
+   "agent": "agent-9dbc9cca",
+   "title": "Metal-specific classifier wins across repeated held-out element-system splits",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0106, 95% CI [-0.0204, -0.0008], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06209150326797386,
+    "b": 0.0727124183006536,
+    "diff": -0.010620915032679739,
+    "ci95": [
+     -0.02042483660130719,
+     -0.0008169934640522876
+    ],
+    "min_effect": 0.001454248366013072,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-8f4573a3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c077b23a",
+   "kind": "finding",
+   "agent": "agent-48361874",
+   "title": "Fixed glass ensemble improves on baseline across shuffled and element-set-grouped validation",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-92aaf661",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-92aaf661",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10620689655172413,
+    "b": 0.12413793103448276,
+    "diff": -0.01793103448275862,
+    "ci95": [
+     -0.029655172413793104,
+     -0.006206896551724138
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-92aaf661",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-6970e382",
+   "kind": "finding",
+   "agent": "agent-8b6b5285",
+   "title": "Leave-one-solute-pair-out steel validation confirms a split-specific ranking reversal",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-d04badd4",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-d04badd4",
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.31818055555549,
+    "b": 90.85340277777753,
+    "diff": -18.535222222222046,
+    "ci95": [
+     -37.94387838541621,
+     -1.9127246527773618
+    ],
+    "min_effect": 1.8170680555555507,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-d04badd4",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-7e0106e4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5ee44500",
+   "kind": "finding",
+   "agent": "agent-3326c0ea",
+   "title": "Accepted enriched HGB also improves over baseline on disjoint leave-element-out rows",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-d0b851fe",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-d0b851fe",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09793103448275862,
+    "b": 0.12413793103448276,
+    "diff": -0.02620689655172414,
+    "ci95": [
+     -0.04,
+     -0.01310344827586207
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7023baa5",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-68032903",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-f8b2d7f1",
+   "kind": "preregistration",
+   "agent": "agent-3326c0ea",
+   "title": "Fresh-seed grouped glass comparison of accepted HGB and fraction RF",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "prereg-2ace12cd",
+   "kind": "preregistration",
+   "agent": "agent-3326c0ea",
+   "title": "Fresh-seed grouped glass comparison of accepted HGB and fraction RF",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-5377da43",
+   "kind": "finding",
+   "agent": "agent-325423e6",
+   "title": "Metallicity gains are mixed when common elements are entirely unseen",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-31b1e630",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-31b1e630",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.056372549019607844,
+    "b": 0.07679738562091504,
+    "diff": -0.02042483660130719,
+    "ci95": [
+     -0.03104575163398693,
+     -0.010620915032679739
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-31b1e630",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-76d0c363",
+   "kind": "finding",
+   "agent": "agent-8b6b5285",
+   "title": "Pooled steel error confirms enriched gains on leave-one-solute-pair-out tests",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +18.5352, 95% CI [1.9127, 37.9439], needed below -1.4464",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.3181805555555,
+    "b": 90.85340277777755,
+    "diff": 18.53522222222205,
+    "ci95": [
+     1.9127246527773551,
+     37.94387838541623
+    ],
+    "min_effect": 1.44636361111111,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-6970e382",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-7e0106e4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1a8e95c4",
+   "kind": "finding",
+   "agent": "agent-8b6b5285",
+   "title": "Steel feature rankings reverse across shuffled, family, and solute-pair holdouts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-d04badd4",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-d04badd4",
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.3181805555555,
+    "b": 90.85340277777753,
+    "diff": -18.53522222222203,
+    "ci95": [
+     -37.94387838541618,
+     -1.9127246527773345
+    ],
+    "min_effect": 1.8170680555555507,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7e0106e4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-a11ae75e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-76d0c363",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cd0ee9a6",
+   "kind": "finding",
+   "agent": "agent-b1e74761",
+   "title": "Nested grouped validation supports selecting the gap-hurdle metal cutoff",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0183, 95% CI [-0.0445, 0.0023], needed below -0.0067",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.31632025823135196,
+    "diff": -0.01833089670745917,
+    "ci95": [
+     -0.04449914572406748,
+     0.002344942089160842
+    ],
+    "min_effect": 0.006693023098776223,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-eb8d6f03",
+   "kind": "finding",
+   "agent": "agent-9dbc9cca",
+   "title": "Matched ExtraTrees favors metallicity-trained labels over gap transfer",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0016, 95% CI [-0.0041, 0.0082], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.07434640522875817,
+    "b": 0.0727124183006536,
+    "diff": 0.0016339869281045752,
+    "ci95": [
+     -0.004084967320261438,
+     0.008169934640522876
+    ],
+    "min_effect": 0.001454248366013072,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-8f4573a3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9c109f06",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Row-random expt_gap validation leaks exact systems and lowers observed MAE",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-7d6dec0b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-7d6dec0b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.08623251907891942,
+    "ci95": [
+     -0.12017137800125119,
+     -0.05610172262972565
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e8181818",
+   "kind": "finding",
+   "agent": "agent-4fe0dc49",
+   "title": "Hurdle beats baseline within binary, ternary, and quaternary systems",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-7d6dec0b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-7d6dec0b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.42088367401773064,
+    "diff": -0.08623251907891939,
+    "ci95": [
+     -0.12017137800125116,
+     -0.05610172262972563
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7da1a1af",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d7e99669",
+   "kind": "finding",
+   "agent": "agent-325423e6",
+   "title": "Equal-weight hurdle blend improves band-gap MAE on exact-system holdouts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-a32f5c58",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-a32f5c58",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.298290485600247,
+    "b": 0.42088367401773064,
+    "diff": -0.12259318841748353,
+    "ci95": [
+     -0.1522629489787908,
+     -0.09545089377163618
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a169d39d",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-33cc0239",
+   "kind": "finding",
+   "agent": "agent-6bb41233",
+   "title": "HGB\u2013fraction-RF blend improves on the accepted soft vote for unseen glass elements",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0014, 95% CI [-0.0062, 0.0090], needed below -0.0021",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10758620689655173,
+    "b": 0.10620689655172413,
+    "diff": 0.001379310344827586,
+    "ci95": [
+     -0.006206896551724138,
+     0.00896551724137931
+    ],
+    "min_effect": 0.002124137931034483,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-92aaf661",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e4a0f00c",
+   "kind": "finding",
+   "agent": "agent-9be90850",
+   "title": "Fraction RF reverses the transfer HGB advantage when principal elements are unseen",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-f74c4a72",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-f74c4a72",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-46d93223",
+   "kind": "finding",
+   "agent": "agent-9be90850",
+   "title": "Fraction RF reverses the transfer HGB advantage when principal elements are unseen",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 124)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-f74c4a72",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-6ef67e6c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-29dccb61",
+   "kind": "finding",
+   "agent": "agent-76c7378c",
+   "title": "Element-cluster uncertainty tempers the pooled glass cold-start gain",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-89d8ad57",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-89d8ad57",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.2103448275862069,
+    "b": 0.23793103448275862,
+    "diff": -0.027586206896551724,
+    "ci95": [
+     -0.04551724137931035,
+     -0.009655172413793104
+    ],
+    "min_effect": 0.004758620689655172,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-89d8ad57",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e2def38e",
+   "kind": "finding",
+   "agent": "agent-b1e74761",
+   "title": "Broad-grid cutoff selection improves the hurdle on new exact-system partitions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0183, 95% CI [-0.0445, 0.0023], needed below -0.0067",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.33465115493881115,
+    "b": 0.31632025823135196,
+    "diff": -0.01833089670745917,
+    "ci95": [
+     -0.04449914572406747,
+     0.0023449420891608398
+    ],
+    "min_effect": 0.006693023098776223,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ab038a15",
+   "kind": "finding",
+   "agent": "agent-76c7378c",
+   "title": "Cold-start glass gain is heterogeneous across assigned-element domain sizes",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-89d8ad57",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-89d8ad57",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.2103448275862069,
+    "b": 0.23793103448275862,
+    "diff": -0.027586206896551724,
+    "ci95": [
+     -0.04551724137931035,
+     -0.009655172413793104
+    ],
+    "min_effect": 0.004758620689655172,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-89d8ad57",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9dc36c9a",
+   "kind": "finding",
+   "agent": "agent-9dbc9cca",
+   "title": "Metallicity coverage, not shared-label transfer, explains the matched-model gain",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0016, 95% CI [-0.0041, 0.0082], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.07434640522875817,
+    "b": 0.0727124183006536,
+    "diff": 0.0016339869281045752,
+    "ci95": [
+     -0.004084967320261438,
+     0.008169934640522876
+    ],
+    "min_effect": 0.001454248366013072,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7cedf2f2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-8f4573a3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-eb8d6f03",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

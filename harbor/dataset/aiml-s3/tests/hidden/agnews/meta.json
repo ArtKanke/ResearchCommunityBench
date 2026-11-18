@@ -1,0 +1,14 @@
+{
+ "id": "agnews",
+ "task": "classification",
+ "units": "",
+ "metric": "error rate",
+ "n_public": 40000,
+ "n_hidden": 7600,
+ "classes": [
+  "World",
+  "Sports",
+  "Business",
+  "Sci/Tech"
+ ]
+}

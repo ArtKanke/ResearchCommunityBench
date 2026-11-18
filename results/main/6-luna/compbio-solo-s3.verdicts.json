@@ -1,0 +1,896 @@
+{
+ "run_id": "run-0cbf3c25",
+ "model": "6-luna",
+ "task": "compbio-solo-s3",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 6,
+  "R_frontier": 3,
+  "C_collaborative": 0,
+  "submitted_credited": 24,
+  "duplicates": 0,
+  "best_gain": {
+   "CASP3_HUMAN_Roychowdhury_2020": 0.0843,
+   "BLAT_ECOLX_Firnberg_2014": 0.1857,
+   "BLAT_ECOLX_Stiffler_2015": 0.1956
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 18
+  }
+ },
+ "rewards": {
+  "score": 0.5454545454545454,
+  "R_replicated": 6.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 3.0,
+  "datasets_advanced": 3.0,
+  "mean_best_gain": 0.06651428571428572,
+  "auditor_pending": 0.0,
+  "submitted_credited": 24.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 18.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.7407,
+  "model_calls": 97.0,
+  "experiments": 84.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.123,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.931,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 56.3
+ },
+ "claims": [
+  {
+   "id": "findin-219bac41",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Matched Stiffler TEM-1 scores improve Firnberg fitness prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382442841103203,
+    "b": 0.22382417490302492,
+    "diff": 2.535080071179217e-07,
+    "ci95": [
+     7.042942615868028e-08,
+     4.36791814945799e-07
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a5611ecb",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Matched Firnberg TEM-1 scores improve Stiffler fitness prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0110",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.5502393278965813,
+    "b": 0.5502384497273504,
+    "diff": 8.781692307675185e-07,
+    "ci95": [
+     6.302663675157284e-07,
+     1.125836923075673e-06
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-93b2dfe2",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-dependent cross-assay transfer improves Firnberg TEM-1 prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382442841103203,
+    "b": 0.22382417490302492,
+    "diff": 2.535080071179217e-07,
+    "ci95": [
+     7.042942615868028e-08,
+     4.36791814945799e-07
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a4c9c2a8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-dependent cross-assay transfer improves Stiffler TEM-1 prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0110",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.5502393278965813,
+    "b": 0.5502384497273504,
+    "diff": 8.781692307675185e-07,
+    "ci95": [
+     6.302663675157284e-07,
+     1.125836923075673e-06
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-6f9168ad",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Residue-aware cross-assay transfer improves Firnberg TEM-1 prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382442841103203,
+    "b": 0.22382417490302492,
+    "diff": 2.535080071179217e-07,
+    "ci95": [
+     7.042942615868028e-08,
+     4.36791814945799e-07
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c0d0b161",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-interaction transfer improves Stiffler TEM-1 prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0110",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.5502393278965813,
+    "b": 0.5502384497273504,
+    "diff": 8.781692307675185e-07,
+    "ci95": [
+     6.302663675157284e-07,
+     1.125836923075673e-06
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-edc6decb",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-assay transfer improves KCNE1 functional prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0041",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.20268767184739678,
+    "b": 0.2026873113806104,
+    "diff": 3.6046678635709097e-07,
+    "ci95": [
+     1.1408752243992896e-07,
+     5.940237881514527e-07
+    ],
+    "min_effect": 0.004053746227612208,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a3a180de",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-assay transfer improves KCNE1 expression prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0044",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.21954687620530972,
+    "b": 0.219546819939823,
+    "diff": 5.626548672542475e-08,
+    "ci95": [
+     -8.240442478061629e-08,
+     1.938154867260093e-07
+    ],
+    "min_effect": 0.00439093639879646,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-5362cd49",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-assay transfer improves KRAS DARPin-binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0031",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.1566378658754276,
+    "b": 0.15663735009104168,
+    "diff": 5.157843859653139e-07,
+    "ci95": [
+     3.4917072243328294e-07,
+     6.832032600248627e-07
+    ],
+    "min_effect": 0.003132747001820834,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8726befa",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-assay transfer improves KRAS abundance prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 799,
+    "a": 0.22499242243861914,
+    "b": 0.22499231825117236,
+    "diff": 1.0418744680959237e-07,
+    "ci95": [
+     -1.973830600589807e-08,
+     2.251297055707144e-07
+    ],
+    "min_effect": 0.004499846365023447,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a852c8a1",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Pooled substitution identity improves CASP3 activity prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0381, 95% CI [-0.0626, -0.0127], beyond the minimum effect 0.0092)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.41945452302182323,
+    "b": 0.45756248593065013,
+    "diff": -0.03810796290882686,
+    "ci95": [
+     -0.06264937913251994,
+     -0.012653717072060618
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-42cae9c0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Stiffler TEM-1 scores improve Firnberg fitness prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382442841103203,
+    "b": 0.22382417490302492,
+    "diff": 2.535080071179217e-07,
+    "ci95": [
+     7.042942615868028e-08,
+     4.36791814945799e-07
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-f2ddf9e7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Firnberg scores improve Stiffler TEM-1 fitness prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0110",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.5502393278965813,
+    "b": 0.5502384497273504,
+    "diff": 8.781692307675185e-07,
+    "ci95": [
+     6.302663675157284e-07,
+     1.125836923075673e-06
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-f1b4f8df",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KRAS abundance transfer improves DARPin binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0031",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.1566378658754276,
+    "b": 0.15663735009104168,
+    "diff": 5.157843859653139e-07,
+    "ci95": [
+     3.4917072243328294e-07,
+     6.832032600248627e-07
+    ],
+    "min_effect": 0.003132747001820834,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-79fffbd6",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KRAS binding transfer improves abundance prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 799,
+    "a": 0.22499242243861914,
+    "b": 0.22499231825117236,
+    "diff": 1.0418744680959237e-07,
+    "ci95": [
+     -1.973830600589807e-08,
+     2.251297055707144e-07
+    ],
+    "min_effect": 0.004499846365023447,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-6f6b829e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 expression transfer improves function prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0041",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.20268767184739678,
+    "b": 0.2026873113806104,
+    "diff": 3.6046678635709097e-07,
+    "ci95": [
+     1.1408752243992896e-07,
+     5.940237881514527e-07
+    ],
+    "min_effect": 0.004053746227612208,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-48dd99f6",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Blending binding transfer improves KRAS abundance prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0021, 95% CI [-0.0092, 0.0051], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 799,
+    "a": 0.22286696639365636,
+    "b": 0.22499231825117236,
+    "diff": -0.002125351857515977,
+    "ci95": [
+     -0.009247597383846059,
+     0.005073985204040211
+    ],
+    "min_effect": 0.004499846365023447,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-efe0c4f2",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Pooled substitution identity improves Firnberg prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0414, 95% CI [-0.0503, -0.0325], beyond the minimum effect 0.0045)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.18242018618754446,
+    "b": 0.22382417490302492,
+    "diff": -0.04140398871548042,
+    "ci95": [
+     -0.05029411098342749,
+     -0.032514525606172164
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ecdb81e5",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Pooled substitution identity improves Stiffler prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1070, 95% CI [-0.1297, -0.0846], beyond the minimum effect 0.0110)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.44321773869576075,
+    "b": 0.5502384497273504,
+    "diff": -0.10702071103158975,
+    "ci95": [
+     -0.12970468841419017,
+     -0.08457240069358293
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-f2867f7a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Substitution identity improves KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0016, 95% CI [-0.0110, 0.0082], needed below -0.0041",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.20110104869186712,
+    "b": 0.2026873113806104,
+    "diff": -0.0015862626887432642,
+    "ci95": [
+     -0.011010360911965878,
+     0.00815803991733258
+    ],
+    "min_effect": 0.004053746227612208,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a9842588",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Substitution identity improves KRAS binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0034, 95% CI [-0.0097, 0.0026], needed below -0.0031",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.15322986170142625,
+    "b": 0.15663735009104168,
+    "diff": -0.0034074883896153887,
+    "ci95": [
+     -0.009747122792571948,
+     0.0025775225605815153
+    ],
+    "min_effect": 0.003132747001820834,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b302563d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical mutation features improve Firnberg prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0416, 95% CI [-0.0504, -0.0325], beyond the minimum effect 0.0045)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.18226542509626334,
+    "b": 0.22382417490302492,
+    "diff": -0.041558749806761566,
+    "ci95": [
+     -0.05044957289162366,
+     -0.03245631384883897
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d670b636",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Substitution identity improves CASP3 fitness prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0386, 95% CI [-0.0628, -0.0132], beyond the minimum effect 0.0092)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.418977453848593,
+    "b": 0.45756248593065013,
+    "diff": -0.03858503208205717,
+    "ci95": [
+     -0.06276648311240382,
+     -0.013235464109885232
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-27d91036",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical mutation features improve Stiffler prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1076, 95% CI [-0.1306, -0.0850], beyond the minimum effect 0.0110)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.4426236336847265,
+    "b": 0.5502384497273504,
+    "diff": -0.10761481604262395,
+    "ci95": [
+     -0.13058682012713763,
+     -0.08500202873467803
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": true
+   },
+   "relations": []
+  }
+ ]
+}

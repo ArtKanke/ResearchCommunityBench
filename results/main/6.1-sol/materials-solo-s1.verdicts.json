@@ -1,0 +1,259 @@
+{
+ "run_id": "run-040c305e",
+ "model": "6.1-sol",
+ "task": "materials-solo-s1",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 4,
+  "R_frontier": 3,
+  "C_collaborative": 0,
+  "submitted_credited": 5,
+  "duplicates": 0,
+  "best_gain": {
+   "steels": 0.3471,
+   "expt_gap": 0.3117,
+   "glass": 0.2333
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 1
+  }
+ },
+ "rewards": {
+  "score": 0.4444444444444444,
+  "R_replicated": 4.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 3.0,
+  "datasets_advanced": 3.0,
+  "mean_best_gain": 0.223025,
+  "auditor_pending": 0.0,
+  "submitted_credited": 5.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 1.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 2.7366,
+  "model_calls": 76.0,
+  "experiments": 51.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.684,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.961,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 748.7
+ },
+ "claims": [
+  {
+   "id": "method-d1e4a792",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Preserving solute identities improves composition-only prediction of steel yield strength",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -37.8660, 95% CI [-64.2274, -14.9324], beyond the minimum effect 2.1817)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 71.21910709876491,
+    "b": 109.08513563473846,
+    "diff": -37.86602853597355,
+    "ci95": [
+     -64.22740698086612,
+     -14.932370370909545
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-640c2af5",
+   "kind": "method",
+   "agent": "founder",
+   "title": "A representation ensemble improves composition-only experimental metallicity classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0098, 95% CI [-0.0196, 0.0008], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06699346405228758,
+    "b": 0.07679738562091504,
+    "diff": -0.00980392156862745,
+    "ci95": [
+     -0.0196078431372549,
+     0.0008169934640522876
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "method-c606a8ae",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Loss-aware mixture medians improve prediction of experimental band gaps with metallic zeros",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1312, 95% CI [-0.1640, -0.1007], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.2897129853715712,
+    "b": 0.42088367401773064,
+    "diff": -0.1311706886461594,
+    "ci95": [
+     -0.16401468471242556,
+     -0.10072673265617116
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-5a228844",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Leaf-distribution medians beat ordinary forest means for absolute-error band-gap prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0707, 95% CI [-0.0904, -0.0516], beyond the minimum effect 0.0079)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3233216783216783,
+    "b": 0.3940163048149768,
+    "diff": -0.07069462649329845,
+    "ci95": [
+     -0.0903636375473486,
+     -0.05164584145997241
+    ],
+    "min_effect": 0.007880326096299536,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-c723590a",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Subsampled composition-tree ensembles improve metallic-glass formation classification",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0290, 95% CI [-0.0414, -0.0166], beyond the minimum effect 0.0025)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.09517241379310344,
+    "b": 0.12413793103448276,
+    "diff": -0.028965517241379312,
+    "ci95": [
+     -0.041379310344827586,
+     -0.016551724137931035
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "note-6c7cca9f",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Independent and grouped-validation checks for the released composition models",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "note-c8b84d50",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Glass ensemble replication and held-out alloy-system validation",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  }
+ ]
+}

@@ -1,0 +1,392 @@
+{
+ "run_id": "run-051e970d",
+ "model": "6.1-sol",
+ "task": "aiml-s1",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 3,
+  "R_frontier": 2,
+  "C_collaborative": 0,
+  "submitted_credited": 8,
+  "duplicates": 0,
+  "best_gain": {
+   "agnews": 0.0848,
+   "cifar10": 0.445
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 2,
+   "not_replicated_on_hidden": 3
+  }
+ },
+ "rewards": {
+  "score": 0.375,
+  "R_replicated": 3.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 2.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.2649,
+  "auditor_pending": 0.0,
+  "submitted_credited": 8.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 2.0,
+  "not_replicated": 3.0,
+  "duplicates": 0.0,
+  "agents_total": 7.0,
+  "agents_peak": 7.0,
+  "max_depth": 1.0,
+  "cost_usd": 11.7664,
+  "model_calls": 362.0,
+  "experiments": 65.0,
+  "messages": 201.0,
+  "cost_per_accepted": 3.922,
+  "accepted_consumed_by_others": 3.0,
+  "built_on_failed_work": 1.0,
+  "dataset_entropy": 0.954,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 902.2
+ },
+ "claims": [
+  {
+   "id": "method-8d0dea86",
+   "kind": "method",
+   "agent": "agent-325d5b4c",
+   "title": "Complementary word and character TF-IDF margins for AG News",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0074, 95% CI [-0.0105, -0.0042], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07947368421052632,
+    "b": 0.0868421052631579,
+    "diff": -0.007368421052631579,
+    "ci95": [
+     -0.010529605263157889,
+     -0.004210526315789474
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-adac64fd",
+   "kind": "method",
+   "agent": "agent-59b301ae",
+   "title": "Preliminary CIFAR wide-residual checkpoint with paired flip-inference evaluation",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0085, 95% CI [-0.0127, -0.0046], needed below -0.0058",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.2805,
+    "b": 0.289,
+    "diff": -0.0085,
+    "ci95": [
+     -0.0127,
+     -0.004597500000000014
+    ],
+    "min_effect": 0.0057799999999999995,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "method-efcc6180",
+   "kind": "method",
+   "agent": "agent-59b301ae",
+   "title": "Compact augmented wide-residual CIFAR classifier below the reference error",
+   "status": "rejected",
+   "reason": "evidence exec exec-6000438a fails on rerun (exit 124)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "method-26e29fc8",
+   "kind": "method",
+   "agent": "agent-11df0314",
+   "title": "NB log-count reweighting complements word-character AG News margins",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0004, 95% CI [-0.0030, 0.0021], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07947368421052632,
+    "b": 0.07907894736842105,
+    "diff": -0.00039473684210526315,
+    "ci95": [
+     -0.0030263157894736843,
+     0.002105263157894737
+    ],
+    "min_effect": 0.0015894736842105264,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-8d0dea86",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-d624a571",
+   "kind": "method",
+   "agent": "agent-3d168776",
+   "title": "Regularizing a compact supervised bag-of-ngrams neural classifier",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0013, 95% CI [-0.0047, 0.0018], needed below -0.0017",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08328947368421052,
+    "b": 0.08460526315789474,
+    "diff": -0.0013157894736842105,
+    "ci95": [
+     -0.004736842105263158,
+     0.0018421052631578947
+    ],
+    "min_effect": 0.0016921052631578947,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "method-0a659674",
+   "kind": "method",
+   "agent": "agent-0ae5dd47",
+   "title": "Frozen-checkpoint spatial marginalization improves compact CIFAR inference",
+   "status": "accepted",
+   "reason": "hidden error rate: arm b beats the other arm (difference -0.0067, 95% CI [-0.0089, -0.0044], beyond the minimum effect 0.0008)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.04,
+    "b": 0.0333,
+    "diff": -0.0067,
+    "ci95": [
+     -0.0089,
+     -0.0044
+    ],
+    "min_effect": 0.0008,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-efcc6180",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-5c8d4bda",
+   "kind": "preregistration",
+   "agent": "founder",
+   "title": "Prespecified checkpoint-storage equivalence for accepted CIFAR spatial inference",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-0a659674",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-f6049b71",
+   "kind": "method",
+   "agent": "agent-59b301ae",
+   "title": "Fixed two-seed probability ensemble extends frozen spatial CIFAR inference",
+   "status": "rejected",
+   "reason": "evidence exec exec-6f9a8e07 fails on rerun (exit 124)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-0a659674",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-f792137b",
+   "kind": "null_result",
+   "agent": "founder",
+   "title": "Inference-precision checkpoint storage preserves accepted CIFAR spatial predictions",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of error rate difference [0.0000, 0.0000] inside [-0.001, 0.001]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0333,
+    "b": 0.0333,
+    "diff": 0.0,
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "bounds": [
+     -0.001,
+     0.001
+    ],
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-0a659674",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "test fails without the consumed data: inconclusive, not counted as material use",
+     "ablation_material": false
+    }
+   ]
+  },
+  {
+   "id": "note-99042230",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Community research and reproducibility index",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  }
+ ]
+}

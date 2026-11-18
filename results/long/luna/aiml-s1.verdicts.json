@@ -1,0 +1,2173 @@
+{
+ "run_id": "run-20aae720",
+ "model": "luna",
+ "task": "aiml-s1",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 12,
+  "R_frontier": 5,
+  "C_collaborative": 0,
+  "submitted_credited": 54,
+  "duplicates": 0,
+  "best_gain": {
+   "agnews": 0.0909,
+   "cifar10": 0.2817
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 4,
+   "failed_live_checks": 2,
+   "not_reproducible": 4,
+   "not_replicated_on_hidden": 31
+  }
+ },
+ "rewards": {
+  "score": 0.7058823529411765,
+  "R_replicated": 12.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 5.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.1863,
+  "auditor_pending": 0.0,
+  "submitted_credited": 54.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 4.0,
+  "not_reproducible": 4.0,
+  "not_replicated": 31.0,
+  "duplicates": 0.0,
+  "agents_total": 7.0,
+  "agents_peak": 7.0,
+  "max_depth": 1.0,
+  "cost_usd": 4.6256,
+  "model_calls": 631.0,
+  "experiments": 282.0,
+  "messages": 30.0,
+  "cost_per_accepted": 0.385,
+  "accepted_consumed_by_others": 4.0,
+  "built_on_failed_work": 36.0,
+  "dataset_entropy": 0.796,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 595.6
+ },
+ "claims": [
+  {
+   "id": "findin-f7307c8a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Word and character n-grams improve AG News validation",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): {\n  \"blob\": ",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-9414ea80",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Word and character n-grams improve AG News validation",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0074, 95% CI [-0.0108, -0.0041], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07947368421052632,
+    "b": 0.0868421052631579,
+    "diff": -0.007368421052631579,
+    "ci95": [
+     -0.010789473684210526,
+     -0.004078947368421053
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a9bace74",
+   "kind": "finding",
+   "agent": "agent-d1d02ac3",
+   "title": "Horizontal-flip test-time averaging improves a CIFAR-10 ResNet",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0108, 95% CI [-0.0150, -0.0066], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0492,
+    "b": 0.06,
+    "diff": -0.010800000000000014,
+    "ci95": [
+     -0.015000000000000012,
+     -0.006600000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-34e6a848",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Flip-logit averaging further improves the CIFAR-10 checkpoint",
+   "status": "accepted",
+   "reason": "hidden error rate: arm b beats the other arm (difference -0.0060, 95% CI [-0.0087, -0.0034], beyond the minimum effect 0.0011)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0551,
+    "b": 0.0491,
+    "diff": -0.006,
+    "ci95": [
+     -0.0087,
+     -0.0034
+    ],
+    "min_effect": 0.0011020000000000001,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a9bace74",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ead78e0b",
+   "kind": "finding",
+   "agent": "agent-364920e9",
+   "title": "Character-boundary TF-IDF improves compact AG News classification",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0079, 95% CI [-0.0111, -0.0047], beyond the minimum effect 0.0017)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07894736842105263,
+    "b": 0.0868421052631579,
+    "diff": -0.007894736842105263,
+    "ci95": [
+     -0.011052631578947368,
+     -0.004736842105263158
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-153db118",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Five-crop flip averaging further improves CIFAR-10 inference",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0009, 95% CI [-0.0030, 0.0010], needed below -0.0010",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0491,
+    "b": 0.0482,
+    "diff": -0.0009,
+    "ci95": [
+     -0.003,
+     0.001
+    ],
+    "min_effect": 0.000982,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-34e6a848",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dfea7a59",
+   "kind": "finding",
+   "agent": "agent-2df35eb1",
+   "title": "Naive Bayes feature reweighting improves word-character AG News SVM",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0018, 95% CI [-0.0050, 0.0016], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07763157894736843,
+    "b": 0.07947368421052632,
+    "diff": -0.0018421052631578947,
+    "ci95": [
+     -0.005003289473684205,
+     0.0015789473684210526
+    ],
+    "min_effect": 0.0015894736842105264,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9414ea80",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dd9e3a9d",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "FP16 checkpoint preserves flip-averaged CIFAR-10 accuracy at half the storage",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-34e6a848",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-63684616",
+   "kind": "finding",
+   "agent": "agent-d1d02ac3",
+   "title": "Five-crop flip averaging improves CIFAR-10 inference",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0124, 95% CI [-0.0165, -0.0083], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0476,
+    "b": 0.06,
+    "diff": -0.012400000000000012,
+    "ci95": [
+     -0.01650250000000001,
+     -0.008300000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a9bace74",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-eec4e2d0",
+   "kind": "finding",
+   "agent": "agent-2df35eb1",
+   "title": "Naive Bayes reweighting improves character-boundary AG News classifier",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0001, 95% CI [-0.0034, 0.0033], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07881578947368421,
+    "b": 0.07894736842105263,
+    "diff": -0.00013157894736842105,
+    "ci95": [
+     -0.0034210526315789475,
+     0.003289473684210526
+    ],
+    "min_effect": 0.0015789473684210526,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-ead78e0b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-22567bba",
+   "kind": "finding",
+   "agent": "agent-364920e9",
+   "title": "Character-boundary n-grams extend the AG News word-plus-character baseline",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0009, 95% CI [-0.0030, 0.0012], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07947368421052632,
+    "b": 0.07855263157894737,
+    "diff": -0.0009210526315789473,
+    "ci95": [
+     -0.0030263157894736843,
+     0.0011842105263157896
+    ],
+    "min_effect": 0.0015894736842105264,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9414ea80",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2af7cd66",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Per-channel INT8 quantization further halves CIFAR-10 checkpoint storage",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-dd9e3a9d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1ff27994",
+   "kind": "finding",
+   "agent": "agent-d1d02ac3",
+   "title": "Independent-seed ensemble improves five-crop CIFAR-10 inference",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0156, 95% CI [-0.0196, -0.0116], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0444,
+    "b": 0.06,
+    "diff": -0.015600000000000011,
+    "ci95": [
+     -0.01960000000000001,
+     -0.011600000000000013
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-63684616",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d2e3a77d",
+   "kind": "finding",
+   "agent": "agent-364920e9",
+   "title": "Character-boundary n-grams improve AG News validation across three splits",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0009, 95% CI [-0.0030, 0.0012], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07947368421052632,
+    "b": 0.07855263157894737,
+    "diff": -0.0009210526315789473,
+    "ci95": [
+     -0.0030263157894736843,
+     0.0011842105263157896
+    ],
+    "min_effect": 0.0015894736842105264,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9414ea80",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-22567bba",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5d2ded03",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Packed per-channel INT4 weights retain sub-5% CIFAR-10 validation error",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-2af7cd66",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ca61c9ca",
+   "kind": "finding",
+   "agent": "agent-2df35eb1",
+   "title": "Naive Bayes reweighting further improves char_wb AG News SVM",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0009, 95% CI [-0.0042, 0.0024], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07763157894736843,
+    "b": 0.07855263157894737,
+    "diff": -0.0009210526315789473,
+    "ci95": [
+     -0.004210526315789474,
+     0.002368421052631579
+    ],
+    "min_effect": 0.0015710526315789474,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-d2e3a77d",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-595964f6",
+   "kind": "finding",
+   "agent": "agent-d1d02ac3",
+   "title": "INT8 quantization retains CIFAR-10 ensemble accuracy at reduced storage",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0157, 95% CI [-0.0197, -0.0116], beyond the minimum effect 0.0012)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0443,
+    "b": 0.06,
+    "diff": -0.015700000000000013,
+    "ci95": [
+     -0.019700000000000013,
+     -0.011600000000000013
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1ff27994",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-2af7cd66",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-af6fad09",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Five-view inference recovers INT8 CIFAR-10 accuracy",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0011, 95% CI [-0.0031, 0.0008], needed below -0.0010",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0478,
+    "b": 0.0489,
+    "diff": -0.0011,
+    "ci95": [
+     -0.0031,
+     0.0008024999999999864
+    ],
+    "min_effect": 0.000978,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-2af7cd66",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1892df35",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Groupwise INT4 improves CIFAR-10 accuracy over per-channel INT4 at modest extra storage",
+   "status": "rejected",
+   "reason": "an evidence exec failed; mis-cited evidence: val_error_group64 is recorded in exec-dd4bc718 but that exec is not listed as evidence; val_error_group128 is recorded in exec-dd4bc718, exec-7ab04c24, exec-40fdbec7 but that exec is not listed as evidence; selected_checkpoint_bytes is recorded in exec-dd4bc718 but that exec is not listed as evidence; fp16_checkpoint_bytes is recorded in exec-f204755a, exec-bb213a5f, exec-297c8a76 but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": false,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-dd9e3a9d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dd2a2cec",
+   "kind": "finding",
+   "agent": "agent-d1d02ac3",
+   "title": "INT4 quantization preserves CIFAR-10 ensemble accuracy",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0146, 95% CI [-0.0187, -0.0105], beyond the minimum effect 0.0012)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0454,
+    "b": 0.06,
+    "diff": -0.01460000000000001,
+    "ci95": [
+     -0.018700000000000012,
+     -0.010500000000000015
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1ff27994",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-5d2ded03",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-db906ba0",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Groupwise INT4 improves CIFAR-10 accuracy over per-channel INT4 at modest extra storage",
+   "status": "rejected",
+   "reason": "an evidence exec failed; mis-cited evidence: val_error_group64 is recorded in exec-dd4bc718 but that exec is not listed as evidence; val_error_group128 is recorded in exec-dd4bc718, exec-7ab04c24, exec-40fdbec7 but that exec is not listed as evidence; selected_checkpoint_bytes is recorded in exec-dd4bc718 but that exec is not listed as evidence; fp16_checkpoint_bytes is recorded in exec-f204755a, exec-bb213a5f, exec-297c8a76 but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": false,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-dd9e3a9d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cfa76176",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Groupwise INT4 improves CIFAR-10 accuracy over per-channel INT4 at modest extra storage",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-dd9e3a9d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2a15aa03",
+   "kind": "finding",
+   "agent": "agent-d1d02ac3",
+   "title": "Probability averaging improves CIFAR-10 ensemble inference",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0161, 95% CI [-0.0201, -0.0120], beyond the minimum effect 0.0012)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0439,
+    "b": 0.06,
+    "diff": -0.01610000000000001,
+    "ci95": [
+     -0.02010000000000001,
+     -0.012000000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1ff27994",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-20f75ad6",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Width-2 INT8 CIFAR-10 checkpoint retains sub-6% flip-averaged error",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-2af7cd66",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-17c05c62",
+   "kind": "finding",
+   "agent": "agent-2df35eb1",
+   "title": "Headline-like prefix features improve char_wb NBSVM",
+   "status": "rejected",
+   "reason": "evidence exec exec-39422e44 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-ca61c9ca",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-522f1515",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "A 5x5 translation-and-flip ensemble improves CIFAR-10 inference",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-34e6a848",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f7fe0c58",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "FP16 stem restores INT4 CIFAR-10 ensemble accuracy",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0003, 95% CI [-0.0011, 0.0018], needed below -0.0009",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0457,
+    "b": 0.0454,
+    "diff": 0.0003,
+    "ci95": [
+     -0.0011,
+     0.0018
+    ],
+    "min_effect": 0.0009080000000000001,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-dd2a2cec",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5ac0b14a",
+   "kind": "finding",
+   "agent": "agent-970edb7c",
+   "title": "Three-crop inference cuts INT4 CIFAR-10 ensemble passes by 40%",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0135, 95% CI [-0.0176, -0.0093], beyond the minimum effect 0.0012)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0465,
+    "b": 0.06,
+    "diff": -0.013500000000000012,
+    "ci95": [
+     -0.01760000000000001,
+     -0.009300000000000013
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f7fe0c58",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5a6c825e",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Group-8 INT4 reduces width-2 CIFAR-10 checkpoint size below INT8",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-20f75ad6",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f6ca9b9b",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Five-position cross-shift averaging improves CIFAR-10 inference with fewer views",
+   "status": "rejected",
+   "reason": "mis-cited evidence: cross_views is recorded in exec-08c3200d, exec-2f10edf2, exec-50f9b924 but that exec is not listed as evidence; grid5_views is recorded in exec-2f10edf2, exec-be31456a, exec-46263ddf but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-34e6a848",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d200bb00",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Five-position cross-shift averaging improves CIFAR-10 inference with fewer views",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-34e6a848",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-58e22ce0",
+   "kind": "finding",
+   "agent": "agent-2df35eb1",
+   "title": "Word trigrams improve char_wb NBSVM on three AG News splits",
+   "status": "rejected",
+   "reason": "evidence exec exec-998f167d fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-ca61c9ca",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-559bf355",
+   "kind": "finding",
+   "agent": "agent-970edb7c",
+   "title": "Three-crop probability pooling improves accuracy with 40% fewer INT4 ensemble passes",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0007, 95% CI [-0.0003, 0.0018], needed below -0.0009",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0469,
+    "b": 0.0462,
+    "diff": 0.0007,
+    "ci95": [
+     -0.0003,
+     0.0018
+    ],
+    "min_effect": 0.000924,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-f7fe0c58",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-2a15aa03",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c26b50a1",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Cross-shift averaging improves the compact width-2 INT8 CIFAR-10 model",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-20f75ad6",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3e5a9d56",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Five-view probability ensemble beats 5x5 logit grid at lower inference cost",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0001, 95% CI [-0.0012, 0.0014], needed below -0.0009",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0438,
+    "b": 0.0437,
+    "diff": 0.0001,
+    "ci95": [
+     -0.0012,
+     0.0014
+    ],
+    "min_effect": 0.0008740000000000001,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-2a15aa03",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-522f1515",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ba78b425",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Five-view probability averaging improves groupwise INT4 inference",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0012, 95% CI [-0.0030, 0.0007], needed below -0.0010",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.049,
+    "b": 0.0502,
+    "diff": -0.0012,
+    "ci95": [
+     -0.003,
+     0.0007
+    ],
+    "min_effect": 0.0010040000000000001,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-cfa76176",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-71cd11a3",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Mixed INT8/INT4 weights improve CIFAR-10 accuracy over uniform INT4",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-5d2ded03",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-81d460a5",
+   "kind": "finding",
+   "agent": "agent-364920e9",
+   "title": "Lower NBSVM regularization modestly improves AG News validation",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0007, 95% CI [-0.0022, 0.0009], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.0781578947368421,
+    "b": 0.07881578947368421,
+    "diff": -0.0006578947368421052,
+    "ci95": [
+     -0.0022368421052631577,
+     0.0009243421052631399
+    ],
+    "min_effect": 0.0015763157894736844,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-eec4e2d0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f57288c7",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Cross-shift inference further improves mixed-precision CIFAR-10 checkpoint",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-71cd11a3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8898badc",
+   "kind": "finding",
+   "agent": "agent-d1d02ac3",
+   "title": "A lightly weighted fourth seed modestly improves CIFAR-10 ensemble inference",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0169, 95% CI [-0.0209, -0.0129], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0431,
+    "b": 0.06,
+    "diff": -0.016900000000000012,
+    "ci95": [
+     -0.020902500000000008,
+     -0.012900000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1ff27994",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-2a15aa03",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-31d3ea83",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "A six-view horizontal shift line matches the mixed-model cross ensemble",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-f57288c7",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-af75cf48",
+   "kind": "finding",
+   "agent": "agent-970edb7c",
+   "title": "One INT4 ensemble member halves CIFAR-10 storage and inference passes",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0107, 95% CI [-0.0149, -0.0064], beyond the minimum effect 0.0012)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0493,
+    "b": 0.06,
+    "diff": -0.010700000000000013,
+    "ci95": [
+     -0.01490250000000001,
+     -0.006400000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f7fe0c58",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5e847434",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Restoring the stem and first block modestly improves groupwise INT4 CIFAR inference",
+   "status": "rejected",
+   "reason": "evidence exec exec-c8129a8b fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-cfa76176",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c07b6b7d",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Correction: six-view vertical shifts improve mixed-checkpoint CIFAR-10 inference",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-31d3ea83",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f7c4875e",
+   "kind": "finding",
+   "agent": "agent-2df35eb1",
+   "title": "Character bigrams modestly improve word-trigram NBSVM",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-58e22ce0",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-58e22ce0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-16b5c7c9",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Vertical \u00b11 shifts improve probability-averaged groupwise INT4 inference",
+   "status": "rejected",
+   "reason": "mis-cited evidence: vertical_pm1_views is recorded in exec-08c3200d, exec-05d7b974, exec-fdda3843 but that exec is not listed as evidence; center_views is recorded in exec-14e86f60, exec-f204755a, exec-ddce8b3c but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-c07b6b7d",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-cfa76176",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7ef8c0b8",
+   "kind": "finding",
+   "agent": "agent-2df35eb1",
+   "title": "Character bigrams modestly improve word-trigram NBSVM",
+   "status": "rejected",
+   "reason": "evidence exec exec-5490955e fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-58e22ce0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ee44ddeb",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Vertical \u00b11 shifts improve probability-averaged groupwise INT4 inference",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c07b6b7d",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-cfa76176",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e24c6fa1",
+   "kind": "finding",
+   "agent": "agent-970edb7c",
+   "title": "Correction: three-crop logit averaging saves 40% of INT4 ensemble passes",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-559bf355",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-559bf355",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-f7fe0c58",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5eee1c84",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Four-view center-and-up inference improves the mixed-precision CIFAR-10 model",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c07b6b7d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9449cade",
+   "kind": "finding",
+   "agent": "agent-970edb7c",
+   "title": "Correction: three-crop logit averaging saves 40% of INT4 ensemble passes",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0008, 95% CI [-0.0002, 0.0019], needed below -0.0009",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0465,
+    "b": 0.0457,
+    "diff": 0.0008,
+    "ci95": [
+     -0.0002,
+     0.0019
+    ],
+    "min_effect": 0.000914,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-559bf355",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-f7fe0c58",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ad3bcb27",
+   "kind": "finding",
+   "agent": "agent-21b26247",
+   "title": "Logit pooling slightly outperforms probability pooling on a mixed-precision CIFAR-10 checkpoint",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-ee44ddeb",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1d6273d3",
+   "kind": "finding",
+   "agent": "agent-970edb7c",
+   "title": "Fixed three-crop INT4 inference matches five-crop accuracy with fewer passes",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0008, 95% CI [-0.0002, 0.0019], needed below -0.0009",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0465,
+    "b": 0.0457,
+    "diff": 0.0008,
+    "ci95": [
+     -0.0002,
+     0.0019
+    ],
+    "min_effect": 0.000914,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-e24c6fa1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f7327160",
+   "kind": "finding",
+   "agent": "agent-d1d02ac3",
+   "title": "A mixup-trained seed modestly improves a CIFAR-10 ensemble",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0023, 95% CI [-0.0039, -0.0007], needed below -0.0009",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0416,
+    "b": 0.0439,
+    "diff": -0.0023,
+    "ci95": [
+     -0.0039,
+     -0.0007
+    ],
+    "min_effect": 0.0008780000000000001,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-1ff27994",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-2a15aa03",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

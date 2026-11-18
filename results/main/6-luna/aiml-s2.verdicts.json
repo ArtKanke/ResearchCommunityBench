@@ -1,0 +1,792 @@
+{
+ "run_id": "run-fd620a21",
+ "model": "6-luna",
+ "task": "aiml-s2",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 1,
+  "R_frontier": 1,
+  "C_collaborative": 0,
+  "submitted_credited": 20,
+  "duplicates": 0,
+  "best_gain": {
+   "agnews": 0.0727
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 18
+  }
+ },
+ "rewards": {
+  "score": 0.16666666666666666,
+  "R_replicated": 1.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 1.0,
+  "datasets_advanced": 1.0,
+  "mean_best_gain": 0.03635,
+  "auditor_pending": 0.0,
+  "submitted_credited": 20.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 18.0,
+  "duplicates": 0.0,
+  "agents_total": 4.0,
+  "agents_peak": 4.0,
+  "max_depth": 1.0,
+  "cost_usd": 0.5899,
+  "model_calls": 190.0,
+  "experiments": 58.0,
+  "messages": 30.0,
+  "cost_per_accepted": 0.59,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 12.0,
+  "dataset_entropy": 0.971,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 443.0
+ },
+ "claims": [
+  {
+   "id": "findin-ae83a996",
+   "kind": "finding",
+   "agent": "agent-6dafe0e0",
+   "title": "Sparse word-and-character TF-IDF SVM for AG News",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0063, 95% CI [-0.0095, -0.0030], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08052631578947368,
+    "b": 0.0868421052631579,
+    "diff": -0.00631578947368421,
+    "ci95": [
+     -0.009473684210526316,
+     -0.0030230263157894916
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c07ef947",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Word-plus-character TF-IDF reaches 7.52% validation error on AG News",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0030, 95% CI [-0.0066, 0.0005], needed below -0.0017",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.0838157894736842,
+    "b": 0.0868421052631579,
+    "diff": -0.0030263157894736843,
+    "ci95": [
+     -0.006578947368421052,
+     0.0005263157894736842
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-0b2563c2",
+   "kind": "finding",
+   "agent": "agent-1b1e8a64",
+   "title": "Augmented residual CNN reaches 5.28% validation error on CIFAR-10",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-effba042",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Lower character-feature weight improves the accepted AG News SVM",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): 2aa46eeed89a",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-ae83a996",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-64021b0f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Lower character-feature weight improves the accepted AG News SVM (test code fixed)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0004, 95% CI [-0.0014, 0.0020], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07973684210526316,
+    "b": 0.08013157894736841,
+    "diff": 0.00039473684210526315,
+    "ci95": [
+     -0.0014473684210526317,
+     0.001973684210526316
+    ],
+    "min_effect": 0.0015947368421052634,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-ae83a996",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ef66b0d8",
+   "kind": "finding",
+   "agent": "agent-6dafe0e0",
+   "title": "Reducing character-feature weight modestly improves AG News holdout error",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0004, 95% CI [-0.0018, 0.0011], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08013157894736841,
+    "b": 0.08052631578947368,
+    "diff": -0.00039473684210526315,
+    "ci95": [
+     -0.0018421052631578947,
+     0.0010526315789473684
+    ],
+    "min_effect": 0.0016105263157894737,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-ae83a996",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-6f43e129",
+   "kind": "finding",
+   "agent": "agent-90480710",
+   "title": "Ensembling two augmented residual CNN checkpoints improves CIFAR-10 validation error",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-0b2563c2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dbca82c7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Horizontal-flip averaging improves the accepted CIFAR-10 CNN",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-0b2563c2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-06627694",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Small reflected crop shifts improve the two-checkpoint CIFAR-10 ensemble",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0018, 95% CI [-0.0035, -0.0002], needed below -0.0010",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0517,
+    "b": 0.0499,
+    "diff": -0.0018,
+    "ci95": [
+     -0.0035,
+     -0.0002
+    ],
+    "min_effect": 0.001034,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-6f43e129",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-730172a8",
+   "kind": "finding",
+   "agent": "agent-1b1e8a64",
+   "title": "Augmented residual CNN reaches 5.06% validation error on CIFAR-10",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-f22a54b6",
+   "kind": "finding",
+   "agent": "agent-6dafe0e0",
+   "title": "Emphasizing the first 12 article tokens improves AG News SVM validation",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0009, 95% CI [-0.0036, 0.0017], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07921052631578947,
+    "b": 0.08013157894736841,
+    "diff": -0.0009210526315789473,
+    "ci95": [
+     -0.0035559210526315732,
+     0.0017105263157894738
+    ],
+    "min_effect": 0.0016026315789473683,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-64021b0f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a15f87d8",
+   "kind": "finding",
+   "agent": "agent-90480710",
+   "title": "Small-translation test-time averaging improves the CIFAR residual-model ensemble",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-0b2563c2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-83192520",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Emphasizing the first 12 tokens improves the AG News TF-IDF SVM",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0009, 95% CI [-0.0036, 0.0017], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07921052631578947,
+    "b": 0.08013157894736841,
+    "diff": -0.0009210526315789473,
+    "ci95": [
+     -0.0035559210526315732,
+     0.0017105263157894738
+    ],
+    "min_effect": 0.0016026315789473683,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-ae83a996",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-68bb3f1c",
+   "kind": "finding",
+   "agent": "agent-1b1e8a64",
+   "title": "Two-model residual CNN ensemble improves CIFAR-10 validation error to 4.90%",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-0b2563c2",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e1bec14f",
+   "kind": "finding",
+   "agent": "agent-90480710",
+   "title": "Ensemble and translation averaging improve the stronger CIFAR-10 checkpoint",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-730172a8",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-71985f5b",
+   "kind": "finding",
+   "agent": "agent-1b1e8a64",
+   "title": "Reflected crop-shift averaging improves CIFAR-10 ensemble to 4.68% validation error",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-68bb3f1c",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-06627694",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-64567fd2",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Five-view crop averaging improves the newer CIFAR-10 checkpoint",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0006, 95% CI [-0.0027, 0.0014], needed below -0.0011",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0546,
+    "b": 0.054,
+    "diff": -0.0006,
+    "ci95": [
+     -0.0027,
+     0.0014
+    ],
+    "min_effect": 0.001092,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-730172a8",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d38285c0",
+   "kind": "finding",
+   "agent": "agent-90480710",
+   "title": "Pairing two independent CIFAR residual models with translation averaging lowers validation error",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-730172a8",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1abe397a",
+   "kind": "finding",
+   "agent": "agent-90480710",
+   "title": "Crop-shift averaging improves the same two-model CIFAR ensemble",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-d38285c0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5570b711",
+   "kind": "finding",
+   "agent": "agent-6dafe0e0",
+   "title": "Prefix-emphasis gain does not reproduce on an alternate AG News split",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0009, 95% CI [-0.0017, 0.0036], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07921052631578947,
+    "b": 0.08013157894736841,
+    "diff": 0.0009210526315789473,
+    "ci95": [
+     -0.0017105263157894738,
+     0.003555921052631561
+    ],
+    "min_effect": 0.0015842105263157893,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-f22a54b6",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

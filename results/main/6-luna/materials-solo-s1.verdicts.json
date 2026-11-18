@@ -1,0 +1,336 @@
+{
+ "run_id": "run-5fd83160",
+ "model": "6-luna",
+ "task": "materials-solo-s1",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 4,
+  "R_frontier": 4,
+  "C_collaborative": 0,
+  "submitted_credited": 7,
+  "duplicates": 2,
+  "best_gain": {
+   "expt_gap": 0.2347,
+   "glass": 0.1389,
+   "steels": 0.3389
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 1
+  }
+ },
+ "rewards": {
+  "score": 0.4444444444444444,
+  "R_replicated": 4.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 4.0,
+  "datasets_advanced": 3.0,
+  "mean_best_gain": 0.17812499999999998,
+  "auditor_pending": 0.0,
+  "submitted_credited": 7.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 1.0,
+  "duplicates": 2.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.2605,
+  "model_calls": 53.0,
+  "experiments": 39.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.065,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.921,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 209.1
+ },
+ "claims": [
+  {
+   "id": "findin-b020f5e0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-task metal labels improve experimental band-gap prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0988, 95% CI [-0.1330, -0.0675], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.32209055944055953,
+    "b": 0.42088367401773064,
+    "diff": -0.09879311457717103,
+    "ci95": [
+     -0.1330149325463675,
+     -0.06751843379034075
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-f17c2273",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Composition-distribution features improve glass-forming classification",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0172, 95% CI [-0.0290, -0.0055], beyond the minimum effect 0.0025)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10689655172413794,
+    "b": 0.12413793103448276,
+    "diff": -0.017241379310344827,
+    "ci95": [
+     -0.028982758620689626,
+     -0.005517241379310344
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8cce9829",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Element-identity features improve steel yield-strength prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -33.4076, 95% CI [-57.2221, -13.0726], beyond the minimum effect 2.1817)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 75.67758531745947,
+    "b": 109.08513563473846,
+    "diff": -33.40755031727898,
+    "ci95": [
+     -57.22209659297616,
+     -13.072648322042678
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-1e052208",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Composition-distribution features improve experimental metal classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0090, 95% CI [-0.0188, 0.0008], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06781045751633986,
+    "b": 0.07679738562091504,
+    "diff": -0.008986928104575163,
+    "ci95": [
+     -0.018790849673202614,
+     0.0008169934640522876
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-36119de4",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Leakage-safe cross-task metal labels improve band-gap prediction",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-b020f5e0",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-b020f5e0",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.32209055944055953,
+    "b": 0.42088367401773064,
+    "diff": -0.09879311457717105,
+    "ci95": [
+     -0.13301493254636748,
+     -0.06751843379034074
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b020f5e0",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4bbf0138",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Elemental fractions improve ExtraTrees steel-strength predictions",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -43.4895, 95% CI [-67.6814, -22.9893], beyond the minimum effect 2.3122)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 115.61063293650717,
+    "b": 72.12111309523763,
+    "diff": -43.48951984126955,
+    "ci95": [
+     -67.68142331349226,
+     -22.98933293650774
+    ],
+    "min_effect": 2.3122126587301435,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-8cce9829",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f1aba521",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Leakage-safe cross-task metal labels improve band-gap prediction",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-b020f5e0",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-b020f5e0",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.32209055944055953,
+    "b": 0.42088367401773064,
+    "diff": -0.09879311457717105,
+    "ci95": [
+     -0.13301493254636748,
+     -0.06751843379034074
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b020f5e0",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-36119de4",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

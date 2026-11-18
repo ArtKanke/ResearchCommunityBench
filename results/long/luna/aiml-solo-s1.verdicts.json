@@ -1,0 +1,388 @@
+{
+ "run_id": "run-ce12391a",
+ "model": "luna",
+ "task": "aiml-solo-s1",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 6,
+  "R_frontier": 3,
+  "C_collaborative": 0,
+  "submitted_credited": 9,
+  "duplicates": 3,
+  "best_gain": {
+   "agnews": 0.1091,
+   "cifar10": 0.39
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 0
+  }
+ },
+ "rewards": {
+  "score": 0.5454545454545454,
+  "R_replicated": 6.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 3.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.24955,
+  "auditor_pending": 0.0,
+  "submitted_credited": 9.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 0.0,
+  "duplicates": 3.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 1.0197,
+  "model_calls": 115.0,
+  "experiments": 75.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.17,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.764,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 401.0
+ },
+ "claims": [
+  {
+   "id": "findin-6f25feba",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Character n-grams improve a word-TF\u2013IDF AG News classifier",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0095, 95% CI [-0.0128, -0.0062], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07736842105263157,
+    "b": 0.0868421052631579,
+    "diff": -0.009473684210526316,
+    "ci95": [
+     -0.012763157894736843,
+     -0.0061842105263157894
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ebfbed03",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A compact residual CNN beats the CIFAR-10 6% error reference",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0143, 95% CI [-0.0184, -0.0101], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0457,
+    "b": 0.06,
+    "diff": -0.01430000000000001,
+    "ci95": [
+     -0.01840000000000001,
+     -0.010100000000000013
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ddc7cb44",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A weighted CIFAR-10 ensemble improves error on two validation splits",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0234, 95% CI [-0.0269, -0.0199], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0366,
+    "b": 0.06,
+    "diff": -0.02340000000000001,
+    "ci95": [
+     -0.02690000000000001,
+     -0.019897500000000026
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-bb36ff93",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Word-character SVM outperforms word-only logistic regression on AG News",
+   "status": "accepted",
+   "reason": "hidden error rate: arm b beats the other arm (difference -0.0099, 95% CI [-0.0133, -0.0067], beyond the minimum effect 0.0017)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08723684210526315,
+    "b": 0.07736842105263157,
+    "diff": -0.009868421052631578,
+    "ci95": [
+     -0.013289473684210526,
+     -0.006710526315789474
+    ],
+    "min_effect": 0.0017447368421052631,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-566f65ba",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Blending hybrid and Naive Bayes-weighted SVM improves AG News classification",
+   "status": "accepted",
+   "reason": "hidden error rate: arm b beats the other arm (difference -0.0095, 95% CI [-0.0132, -0.0061], beyond the minimum effect 0.0017)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08723684210526315,
+    "b": 0.07776315789473684,
+    "diff": -0.009473684210526316,
+    "ci95": [
+     -0.013157894736842105,
+     -0.0060526315789473685
+    ],
+    "min_effect": 0.0017447368421052631,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-4694cc3b",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Independent AG News split confirms hybrid SVM blend improves error",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-566f65ba",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-566f65ba",
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08723684210526315,
+    "b": 0.07776315789473684,
+    "diff": -0.009473684210526316,
+    "ci95": [
+     -0.013157894736842105,
+     -0.0060526315789473685
+    ],
+    "min_effect": 0.0017447368421052631,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8d33c85d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Additional AG News splits replicate the SVM blend advantage",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-566f65ba",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-566f65ba",
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08723684210526315,
+    "b": 0.07776315789473684,
+    "diff": -0.009473684210526316,
+    "ci95": [
+     -0.013157894736842105,
+     -0.0060526315789473685
+    ],
+    "min_effect": 0.0017447368421052631,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-566f65ba",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-74d09b3e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Naive Bayes-weighted word-character SVM improves AG News error",
+   "status": "accepted",
+   "reason": "hidden error rate: arm b beats the other arm (difference -0.0093, 95% CI [-0.0136, -0.0051], beyond the minimum effect 0.0017)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08723684210526315,
+    "b": 0.07789473684210527,
+    "diff": -0.009342105263157895,
+    "ci95": [
+     -0.013552631578947368,
+     -0.005131578947368421
+    ],
+    "min_effect": 0.0017447368421052631,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-48a29f28",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Independent holdout confirms Naive Bayes-weighted SVM gain",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-74d09b3e",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-74d09b3e",
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08723684210526315,
+    "b": 0.07789473684210527,
+    "diff": -0.009342105263157895,
+    "ci95": [
+     -0.013552631578947368,
+     -0.005131578947368421
+    ],
+    "min_effect": 0.0017447368421052631,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-74d09b3e",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

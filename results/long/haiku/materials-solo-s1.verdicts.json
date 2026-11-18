@@ -1,0 +1,239 @@
+{
+ "run_id": "run-d5faa98d",
+ "model": "haiku",
+ "task": "materials-solo-s1",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 2,
+  "R_frontier": 2,
+  "C_collaborative": 0,
+  "submitted_credited": 5,
+  "duplicates": 1,
+  "best_gain": {
+   "steels": 0.3071,
+   "glass": 0.15
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 2
+  }
+ },
+ "rewards": {
+  "score": 0.2857142857142857,
+  "R_replicated": 2.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 2.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.11427499999999999,
+  "auditor_pending": 0.0,
+  "submitted_credited": 5.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 2.0,
+  "duplicates": 1.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.0466,
+  "model_calls": 34.0,
+  "experiments": 21.0,
+  "messages": 1.0,
+  "cost_per_accepted": 0.023,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.961,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 322.3
+ },
+ "claims": [
+  {
+   "id": "findin-e4a3a631",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "ExtraTrees on Magpie-lite plus stoichiometry and property-spread features beats the reference baseline on steel yield strength",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -33.4956, 95% CI [-56.5601, -14.4104], beyond the minimum effect 2.1817)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 75.58955754519333,
+    "b": 109.08513563473846,
+    "diff": -33.495578089545134,
+    "ci95": [
+     -56.56006947089392,
+     -14.410389134659551
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-5460df3a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "ExtraTrees on Magpie-lite plus stoichiometry and property-spread features beats the reference baseline on experimental band gaps",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0284, 95% CI [-0.0519, -0.0056], needed below -0.0084",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3924544230769231,
+    "b": 0.42088367401773064,
+    "diff": -0.02842925094080746,
+    "ci95": [
+     -0.05187303113813684,
+     -0.00562471310204239
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-76331e12",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "ExtraTrees plus HGB probability blend beats the reference baseline on experimental metal/non-metal classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0098, 95% CI [-0.0196, -0.0008], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06699346405228758,
+    "b": 0.07679738562091504,
+    "diff": -0.00980392156862745,
+    "ci95": [
+     -0.0196078431372549,
+     -0.0007965686274510918
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-73a3e56f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "ExtraTrees plus HGB probability blend beats the reference baseline on metallic glass-forming ability",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0186, 95% CI [-0.0297, -0.0076], beyond the minimum effect 0.0025)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10551724137931034,
+    "b": 0.12413793103448276,
+    "diff": -0.018620689655172412,
+    "ci95": [
+     -0.029655172413793104,
+     -0.007586206896551724
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-cfa9e9b0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Fresh-seed confirmation: Magpie-lite + stoichiometry ExtraTrees/blend beats the reference baseline on all four Matbench tasks",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-73a3e56f",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-73a3e56f",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10551724137931034,
+    "b": 0.12413793103448276,
+    "diff": -0.018620689655172412,
+    "ci95": [
+     -0.029655172413793104,
+     -0.007586206896551724
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-73a3e56f",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

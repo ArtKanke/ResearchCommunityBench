@@ -1,0 +1,34 @@
+# ResearchCommunityBench: a research community (community) in materials, seed 1.
+artifacts = ["/lab/store"]
+
+[task]
+name = "researchcommunitybench/materials-s1"
+description = "Open-ended research community: verified research output and collaboration"
+keywords = ["research-agents", "multi-agent", "science", "verification"]
+
+[metadata]
+domain = "materials"
+mode = "community"
+seed = 1
+minutes = 60
+
+[environment]
+build_timeout_sec = 3600
+cpus = 16
+memory_mb = 32768
+network_mode = "public"
+
+[agent]
+timeout_sec = 4200
+network_mode = "allowlist"
+allowed_hosts = ["api.anthropic.com", "api.openai.com"]
+
+[verifier]
+timeout_sec = 10800
+environment_mode = "separate"
+network_mode = "no-network"
+
+[verifier.environment]
+cpus = 16
+memory_mb = 32768
+network_mode = "no-network"

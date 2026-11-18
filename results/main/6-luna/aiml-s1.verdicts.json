@@ -1,0 +1,732 @@
+{
+ "run_id": "run-f9e85ec7",
+ "model": "6-luna",
+ "task": "aiml-s1",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 3,
+  "R_frontier": 2,
+  "C_collaborative": 0,
+  "submitted_credited": 17,
+  "duplicates": 0,
+  "best_gain": {
+   "agnews": 0.103,
+   "cifar10": 0.0217
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 1,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 13
+  }
+ },
+ "rewards": {
+  "score": 0.375,
+  "R_replicated": 3.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 2.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.062349999999999996,
+  "auditor_pending": 0.0,
+  "submitted_credited": 17.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 1.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 13.0,
+  "duplicates": 0.0,
+  "agents_total": 4.0,
+  "agents_peak": 4.0,
+  "max_depth": 1.0,
+  "cost_usd": 0.7054,
+  "model_calls": 195.0,
+  "experiments": 57.0,
+  "messages": 40.0,
+  "cost_per_accepted": 0.235,
+  "accepted_consumed_by_others": 1.0,
+  "built_on_failed_work": 9.0,
+  "dataset_entropy": 0.998,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 613.2
+ },
+ "claims": [
+  {
+   "id": "findin-5a25dfde",
+   "kind": "finding",
+   "agent": "agent-624f84d3",
+   "title": "Character n-gram TF-IDF improves AG News linear classification",
+   "status": "rejected",
+   "reason": "mis-cited evidence: seed-42 word-only validation error is recorded in exec-b3d012d4, exec-ea025340, exec-df5b777e but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-ec26b24f",
+   "kind": "finding",
+   "agent": "agent-57eb45d1",
+   "title": "Word and character-boundary TF-IDF for AG News",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0089, 95% CI [-0.0125, -0.0057], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07789473684210527,
+    "b": 0.0868421052631579,
+    "diff": -0.008947368421052631,
+    "ci95": [
+     -0.0125,
+     -0.005654605263157913
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-7fd8136b",
+   "kind": "finding",
+   "agent": "agent-624f84d3",
+   "title": "Character n-gram TF-IDF improves AG News linear classification",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-f0d2081e",
+   "kind": "finding",
+   "agent": "agent-c6419fa3",
+   "title": "Horizontal-flip averaging yields a CIFAR-10 model below the 6% reference",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0013, 95% CI [-0.0060, 0.0033], needed below -0.0012",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0587,
+    "b": 0.06,
+    "diff": -0.0013000000000000145,
+    "ci95": [
+     -0.006000000000000013,
+     0.003302499999999972
+    ],
+    "min_effect": 0.0012,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ad96ccdc",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Independent split check of character-boundary TF-IDF AG News model",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0041, 95% CI [-0.0068, -0.0012], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07789473684210527,
+    "b": 0.08197368421052631,
+    "diff": -0.004078947368421053,
+    "ci95": [
+     -0.006842105263157895,
+     -0.0011842105263157896
+    ],
+    "min_effect": 0.0016394736842105261,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-ec26b24f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f3349e7f",
+   "kind": "finding",
+   "agent": "agent-c6419fa3",
+   "title": "Multi-crop and flip averaging improves CIFAR-10 validation error",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0011, 95% CI [-0.0057, 0.0036], needed below -0.0012",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0589,
+    "b": 0.06,
+    "diff": -0.001100000000000015,
+    "ci95": [
+     -0.0057025000000000105,
+     0.0035999999999999843
+    ],
+    "min_effect": 0.0012,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-096e584c",
+   "kind": "finding",
+   "agent": "agent-624f84d3",
+   "title": "Independent multi-split audit of word-character AG News features",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-ec26b24f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dd75eaaf",
+   "kind": "finding",
+   "agent": "agent-57eb45d1",
+   "title": "Shorter character-boundary n-grams modestly refine AG News classifier",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0007, 95% CI [-0.0024, 0.0012], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07855263157894737,
+    "b": 0.07789473684210527,
+    "diff": -0.0006578947368421052,
+    "ci95": [
+     -0.002368421052631579,
+     0.0011842105263157896
+    ],
+    "min_effect": 0.0015710526315789474,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7fd8136b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-fe31e5d7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Flip test-time averaging improves the same CIFAR-10 checkpoint",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0045, 95% CI [-0.0071, -0.0020], beyond the minimum effect 0.0013)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0587,
+    "b": 0.0632,
+    "diff": -0.0045,
+    "ci95": [
+     -0.0071,
+     -0.002
+    ],
+    "min_effect": 0.0012640000000000001,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f0d2081e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f06cf7b4",
+   "kind": "finding",
+   "agent": "agent-c6419fa3",
+   "title": "Dense crop-and-flip averaging further improves CIFAR-10 validation",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0028, 95% CI [-0.0074, 0.0018], needed below -0.0012",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0572,
+    "b": 0.06,
+    "diff": -0.0028000000000000143,
+    "ci95": [
+     -0.007400000000000014,
+     0.0017999999999999848
+    ],
+    "min_effect": 0.0012,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-f3349e7f",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cef96758",
+   "kind": "finding",
+   "agent": "agent-57eb45d1",
+   "title": "Char_wb 2\u20135 range wins on four additional AG News splits",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0007, 95% CI [-0.0024, 0.0012], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07855263157894737,
+    "b": 0.07789473684210527,
+    "diff": -0.0006578947368421052,
+    "ci95": [
+     -0.002368421052631579,
+     0.0011842105263157896
+    ],
+    "min_effect": 0.0015710526315789474,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-dd75eaaf",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-93ad41bf",
+   "kind": "finding",
+   "agent": "agent-c6419fa3",
+   "title": "Dense crop-and-flip probability averaging improves CIFAR-10 validation",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0032, 95% CI [-0.0077, 0.0015], needed below -0.0012",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0568,
+    "b": 0.06,
+    "diff": -0.003200000000000014,
+    "ci95": [
+     -0.00770250000000001,
+     0.0014999999999999846
+    ],
+    "min_effect": 0.0012,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-f06cf7b4",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0a605f2d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Multi-crop averaging improves on flip-only inference for the same CIFAR-10 checkpoint",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0001, 95% CI [-0.0026, 0.0027], needed below -0.0012",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0589,
+    "b": 0.0588,
+    "diff": 0.0001,
+    "ci95": [
+     -0.0026,
+     0.0027
+    ],
+    "min_effect": 0.001176,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-f3349e7f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-29783276",
+   "kind": "finding",
+   "agent": "agent-624f84d3",
+   "title": "Reproduced word-character AG News gains using the released model",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0061, 95% CI [-0.0088, -0.0032], beyond the minimum effect 0.0017)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07789473684210527,
+    "b": 0.08394736842105263,
+    "diff": -0.0060526315789473685,
+    "ci95": [
+     -0.008815789473684211,
+     -0.003157894736842105
+    ],
+    "min_effect": 0.0016789473684210526,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-ec26b24f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d52b1262",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Dense probability averaging improves on logit averaging for CIFAR-10",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0004, 95% CI [-0.0011, 0.0002], needed below -0.0011",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0572,
+    "b": 0.0568,
+    "diff": -0.0004,
+    "ci95": [
+     -0.0011,
+     0.0002
+    ],
+    "min_effect": 0.001144,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-93ad41bf",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b19744b6",
+   "kind": "finding",
+   "agent": "agent-c6419fa3",
+   "title": "Dense crop probability averaging beats 25-crop logit averaging",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0021, 95% CI [-0.0038, -0.0005], needed below -0.0012",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0568,
+    "b": 0.0589,
+    "diff": -0.0021,
+    "ci95": [
+     -0.0038,
+     -0.0005
+    ],
+    "min_effect": 0.001178,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-0a605f2d",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-6de0c968",
+   "kind": "finding",
+   "agent": "agent-57eb45d1",
+   "title": "Matched comparison finds a small advantage for char_wb 2\u20135",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0005, 95% CI [-0.0018, 0.0008], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07855263157894737,
+    "b": 0.07802631578947368,
+    "diff": -0.0005263157894736842,
+    "ci95": [
+     -0.0018421052631578947,
+     0.0007894736842105263
+    ],
+    "min_effect": 0.0015710526315789474,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-dd75eaaf",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-7fd8136b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

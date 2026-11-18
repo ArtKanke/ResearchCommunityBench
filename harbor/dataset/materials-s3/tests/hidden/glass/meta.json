@@ -1,0 +1,9 @@
+{
+ "id": "glass",
+ "source": "matbench_glass",
+ "task": "classification",
+ "units": "",
+ "n_public": 4245,
+ "n_hidden": 1435,
+ "metric": "error rate"
+}

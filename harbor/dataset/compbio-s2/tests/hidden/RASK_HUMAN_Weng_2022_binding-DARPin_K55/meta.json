@@ -1,0 +1,10 @@
+{
+ "id": "RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+ "task": "regression",
+ "units": "DMS score",
+ "metric": "MAE",
+ "n_public": 2323,
+ "n_hidden": 761,
+ "protein": "RASK_HUMAN",
+ "selection_type": "Binding"
+}

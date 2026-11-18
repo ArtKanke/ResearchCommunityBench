@@ -1,0 +1,692 @@
+{
+ "run_id": "run-6e5687cc",
+ "model": "6-luna",
+ "task": "materials-s3",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 5,
+  "R_frontier": 3,
+  "C_collaborative": 0,
+  "submitted_credited": 17,
+  "duplicates": 1,
+  "best_gain": {
+   "expt_gap": 0.3431
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 1,
+   "not_replicated_on_hidden": 10
+  }
+ },
+ "rewards": {
+  "score": 0.5,
+  "R_replicated": 5.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 3.0,
+  "datasets_advanced": 1.0,
+  "mean_best_gain": 0.085775,
+  "auditor_pending": 0.0,
+  "submitted_credited": 17.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 1.0,
+  "not_replicated": 10.0,
+  "duplicates": 1.0,
+  "agents_total": 5.0,
+  "agents_peak": 5.0,
+  "max_depth": 1.0,
+  "cost_usd": 0.7226,
+  "model_calls": 200.0,
+  "experiments": 89.0,
+  "messages": 11.0,
+  "cost_per_accepted": 0.145,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 5.0,
+  "dataset_entropy": 0.933,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 1539.9
+ },
+ "claims": [
+  {
+   "id": "findin-61a5b7db",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Stoichiometric dispersion features improve experimental band-gap prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0291, 95% CI [-0.0495, -0.0093], beyond the minimum effect 0.0091)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.42841247627264906,
+    "b": 0.4574966957583235,
+    "diff": -0.029084219485674526,
+    "ci95": [
+     -0.04950440876219129,
+     -0.00926277536674203
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8356b1cd",
+   "kind": "finding",
+   "agent": "agent-18a2a7fc",
+   "title": "Extra Trees ensemble improves composition-only steel yield-strength prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -22.2195, 95% CI [-44.0193, -1.7359], needed below -2.0361",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 76,
+    "a": 79.58706052631506,
+    "b": 101.80660271729003,
+    "diff": -22.21954219097498,
+    "ci95": [
+     -44.0192834280954,
+     -1.7358733164716953
+    ],
+    "min_effect": 2.0361320543458006,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8c04412d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Higher-moment composition features do not improve the steel ensemble",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -2.2746, 95% CI [-10.1037, 5.5776], needed below -1.6372",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 76,
+    "a": 79.58706052631501,
+    "b": 81.8616473684204,
+    "diff": -2.274586842105386,
+    "ci95": [
+     -10.10366042763215,
+     5.577619506578837
+    ],
+    "min_effect": 1.6372329473684082,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-8356b1cd",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a4b27e0c",
+   "kind": "finding",
+   "agent": "agent-d4a91877",
+   "title": "Elemental composition features improve glass-forming classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0118, 95% CI [-0.0237, 0.0000], needed below -0.0024",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1435,
+    "a": 0.10662020905923345,
+    "b": 0.11846689895470383,
+    "diff": -0.011846689895470384,
+    "ci95": [
+     -0.023693379790940768,
+     0.0
+    ],
+    "min_effect": 0.0023693379790940767,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-bdb27a3a",
+   "kind": "finding",
+   "agent": "agent-5e489dea",
+   "title": "Element-fraction indicators extend stoichiometric-dispersion band-gap features",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0514, 95% CI [-0.0726, -0.0314], beyond the minimum effect 0.0091)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.406090491803279,
+    "b": 0.4574966957583235,
+    "diff": -0.0514062039550446,
+    "ci95": [
+     -0.07264951045181746,
+     -0.03138321170554523
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-61a5b7db",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ff9cf209",
+   "kind": "finding",
+   "agent": "agent-18a2a7fc",
+   "title": "Five-seed averaging extends stoichiometric-dispersion band-gap model",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0297, 95% CI [-0.0501, -0.0102], beyond the minimum effect 0.0091)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.42778334771354637,
+    "b": 0.4574966957583235,
+    "diff": -0.02971334804477719,
+    "ci95": [
+     -0.0501332391249023,
+     -0.01015248100844583
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-61a5b7db",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c7609410",
+   "kind": "finding",
+   "agent": "agent-b548765e",
+   "title": "Composition identity features improve experimental metal classification",
+   "status": "rejected",
+   "reason": "evidence exec exec-bb46c932 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-65574530",
+   "kind": "finding",
+   "agent": "agent-b548765e",
+   "title": "Metal-classification improvement persists across fold seeds",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-5979d5e5",
+   "kind": "finding",
+   "agent": "agent-5e489dea",
+   "title": "Corrected release: element-fraction features extend band-gap prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0519, 95% CI [-0.0736, -0.0316], beyond the minimum effect 0.0091)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.40557975841242466,
+    "b": 0.4574966957583235,
+    "diff": -0.05191693734589887,
+    "ci95": [
+     -0.07364561042694828,
+     -0.03162078855181552
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-61a5b7db",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ac4859d8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Blending Extra Trees with the glass-forming classifier modestly reduces CV error",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0021, 95% CI [-0.0070, 0.0028], needed below -0.0021",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1435,
+    "a": 0.10662020905923345,
+    "b": 0.10452961672473868,
+    "diff": -0.0020905923344947735,
+    "ci95": [
+     -0.006968641114982578,
+     0.0027874564459930314
+    ],
+    "min_effect": 0.002132404181184669,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a4b27e0c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-bbdf82d8",
+   "kind": "finding",
+   "agent": "agent-b548765e",
+   "title": "Stoichiometric-dispersion features transfer to metal classification",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-61a5b7db",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cdb81fa1",
+   "kind": "finding",
+   "agent": "agent-5e489dea",
+   "title": "Two-stage zero-gap prediction improves composition-based band-gap estimates",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1570, 95% CI [-0.1888, -0.1258], beyond the minimum effect 0.0091)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.3005092148403797,
+    "b": 0.4574966957583235,
+    "diff": -0.15698748091794387,
+    "ci95": [
+     -0.18884033282661045,
+     -0.12575375321745944
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-61a5b7db",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5f914c19",
+   "kind": "finding",
+   "agent": "agent-b548765e",
+   "title": "Stoichiometric composition descriptors contribute to metal-classification accuracy",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-1769dd93",
+   "kind": "finding",
+   "agent": "agent-b548765e",
+   "title": "Metal-classification gains persist under chemical-system-grouped validation",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c7609410",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a16a4c7e",
+   "kind": "finding",
+   "agent": "agent-5e489dea",
+   "title": "Independent splits corroborate two-stage band-gap predictor",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-cdb81fa1",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-cdb81fa1",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.3005092148403797,
+    "b": 0.4574966957583235,
+    "diff": -0.15698748091794384,
+    "ci95": [
+     -0.18884033282661045,
+     -0.1257537532174594
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-cdb81fa1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-62ea83fa",
+   "kind": "finding",
+   "agent": "agent-d4a91877",
+   "title": "Nested threshold selection improves glass-forming classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0077, 95% CI [-0.0195, 0.0049], needed below -0.0024",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1435,
+    "a": 0.110801393728223,
+    "b": 0.11846689895470383,
+    "diff": -0.007665505226480836,
+    "ci95": [
+     -0.019529616724738644,
+     0.004878048780487805
+    ],
+    "min_effect": 0.0023693379790940767,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-e3db6b7b",
+   "kind": "finding",
+   "agent": "agent-b548765e",
+   "title": "Dispersion-feature ensemble improves grouped metal-classification validation",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-bbdf82d8",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-1769dd93",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-61a5b7db",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

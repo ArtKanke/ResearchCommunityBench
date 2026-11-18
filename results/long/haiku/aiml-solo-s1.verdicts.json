@@ -1,0 +1,182 @@
+{
+ "run_id": "run-e375cb7f",
+ "model": "haiku",
+ "task": "aiml-solo-s1",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 3,
+  "R_frontier": 2,
+  "C_collaborative": 0,
+  "submitted_credited": 4,
+  "duplicates": 0,
+  "best_gain": {
+   "cifar10": 0.2033,
+   "agnews": 0.0667
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 1,
+   "not_replicated_on_hidden": 0
+  }
+ },
+ "rewards": {
+  "score": 0.375,
+  "R_replicated": 3.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 2.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.135,
+  "auditor_pending": 0.0,
+  "submitted_credited": 4.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 1.0,
+  "not_replicated": 0.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.0863,
+  "model_calls": 44.0,
+  "experiments": 20.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.029,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 1.0,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 848.0
+ },
+ "claims": [
+  {
+   "id": "findin-19eb0aaf",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "ResNet-9-style CNN with label smoothing, crop/flip augmentation and flip TTA beats the 6% CIFAR-10 reference",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0122, 95% CI [-0.0162, -0.0078], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0478,
+    "b": 0.06,
+    "diff": -0.012200000000000013,
+    "ci95": [
+     -0.016200000000000013,
+     -0.007800000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a95d48ea",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Word+char TF-IDF linear ensemble beats a TF-IDF+logistic-regression replica on AG News",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0176, 95% CI [-0.0220, -0.0134], beyond the minimum effect 0.0020)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08105263157894736,
+    "b": 0.09868421052631579,
+    "diff": -0.017631578947368422,
+    "ci95": [
+     -0.021973684210526315,
+     -0.013421052631578948
+    ],
+    "min_effect": 0.001973684210526316,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8111bc10",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A 3-seed ensemble of the ResNet-9-style CIFAR-10 recipe beats the 6% reference with margin",
+   "status": "rejected",
+   "reason": "claimed numbers do not reproduce within 10% on rerun",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-2f903685",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Word+char TF-IDF linear ensemble predicts AG News below the TF-IDF+logistic-regression comparator",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0058, 95% CI [-0.0088, -0.0026], beyond the minimum effect 0.0017)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08105263157894736,
+    "b": 0.0868421052631579,
+    "diff": -0.005789473684210527,
+    "ci95": [
+     -0.008815789473684211,
+     -0.002631578947368421
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  }
+ ]
+}

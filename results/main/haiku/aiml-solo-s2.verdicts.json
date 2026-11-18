@@ -1,0 +1,124 @@
+{
+ "run_id": "run-d62398d3",
+ "model": "haiku",
+ "task": "aiml-solo-s2",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 2,
+  "R_frontier": 2,
+  "C_collaborative": 0,
+  "submitted_credited": 2,
+  "duplicates": 0,
+  "best_gain": {
+   "cifar10": 0.1683
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 0
+  }
+ },
+ "rewards": {
+  "score": 0.2857142857142857,
+  "R_replicated": 2.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 2.0,
+  "datasets_advanced": 1.0,
+  "mean_best_gain": 0.08415,
+  "auditor_pending": 0.0,
+  "submitted_credited": 2.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 0.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.0211,
+  "model_calls": 17.0,
+  "experiments": 7.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.011,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.0,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 395.3
+ },
+ "claims": [
+  {
+   "id": "findin-619e9bda",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "ResNet-9-style CNN with 120-epoch one-cycle SGD beats the 6% CIFAR-10 reference",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0079, 95% CI [-0.0122, -0.0035], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0521,
+    "b": 0.06,
+    "diff": -0.007900000000000015,
+    "ci95": [
+     -0.012200000000000015,
+     -0.003500000000000015
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-95d1f68d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Two-seed ensemble of ResNet-9-style CNNs beats single models on CIFAR-10 (4.54% held-out error)",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0101, 95% CI [-0.0143, -0.0056], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0499,
+    "b": 0.06,
+    "diff": -0.010100000000000013,
+    "ci95": [
+     -0.01430000000000001,
+     -0.005600000000000015
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": []
+  }
+ ]
+}

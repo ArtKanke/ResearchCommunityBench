@@ -1,0 +1,10 @@
+{
+ "id": "KCNE1_HUMAN_Muhammad_2023_expression",
+ "task": "regression",
+ "units": "DMS score",
+ "metric": "MAE",
+ "n_public": 1774,
+ "n_hidden": 565,
+ "protein": "KCNE1_HUMAN",
+ "selection_type": "Expression"
+}

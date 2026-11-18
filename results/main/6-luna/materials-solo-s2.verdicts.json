@@ -1,0 +1,308 @@
+{
+ "run_id": "run-8e51ae41",
+ "model": "6-luna",
+ "task": "materials-solo-s2",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 3,
+  "R_frontier": 2,
+  "C_collaborative": 0,
+  "submitted_credited": 7,
+  "duplicates": 0,
+  "best_gain": {
+   "expt_gap": 0.2644,
+   "steels": 0.3067
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 4
+  }
+ },
+ "rewards": {
+  "score": 0.375,
+  "R_replicated": 3.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 2.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.14277499999999999,
+  "auditor_pending": 0.0,
+  "submitted_credited": 7.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 4.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.0961,
+  "model_calls": 38.0,
+  "experiments": 21.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.032,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 1.0,
+  "dataset_entropy": 0.921,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 289.9
+ },
+ "claims": [
+  {
+   "id": "findin-0ae7827b",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Two-stage composition model improves experimental band-gap prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1104, 95% CI [-0.1458, -0.0732], beyond the minimum effect 0.0083)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1164,
+    "a": 0.3071217411225659,
+    "b": 0.41749409777837104,
+    "diff": -0.11037235665580516,
+    "ci95": [
+     -0.1457611609529169,
+     -0.07315847214948555
+    ],
+    "min_effect": 0.00834988195556742,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-7157ad77",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Element-fraction features improve experimental metallicity classification",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-513b148f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Corrected hidden-test code for metallicity classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [-0.0113, 0.0113], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1236,
+    "a": 0.08009708737864078,
+    "b": 0.08009708737864078,
+    "diff": 0.0,
+    "ci95": [
+     -0.011326860841423949,
+     0.011326860841423949
+    ],
+    "min_effect": 0.0016019417475728157,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7157ad77",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cfdd6d26",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Elemental composition features improve steel yield-strength prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -35.5121, 95% CI [-55.0344, -17.9393], beyond the minimum effect 2.3161)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 75,
+    "a": 80.29118055555523,
+    "b": 115.8032555697671,
+    "diff": -35.512075014211874,
+    "ci95": [
+     -55.0343961533999,
+     -17.939254905059183
+    ],
+    "min_effect": 2.3160651113953423,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-0cd196e8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "All-element Magpie properties improve two-stage band-gap prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0916, 95% CI [-0.1249, -0.0588], beyond the minimum effect 0.0083)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1164,
+    "a": 0.3259155809707904,
+    "b": 0.41749409777837104,
+    "diff": -0.09157851680758068,
+    "ci95": [
+     -0.124939801651729,
+     -0.05884295459209036
+    ],
+    "min_effect": 0.00834988195556742,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ed4cc24c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Elemental descriptors and threshold tuning improve glass-forming classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0112, 95% CI [-0.0212, -0.0013], needed below -0.0022",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1512,
+    "a": 0.09854497354497355,
+    "b": 0.10978835978835978,
+    "diff": -0.011243386243386243,
+    "ci95": [
+     -0.021164021164021163,
+     -0.0013227513227513227
+    ],
+    "min_effect": 0.002195767195767196,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-dcd89c16",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Metallicity classification improvement persists across fold seeds",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [-0.0113, 0.0113], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1236,
+    "a": 0.08009708737864078,
+    "b": 0.08009708737864078,
+    "diff": 0.0,
+    "ci95": [
+     -0.011326860841423949,
+     0.011326860841423949
+    ],
+    "min_effect": 0.0016019417475728157,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7157ad77",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

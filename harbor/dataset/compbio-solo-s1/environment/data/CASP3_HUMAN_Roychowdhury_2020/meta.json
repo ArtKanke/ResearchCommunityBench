@@ -1,0 +1,10 @@
+{
+ "id": "CASP3_HUMAN_Roychowdhury_2020",
+ "task": "regression",
+ "units": "DMS score",
+ "metric": "MAE",
+ "n_public": 1163,
+ "n_hidden": 404,
+ "protein": "CASP3_HUMAN",
+ "selection_type": "Activity"
+}

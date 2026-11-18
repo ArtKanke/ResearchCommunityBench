@@ -1,0 +1,319 @@
+{
+ "run_id": "run-5faba642",
+ "model": "haiku",
+ "task": "compbio-solo-s1",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 7,
+  "R_frontier": 7,
+  "C_collaborative": 0,
+  "submitted_credited": 7,
+  "duplicates": 0,
+  "best_gain": {
+   "BLAT_ECOLX_Firnberg_2014": 0.3013,
+   "BLAT_ECOLX_Stiffler_2015": 0.3448,
+   "CASP3_HUMAN_Roychowdhury_2020": 0.1715,
+   "KCNE1_HUMAN_Muhammad_2023_expression": 0.2875,
+   "KCNE1_HUMAN_Muhammad_2023_function": 0.2621,
+   "RASK_HUMAN_Weng_2022_abundance": 0.1773,
+   "RASK_HUMAN_Weng_2022_binding-DARPin_K55": 0.3163
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 0
+  }
+ },
+ "rewards": {
+  "score": 0.5833333333333334,
+  "R_replicated": 7.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 7.0,
+  "datasets_advanced": 7.0,
+  "mean_best_gain": 0.2658285714285714,
+  "auditor_pending": 0.0,
+  "submitted_credited": 7.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 0.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.0231,
+  "model_calls": 20.0,
+  "experiments": 9.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.003,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 1.0,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 20.5
+ },
+ "claims": [
+  {
+   "id": "findin-095e792a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-aware gradient boosting beats one-hot ridge on BLAT_ECOLX single-substitution DMS",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0687, 95% CI [-0.0770, -0.0599], beyond the minimum effect 0.0046)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.15927285715812858,
+    "b": 0.22794534737615452,
+    "diff": -0.06867249021802593,
+    "ci95": [
+     -0.07704487196824918,
+     -0.05994838230690611
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-68cc83a8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-aware gradient boosting beats one-hot ridge on BLAT DMS (ECOLX_Stiffler_2015)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1964, 95% CI [-0.2204, -0.1735], beyond the minimum effect 0.0114)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3731268290219168,
+    "b": 0.5694838951802093,
+    "diff": -0.19635706615829232,
+    "ci95": [
+     -0.22039119144320296,
+     -0.1735226882310085
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-e8d446c0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-aware gradient boosting beats one-hot ridge on CASP3 DMS (HUMAN_Roychowdhury_2020)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0763, 95% CI [-0.1023, -0.0517], beyond the minimum effect 0.0089)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.36869665414631686,
+    "b": 0.44500763569165896,
+    "diff": -0.07631098154534205,
+    "ci95": [
+     -0.10231506502934204,
+     -0.05169067681248295
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-7bf84709",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-aware gradient boosting beats one-hot ridge on KCNE1 DMS (HUMAN_Muhammad_2023_expression)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0576, 95% CI [-0.0698, -0.0453], beyond the minimum effect 0.0040)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.14281722146188472,
+    "b": 0.20045092879553264,
+    "diff": -0.05763370733364795,
+    "ci95": [
+     -0.06976373337856231,
+     -0.0453278081537063
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-60d8ed43",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-aware gradient boosting beats one-hot ridge on KCNE1 DMS (HUMAN_Muhammad_2023_function)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0511, 95% CI [-0.0616, -0.0398], beyond the minimum effect 0.0039)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.14375431237894162,
+    "b": 0.19482725023143352,
+    "diff": -0.05107293785249185,
+    "ci95": [
+     -0.06161713424946693,
+     -0.039807559918040816
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-e2ff3090",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-aware gradient boosting beats one-hot ridge on RASK DMS (HUMAN_Weng_2022_abundance)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0384, 95% CI [-0.0481, -0.0290], beyond the minimum effect 0.0043)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.17816923156670844,
+    "b": 0.2165612233001855,
+    "diff": -0.03839199173347709,
+    "ci95": [
+     -0.048139364659685366,
+     -0.028969723962857456
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d07438a9",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-aware gradient boosting beats one-hot ridge on RASK DMS (HUMAN_Weng_2022_binding-DARPin_K55)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0490, 95% CI [-0.0569, -0.0412], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.1059571462408185,
+    "b": 0.15496955279329153,
+    "diff": -0.04901240655247301,
+    "ci95": [
+     -0.05694416864028028,
+     -0.04123885495658211
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "note-f3e7f3e9",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Caveat: position-aware gain over one-hot ridge shrinks to 2-5% under position-grouped CV",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  }
+ ]
+}

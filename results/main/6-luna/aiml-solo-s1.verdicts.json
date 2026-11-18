@@ -1,0 +1,198 @@
+{
+ "run_id": "run-07b9101e",
+ "model": "6-luna",
+ "task": "aiml-solo-s1",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 1,
+  "R_frontier": 1,
+  "C_collaborative": 0,
+  "submitted_credited": 4,
+  "duplicates": 2,
+  "best_gain": {
+   "agnews": 0.0879
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 0
+  }
+ },
+ "rewards": {
+  "score": 0.16666666666666666,
+  "R_replicated": 1.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 1.0,
+  "datasets_advanced": 1.0,
+  "mean_best_gain": 0.04395,
+  "auditor_pending": 0.0,
+  "submitted_credited": 4.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 0.0,
+  "duplicates": 2.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.1342,
+  "model_calls": 38.0,
+  "experiments": 19.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.134,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.0,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 98.8
+ },
+ "claims": [
+  {
+   "id": "findin-8bc86914",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Character-within-word TF-IDF improves AG News classification",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): 864fa625b58a",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-c484dd30",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Character-within-word TF-IDF improves AG News classification",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0076, 95% CI [-0.0112, -0.0042], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07921052631578947,
+    "b": 0.0868421052631579,
+    "diff": -0.007631578947368421,
+    "ci95": [
+     -0.01118421052631579,
+     -0.004210526315789474
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-0c259a75",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Character n-grams improve AG News error across three additional splits",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-c484dd30",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-c484dd30",
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07921052631578947,
+    "b": 0.0868421052631579,
+    "diff": -0.007631578947368421,
+    "ci95": [
+     -0.01118421052631579,
+     -0.004210526315789474
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-c484dd30",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4eef3aa7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "AG News bigram-only features underperform unigrams; character features help word n-grams",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-c484dd30",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-c484dd30",
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07921052631578947,
+    "b": 0.0868421052631579,
+    "diff": -0.007631578947368421,
+    "ci95": [
+     -0.01118421052631579,
+     -0.004210526315789474
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-c484dd30",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

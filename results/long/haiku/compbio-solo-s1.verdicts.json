@@ -1,0 +1,519 @@
+{
+ "run_id": "run-26ef81b0",
+ "model": "haiku",
+ "task": "compbio-solo-s1",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 0,
+  "R_frontier": 0,
+  "C_collaborative": 0,
+  "submitted_credited": 19,
+  "duplicates": 0,
+  "best_gain": {},
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 2,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 17
+  }
+ },
+ "rewards": {
+  "score": 0.0,
+  "R_replicated": 0.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 0.0,
+  "datasets_advanced": 0.0,
+  "mean_best_gain": 0.0,
+  "auditor_pending": 0.0,
+  "submitted_credited": 19.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 2.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 17.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.1,
+  "model_calls": 37.0,
+  "experiments": 15.0,
+  "messages": 2.0,
+  "cost_per_accepted": -1.0,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.928,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 114.9
+ },
+ "claims": [
+  {
+   "id": "findin-867ff738",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM (L1) with position-aware features beats one-hot ridge on BLAT_ECOLX_Firnberg_2014",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d64f256e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM (L1) with position-aware features beats one-hot ridge on BLAT_ECOLX_Stiffler_2015",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-fc025723",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM (L1) with position-aware features beats one-hot ridge on CASP3_HUMAN_Roychowdhury_2020",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c3c4ee9c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM (L1) with position-aware features beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-45c3fcc6",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM (L1) with position-aware features beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b120fe7d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM (L1) with position-aware features beats one-hot ridge on RASK_HUMAN_Weng_2022_abundance",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b0db6ae7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM (L1) with position-aware features beats one-hot ridge on RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d4db1038",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Pooling the Stiffler BLAT_ECOLX train set (rescaled) improves LightGBM-L1 holdout MAE on Firnberg BLAT_ECOLX",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-fbb7b54d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Pooling the Firnberg BLAT_ECOLX train set (rescaled) improves LightGBM-L1 holdout MAE on Stiffler BLAT_ECOLX",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ec26e894",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Partner-lookup (same mutant in Stiffler BLAT_ECOLX, rescaled; ridge fallback) beats one-hot ridge on Firnberg BLAT_ECOLX holdout",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-6f9aeb15",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Partner-lookup (same mutant in Firnberg BLAT_ECOLX, rescaled; ridge fallback) beats one-hot ridge on Stiffler BLAT_ECOLX holdout",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-263b8b61",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Partner-score feature in LightGBM-L1 beats one-hot ridge on BLAT_ECOLX_Firnberg_2014 holdout",
+   "status": "rejected",
+   "reason": "mis-cited evidence: holdout_mae_ridge is recorded in exec-c75ccf45, exec-9dabec0b, exec-a98676e3 but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-a4ce6383",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Partner-score feature in LightGBM-L1 beats one-hot ridge on BLAT_ECOLX_Stiffler_2015 holdout",
+   "status": "rejected",
+   "reason": "mis-cited evidence: holdout_mae_ridge is recorded in exec-c75ccf45, exec-9dabec0b, exec-a98676e3 but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-6c635c94",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Partner-score feature in LightGBM-L1 beats one-hot ridge on BLAT_ECOLX_Firnberg_2014 holdout",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-00805deb",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Partner-score feature in LightGBM-L1 beats one-hot ridge on BLAT_ECOLX_Stiffler_2015 holdout",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-fd4f95bb",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Partner-score feature in LightGBM-L1 beats one-hot ridge on RASK_HUMAN_Weng_2022_abundance holdout",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b04d2e04",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Partner-score feature in LightGBM-L1 beats one-hot ridge on RASK_HUMAN_Weng_2022_binding-DARPin_K55 holdout",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-725b55a7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Partner-score feature in LightGBM-L1 beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_expression holdout",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-2fd9e639",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Partner-score feature in LightGBM-L1 beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_function holdout",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  }
+ ]
+}

@@ -1,0 +1,350 @@
+{
+ "run_id": "run-22d19e48",
+ "model": "opus",
+ "task": "materials-solo-s1",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 3,
+  "R_frontier": 3,
+  "C_collaborative": 0,
+  "submitted_credited": 7,
+  "duplicates": 0,
+  "best_gain": {
+   "expt_gap": 0.2462,
+   "glass": 0.1278,
+   "steels": 0.1684
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 4
+  }
+ },
+ "rewards": {
+  "score": 0.375,
+  "R_replicated": 3.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 3.0,
+  "datasets_advanced": 3.0,
+  "mean_best_gain": 0.1356,
+  "auditor_pending": 0.0,
+  "submitted_credited": 7.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 4.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 1.0057,
+  "model_calls": 30.0,
+  "experiments": 15.0,
+  "messages": 1.0,
+  "cost_per_accepted": 0.335,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 1.0,
+  "dataset_entropy": 0.975,
+  "replications_of_failed_work": 1.0,
+  "verification_seconds": 371.2
+ },
+ "claims": [
+  {
+   "id": "findin-5aa232e2",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended composition features + LightGBM/ExtraTrees with metal gate cut expt_gap MAE 28% vs baseline",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1036, 95% CI [-0.1325, -0.0764], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.31724680444506675,
+    "b": 0.42088367401773064,
+    "diff": -0.1036368695726638,
+    "ci95": [
+     -0.13250982428814748,
+     -0.07639468950481286
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-9392fc89",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended composition features + LightGBM/ExtraTrees cut steels yield-strength MAE 23% vs baseline",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -18.3722, 95% CI [-39.3910, -0.2237], needed below -2.1817",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 90.71289324478312,
+    "b": 109.08513563473846,
+    "diff": -18.372242389955343,
+    "ci95": [
+     -39.39095590033193,
+     -0.22369079167551442
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-fcc2af49",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended composition features + LightGBM/ExtraTrees reduce expt_is_metal error rate 11% vs baseline",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0098, 95% CI [-0.0196, -0.0008], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06699346405228758,
+    "b": 0.07679738562091504,
+    "diff": -0.00980392156862745,
+    "ci95": [
+     -0.0196078431372549,
+     -0.0008169934640522876
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-fb540240",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended composition features + LightGBM/ExtraTrees reduce glass-forming error rate 6% vs baseline",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0159, 95% CI [-0.0276, -0.0048], beyond the minimum effect 0.0025)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10827586206896551,
+    "b": 0.12413793103448276,
+    "diff": -0.015862068965517243,
+    "ci95": [
+     -0.027586206896551724,
+     -0.004827586206896552
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ca1e221f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Raw element-fraction features are the main driver of the steels gain (ablation)",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -12.7880, 95% CI [-22.1364, -5.0183], beyond the minimum effect 2.0700)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 90.71289324478315,
+    "b": 103.50085509989142,
+    "diff": -12.787961855108286,
+    "ci95": [
+     -22.136372618260438,
+     -5.0182760439548115
+    ],
+    "min_effect": 2.0700171019978284,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-9392fc89",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-40efc896",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Hurdle model (regressor trained on non-metals only) lowers expt_gap MAE vs single regressor + gate",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0037, 95% CI [-0.0237, 0.0177], needed below -0.0063",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.31358036915415555,
+    "b": 0.31724680444506675,
+    "diff": -0.003666435290911254,
+    "ci95": [
+     -0.023741699393032705,
+     0.01772663055628241
+    ],
+    "min_effect": 0.006344936088901335,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-5aa232e2",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-c9ba98dd",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Negative results: kNN stacking, mismatch descriptors, extra metal labels did not help",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-53f519c5",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Replication over 3 new CV seeds: expt_is_metal gain over baseline holds in 14/15 folds",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0098, 95% CI [-0.0196, -0.0008], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06699346405228758,
+    "b": 0.07679738562091504,
+    "diff": -0.00980392156862745,
+    "ci95": [
+     -0.0196078431372549,
+     -0.0008169934640522876
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-fcc2af49",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-fb540240",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

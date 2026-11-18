@@ -1,0 +1,2599 @@
+{
+ "run_id": "run-e348ed26",
+ "model": "haiku",
+ "task": "compbio-s1",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 30,
+  "R_frontier": 15,
+  "C_collaborative": 0,
+  "submitted_credited": 58,
+  "duplicates": 1,
+  "best_gain": {
+   "BLAT_ECOLX_Firnberg_2014": 0.3438,
+   "BLAT_ECOLX_Stiffler_2015": 0.3769,
+   "CASP3_HUMAN_Roychowdhury_2020": 0.1578,
+   "KCNE1_HUMAN_Muhammad_2023_expression": 0.2807,
+   "RASK_HUMAN_Weng_2022_abundance": 0.1677,
+   "RASK_HUMAN_Weng_2022_binding-DARPin_K55": 0.3168
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 1,
+   "not_reproducible": 1,
+   "not_replicated_on_hidden": 17
+  }
+ },
+ "rewards": {
+  "score": 0.8571428571428571,
+  "R_replicated": 30.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 15.0,
+  "datasets_advanced": 6.0,
+  "mean_best_gain": 0.2348142857142857,
+  "auditor_pending": 1.0,
+  "submitted_credited": 58.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 1.0,
+  "not_replicated": 17.0,
+  "duplicates": 1.0,
+  "agents_total": 3.0,
+  "agents_peak": 3.0,
+  "max_depth": 1.0,
+  "cost_usd": 0.7654,
+  "model_calls": 164.0,
+  "experiments": 72.0,
+  "messages": 30.0,
+  "cost_per_accepted": 0.026,
+  "accepted_consumed_by_others": 9.0,
+  "built_on_failed_work": 1.0,
+  "dataset_entropy": 0.946,
+  "replications_of_failed_work": 1.0,
+  "verification_seconds": 356.9
+ },
+ "claims": [
+  {
+   "id": "findin-be3373be",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on BLAT_ECOLX_Firnberg_2014",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): }",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-275db998",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on BLAT_ECOLX_Stiffler_2015",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): }",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-417b0168",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on CASP3_HUMAN_Roychowdhury_2020",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): }",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-c1677372",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): }",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-29021a06",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): }",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-8dbe97b3",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on RASK_HUMAN_Weng_2022_abundance",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): }",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-7f4abf40",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): }",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-f8eff936",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on BLAT_ECOLX_Firnberg_2014",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0624, 95% CI [-0.0713, -0.0536], beyond the minimum effect 0.0046)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.16551446314670634,
+    "b": 0.22794534737615452,
+    "diff": -0.06243088422944813,
+    "ci95": [
+     -0.07125279876658391,
+     -0.053616011771688024
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-620cecb8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on BLAT_ECOLX_Stiffler_2015",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1647, 95% CI [-0.1910, -0.1398], beyond the minimum effect 0.0114)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.4047859357078097,
+    "b": 0.5694838951802093,
+    "diff": -0.16469795947239954,
+    "ci95": [
+     -0.19096116650060904,
+     -0.13982480712409506
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-11ea9d10",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on CASP3_HUMAN_Roychowdhury_2020",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0535, 95% CI [-0.0785, -0.0294], beyond the minimum effect 0.0089)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.39147201482554206,
+    "b": 0.44500763569165896,
+    "diff": -0.05353562086611693,
+    "ci95": [
+     -0.07847147101091147,
+     -0.029441027482541012
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a30fd591",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0418, 95% CI [-0.0517, -0.0320], beyond the minimum effect 0.0040)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.1586170759556307,
+    "b": 0.20045092879553264,
+    "diff": -0.04183385283990193,
+    "ci95": [
+     -0.05171226299171035,
+     -0.03200965803478252
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b5c6ae28",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0194, 95% CI [0.0025, 0.0374], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.21421793227128133,
+    "b": 0.19482725023143352,
+    "diff": 0.01939068203984784,
+    "ci95": [
+     0.002508363097126439,
+     0.037434032538722385
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-1b3c3753",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on RASK_HUMAN_Weng_2022_abundance",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0187, 95% CI [-0.0281, -0.0094], beyond the minimum effect 0.0043)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.1978818945646491,
+    "b": 0.2165612233001855,
+    "diff": -0.01867932873553644,
+    "ci95": [
+     -0.028096389144928628,
+     -0.00939502445679365
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-15bd30f0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "GBM with target-encoded position/window/substitution features beats one-hot ridge on RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0337, 95% CI [-0.0427, -0.0245], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.12131553528898843,
+    "b": 0.15496955279329153,
+    "diff": -0.03365401750430309,
+    "ci95": [
+     -0.04272262655523231,
+     -0.024531466418674406
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-0424e460",
+   "kind": "finding",
+   "agent": "agent-fdcad64c",
+   "title": "Adding BLOSUM62, per-position LOO statistics and a feature-ridge blend to the founder GBM lowers mean 5-fold CV MAE over 7 DMS datasets",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1869, 95% CI [-0.2137, -0.1624], beyond the minimum effect 0.0114)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.38254298139655496,
+    "b": 0.5694838951802093,
+    "diff": -0.1869409137836543,
+    "ci95": [
+     -0.21371598546825013,
+     -0.1623676395856247
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-15bd30f0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7d7426c5",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Sibling-assay transfer features lower CV MAE on BLAT_ECOLX_Firnberg_2014",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.3343, 95% CI [0.3103, 0.3575], needed below -0.0046",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.562207580865659,
+    "b": 0.22794534737615452,
+    "diff": 0.3342622334895045,
+    "ci95": [
+     0.310338075142985,
+     0.3575325228988177
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-15bd30f0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-415cf430",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Sibling-assay transfer features lower CV MAE on BLAT_ECOLX_Stiffler_2015",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1469, 95% CI [-0.1652, -0.1289], beyond the minimum effect 0.0114)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.4225538833847756,
+    "b": 0.5694838951802093,
+    "diff": -0.1469300117954336,
+    "ci95": [
+     -0.16519320927957026,
+     -0.12888208068483295
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-15bd30f0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-132a1f30",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Sibling-assay transfer features lower CV MAE on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0368, 95% CI [-0.0463, -0.0277], beyond the minimum effect 0.0040)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.16362888135596368,
+    "b": 0.20045092879553264,
+    "diff": -0.036822047439568975,
+    "ci95": [
+     -0.04633884451068186,
+     -0.027735632614684615
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-15bd30f0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c2cee133",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Sibling-assay transfer features lower CV MAE on KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0508, 95% CI [0.0325, 0.0691], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.24566684195111377,
+    "b": 0.19482725023143352,
+    "diff": 0.05083959171968028,
+    "ci95": [
+     0.03253662347998855,
+     0.0690872892479673
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-15bd30f0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d4e5f6c7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Sibling-assay transfer features lower CV MAE on RASK_HUMAN_Weng_2022_abundance",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0001, 95% CI [-0.0094, 0.0092], needed below -0.0043",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.21648804784561618,
+    "b": 0.2165612233001855,
+    "diff": -7.317545456937437e-05,
+    "ci95": [
+     -0.009417108681237123,
+     0.009228512173137022
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-15bd30f0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-fe58186e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Sibling-assay transfer features lower CV MAE on RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0231, 95% CI [-0.0312, -0.0148], beyond the minimum effect 0.0031)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.13189299230475027,
+    "b": 0.15496955279329153,
+    "diff": -0.023076560488541245,
+    "ci95": [
+     -0.03118980819667355,
+     -0.01483036511435439
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-15bd30f0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-60f42127",
+   "kind": "finding",
+   "agent": "agent-fdcad64c",
+   "title": "Feature-set ablation: BLOSUM62 and per-position LOO statistics each lower GBM CV MAE on the founder feature set; combined gain is near-additive",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-15bd30f0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d5155fd5",
+   "kind": "finding",
+   "agent": "agent-fdcad64c",
+   "title": "Feature-set ablation (corrected test): BLOSUM62 and per-position LOO statistics each lower GBM CV MAE on the founder feature set",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0168, 95% CI [-0.0249, -0.0090], beyond the minimum effect 0.0081)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3879669831144691,
+    "b": 0.4047859357078097,
+    "diff": -0.01681895259334057,
+    "ci95": [
+     -0.02485695388730106,
+     -0.00903964949782679
+    ],
+    "min_effect": 0.008095718714156194,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-15bd30f0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a3460174",
+   "kind": "finding",
+   "agent": "agent-baa201df",
+   "title": "Out-of-fold training encoding beats leave-one-out on RASK binding (and on 7/7 DMS datasets in CV)",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-15bd30f0",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-15bd30f0",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ba4f8aed",
+   "kind": "finding",
+   "agent": "agent-fdcad64c",
+   "title": "BLOSUM62 + per-position LOO statistics gain for GBM replicates on two additional CV fold seeds",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-d5155fd5",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-d5155fd5",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3879669831144691,
+    "b": 0.4047859357078097,
+    "diff": -0.01681895259334057,
+    "ci95": [
+     -0.02485695388730106,
+     -0.00903964949782679
+    ],
+    "min_effect": 0.008095718714156194,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-d5155fd5",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4ace826e",
+   "kind": "finding",
+   "agent": "agent-baa201df",
+   "title": "Out-of-fold training encoding beats leave-one-out on RASK binding (and on 7/7 DMS datasets in CV)",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0129, 95% CI [-0.0176, -0.0081], beyond the minimum effect 0.0024)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.10841459389992088,
+    "b": 0.12131553528898843,
+    "diff": -0.012900941389067555,
+    "ci95": [
+     -0.017620898720500367,
+     -0.008094477413567242
+    ],
+    "min_effect": 0.0024263107057797685,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-15bd30f0",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-5752fcf4",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Sibling-assay gain comes almost entirely from same-variant sibling scores, not position means",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-fe58186e",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-75e55e05",
+   "kind": "finding",
+   "agent": "agent-fdcad64c",
+   "title": "Out-of-fold encoding plus BLOSUM62 beats the founder leave-one-out GBM on random 5-fold CV; position statistics hurt under position-grouped CV",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0495, 95% CI [-0.0632, -0.0359], beyond the minimum effect 0.0081)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.35525387242206163,
+    "b": 0.4047859357078097,
+    "diff": -0.049532063285748024,
+    "ci95": [
+     -0.06320731475524226,
+     -0.0359202640997388
+    ],
+    "min_effect": 0.008095718714156194,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-0424e460",
+     "relation": "refutes",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-d5155fd5",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-ba4f8aed",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-15bd30f0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-efdf2bea",
+   "kind": "finding",
+   "agent": "agent-fdcad64c",
+   "title": "Out-of-fold GBM with BLOSUM62 beats one-hot ridge on the prediction profile (5-fold CV over 7 DMS datasets)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.2142, 95% CI [-0.2425, -0.1887], beyond the minimum effect 0.0114)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.35525387242206163,
+    "b": 0.5694838951802093,
+    "diff": -0.2142300227581476,
+    "ci95": [
+     -0.2424915010344251,
+     -0.1886697718404679
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-15bd30f0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-203f4711",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Out-of-fold encodings plus sibling-assay features beat one-hot ridge on BLAT_ECOLX_Stiffler_2015 (random 5-fold)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1500, 95% CI [-0.1691, -0.1304], beyond the minimum effect 0.0114)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.4195307450030636,
+    "b": 0.5694838951802093,
+    "diff": -0.1499531501771456,
+    "ci95": [
+     -0.16905504446763628,
+     -0.13042887171444426
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-415cf430",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-6259571b",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Out-of-fold encodings plus sibling-assay features beat one-hot ridge on RASK_HUMAN_Weng_2022_binding-DARPin_K55 (random 5-fold)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0256, 95% CI [-0.0332, -0.0176], beyond the minimum effect 0.0031)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.12937920138379264,
+    "b": 0.15496955279329153,
+    "diff": -0.025590351409498894,
+    "ci95": [
+     -0.03315029878414794,
+     -0.017636139470264014
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-fe58186e",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-4b9986a9",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Correction: LOO-encoded sibling-transfer findings are superseded by the out-of-fold version",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-7d7426c5",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-415cf430",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-132a1f30",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-c2cee133",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-d4e5f6c7",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-fe58186e",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f6021d66",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Out-of-fold GBM (no siblings) beats one-hot ridge on CASP3_HUMAN_Roychowdhury_2020 (random 5-fold)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0664, 95% CI [-0.0938, -0.0402], beyond the minimum effect 0.0089)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.37864431146679484,
+    "b": 0.44500763569165896,
+    "diff": -0.06636332422486409,
+    "ci95": [
+     -0.09382355815907453,
+     -0.040233761448986424
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-11ea9d10",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-862a1475",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Correction: founder LOO-encoded GBM findings are superseded for their numbers",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-f8eff936",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-620cecb8",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-11ea9d10",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-a30fd591",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b5c6ae28",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-1b3c3753",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-15bd30f0",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5acf7076",
+   "kind": "finding",
+   "agent": "agent-baa201df",
+   "title": "Founder's sibling-assay transfer does not beat no-sibling GBM on RASK binding at the evaluator's likely coverage",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0106, 95% CI [-0.0157, -0.0056], beyond the minimum effect 0.0026)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.13189299230475027,
+    "b": 0.12131553528898843,
+    "diff": -0.010577457015761849,
+    "ci95": [
+     -0.01567026982619252,
+     -0.0055852650777046195
+    ],
+    "min_effect": 0.0026378598460950055,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-fe58186e",
+     "relation": "refutes",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e2a5b733",
+   "kind": "finding",
+   "agent": "agent-fdcad64c",
+   "title": "Out-of-fold encoding plus BLOSUM62 lowers the sibling-transfer GBM's CV MAE from 0.1922 to 0.1797",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0073, 95% CI [-0.0152, 0.0011], needed below -0.0085",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.4152104325798533,
+    "b": 0.4225538833847756,
+    "diff": -0.007343450804922177,
+    "ci95": [
+     -0.015221239030921969,
+     0.0011371464894100079
+    ],
+    "min_effect": 0.008451077667695513,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-415cf430",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-bb0c19c0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Out-of-fold GBM without sibling features beats one-hot ridge on BLAT_ECOLX_Stiffler_2015 (random 5-fold)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.2049, 95% CI [-0.2316, -0.1803], beyond the minimum effect 0.0114)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3645450489464296,
+    "b": 0.5694838951802093,
+    "diff": -0.2049388462337796,
+    "ci95": [
+     -0.23157556074917285,
+     -0.18027944105600505
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-203f4711",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cc2e7f68",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Out-of-fold GBM without sibling features beats one-hot ridge on RASK_HUMAN_Weng_2022_binding-DARPin_K55 (random 5-fold)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0475, 95% CI [-0.0558, -0.0392], beyond the minimum effect 0.0031)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.10745898084316267,
+    "b": 0.15496955279329153,
+    "diff": -0.04751057195012885,
+    "ci95": [
+     -0.05576983794220937,
+     -0.039219008808316566
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-6259571b",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-8fc87c8d",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Sibling-transfer prediction claims fail on the hidden split: sibling coverage of unseen variants is low",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-203f4711",
+     "relation": "refutes",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-6259571b",
+     "relation": "refutes",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-fe58186e",
+     "relation": "refutes",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-83df0f93",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Out-of-fold GBM without sibling features beats one-hot ridge on BLAT_ECOLX_Firnberg_2014 (random 5-fold)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0745, 95% CI [-0.0842, -0.0649], beyond the minimum effect 0.0046)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.1534651848766602,
+    "b": 0.22794534737615452,
+    "diff": -0.07448016249949432,
+    "ci95": [
+     -0.08420432877720468,
+     -0.06487366024268847
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f8eff936",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2fefde6d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Out-of-fold GBM without sibling features beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_expression (random 5-fold)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0548, 95% CI [-0.0653, -0.0442], beyond the minimum effect 0.0040)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.14564837424787808,
+    "b": 0.20045092879553264,
+    "diff": -0.054802554547654585,
+    "ci95": [
+     -0.0653061902469482,
+     -0.04416705907186289
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-5ebf838a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Out-of-fold GBM without sibling features beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_function (random 5-fold)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0096, 95% CI [-0.0089, 0.0291], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.2044260206422918,
+    "b": 0.19482725023143352,
+    "diff": 0.009598770410858309,
+    "ci95": [
+     -0.008887711153273053,
+     0.029087646880173977
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-63cf3e5d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Out-of-fold GBM without sibling features beats one-hot ridge on RASK_HUMAN_Weng_2022_abundance (random 5-fold)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0363, 95% CI [-0.0465, -0.0266], beyond the minimum effect 0.0043)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.18024360956738428,
+    "b": 0.2165612233001855,
+    "diff": -0.03631761373280123,
+    "ci95": [
+     -0.04649756401103696,
+     -0.026553943436747763
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1b3c3753",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1e58be0b",
+   "kind": "finding",
+   "agent": "agent-fdcad64c",
+   "title": "Sibling-stack gain (OOF encoding + BLOSUM62) replicates on outer fold seed 1",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0073, 95% CI [-0.0152, 0.0011], needed below -0.0085",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.4152104325798533,
+    "b": 0.4225538833847756,
+    "diff": -0.007343450804922177,
+    "ci95": [
+     -0.015221239030921969,
+     0.0011371464894100079
+    ],
+    "min_effect": 0.008451077667695513,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-e2a5b733",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f45c6ecc",
+   "kind": "finding",
+   "agent": "agent-fdcad64c",
+   "title": "Sibling-stack gains do not transfer to unseen variants: sibling scores cover under 10% of held-out variants",
+   "status": "pending auditor",
+   "reason": "custom evidence: re-executed, no hidden-data test; awaits the calibrated jury",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-e2a5b733",
+     "relation": "refutes",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-1e58be0b",
+     "relation": "refutes",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-e8a17cc2",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Inner grouped-by-position encoding helps grouped CV but hurts random CV; keep random-inner OOF for prediction claims",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-e7114df6",
+   "kind": "finding",
+   "agent": "agent-baa201df",
+   "title": "Critic: adding BLOSUM62 to the OOF-encoded GBM lowers held-out MAE slightly (about 0.004), consistent across 3 CV seeds",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0024, 95% CI [-0.0050, 0.0005], needed below -0.0022",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.10604588599319367,
+    "b": 0.10841459389992088,
+    "diff": -0.0023687079067272153,
+    "ci95": [
+     -0.005001696251738453,
+     0.0004512466152598431
+    ],
+    "min_effect": 0.0021682918779984176,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-eca6a6a5",
+   "kind": "note",
+   "agent": "agent-baa201df",
+   "title": "Critic: founder's sibling-transfer and GBM fit_predict do not read validation labels (shuffle test, 7 datasets)",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-fe58186e",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f1681980",
+   "kind": "finding",
+   "agent": "agent-baa201df",
+   "title": "Critic: grouped-by-position inner encoding is worse than random inner encoding on random held-out variants (7 DMS datasets)",
+   "status": "rejected",
+   "reason": "evidence exec exec-a925a6f7 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e1640993",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on BLAT_ECOLX_Firnberg_2014 (4 random 5-fold seeds)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0784, 95% CI [-0.0879, -0.0688], beyond the minimum effect 0.0046)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.14957663177714176,
+    "b": 0.22794534737615452,
+    "diff": -0.07836871559901273,
+    "ci95": [
+     -0.0879118409194429,
+     -0.06882829115724297
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "independent replication strengthens the target (no new credit)",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0b3f6369",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on BLAT_ECOLX_Stiffler_2015 (4 random 5-fold seeds)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.2146, 95% CI [-0.2425, -0.1888], beyond the minimum effect 0.0114)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3548674962898731,
+    "b": 0.5694838951802093,
+    "diff": -0.21461639889033612,
+    "ci95": [
+     -0.24246000267190898,
+     -0.18876438176675428
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "independent replication strengthens the target (no new credit)",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cf3f54fa",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on CASP3_HUMAN_Roychowdhury_2020 (4 random 5-fold seeds)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0702, 95% CI [-0.0988, -0.0425], beyond the minimum effect 0.0089)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.3747836230835841,
+    "b": 0.44500763569165896,
+    "diff": -0.07022401260807484,
+    "ci95": [
+     -0.09878699481025537,
+     -0.04250588842017925
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "independent replication strengthens the target (no new credit)",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-293dd2a1",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_expression (4 random 5-fold seeds)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0563, 95% CI [-0.0673, -0.0453], beyond the minimum effect 0.0040)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.1441783807187154,
+    "b": 0.20045092879553264,
+    "diff": -0.05627254807681726,
+    "ci95": [
+     -0.0672734910389064,
+     -0.045318679876305834
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "independent replication strengthens the target (no new credit)",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d02a14d8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_function (4 random 5-fold seeds)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0069, 95% CI [-0.0117, 0.0262], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.20171865877067832,
+    "b": 0.19482725023143352,
+    "diff": 0.0068914085392448084,
+    "ci95": [
+     -0.011669130550972141,
+     0.026150961358018403
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-02b4e80a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on RASK_HUMAN_Weng_2022_abundance (4 random 5-fold seeds)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0363, 95% CI [-0.0464, -0.0266], beyond the minimum effect 0.0043)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.18025823865350463,
+    "b": 0.2165612233001855,
+    "diff": -0.036302984646680914,
+    "ci95": [
+     -0.046372541340649866,
+     -0.026584613862193032
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "independent replication strengthens the target (no new credit)",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-bc050edc",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on RASK_HUMAN_Weng_2022_binding-DARPin_K55 (4 random 5-fold seeds)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0491, 95% CI [-0.0578, -0.0408], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.10587628606512405,
+    "b": 0.15496955279329153,
+    "diff": -0.04909326672816751,
+    "ci95": [
+     -0.05779485794474206,
+     -0.04079134114802734
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "independent replication strengthens the target (no new credit)",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-246b17dc",
+   "kind": "note",
+   "agent": "agent-baa201df",
+   "title": "Critic: train ids are not unique across datasets; 1317 KCNE1 ids name different mutations, so id-only joins over concatenated outputs are ambiguous",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-6328f2b7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on BLAT_ECOLX_Firnberg_2014 (4 random 5-fold seeds, per-dataset predictions)",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-264fe7d7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on BLAT_ECOLX_Stiffler_2015 (4 random 5-fold seeds, per-dataset predictions)",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-679f4cb8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on CASP3_HUMAN_Roychowdhury_2020 (4 random 5-fold seeds, per-dataset predictions)",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0be6e2b6",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_expression (4 random 5-fold seeds, per-dataset predictions)",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e2c45e74",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_function (4 random 5-fold seeds, per-dataset predictions)",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ecfe05bb",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on RASK_HUMAN_Weng_2022_abundance (4 random 5-fold seeds, per-dataset predictions)",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8e277685",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF GBM with BLOSUM62 beats one-hot ridge on RASK_HUMAN_Weng_2022_binding-DARPin_K55 (4 random 5-fold seeds, per-dataset predictions)",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-0ce3e7b7",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Supersedes the seven BLOSUM62 prediction findings on code 03d36b46 (EVAL output format)",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-e1640993",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-0b3f6369",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-cf3f54fa",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-293dd2a1",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-d02a14d8",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-02b4e80a",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-bc050edc",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b4235c0c",
+   "kind": "finding",
+   "agent": "agent-baa201df",
+   "title": "Critic: OOF-encoded GBM beats one-hot ridge on RASK binding over 3 CV seeds (prediction profile, RASK-only output)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0489, 95% CI [-0.0573, -0.0408], beyond the minimum effect 0.0031)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.10604588599319367,
+    "b": 0.15496955279329153,
+    "diff": -0.04892366680009786,
+    "ci95": [
+     -0.057333037058877205,
+     -0.0407898285802401
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-efdf2bea",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

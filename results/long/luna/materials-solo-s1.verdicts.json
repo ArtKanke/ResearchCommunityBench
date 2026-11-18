@@ -1,0 +1,758 @@
+{
+ "run_id": "run-ceec3c68",
+ "model": "luna",
+ "task": "materials-solo-s1",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 1,
+  "R_frontier": 1,
+  "C_collaborative": 0,
+  "submitted_credited": 25,
+  "duplicates": 1,
+  "best_gain": {
+   "expt_gap": 0.241
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 23
+  }
+ },
+ "rewards": {
+  "score": 0.16666666666666666,
+  "R_replicated": 1.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 1.0,
+  "datasets_advanced": 1.0,
+  "mean_best_gain": 0.06025,
+  "auditor_pending": 0.0,
+  "submitted_credited": 25.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 23.0,
+  "duplicates": 1.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 1.9064,
+  "model_calls": 204.0,
+  "experiments": 139.0,
+  "messages": 0.0,
+  "cost_per_accepted": 1.906,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.979,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 920.0
+ },
+ "claims": [
+  {
+   "id": "findin-ad3ce7db",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Enriched composition moments improve experimental metallicity prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-7e961581",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Enriched composition descriptors improve experimental band-gap prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-88ea12d4",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Enriched composition descriptors improve steel yield-strength prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-915ebf1e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Square-root target training improves experimental band-gap prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d36d048e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Fraction and stoichiometry features improve steel-strength prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8750ac7e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A lower decision threshold improves experimental metallicity classification",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c5d4c680",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Feature-subsampled ExtraTrees improves glass-forming classification",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-7421138c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A zero-gap hurdle model improves experimental band-gap prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ad875f63",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A 0.6 zero-gap threshold further improves hurdle-model band-gap prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-38401da0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Log-target ExtraTrees improves steel yield-strength prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-51d6af82",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Composition-based glass classification improves on composition-grouped validation",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-159ee190",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A 0.5 threshold improves composition-based metallicity classification",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-1cec68c7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Steel yield-strength gains persist under composition-grouped validation",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-203f9f5e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A zero-gap hurdle improves band-gap MAE over square-root regression",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0370, 95% CI [-0.0623, -0.0135], beyond the minimum effect 0.0071)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.31945786953945526,
+    "b": 0.3564208146266644,
+    "diff": -0.036962945087209105,
+    "ci95": [
+     -0.06231479413255404,
+     -0.013455602214789803
+    ],
+    "min_effect": 0.007128416292533289,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-39ccaf6b",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "The band-gap hurdle advantage persists across unseen elemental systems",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-203f9f5e",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-203f9f5e",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.31945786953945526,
+    "b": 0.3564208146266644,
+    "diff": -0.03696294508720911,
+    "ci95": [
+     -0.06231479413255406,
+     -0.013455602214789803
+    ],
+    "min_effect": 0.007128416292533289,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8061b3ba",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Metallicity classification generalizes across held-out elemental systems",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-6cb614c3",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Glass-forming classification generalizes across held-out elemental systems",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c50ceeaf",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Steel strength prediction improves on entirely held-out elemental systems",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b357707e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Selected elemental features improve steel strength extrapolation",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -5.5758, 95% CI [-15.0038, 2.7465], needed below -1.6764",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 78.24467669609538,
+    "b": 83.82050770632763,
+    "diff": -5.575831010232239,
+    "ci95": [
+     -15.003833712779162,
+     2.7464592445348894
+    ],
+    "min_effect": 1.6764101541265526,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a652df5a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Removing stoichiometric descriptors modestly improves grouped steel prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -1.4053, 95% CI [-5.5505, 2.6706], needed below -1.5649",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 76.83936737383857,
+    "b": 78.24467669609537,
+    "diff": -1.4053093222567996,
+    "ci95": [
+     -5.550491681144756,
+     2.670581443115064
+    ],
+    "min_effect": 1.5648935339219074,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a0186d0f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A 0.425 threshold modestly improves glass classification on unseen systems",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0014, 95% CI [-0.0055, 0.0028], needed below -0.0020",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.0993103448275862,
+    "b": 0.1006896551724138,
+    "diff": -0.001379310344827586,
+    "ci95": [
+     -0.005517241379310344,
+     0.002758620689655172
+    ],
+    "min_effect": 0.002013793103448276,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-bce7e498",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Auxiliary metallicity labels improve grouped band-gap hurdle prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-cc67e8f2",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Leakage-controlled auxiliary metallicity labels aid band-gap hurdle prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-bce7e498",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-731bcab6",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Seed averaging modestly improves grouped glass classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0041, 95% CI [-0.0007, 0.0090], needed below -0.0020",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10344827586206896,
+    "b": 0.0993103448275862,
+    "diff": 0.004137931034482759,
+    "ci95": [
+     -0.000689655172413793,
+     0.00896551724137931
+    ],
+    "min_effect": 0.0019862068965517243,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-661df1b2",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Majority voting slightly improves grouped glass ensemble classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [-0.0021, 0.0021], needed below -0.0021",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10344827586206896,
+    "b": 0.10344827586206896,
+    "diff": 0.0,
+    "ci95": [
+     -0.0020689655172413794,
+     0.0020689655172413794
+    ],
+    "min_effect": 0.0020689655172413794,
+    "pass": false
+   },
+   "relations": []
+  }
+ ]
+}

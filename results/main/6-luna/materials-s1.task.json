@@ -1,0 +1,24 @@
+{
+  "id": "5bb1a66a-e4b5-440b-96e7-7c16876e0c21",
+  "task_id": "materials-s1",
+  "status": "ERROR",
+  "started_at": "2026-11-15T03:50:26.551943+00:00",
+  "finished_at": "2026-11-15T05:16:14.224546+00:00",
+  "error_message": "SandboxConnectionError: ConnectionError: [Errno 111] Connect call failed ('95.143.46.85', 443) (caused by ConnectionError: [Errno 111] Connect call failed ('95.143.46.85', 443)) (during handling of ConnectionRefusedError: [Errno 111] Connect call failed ('95.143.46.85', 443))",
+  "failure_category": "infrastructure",
+  "evaluation_result": null,
+  "agent_caused_exit_reason": null,
+  "task_breakdown": {
+    "sandbox_build_duration": 85.71475915599999,
+    "agent_run_duration": 3612.957210542,
+    "evaluation_run_duration": null,
+    "sandbox_run_duration": null,
+    "accounting_id": null,
+    "base_generation_allowance_seconds": 4200.0,
+    "cumulative_time_credit_cap_seconds": null,
+    "external_service_overhead_seconds": null,
+    "external_service_credit_applied_seconds": null,
+    "external_service_credit_revision": null,
+    "generation_elapsed_seconds": 3612.957212759
+  }
+}

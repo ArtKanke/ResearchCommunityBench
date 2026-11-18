@@ -1,0 +1,369 @@
+{
+ "run_id": "run-753e5a43",
+ "model": "haiku",
+ "task": "compbio-s1",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 6,
+  "R_frontier": 6,
+  "C_collaborative": 0,
+  "submitted_credited": 9,
+  "duplicates": 1,
+  "best_gain": {
+   "BLAT_ECOLX_Stiffler_2015": 0.3482,
+   "CASP3_HUMAN_Roychowdhury_2020": 0.203,
+   "KCNE1_HUMAN_Muhammad_2023_function": 0.2299,
+   "RASK_HUMAN_Weng_2022_abundance": 0.146,
+   "RASK_HUMAN_Weng_2022_binding-DARPin_K55": 0.2852,
+   "BLAT_ECOLX_Firnberg_2014": 0.3195
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 0
+  }
+ },
+ "rewards": {
+  "score": 0.5454545454545454,
+  "R_replicated": 6.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 6.0,
+  "datasets_advanced": 6.0,
+  "mean_best_gain": 0.21882857142857143,
+  "auditor_pending": 0.0,
+  "submitted_credited": 9.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 0.0,
+  "duplicates": 1.0,
+  "agents_total": 3.0,
+  "agents_peak": 3.0,
+  "max_depth": 1.0,
+  "cost_usd": 0.0542,
+  "model_calls": 53.0,
+  "experiments": 10.0,
+  "messages": 10.0,
+  "cost_per_accepted": 0.009,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.968,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 9.4
+ },
+ "claims": [
+  {
+   "id": "findin-7e40f3f3",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-aware GBM beats one-hot ridge on TEM-1 (Stiffler 2015) DMS",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1983, 95% CI [-0.2239, -0.1752], beyond the minimum effect 0.0114)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.37120526352283495,
+    "b": 0.5694838951802093,
+    "diff": -0.19827863165737433,
+    "ci95": [
+     -0.22393684849201262,
+     -0.1751594737714028
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-bc54e2a2",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-aware GBM beats one-hot ridge on TEM-1 (Stiffler 2015) DMS (v2, sequence-only inputs)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-7e40f3f3",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-7e40f3f3",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.37120526352283495,
+    "b": 0.5694838951802093,
+    "diff": -0.19827863165737433,
+    "ci95": [
+     -0.22393684849201262,
+     -0.1751594737714028
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "note-0805d75d",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Correction to findin-7e40f3f3: use findin-bc54e2a2 for the TEM-1 position-model test",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-7e40f3f3",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-27b1a254",
+   "kind": "finding",
+   "agent": "agent-a193ea7e",
+   "title": "Position-aware GBM beats one-hot ridge on CASP3_HUMAN DMS (5-fold CV)",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): }",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-f19bbc02",
+   "kind": "finding",
+   "agent": "agent-a193ea7e",
+   "title": "Position-aware GBM beats one-hot ridge on KCNE1 function DMS (5-fold CV)",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): }",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-52962cf0",
+   "kind": "finding",
+   "agent": "agent-a193ea7e",
+   "title": "Position-aware GBM beats one-hot ridge on CASP3_HUMAN DMS (5-fold CV)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0903, 95% CI [-0.1170, -0.0651], beyond the minimum effect 0.0089)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.35469085629578956,
+    "b": 0.44500763569165896,
+    "diff": -0.09031677939586938,
+    "ci95": [
+     -0.11700929349003095,
+     -0.06511613129732544
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-47c520a0",
+   "kind": "finding",
+   "agent": "agent-a193ea7e",
+   "title": "Position-aware GBM beats one-hot ridge on KCNE1 function DMS (5-fold CV)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0448, 95% CI [-0.0550, -0.0331], beyond the minimum effect 0.0039)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.1500437749464446,
+    "b": 0.19482725023143352,
+    "diff": -0.04478347528498889,
+    "ci95": [
+     -0.05503253560578645,
+     -0.03307675063648474
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b5378fa2",
+   "kind": "finding",
+   "agent": "agent-fbc5afdc",
+   "title": "Position-aware GBM beats one-hot ridge on RASK_HUMAN abundance DMS (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0316, 95% CI [-0.0405, -0.0230], beyond the minimum effect 0.0043)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.18493960169649454,
+    "b": 0.2165612233001855,
+    "diff": -0.031621621603690996,
+    "ci95": [
+     -0.04049333692688895,
+     -0.022975210926114126
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c7960bbb",
+   "kind": "finding",
+   "agent": "agent-fbc5afdc",
+   "title": "Position-aware GBM beats one-hot ridge on RASK_HUMAN DARPin K55 binding DMS (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0442, 95% CI [-0.0520, -0.0361], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.11077517211208206,
+    "b": 0.15496955279329153,
+    "diff": -0.04419438068120947,
+    "ci95": [
+     -0.05198014129169781,
+     -0.03611564756959187
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-4206d140",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-aware GBM beats one-hot ridge on TEM-1 (Firnberg 2014) DMS (5-fold CV)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0728, 95% CI [-0.0813, -0.0639], beyond the minimum effect 0.0046)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.15512419113496084,
+    "b": 0.22794534737615452,
+    "diff": -0.07282115624119366,
+    "ci95": [
+     -0.0812976243387765,
+     -0.06392499352988612
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": []
+  }
+ ]
+}

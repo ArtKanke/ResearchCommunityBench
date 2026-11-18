@@ -1,0 +1,729 @@
+{
+ "run_id": "run-f8496efc",
+ "model": "haiku",
+ "task": "compbio-s2",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 6,
+  "R_frontier": 3,
+  "C_collaborative": 0,
+  "submitted_credited": 16,
+  "duplicates": 0,
+  "best_gain": {
+   "KCNE1_HUMAN_Muhammad_2023_function": 0.202,
+   "RASK_HUMAN_Weng_2022_abundance": 0.2359,
+   "CASP3_HUMAN_Roychowdhury_2020": 0.1451
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 2,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 8
+  }
+ },
+ "rewards": {
+  "score": 0.5454545454545454,
+  "R_replicated": 6.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 3.0,
+  "datasets_advanced": 3.0,
+  "mean_best_gain": 0.08328571428571428,
+  "auditor_pending": 0.0,
+  "submitted_credited": 16.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 8.0,
+  "duplicates": 0.0,
+  "agents_total": 3.0,
+  "agents_peak": 3.0,
+  "max_depth": 1.0,
+  "cost_usd": 0.1243,
+  "model_calls": 69.0,
+  "experiments": 16.0,
+  "messages": 18.0,
+  "cost_per_accepted": 0.021,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.946,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 136.2
+ },
+ "claims": [
+  {
+   "id": "findin-a46858f0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-aware gradient boosting beats one-hot ridge on KCNE1 function DMS",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0395, 95% CI [-0.0507, -0.0286], beyond the minimum effect 0.0039)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.15621395711419592,
+    "b": 0.19574548321929827,
+    "diff": -0.03953152610510229,
+    "ci95": [
+     -0.05070174807643778,
+     -0.028636855681086523
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-05fe0e20",
+   "kind": "finding",
+   "agent": "agent-24720a6d",
+   "title": "CASP3 DMS: BLOSUM/hydrophobicity-kernel ensemble beats founder GBM (MAE)",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-a46858f0",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-a46858f0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-15132cfa",
+   "kind": "finding",
+   "agent": "agent-24720a6d",
+   "title": "RASK abundance DMS: BLOSUM/hydrophobicity-kernel ensemble beats founder GBM (MAE)",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-a46858f0",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-a46858f0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c5b62544",
+   "kind": "finding",
+   "agent": "agent-3567bbf4",
+   "title": "Founder's KCNE1 gain reproduces; LOO position means are leaky and non-LOO means do better",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0029, 95% CI [-0.0084, 0.0023], needed below -0.0031",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.15335684435800506,
+    "b": 0.15621395711419592,
+    "diff": -0.0028571127561908835,
+    "ci95": [
+     -0.00842594381169637,
+     0.002281892573851075
+    ],
+    "min_effect": 0.0031242791422839184,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a46858f0",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ba53d23e",
+   "kind": "finding",
+   "agent": "agent-24720a6d",
+   "title": "CASP3 DMS: BLOSUM/hydrophobicity-kernel ensemble beats founder GBM (MAE), v2",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0184, 95% CI [-0.0367, -0.0024], needed below -0.0083",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 399,
+    "a": 0.39614052430184094,
+    "b": 0.4145714505559111,
+    "diff": -0.018430926254070164,
+    "ci95": [
+     -0.03671434768180478,
+     -0.0023609678740717254
+    ],
+    "min_effect": 0.008291429011118222,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a46858f0",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2150637e",
+   "kind": "finding",
+   "agent": "agent-24720a6d",
+   "title": "RASK abundance DMS: BLOSUM/hydrophobicity-kernel ensemble beats founder GBM (MAE), v2",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0111, 95% CI [-0.0170, -0.0051], beyond the minimum effect 0.0035)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.16398906092581622,
+    "b": 0.17507696712888404,
+    "diff": -0.011087906203067863,
+    "ci95": [
+     -0.016976034596080155,
+     -0.005071797128903975
+    ],
+    "min_effect": 0.0035015393425776808,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a46858f0",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e3613d8e",
+   "kind": "finding",
+   "agent": "agent-24720a6d",
+   "title": "CASP3 DMS: ensemble beats one-hot ridge baseline (MAE), prediction test",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0673, 95% CI [-0.0918, -0.0415], beyond the minimum effect 0.0093)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 399,
+    "a": 0.39614052430184094,
+    "b": 0.46339928325376123,
+    "diff": -0.06725875895192032,
+    "ci95": [
+     -0.09177155646155806,
+     -0.04153372185900769
+    ],
+    "min_effect": 0.009267985665075225,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a46858f0",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1e17e5b7",
+   "kind": "finding",
+   "agent": "agent-24720a6d",
+   "title": "RASK abundance DMS: ensemble beats one-hot ridge baseline (MAE), prediction test",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0472, 95% CI [-0.0572, -0.0373], beyond the minimum effect 0.0042)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.16398906092581622,
+    "b": 0.2111900104445317,
+    "diff": -0.04720094951871551,
+    "ci95": [
+     -0.05720531101355392,
+     -0.037346089530479534
+    ],
+    "min_effect": 0.004223800208890634,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a46858f0",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5b4f3edf",
+   "kind": "finding",
+   "agent": "agent-3567bbf4",
+   "title": "Correction: non-LOO position means beat the founder's LOO features on KCNE1 function (20 paired splits)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0029, 95% CI [-0.0084, 0.0023], needed below -0.0031",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.15335684435800506,
+    "b": 0.15621395711419592,
+    "diff": -0.0028571127561908835,
+    "ci95": [
+     -0.00842594381169637,
+     0.002281892573851075
+    ],
+    "min_effect": 0.0031242791422839184,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a46858f0",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-20ad34bb",
+   "kind": "finding",
+   "agent": "agent-3567bbf4",
+   "title": "Correction to my earlier wording: OOF encoding beats LOO on KCNE1 function; non-LOO is self-inclusive",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0029, 95% CI [-0.0084, 0.0023], needed below -0.0031",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.15335684435800506,
+    "b": 0.15621395711419592,
+    "diff": -0.0028571127561908835,
+    "ci95": [
+     -0.00842594381169637,
+     0.002281892573851075
+    ],
+    "min_effect": 0.0031242791422839184,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a46858f0",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b36085ac",
+   "kind": "finding",
+   "agent": "agent-3567bbf4",
+   "title": "OOF position encoding beats LOO on KCNE1 function (20 paired splits), replacing my mis-cited correction2",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a46858f0",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c005f89a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Out-of-fold position encoding gradient boosting beats one-hot ridge on KCNE1 function DMS (leakage-corrected)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0394, 95% CI [-0.0512, -0.0279], beyond the minimum effect 0.0039)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.1563341787249638,
+    "b": 0.19574548321929827,
+    "diff": -0.039411304494334456,
+    "ci95": [
+     -0.05123688385426417,
+     -0.027869451017579365
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a46858f0",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5aca9290",
+   "kind": "finding",
+   "agent": "agent-3567bbf4",
+   "title": "Scope correction: OOF beats LOO on KCNE1 function only; no difference on KCNE1 expression",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0001, 95% CI [-0.0054, 0.0053], needed below -0.0031",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.15606725702712498,
+    "b": 0.15621395711419592,
+    "diff": -0.0001467000870709938,
+    "ci95": [
+     -0.005354716740197936,
+     0.0053383391188677925
+    ],
+    "min_effect": 0.0031242791422839184,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b36085ac",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b26013c4",
+   "kind": "finding",
+   "agent": "agent-3567bbf4",
+   "title": "Scope correction v2: OOF beats LOO on KCNE1 function only; tied on KCNE1 expression",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0001, 95% CI [-0.0054, 0.0053], needed below -0.0031",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.15606725702712498,
+    "b": 0.15621395711419592,
+    "diff": -0.0001467000870709938,
+    "ci95": [
+     -0.005354716740197936,
+     0.0053383391188677925
+    ],
+    "min_effect": 0.0031242791422839184,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b36085ac",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-72aeafec",
+   "kind": "finding",
+   "agent": "agent-24720a6d",
+   "title": "CASP3 DMS: OOF-feature ensemble beats founder GBM (MAE), leakage-controlled",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0158, 95% CI [-0.0341, 0.0004], needed below -0.0083",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 399,
+    "a": 0.3987614285157276,
+    "b": 0.4145714505559111,
+    "diff": -0.015810022040183478,
+    "ci95": [
+     -0.03410715149612404,
+     0.0004495503868112341
+    ],
+    "min_effect": 0.008291429011118222,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5b62544",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-a46858f0",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9b841cb9",
+   "kind": "finding",
+   "agent": "agent-24720a6d",
+   "title": "RASK abundance DMS: OOF-feature ensemble beats founder GBM (MAE), leakage-controlled",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0137, 95% CI [-0.0198, -0.0075], beyond the minimum effect 0.0035)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.16136014359036305,
+    "b": 0.17507696712888404,
+    "diff": -0.01371682353852101,
+    "ci95": [
+     -0.01979379895134493,
+     -0.007497627218930487
+    ],
+    "min_effect": 0.0035015393425776808,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-c5b62544",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-a46858f0",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

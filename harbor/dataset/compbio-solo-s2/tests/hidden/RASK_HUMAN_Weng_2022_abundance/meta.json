@@ -1,0 +1,10 @@
+{
+ "id": "RASK_HUMAN_Weng_2022_abundance",
+ "task": "regression",
+ "units": "DMS score",
+ "metric": "MAE",
+ "n_public": 2310,
+ "n_hidden": 756,
+ "protein": "RASK_HUMAN",
+ "selection_type": "Expression"
+}

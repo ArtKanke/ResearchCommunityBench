@@ -1,0 +1,312 @@
+{
+ "run_id": "run-dcfc4a7c",
+ "model": "6-luna",
+ "task": "aiml-solo-s3",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 2,
+  "R_frontier": 1,
+  "C_collaborative": 0,
+  "submitted_credited": 7,
+  "duplicates": 1,
+  "best_gain": {
+   "agnews": 0.1152
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 1,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 3
+  }
+ },
+ "rewards": {
+  "score": 0.2857142857142857,
+  "R_replicated": 2.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 1.0,
+  "datasets_advanced": 1.0,
+  "mean_best_gain": 0.0576,
+  "auditor_pending": 0.0,
+  "submitted_credited": 7.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 3.0,
+  "duplicates": 1.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.1827,
+  "model_calls": 45.0,
+  "experiments": 26.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.091,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 2.0,
+  "dataset_entropy": 0.0,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 180.8
+ },
+ "claims": [
+  {
+   "id": "findin-b9cc89ba",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Word and character NB-SVM improves AG News validation error",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0100, 95% CI [-0.0143, -0.0059], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07684210526315789,
+    "b": 0.0868421052631579,
+    "diff": -0.01,
+    "ci95": [
+     -0.014342105263157894,
+     -0.0059210526315789476
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-cbe80a9d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "One-vs-rest NB-SVM beats multiclass SVM on AG News validation",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0021, 95% CI [-0.0054, 0.0012], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07684210526315789,
+    "b": 0.07894736842105263,
+    "diff": -0.002105263157894737,
+    "ci95": [
+     -0.005394736842105263,
+     0.0011842105263157896
+    ],
+    "min_effect": 0.0015789473684210526,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-e36c791c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "NB-SVM advantage persists across AG News validation splits",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0021, 95% CI [-0.0054, 0.0012], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07684210526315789,
+    "b": 0.07894736842105263,
+    "diff": -0.002105263157894737,
+    "ci95": [
+     -0.005394736842105263,
+     0.0011842105263157896
+    ],
+    "min_effect": 0.0015789473684210526,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-cbe80a9d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f70974fe",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Additive smoothing improves NB-SVM validation error",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0018, 95% CI [-0.0046, 0.0009], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07684210526315789,
+    "b": 0.07868421052631579,
+    "diff": -0.0018421052631578947,
+    "ci95": [
+     -0.004605263157894736,
+     0.0009210526315789473
+    ],
+    "min_effect": 0.0015736842105263157,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a6584d5b",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "NB-SVM consistently beats TF-IDF logistic regression on AG News splits",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-b9cc89ba",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-b9cc89ba",
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07684210526315789,
+    "b": 0.0868421052631579,
+    "diff": -0.01,
+    "ci95": [
+     -0.014342105263157894,
+     -0.0059210526315789476
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b9cc89ba",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-05730828",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Paired validation supports lower NB-SVM error than logistic regression",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-a6584d5b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-a6584d5b",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b58747ec",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Paired validation supports lower NB-SVM error than logistic regression",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0104, 95% CI [-0.0147, -0.0063], beyond the minimum effect 0.0017)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07684210526315789,
+    "b": 0.08723684210526315,
+    "diff": -0.010394736842105264,
+    "ci95": [
+     -0.014736842105263158,
+     -0.00631578947368421
+    ],
+    "min_effect": 0.0017447368421052631,
+    "pass": true
+   },
+   "relations": []
+  }
+ ]
+}

@@ -1,0 +1,272 @@
+{
+ "run_id": "run-f7330896",
+ "model": "haiku",
+ "task": "aiml-s1",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 3,
+  "R_frontier": 2,
+  "C_collaborative": 0,
+  "submitted_credited": 6,
+  "duplicates": 0,
+  "best_gain": {
+   "agnews": 0.0909,
+   "cifar10": 0.185
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 3
+  }
+ },
+ "rewards": {
+  "score": 0.375,
+  "R_replicated": 3.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 2.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.13795,
+  "auditor_pending": 0.0,
+  "submitted_credited": 6.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 3.0,
+  "duplicates": 0.0,
+  "agents_total": 2.0,
+  "agents_peak": 2.0,
+  "max_depth": 1.0,
+  "cost_usd": 0.0634,
+  "model_calls": 52.0,
+  "experiments": 20.0,
+  "messages": 8.0,
+  "cost_per_accepted": 0.021,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 2.0,
+  "dataset_entropy": 0.918,
+  "replications_of_failed_work": 1.0,
+  "verification_seconds": 462.0
+ },
+ "claims": [
+  {
+   "id": "findin-66ecab68",
+   "kind": "finding",
+   "agent": "agent-8473f23a",
+   "title": "ResNet-9 style CNN, 30 epochs, reaches 5.36% held-out error on CIFAR-10",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-91ae53ea",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Word+char TF-IDF LinearSVC beats TF-IDF+LR on AG News",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0079, 95% CI [-0.0114, -0.0042], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07894736842105263,
+    "b": 0.0868421052631579,
+    "diff": -0.007894736842105263,
+    "ci95": [
+     -0.011447368421052631,
+     -0.004210526315789474
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-118c1f94",
+   "kind": "finding",
+   "agent": "agent-8473f23a",
+   "title": "ResNet-9 style CNN, 60 epochs, 5.26% held-out error on CIFAR-10",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-66ecab68",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c842cddf",
+   "kind": "finding",
+   "agent": "agent-8473f23a",
+   "title": "Corrected prediction test for 60-epoch ResNet-9 CIFAR-10 model (weights loaded from file 'weights')",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0111, 95% CI [-0.0153, -0.0068], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0489,
+    "b": 0.06,
+    "diff": -0.011100000000000014,
+    "ci95": [
+     -0.015302500000000007,
+     -0.006800000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-118c1f94",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-89e9d821",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Seed-1 replication of the ResNet-9 CIFAR-10 recipe: holdout error stable at 5.5-5.7%",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0004, 95% CI [-0.0052, 0.0044], needed below -0.0012",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0596,
+    "b": 0.06,
+    "diff": -0.0004000000000000151,
+    "ci95": [
+     -0.005200000000000013,
+     0.004399999999999985
+    ],
+    "min_effect": 0.0012,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-66ecab68",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2404ff52",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LinearSVC on word+char TF-IDF beats the strongest TF-IDF+LR we tested on AG News",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0078, 95% CI [-0.0112, -0.0043], beyond the minimum effect 0.0017)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07894736842105263,
+    "b": 0.08671052631578947,
+    "diff": -0.0077631578947368425,
+    "ci95": [
+     -0.01118421052631579,
+     -0.0043421052631578945
+    ],
+    "min_effect": 0.0017342105263157895,
+    "pass": true
+   },
+   "relations": []
+  }
+ ]
+}

@@ -1,0 +1,738 @@
+{
+ "run_id": "run-87b9648c",
+ "model": "haiku",
+ "task": "materials-s3",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 3,
+  "R_frontier": 1,
+  "C_collaborative": 0,
+  "submitted_credited": 17,
+  "duplicates": 2,
+  "best_gain": {
+   "expt_gap": 0.0823
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 12
+  }
+ },
+ "rewards": {
+  "score": 0.375,
+  "R_replicated": 3.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 1.0,
+  "datasets_advanced": 1.0,
+  "mean_best_gain": 0.020575,
+  "auditor_pending": 0.0,
+  "submitted_credited": 17.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 12.0,
+  "duplicates": 2.0,
+  "agents_total": 3.0,
+  "agents_peak": 3.0,
+  "max_depth": 1.0,
+  "cost_usd": 0.1116,
+  "model_calls": 91.0,
+  "experiments": 32.0,
+  "messages": 21.0,
+  "cost_per_accepted": 0.037,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 2.0,
+  "dataset_entropy": 0.896,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 568.6
+ },
+ "claims": [
+  {
+   "id": "findin-5e922f0d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Richer Magpie-style composition statistics beat the baseline on experimental band gaps",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0305, 95% CI [-0.0490, -0.0130], beyond the minimum effect 0.0091)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.4269558453064107,
+    "b": 0.4574966957583235,
+    "diff": -0.030540850451912897,
+    "ci95": [
+     -0.04903570918777159,
+     -0.013043898081381832
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-2f815271",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Richer Magpie-style composition statistics beat the baseline on experimental metallicity classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0057, 95% CI [-0.0146, 0.0032], needed below -0.0017",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1234,
+    "a": 0.08022690437601297,
+    "b": 0.08589951377633712,
+    "diff": -0.005672609400324149,
+    "ci95": [
+     -0.014586709886547812,
+     0.0032414910858995136
+    ],
+    "min_effect": 0.0017179902755267424,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-9cfadc8a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Richer Magpie-style composition statistics beat the baseline on glass-forming ability classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0105, 95% CI [-0.0209, 0.0000], needed below -0.0024",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1435,
+    "a": 0.10801393728222997,
+    "b": 0.11846689895470383,
+    "diff": -0.010452961672473868,
+    "ci95": [
+     -0.020905923344947737,
+     1.742160278736138e-05
+    ],
+    "min_effect": 0.0023693379790940767,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-3219ce4e",
+   "kind": "finding",
+   "agent": "agent-740e25cb",
+   "title": "ExtraTrees on Magpie-style weighted statistics + element fractions beats the baseline featurizer on steels yield strength",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -19.5151, 95% CI [-40.2389, -0.1435], needed below -2.0361",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 76,
+    "a": 82.29146315789421,
+    "b": 101.80660271729003,
+    "diff": -19.51513955939583,
+    "ci95": [
+     -40.23889275667112,
+     -0.14346457498886825
+    ],
+    "min_effect": 2.0361320543458006,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8a9c964a",
+   "kind": "finding",
+   "agent": "agent-740e25cb",
+   "title": "Magpie-style ExtraTrees transfers to experimental band gaps: 7.6% lower CV MAE than the shipped baseline",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0332, 95% CI [-0.0541, -0.0138], beyond the minimum effect 0.0091)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.42427086568881217,
+    "b": 0.4574966957583235,
+    "diff": -0.033225830069511436,
+    "ci95": [
+     -0.05405090052795661,
+     -0.013781128111484764
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-5e922f0d",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "independent replication strengthens the target (no new credit)",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-859bcf6b",
+   "kind": "finding",
+   "agent": "agent-740e25cb",
+   "title": "Magpie-style ExtraTrees beats the baseline on experimental band gaps across 5 CV seeds (paired)",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-8a9c964a",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-34ef36ba",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "The expt_gap feature-ensemble gain over materials_baseline holds across three CV seeds",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-5e922f0d",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-5e922f0d",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.4269558453064107,
+    "b": 0.4574966957583235,
+    "diff": -0.030540850451912897,
+    "ci95": [
+     -0.04903570918777159,
+     -0.013043898081381825
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-5e922f0d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d9de5e21",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "The gap2 Magpie-statistics ensemble beats materials_baseline on steels yield strength across three CV seeds",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -7.0996, 95% CI [-23.5039, 7.7964], needed below -2.0361",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 76,
+    "a": 94.70701882756548,
+    "b": 101.80660271729003,
+    "diff": -7.099583889724546,
+    "ci95": [
+     -23.50392165267924,
+     7.796393095287494
+    ],
+    "min_effect": 2.0361320543458006,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-3219ce4e",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-28b5c435",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "ExtraTrees alone on Magpie-style weighted statistics beats materials_baseline on steels across three CV seeds, more than the HGB+ET ensemble",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -11.1301, 95% CI [-28.8160, 4.3184], needed below -2.0361",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 76,
+    "a": 90.67650661027561,
+    "b": 101.80660271729003,
+    "diff": -11.130096107014413,
+    "ci95": [
+     -28.815999740194382,
+     4.318435331310054
+    ],
+    "min_effect": 2.0361320543458006,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-d9de5e21",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-416572fd",
+   "kind": "finding",
+   "agent": "agent-740e25cb",
+   "title": "The founder's gap2 featurizer transfers to steels (12% below baseline) but trails Magpie-style ExtraTrees",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -7.0996, 95% CI [-23.5039, 7.7964], needed below -2.0361",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 76,
+    "a": 94.70701882756548,
+    "b": 101.80660271729003,
+    "diff": -7.099583889724539,
+    "ci95": [
+     -23.50392165267921,
+     7.7963930952874785
+    ],
+    "min_effect": 2.0361320543458006,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-5e922f0d",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f6deacfa",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Combining Magpie-style weighted statistics with element fractions raises the steels ExtraTrees gain over baseline to 23% across three CV seeds",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -15.3178, 95% CI [-33.9771, 1.5138], needed below -2.0361",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 76,
+    "a": 86.48875342105266,
+    "b": 101.80660271729003,
+    "diff": -15.317849296237377,
+    "ci95": [
+     -33.97708057443703,
+     1.513817545585795
+    ],
+    "min_effect": 2.0361320543458006,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-3219ce4e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-eb101cfe",
+   "kind": "finding",
+   "agent": "agent-740e25cb",
+   "title": "Magpie-style ExtraTrees beats the baseline on experimental band gaps across 5 CV seeds (paired), with EVAL-enabled code",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-8a9c964a",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-8a9c964a",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.42427086568881217,
+    "b": 0.4574966957583235,
+    "diff": -0.033225830069511436,
+    "ci95": [
+     -0.05405090052795661,
+     -0.013781128111484764
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-859bcf6b",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e91aef93",
+   "kind": "finding",
+   "agent": "agent-9039eed7",
+   "title": "A class-balanced Magpie HGB+ExtraTrees ensemble lowers glass-forming classification error vs materials_baseline across three CV seeds",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0084, 95% CI [-0.0195, 0.0035], needed below -0.0024",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1435,
+    "a": 0.11010452961672473,
+    "b": 0.11846689895470383,
+    "diff": -0.008362369337979094,
+    "ci95": [
+     -0.01951219512195122,
+     0.003484320557491289
+    ],
+    "min_effect": 0.0023693379790940767,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-84a4e08f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Adding element fractions to the gap ensemble modestly raises its expt_gap gain over baseline across three CV seeds",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0376, 95% CI [-0.0559, -0.0196], beyond the minimum effect 0.0091)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.41985100691770694,
+    "b": 0.4574966957583235,
+    "diff": -0.0376456888406166,
+    "ci95": [
+     -0.055869335403403136,
+     -0.019557707628623796
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-5e922f0d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c7966e18",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Correction: the gap2 steels per-seed gains are 11.6% to 13.4%, not 11.6% to 13.6%",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -7.0996, 95% CI [-23.5039, 7.7964], needed below -2.0361",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 76,
+    "a": 94.70701882756548,
+    "b": 101.80660271729003,
+    "diff": -7.099583889724546,
+    "ci95": [
+     -23.503921652679225,
+     7.796393095287491
+    ],
+    "min_effect": 2.0361320543458006,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-d9de5e21",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4ef0c28f",
+   "kind": "finding",
+   "agent": "agent-9039eed7",
+   "title": "Paired fold-level CI: class-balanced Magpie HGB+ExtraTrees beats materials_baseline on glass GFA CV",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0084, 95% CI [-0.0195, 0.0035], needed below -0.0024",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1435,
+    "a": 0.11010452961672473,
+    "b": 0.11846689895470383,
+    "diff": -0.008362369337979094,
+    "ci95": [
+     -0.01951219512195122,
+     0.003484320557491289
+    ],
+    "min_effect": 0.0023693379790940767,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-16a2112a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "The untuned glass ensemble still beats materials_baseline on two KFold seeds not used for selection",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0105, 95% CI [-0.0209, 0.0000], needed below -0.0024",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1435,
+    "a": 0.10801393728222997,
+    "b": 0.11846689895470383,
+    "diff": -0.010452961672473868,
+    "ci95": [
+     -0.020905923344947737,
+     1.742160278736138e-05
+    ],
+    "min_effect": 0.0023693379790940767,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9cfadc8a",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

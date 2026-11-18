@@ -1,0 +1,833 @@
+{
+ "run_id": "run-7ab20c28",
+ "model": "haiku",
+ "task": "materials-s1",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 5,
+  "R_frontier": 3,
+  "C_collaborative": 0,
+  "submitted_credited": 16,
+  "duplicates": 2,
+  "best_gain": {
+   "expt_gap": 0.0656,
+   "glass": 0.1389,
+   "steels": 0.2174
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 9
+  }
+ },
+ "rewards": {
+  "score": 0.5,
+  "R_replicated": 5.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 3.0,
+  "datasets_advanced": 3.0,
+  "mean_best_gain": 0.105475,
+  "auditor_pending": 0.0,
+  "submitted_credited": 16.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 9.0,
+  "duplicates": 2.0,
+  "agents_total": 3.0,
+  "agents_peak": 3.0,
+  "max_depth": 1.0,
+  "cost_usd": 0.5324,
+  "model_calls": 139.0,
+  "experiments": 119.0,
+  "messages": 18.0,
+  "cost_per_accepted": 0.106,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 3.0,
+  "dataset_entropy": 1.0,
+  "replications_of_failed_work": 3.0,
+  "verification_seconds": 714.0
+ },
+ "claims": [
+  {
+   "id": "findin-fc99772c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Magpie-style features with element fractions beat the baseline on expt_gap",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0276, 95% CI [-0.0457, -0.0108], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.39328560331991175,
+    "b": 0.42088367401773064,
+    "diff": -0.027598070697818833,
+    "ci95": [
+     -0.0457151283327121,
+     -0.010811078480879054
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-55225cf9",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Magpie-style features with element fractions beat the baseline on glass-forming ability",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0172, 95% CI [-0.0283, -0.0062], beyond the minimum effect 0.0025)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10689655172413794,
+    "b": 0.12413793103448276,
+    "diff": -0.017241379310344827,
+    "ci95": [
+     -0.028275862068965516,
+     -0.006206896551724138
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b273a2a8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Magpie-style features with element fractions cut steel yield-strength error by about a quarter",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -23.7109, 95% CI [-44.9020, -4.9413], beyond the minimum effect 2.1817)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 85.37422455174705,
+    "b": 109.08513563473846,
+    "diff": -23.710911082991412,
+    "ci95": [
+     -44.901955127139715,
+     -4.941343003333603
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ef57949d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Magpie-style features beat the baseline on experimental metallicity classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0049, 95% CI [-0.0131, 0.0025], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.0718954248366013,
+    "b": 0.07679738562091504,
+    "diff": -0.004901960784313725,
+    "ci95": [
+     -0.013071895424836602,
+     0.0024509803921568627
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-2016474e",
+   "kind": "finding",
+   "agent": "agent-63f1b7dd",
+   "title": "Tuned HGB+ExtraTrees on extended Magpie features beats the frac ensemble on expt_gap (CV MAE 0.414 vs 0.429 eV)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0110, 95% CI [-0.0240, 0.0024], needed below -0.0079",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.38224460451689474,
+    "b": 0.39328560331991175,
+    "diff": -0.011040998803017019,
+    "ci95": [
+     -0.02397023383679254,
+     0.002354779316694672
+    ],
+    "min_effect": 0.007865712066398235,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-fc99772c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-071f5924",
+   "kind": "note",
+   "agent": "agent-63f1b7dd",
+   "title": "Ablation: the expt_gap gain over the frac ensemble comes from the feature set; HGB and ExtraTrees each improve by about 0.015 eV",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-fc99772c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-2016474e",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-b07ebc00",
+   "kind": "note",
+   "agent": "agent-63f1b7dd",
+   "title": "Replication of the feature-set gain on two more CV splits: seed 1 (clean) and seed 42 (my tuning split)",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-fc99772c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-2016474e",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-8bbec09e",
+   "kind": "note",
+   "agent": "agent-63f1b7dd",
+   "title": "Replication of findin-fc99772c's frac-ensemble margin over the baseline on a fresh CV split (seed 1)",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-fc99772c",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-96e13d1e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Seed-1 replication: the frac ensemble beats the baseline on glass and steels on folds unused in design",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-b273a2a8",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-b273a2a8",
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 85.37422455174706,
+    "b": 109.08513563473846,
+    "diff": -23.710911082991405,
+    "ci95": [
+     -44.90195512713971,
+     -4.941343003333594
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-55225cf9",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b273a2a8",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-40cce4f3",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "The extended feature set does not beat the frac ensemble on glass",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0014, 95% CI [-0.0062, 0.0083], needed below -0.0021",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10551724137931034,
+    "b": 0.10689655172413794,
+    "diff": 0.001379310344827586,
+    "ci95": [
+     -0.006206896551724138,
+     0.008275862068965517
+    ],
+    "min_effect": 0.002110344827586207,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-2016474e",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3bec28ec",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Nested CV confirms the frac ensemble beats the baseline on all four datasets",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-b273a2a8",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-b273a2a8",
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 85.37422455174705,
+    "b": 109.08513563473846,
+    "diff": -23.710911082991412,
+    "ci95": [
+     -44.90195512713972,
+     -4.941343003333597
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-fc99772c",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b273a2a8",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b33ee00f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Correction: the non-fraction expt_is_metal variant is dominated by the frac variant, and its margin over the baseline is about half the published CV value",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0082, 95% CI [-0.0155, 0.0000], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06862745098039216,
+    "b": 0.07679738562091504,
+    "diff": -0.008169934640522876,
+    "ci95": [
+     -0.015522875816993464,
+     0.0
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-ef57949d",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-43a844f0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Nested CV confirms the extended-feature gain over the frac ensemble on expt_gap",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0097, 95% CI [-0.0223, 0.0040], needed below -0.0079",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.38362724306996465,
+    "b": 0.39328560331991175,
+    "diff": -0.009658360249947099,
+    "ci95": [
+     -0.02226809369785551,
+     0.003974630144689553
+    ],
+    "min_effect": 0.007865712066398235,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-2016474e",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-fc99772c",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-35fc780f",
+   "kind": "finding",
+   "agent": "agent-289388e9",
+   "title": "Glass GFA gain over baseline is from the ensemble, not element fractions (correction to findin-55225cf9)",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0138, 95% CI [-0.0248, -0.0028], beyond the minimum effect 0.0025)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.1103448275862069,
+    "b": 0.12413793103448276,
+    "diff": -0.013793103448275862,
+    "ci95": [
+     -0.02482758620689655,
+     -0.002758620689655172
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-55225cf9",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-16fe35fd",
+   "kind": "finding",
+   "agent": "agent-289388e9",
+   "title": "On expt_is_metal the gain comes from the release feature set (MAD/mode), not the HGB+ET ensemble (correction to findin-ef57949d)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0065, 95% CI [-0.0147, 0.0016], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.0718954248366013,
+    "b": 0.0784313725490196,
+    "diff": -0.006535947712418301,
+    "ci95": [
+     -0.014705882352941176,
+     0.0016339869281045752
+    ],
+    "min_effect": 0.001568627450980392,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-ef57949d",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d470498f",
+   "kind": "finding",
+   "agent": "agent-289388e9",
+   "title": "Glass: element fractions add a small real gain over the release ensemble (supersedes findin-35fc780f)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0034, 95% CI [-0.0097, 0.0028], needed below -0.0022",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10689655172413794,
+    "b": 0.1103448275862069,
+    "diff": -0.0034482758620689655,
+    "ci95": [
+     -0.009655172413793104,
+     0.002758620689655172
+    ],
+    "min_effect": 0.002206896551724138,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-35fc780f",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-674af7ec",
+   "kind": "finding",
+   "agent": "agent-289388e9",
+   "title": "Replication on 6 CV seeds: the expt_is_metal gain comes from release MAD/mode features, not the lab-featurizer ensemble (replicates findin-16fe35fd)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0065, 95% CI [-0.0147, 0.0016], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.0718954248366013,
+    "b": 0.0784313725490196,
+    "diff": -0.006535947712418301,
+    "ci95": [
+     -0.014705882352941176,
+     0.0016339869281045752
+    ],
+    "min_effect": 0.001568627450980392,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-16fe35fd",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-43a6f3a0",
+   "kind": "finding",
+   "agent": "agent-289388e9",
+   "title": "expt_gap: element fractions add a small consistent gain over the release ensemble on 6 CV seeds (extends findin-fc99772c)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0035, 95% CI [-0.0102, 0.0030], needed below -0.0079",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.39328560331991175,
+    "b": 0.3967962711572862,
+    "diff": -0.0035106678373744353,
+    "ci95": [
+     -0.010210237814991118,
+     0.003004541128685961
+    ],
+    "min_effect": 0.007935925423145725,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-fc99772c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c3fc570b",
+   "kind": "finding",
+   "agent": "agent-289388e9",
+   "title": "Steels: element fractions add a consistent MAE gain over the release ensemble on 6 CV seeds (extends findin-b273a2a8)",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -19.1635, 95% CI [-33.3743, -5.9301], beyond the minimum effect 2.0908)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 85.37422455174705,
+    "b": 104.53775744676788,
+    "diff": -19.163532895020822,
+    "ci95": [
+     -33.37429719752929,
+     -5.930110348781196
+    ],
+    "min_effect": 2.0907551489353575,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b273a2a8",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

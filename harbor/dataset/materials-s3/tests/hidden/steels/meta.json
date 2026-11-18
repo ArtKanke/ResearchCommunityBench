@@ -1,0 +1,9 @@
+{
+ "id": "steels",
+ "source": "matbench_steels",
+ "task": "regression",
+ "units": "MPa",
+ "n_public": 236,
+ "n_hidden": 76,
+ "metric": "MAE"
+}

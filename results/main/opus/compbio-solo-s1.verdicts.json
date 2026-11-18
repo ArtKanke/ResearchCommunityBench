@@ -1,0 +1,578 @@
+{
+ "run_id": "run-d3a37e06",
+ "model": "opus",
+ "task": "compbio-solo-s1",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 4,
+  "R_frontier": 4,
+  "C_collaborative": 0,
+  "submitted_credited": 13,
+  "duplicates": 0,
+  "best_gain": {
+   "BLAT_ECOLX_Stiffler_2015": 0.1763,
+   "KCNE1_HUMAN_Muhammad_2023_expression": 0.2193,
+   "RASK_HUMAN_Weng_2022_binding-DARPin_K55": 0.1406,
+   "CASP3_HUMAN_Roychowdhury_2020": 0.2021
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 9
+  }
+ },
+ "rewards": {
+  "score": 0.4444444444444444,
+  "R_replicated": 4.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 4.0,
+  "datasets_advanced": 4.0,
+  "mean_best_gain": 0.10547142857142856,
+  "auditor_pending": 0.0,
+  "submitted_credited": 13.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 9.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.5747,
+  "model_calls": 22.0,
+  "experiments": 4.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.144,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.989,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 139.7
+ },
+ "claims": [
+  {
+   "id": "method-be808dbb",
+   "kind": "method",
+   "agent": "founder",
+   "title": "LightGBM-L1 with OOF position encodings + cross-assay partner features beats one-hot ridge on BLAT_ECOLX_Firnberg_2014",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.1882, 95% CI [0.1717, 0.2044], needed below -0.0046",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.41612441437740466,
+    "b": 0.22794534737615452,
+    "diff": 0.18817906700125014,
+    "ci95": [
+     0.17166856257726915,
+     0.2044032004617845
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "method-37a28778",
+   "kind": "method",
+   "agent": "founder",
+   "title": "LightGBM-L1 with OOF position encodings + cross-assay partner features beats one-hot ridge on BLAT_ECOLX_Stiffler_2015",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1004, 95% CI [-0.1139, -0.0876], beyond the minimum effect 0.0114)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.46909498878199596,
+    "b": 0.5694838951802093,
+    "diff": -0.10038890639821324,
+    "ci95": [
+     -0.11392362308014319,
+     -0.08755220807204213
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-f3aeead6",
+   "kind": "method",
+   "agent": "founder",
+   "title": "LightGBM-L1 with OOF position encodings + cross-assay partner features beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0440, 95% CI [-0.0522, -0.0360], beyond the minimum effect 0.0040)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.15648877573953401,
+    "b": 0.20045092879553264,
+    "diff": -0.04396215305599864,
+    "ci95": [
+     -0.052159197819148344,
+     -0.0359875791325498
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-a230abf9",
+   "kind": "method",
+   "agent": "founder",
+   "title": "LightGBM-L1 with OOF position encodings + cross-assay partner features beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0999, 95% CI [0.0808, 0.1196], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.29471155398806637,
+    "b": 0.19482725023143352,
+    "diff": 0.09988430375663286,
+    "ci95": [
+     0.08077451865009146,
+     0.11964030386919235
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "method-323b09d2",
+   "kind": "method",
+   "agent": "founder",
+   "title": "LightGBM-L1 with OOF position encodings + cross-assay partner features beats one-hot ridge on RASK_HUMAN_Weng_2022_abundance",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0049, 95% CI [-0.0037, 0.0133], needed below -0.0043",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.22141288192592767,
+    "b": 0.2165612233001855,
+    "diff": 0.0048516586257421265,
+    "ci95": [
+     -0.0036636599236990744,
+     0.013332501127047936
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "method-1d1daf24",
+   "kind": "method",
+   "agent": "founder",
+   "title": "LightGBM-L1 with OOF position encodings + cross-assay partner features beats one-hot ridge on RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0218, 95% CI [-0.0291, -0.0144], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.1331863836820828,
+    "b": 0.15496955279329153,
+    "diff": -0.02178316911120871,
+    "ci95": [
+     -0.02913746016166194,
+     -0.014446429179528058
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-b58c3fd2",
+   "kind": "method",
+   "agent": "founder",
+   "title": "LightGBM-L1 with OOF position encodings + cross-assay partner features beats one-hot ridge on CASP3_HUMAN_Roychowdhury_2020",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0900, 95% CI [-0.1145, -0.0664], beyond the minimum effect 0.0089)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.35505342567435627,
+    "b": 0.44500763569165896,
+    "diff": -0.08995421001730276,
+    "ci95": [
+     -0.11453714633294333,
+     -0.06642240808986462
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-9212d374",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A second DMS assay of the same protein improves variant-effect prediction on BLAT_ECOLX_Firnberg_2014",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.2657, 95% CI [0.2477, 0.2839], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.41612441437740466,
+    "b": 0.15044519625699906,
+    "diff": 0.26567921812040557,
+    "ci95": [
+     0.24770909267563296,
+     0.2838909124151316
+    ],
+    "min_effect": 0.0030089039251399814,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-078b2231",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A second DMS assay of the same protein improves variant-effect prediction on BLAT_ECOLX_Stiffler_2015",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.1069, 95% CI [0.0886, 0.1273], needed below -0.0072",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.46909498878199596,
+    "b": 0.3622228837614279,
+    "diff": 0.10687210502056807,
+    "ci95": [
+     0.08855940366765937,
+     0.12725994913725885
+    ],
+    "min_effect": 0.007244457675228558,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-26b5b58d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A second DMS assay of the same protein improves variant-effect prediction on RASK_HUMAN_Weng_2022_abundance",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0392, 95% CI [0.0301, 0.0491], needed below -0.0036",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.22141288192592767,
+    "b": 0.1821771427640225,
+    "diff": 0.03923573916190517,
+    "ci95": [
+     0.030123348995088735,
+     0.04911230819015792
+    ],
+    "min_effect": 0.0036435428552804502,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-21b433ac",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A second DMS assay of the same protein improves variant-effect prediction on RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0262, 95% CI [0.0201, 0.0324], needed below -0.0021",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.1331863836820828,
+    "b": 0.10693871077052283,
+    "diff": 0.026247672911559976,
+    "ci95": [
+     0.020067708047276454,
+     0.032362470200382215
+    ],
+    "min_effect": 0.002138774215410457,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "prereg-8363d80b",
+   "kind": "preregistration",
+   "agent": "founder",
+   "title": "Prereg: partner-assay features give no meaningful gain on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "prereg-dedca150",
+   "kind": "preregistration",
+   "agent": "founder",
+   "title": "Prereg: partner-assay features give no meaningful gain on KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "null-f6ad340b",
+   "kind": "null_result",
+   "agent": "founder",
+   "title": "Cross-assay KCNE1 features give no meaningful gain on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "rejected",
+   "reason": "not shown equivalent: 90% CI [0.0116, 0.0201] not inside [-0.015, 0.015]",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.15648877573953401,
+    "b": 0.14063121229512154,
+    "diff": 0.015857563444412456,
+    "ci90": [
+     0.011559127145138414,
+     0.020089588776779337
+    ],
+    "bounds": [
+     -0.015,
+     0.015
+    ],
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "prereg-8363d80b",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-bca4aac5",
+   "kind": "null_result",
+   "agent": "founder",
+   "title": "Cross-assay KCNE1 features give no meaningful gain on KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "rejected",
+   "reason": "not shown equivalent: 90% CI [0.0741, 0.0969] not inside [-0.015, 0.015]",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.29471155398806637,
+    "b": 0.20872003559023294,
+    "diff": 0.08599151839783342,
+    "ci90": [
+     0.0740855733670801,
+     0.09692408229768507
+    ],
+    "bounds": [
+     -0.015,
+     0.015
+    ],
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "prereg-dedca150",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

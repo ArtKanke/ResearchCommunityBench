@@ -1,0 +1,1919 @@
+{
+ "run_id": "run-66acebc4",
+ "model": "6.1-sol",
+ "task": "compbio-solo-s1",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 37,
+  "R_frontier": 14,
+  "C_collaborative": 0,
+  "submitted_credited": 51,
+  "duplicates": 0,
+  "best_gain": {
+   "BLAT_ECOLX_Firnberg_2014": 0.4307,
+   "BLAT_ECOLX_Stiffler_2015": 0.4491,
+   "CASP3_HUMAN_Roychowdhury_2020": 0.1789,
+   "KCNE1_HUMAN_Muhammad_2023_expression": 0.3632,
+   "KCNE1_HUMAN_Muhammad_2023_function": 0.3278,
+   "RASK_HUMAN_Weng_2022_abundance": 0.2398,
+   "RASK_HUMAN_Weng_2022_binding-DARPin_K55": 0.4328
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 14
+  }
+ },
+ "rewards": {
+  "score": 0.8809523809523809,
+  "R_replicated": 37.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 14.0,
+  "datasets_advanced": 7.0,
+  "mean_best_gain": 0.34604285714285715,
+  "auditor_pending": 0.0,
+  "submitted_credited": 51.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 14.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 9.0514,
+  "model_calls": 130.0,
+  "experiments": 97.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.245,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.987,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 568.6
+ },
+ "claims": [
+  {
+   "id": "method-3d088a89",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Leakage-controlled structured transfer predicts TEM-1 Firnberg fitness",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0942, 95% CI [-0.1037, -0.0844], beyond the minimum effect 0.0046)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.13371993186062453,
+    "b": 0.22794534737615452,
+    "diff": -0.09422541551552996,
+    "ci95": [
+     -0.10374166423036926,
+     -0.08436988269264825
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-2ebdb252",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Structured cross-assay transfer improves TEM-1 Stiffler fitness prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.2488, 95% CI [-0.2760, -0.2238], beyond the minimum effect 0.0114)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3206928443080218,
+    "b": 0.5694838951802093,
+    "diff": -0.24879105087218736,
+    "ci95": [
+     -0.2760129346458833,
+     -0.22377751630005782
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-d06983c3",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Biochemical and sequence-context sharing improves sparse CASP3 prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0704, 95% CI [-0.0938, -0.0468], beyond the minimum effect 0.0089)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.37464836642675603,
+    "b": 0.44500763569165896,
+    "diff": -0.07035926926490284,
+    "ci95": [
+     -0.0938241786022661,
+     -0.046790795353139035
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-2dfbca07",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Sequence-local biochemical smoothing improves KCNE1 surface-expression prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0649, 95% CI [-0.0762, -0.0529], beyond the minimum effect 0.0040)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.13558838555817612,
+    "b": 0.20045092879553264,
+    "diff": -0.06486254323735652,
+    "ci95": [
+     -0.07623178372711065,
+     -0.05285655536636029
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-93fa6490",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Structured models with expression-assay transfer improve KCNE1 function prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0576, 95% CI [-0.0692, -0.0450], beyond the minimum effect 0.0039)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.13718607553082057,
+    "b": 0.19482725023143352,
+    "diff": -0.05764117470061292,
+    "ci95": [
+     -0.06923510000208805,
+     -0.04498930869137627
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-2d18cb57",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Structured assay transfer improves KRAS abundance prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0461, 95% CI [-0.0563, -0.0366], beyond the minimum effect 0.0043)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.17044012949261897,
+    "b": 0.2165612233001855,
+    "diff": -0.046121093807566564,
+    "ci95": [
+     -0.05628801953871513,
+     -0.0365731957016803
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-cbe919fa",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Structured transfer and nonlinear completion improve KRAS DARPin-K55 prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0634, 95% CI [-0.0723, -0.0544], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.09160699501224336,
+    "b": 0.15496955279329153,
+    "diff": -0.06336255778104818,
+    "ci95": [
+     -0.07230994245328913,
+     -0.054354338421637644
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-95b12ec8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-fitted local tolerance profiles outperform structured completion for TEM-1 Firnberg",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0282, 95% CI [-0.0325, -0.0239], beyond the minimum effect 0.0032)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.13163298850792612,
+    "b": 0.15980151803745568,
+    "diff": -0.02816852952952954,
+    "ci95": [
+     -0.03252064117975606,
+     -0.023926871859016798
+    ],
+    "min_effect": 0.0031960303607491136,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a5150bc9",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-fitted local tolerance profiles outperform structured completion for TEM-1 Stiffler",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0615, 95% CI [-0.0731, -0.0509], beyond the minimum effect 0.0075)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.31371673645244175,
+    "b": 0.3752514643667547,
+    "diff": -0.06153472791431292,
+    "ci95": [
+     -0.07313936117216405,
+     -0.05088969819519411
+    ],
+    "min_effect": 0.007505029287335095,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-e9f05b2d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-fitted local tolerance profiles outperform structured completion for KCNE1 expression",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0133, 95% CI [-0.0189, -0.0076], beyond the minimum effect 0.0028)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.1285577659512272,
+    "b": 0.14180967197600844,
+    "diff": -0.013251906024781247,
+    "ci95": [
+     -0.018865642354211648,
+     -0.00763982180011188
+    ],
+    "min_effect": 0.002836193439520169,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-63d3e864",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-fitted local tolerance profiles outperform structured completion for KCNE1 function",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0144, 95% CI [-0.0201, -0.0086], beyond the minimum effect 0.0029)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.13165891102419688,
+    "b": 0.14607146315538994,
+    "diff": -0.014412552131193036,
+    "ci95": [
+     -0.020130493224906173,
+     -0.008637175019921547
+    ],
+    "min_effect": 0.0029214292631077987,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-29367743",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-fitted local tolerance profiles outperform structured completion for KRAS DARPin-K55 binding",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0160, 95% CI [-0.0207, -0.0116], beyond the minimum effect 0.0021)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.08789289664707733,
+    "b": 0.10389293613996571,
+    "diff": -0.01600003949288837,
+    "ci95": [
+     -0.020691241115575777,
+     -0.011572359586131922
+    ],
+    "min_effect": 0.0020778587227993145,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-bd7e59bc",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Untyped sequence smoothing outperforms amino-acid-selective smoothing in sparse CASP3",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0242, 95% CI [-0.0398, -0.0084], beyond the minimum effect 0.0081)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.4044477779385427,
+    "b": 0.380279698031047,
+    "diff": -0.024168079907495747,
+    "ci95": [
+     -0.03981089008880673,
+     -0.008401878863198455
+    ],
+    "min_effect": 0.008088955558770854,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-0a37d014",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Amino-acid-selective sequence smoothing improves KCNE1 expression",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0210, 95% CI [-0.0285, -0.0133], beyond the minimum effect 0.0033)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.14155004600964388,
+    "b": 0.1625697683269126,
+    "diff": -0.021019722317268712,
+    "ci95": [
+     -0.028494911375239493,
+     -0.013332659512944845
+    ],
+    "min_effect": 0.0032513953665382522,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c894ba55",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Amino-acid-selective sequence smoothing improves KCNE1 function",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0086, 95% CI [-0.0146, -0.0029], needed below -0.0032",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.15330614603234208,
+    "b": 0.1619528375120933,
+    "diff": -0.008646691479751237,
+    "ci95": [
+     -0.014640517304682698,
+     -0.002864383732471785
+    ],
+    "min_effect": 0.003239056750241866,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-9af367cd",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A saturating response link improves matched latent completion for TEM-1 Firnberg",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0127, 95% CI [-0.0177, -0.0076], beyond the minimum effect 0.0032)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.14608883597363972,
+    "b": 0.15873978231247157,
+    "diff": -0.012650946338831839,
+    "ci95": [
+     -0.01769287986036575,
+     -0.007637522898996835
+    ],
+    "min_effect": 0.0031747956462494314,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-65452f22",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A saturating response link improves matched latent completion for TEM-1 Stiffler",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0094, 95% CI [-0.0180, -0.0014], needed below -0.0075",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.36355739699994677,
+    "b": 0.37299820062831657,
+    "diff": -0.009440803628369755,
+    "ci95": [
+     -0.017986962012620178,
+     -0.0013563124259827984
+    ],
+    "min_effect": 0.007459964012566331,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-11dce689",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Biochemical profile summaries outperform raw amino-acid profiles for TEM-1 Firnberg",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0107, 95% CI [-0.0154, -0.0061], beyond the minimum effect 0.0030)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.13815900281445323,
+    "b": 0.14889662935804035,
+    "diff": -0.010737626543587129,
+    "ci95": [
+     -0.015418056867574878,
+     -0.006132363512450712
+    ],
+    "min_effect": 0.002977932587160807,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-1159cd45",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Biochemical profile summaries outperform raw amino-acid profiles for TEM-1 Stiffler",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0256, 95% CI [-0.0379, -0.0133], beyond the minimum effect 0.0070)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3267307585072011,
+    "b": 0.35233993491355825,
+    "diff": -0.025609176406357185,
+    "ci95": [
+     -0.03794628611687716,
+     -0.013333916387079875
+    ],
+    "min_effect": 0.007046798698271165,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-6bb9b34a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Biochemical profile summaries outperform raw amino-acid profiles for KCNE1 expression",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0051, 95% CI [-0.0127, 0.0029], needed below -0.0028",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.13625236544745836,
+    "b": 0.14136293626687935,
+    "diff": -0.005110570819420975,
+    "ci95": [
+     -0.012677251216181237,
+     0.002907050723816788
+    ],
+    "min_effect": 0.002827258725337587,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-0a2cb7d5",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Biochemical profile summaries outperform raw amino-acid profiles for KCNE1 function",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0127, 95% CI [-0.0195, -0.0063], beyond the minimum effect 0.0030)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.137768255800572,
+    "b": 0.1504948076159812,
+    "diff": -0.012726551815409196,
+    "ci95": [
+     -0.019457696790904457,
+     -0.006281819535946528
+    ],
+    "min_effect": 0.0030098961523196237,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ab09d77e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Biochemical profile summaries outperform raw amino-acid profiles for KRAS abundance",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0108, 95% CI [-0.0176, -0.0045], beyond the minimum effect 0.0037)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.17188614734553628,
+    "b": 0.1826873184409307,
+    "diff": -0.010801171095394364,
+    "ci95": [
+     -0.01759836287704989,
+     -0.004483714024260481
+    ],
+    "min_effect": 0.003653746368818614,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b8f235e4",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Biochemical profile summaries outperform raw amino-acid profiles for KRAS DARPin-K55 binding",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0121, 95% CI [-0.0177, -0.0066], beyond the minimum effect 0.0021)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.09224974995425073,
+    "b": 0.10433370075404218,
+    "diff": -0.01208395079979147,
+    "ci95": [
+     -0.01765345986645368,
+     -0.006580255889847551
+    ],
+    "min_effect": 0.0020866740150808434,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-7d83ed27",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Paired-assay profiles improve position-masked prediction for TEM-1 Firnberg",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.2332, 95% CI [-0.2464, -0.2196], beyond the minimum effect 0.0075)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.14133759725632225,
+    "b": 0.374526852173631,
+    "diff": -0.23318925491730877,
+    "ci95": [
+     -0.24640962214404594,
+     -0.21962710522083648
+    ],
+    "min_effect": 0.007490537043472621,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-4b742689",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Paired-assay profiles improve position-masked prediction for KCNE1 function",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0785, 95% CI [-0.0923, -0.0645], beyond the minimum effect 0.0055)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.19401958774478376,
+    "b": 0.27256406445047376,
+    "diff": -0.07854447670569001,
+    "ci95": [
+     -0.09230361840142591,
+     -0.06451809243332052
+    ],
+    "min_effect": 0.005451281289009476,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d91f6f42",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Paired-assay profiles improve position-masked prediction for KRAS DARPin-K55 binding",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0697, 95% CI [-0.0800, -0.0597], beyond the minimum effect 0.0045)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.15416355935581247,
+    "b": 0.22386264229471634,
+    "diff": -0.0696990829389039,
+    "ci95": [
+     -0.07996670840649804,
+     -0.05966351135690064
+    ],
+    "min_effect": 0.004477252845894327,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-f394a5ac",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Profile-stacked release improves held-out prediction for TEM-1 Firnberg",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0982, 95% CI [-0.1080, -0.0882], beyond the minimum effect 0.0046)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.1297618419428892,
+    "b": 0.22794534737615452,
+    "diff": -0.0981835054332653,
+    "ci95": [
+     -0.10795548678605091,
+     -0.08820110485559488
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-fdd149c4",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Profile-stacked release improves held-out prediction for TEM-1 Stiffler",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.2557, 95% CI [-0.2833, -0.2309], beyond the minimum effect 0.0114)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3137342791167443,
+    "b": 0.5694838951802093,
+    "diff": -0.2557496160634649,
+    "ci95": [
+     -0.28326454920114286,
+     -0.2308950301494789
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-42b63e42",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Profile-stacked release improves held-out prediction for CASP3 activity",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0796, 95% CI [-0.1031, -0.0556], beyond the minimum effect 0.0089)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.3653958856097866,
+    "b": 0.44500763569165896,
+    "diff": -0.07961175008187237,
+    "ci95": [
+     -0.1030631446880052,
+     -0.055587315810260045
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-05e533c7",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Profile-stacked release improves held-out prediction for KCNE1 expression",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0728, 95% CI [-0.0845, -0.0609], beyond the minimum effect 0.0040)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.12764590381269725,
+    "b": 0.20045092879553264,
+    "diff": -0.07280502498283538,
+    "ci95": [
+     -0.08448069087897403,
+     -0.06091486901280669
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-534994a9",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Profile-stacked release improves held-out prediction for KCNE1 function",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0639, 95% CI [-0.0760, -0.0511], beyond the minimum effect 0.0039)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.1309617314100837,
+    "b": 0.19482725023143352,
+    "diff": -0.06386551882134983,
+    "ci95": [
+     -0.07596900716123504,
+     -0.051089121742136756
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-7c8bc89f",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Profile-stacked release improves held-out prediction for KRAS abundance",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0519, 95% CI [-0.0625, -0.0422], beyond the minimum effect 0.0043)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.16461934095442513,
+    "b": 0.2165612233001855,
+    "diff": -0.0519418823457604,
+    "ci95": [
+     -0.0624629148588908,
+     -0.04219653909683397
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-76b2b211",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Profile-stacked release improves held-out prediction for KRAS DARPin-K55 binding",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0670, 95% CI [-0.0764, -0.0580], beyond the minimum effect 0.0031)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.08795468184869491,
+    "b": 0.15496955279329153,
+    "diff": -0.06701487094459661,
+    "ci95": [
+     -0.07640803778807971,
+     -0.057999863966908004
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a938ddcc",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Other-protein response covariance improves KRAS binding-profile interpolation",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0023, 95% CI [-0.0052, 0.0005], needed below -0.0018",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.08943919425879444,
+    "b": 0.09174241360755084,
+    "diff": -0.002303219348756396,
+    "ci95": [
+     -0.005176261860844505,
+     0.0004989350841271384
+    ],
+    "min_effect": 0.0018348482721510168,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-363f7891",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Absolute-error training improves profile prediction for TEM-1 Firnberg",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0040, 95% CI [-0.0065, -0.0014], needed below -0.0028",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.1337588274588209,
+    "b": 0.1377786928195481,
+    "diff": -0.00401986536072724,
+    "ci95": [
+     -0.0064613298379394895,
+     -0.0013819654361340258
+    ],
+    "min_effect": 0.002755573856390962,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-186cbc50",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Absolute-error training improves profile prediction for TEM-1 Stiffler",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0063, 95% CI [-0.0128, -0.0005], needed below -0.0064",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3144491710762625,
+    "b": 0.3207010443716211,
+    "diff": -0.006251873295358562,
+    "ci95": [
+     -0.01276197742124282,
+     -0.00045857207581391827
+    ],
+    "min_effect": 0.006414020887432422,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-6a199bcc",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Absolute-error training improves profile prediction for CASP3 activity",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0114, 95% CI [-0.0223, 0.0003], needed below -0.0076",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.36881699244839183,
+    "b": 0.3801704749171375,
+    "diff": -0.011353482468745645,
+    "ci95": [
+     -0.022286921325797147,
+     0.00027990899578978916
+    ],
+    "min_effect": 0.00760340949834275,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-393e45ed",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Absolute-error training improves profile prediction for KCNE1 expression",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0037, 95% CI [-0.0086, 0.0015], needed below -0.0027",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.130266364780846,
+    "b": 0.1339675401101527,
+    "diff": -0.0037011753293066784,
+    "ci95": [
+     -0.008593295531631044,
+     0.001471944999873171
+    ],
+    "min_effect": 0.002679350802203054,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-433f36c7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Absolute-error training improves profile prediction for KCNE1 function",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0026, 95% CI [-0.0064, 0.0010], needed below -0.0027",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.13235030879418566,
+    "b": 0.13498478374384193,
+    "diff": -0.0026344749496563,
+    "ci95": [
+     -0.0063515266531912785,
+     0.0009809609118693182
+    ],
+    "min_effect": 0.0026996956748768387,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-6385c5f7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Absolute-error training improves profile prediction for KRAS DARPin binding",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0020, 95% CI [-0.0055, 0.0015], needed below -0.0018",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.08992764387928838,
+    "b": 0.09189200029498597,
+    "diff": -0.001964356415697595,
+    "ci95": [
+     -0.00551879159612417,
+     0.0014931865722449217
+    ],
+    "min_effect": 0.0018378400058997194,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-07f3a481",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Paired-assay transfer helps sparse-target prediction for TEM-1 Firnberg",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0423, 95% CI [-0.0512, -0.0339], beyond the minimum effect 0.0036)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.1389772146239155,
+    "b": 0.18127654492191445,
+    "diff": -0.042299330297999004,
+    "ci95": [
+     -0.051203883822556966,
+     -0.03394969324064261
+    ],
+    "min_effect": 0.003625530898438289,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b9e857e9",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Paired-assay transfer helps sparse-target prediction for TEM-1 Stiffler",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.1209, 95% CI [-0.1435, -0.0991], beyond the minimum effect 0.0095)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3541763095537358,
+    "b": 0.4750538011455353,
+    "diff": -0.1208774915917995,
+    "ci95": [
+     -0.14349834538072326,
+     -0.0990807121648785
+    ],
+    "min_effect": 0.009501076022910707,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-9ff58782",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Paired-assay transfer helps sparse-target prediction for KRAS abundance",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0202, 95% CI [-0.0255, -0.0147], beyond the minimum effect 0.0044)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.19932751051177067,
+    "b": 0.21951564289736977,
+    "diff": -0.02018813238559914,
+    "ci95": [
+     -0.025476344694087993,
+     -0.014747353218582957
+    ],
+    "min_effect": 0.004390312857947396,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-dd614187",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Paired-assay transfer helps sparse-target prediction for KRAS DARPin binding",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0082, 95% CI [-0.0121, -0.0043], beyond the minimum effect 0.0027)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.12666849197221366,
+    "b": 0.1348218932179761,
+    "diff": -0.008153401245762401,
+    "ci95": [
+     -0.012128884074643218,
+     -0.00434508132805324
+    ],
+    "min_effect": 0.002696437864359522,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-262bbb37",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Biochemical sequence smoothing improves position-masked KCNE1 expression",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0192, 95% CI [-0.0312, -0.0072], beyond the minimum effect 0.0051)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.23801963732635836,
+    "b": 0.2571768690502351,
+    "diff": -0.019157231723876844,
+    "ci95": [
+     -0.03120768289921446,
+     -0.0071719998288602175
+    ],
+    "min_effect": 0.005143537381004703,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-51f9bf0f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Biochemical sequence smoothing improves position-masked KCNE1 function",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0108, 95% CI [-0.0206, -0.0005], needed below -0.0044",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.2104110269209331,
+    "b": 0.2212139355560383,
+    "diff": -0.010802908635105198,
+    "ci95": [
+     -0.020570506245852643,
+     -0.0005052146061892217
+    ],
+    "min_effect": 0.004424278711120766,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-46fb8f3d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Other-protein response kernels improve matched interpolation for CASP3 activity",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0140, 95% CI [-0.0235, -0.0045], needed below -0.0080",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.3838248968009874,
+    "b": 0.39783216740551747,
+    "diff": -0.014007270604529939,
+    "ci95": [
+     -0.02347247926009658,
+     -0.004516772515654096
+    ],
+    "min_effect": 0.007956643348110349,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d71948af",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Other-protein response kernels improve matched interpolation for KCNE1 function",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0078, 95% CI [-0.0129, -0.0023], needed below -0.0034",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.1598256546200759,
+    "b": 0.1676173889200612,
+    "diff": -0.007791734299985291,
+    "ci95": [
+     -0.012913459890331847,
+     -0.002324615719902067
+    ],
+    "min_effect": 0.003352347778401224,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c857dd0e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Other-protein response kernels improve matched interpolation for KRAS abundance",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0107, 95% CI [-0.0156, -0.0058], beyond the minimum effect 0.0037)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.17467721434138722,
+    "b": 0.18537343011495133,
+    "diff": -0.010696215773564098,
+    "ci95": [
+     -0.015578756464115103,
+     -0.005821710224771769
+    ],
+    "min_effect": 0.003707468602299027,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-05c77d7a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Other-protein response kernels improve matched interpolation for KRAS DARPin binding",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0048, 95% CI [-0.0087, -0.0013], needed below -0.0022",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.10689568754382903,
+    "b": 0.11166931532665594,
+    "diff": -0.004773627782826931,
+    "ci95": [
+     -0.008712418501781604,
+     -0.001316058538038091
+    ],
+    "min_effect": 0.0022333863065331187,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d2c6e1b0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 expression smoothing benefit survives contiguous position-block masking",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0234, 95% CI [-0.0337, -0.0130], beyond the minimum effect 0.0058)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.26626656037403057,
+    "b": 0.2896952016574117,
+    "diff": -0.02342864128338124,
+    "ci95": [
+     -0.03370952662057253,
+     -0.013031750479098056
+    ],
+    "min_effect": 0.005793904033148234,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "note-d1db2481",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Reproducibility report and scope qualifications for released DMS predictors",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-51f9bf0f",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-dcd9b6aa",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Additional mask-design and amino-acid-permutation controls",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "note-b05d5e0e",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Successful sequence-block uncertainty analysis replaces failed archive-loading attempt",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "note-dcd9b6aa",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-c6bb389f",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Final release index: profile-stacked predictors, matched findings, and successful audits",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  }
+ ]
+}

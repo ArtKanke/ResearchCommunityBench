@@ -1,0 +1,13 @@
+name: republic-kernel
+# The identical lab kernel every model runs on. The lab server meters and routes the model;
+# no provider keys ever enter the sandbox.
+install_cmd: "chmod +x lab kernel.py && ln -sf \"$PWD/lab\" /usr/local/bin/lab && ln -sf \"$PWD/kernel.py\" /usr/local/bin/lab-kernel"
+run_cmd: "cd /work && lab boot --model \"{model}\" > /lab/logs-founder.txt 2>&1; tail -c 20000 /lab/logs-founder.txt; mkdir -p /lab/logs && cp /lab/logs-founder.txt /lab/logs/founder.log; tar -czf /tmp/institute_logs.tar.gz -C /lab logs || true  # {problem_statement_path}"
+final_output: /tmp/institute_logs.tar.gz
+defaults:
+  model:
+    type: str
+    required: true
+    description: "Lab-server model string, e.g. litellm:anthropic/claude-sonnet-5-5, codex, or mock"
+provided:
+  notes: "Runs `lab boot`: the founder agent in the foreground; spawned agents run as background processes in the same sandbox."

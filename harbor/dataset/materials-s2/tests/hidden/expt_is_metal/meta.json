@@ -1,0 +1,9 @@
+{
+ "id": "expt_is_metal",
+ "source": "matbench_expt_is_metal",
+ "task": "classification",
+ "units": "",
+ "n_public": 3685,
+ "n_hidden": 1236,
+ "metric": "error rate"
+}

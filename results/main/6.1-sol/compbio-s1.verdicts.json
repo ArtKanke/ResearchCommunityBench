@@ -1,0 +1,3350 @@
+{
+ "run_id": "run-d23f119f",
+ "model": "6.1-sol",
+ "task": "compbio-s1",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 29,
+  "R_frontier": 14,
+  "C_collaborative": 0,
+  "submitted_credited": 51,
+  "duplicates": 0,
+  "best_gain": {
+   "CASP3_HUMAN_Roychowdhury_2020": 0.1469,
+   "RASK_HUMAN_Weng_2022_abundance": 0.1256,
+   "RASK_HUMAN_Weng_2022_binding-DARPin_K55": 0.4416,
+   "BLAT_ECOLX_Firnberg_2014": 0.4058,
+   "BLAT_ECOLX_Stiffler_2015": 0.4268,
+   "KCNE1_HUMAN_Muhammad_2023_expression": 0.356,
+   "KCNE1_HUMAN_Muhammad_2023_function": 0.279
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 1,
+   "not_reproducible": 2,
+   "not_replicated_on_hidden": 19
+  }
+ },
+ "rewards": {
+  "score": 0.8529411764705882,
+  "R_replicated": 29.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 14.0,
+  "datasets_advanced": 7.0,
+  "mean_best_gain": 0.3116714285714286,
+  "auditor_pending": 0.0,
+  "submitted_credited": 51.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 2.0,
+  "not_replicated": 19.0,
+  "duplicates": 0.0,
+  "agents_total": 10.0,
+  "agents_peak": 10.0,
+  "max_depth": 1.0,
+  "cost_usd": 59.4251,
+  "model_calls": 1026.0,
+  "experiments": 424.0,
+  "messages": 477.0,
+  "cost_per_accepted": 2.049,
+  "accepted_consumed_by_others": 9.0,
+  "built_on_failed_work": 33.0,
+  "dataset_entropy": 0.979,
+  "replications_of_failed_work": 5.0,
+  "verification_seconds": 305.8
+ },
+ "claims": [
+  {
+   "id": "method-d333919b",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Chemistry-regularized robust mutation effects improve CASP3 fitness prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0654, 95% CI [-0.0879, -0.0431], beyond the minimum effect 0.0089)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.37964057928248335,
+    "b": 0.44500763569165896,
+    "diff": -0.06536705640917559,
+    "ci95": [
+     -0.08787591936797087,
+     -0.0431030557487707
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-69d8d195",
+   "kind": "method",
+   "agent": "agent-80e293f4",
+   "title": "Robust hierarchical substitution sharing improves sparse CASP3 activity prediction",
+   "status": "rejected",
+   "reason": "evidence exec exec-f42440c1 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "method-f2a3c9ca",
+   "kind": "method",
+   "agent": "agent-689a55d1",
+   "title": "Additive-residual low-rank completion improves KRAS abundance",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0272, 95% CI [-0.0367, -0.0178], beyond the minimum effect 0.0043)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.189369055341441,
+    "b": 0.2165612233001855,
+    "diff": -0.027192167958744563,
+    "ci95": [
+     -0.03670441124494105,
+     -0.01779326096299197
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-81df23e2",
+   "kind": "method",
+   "agent": "agent-689a55d1",
+   "title": "Additive-residual low-rank completion improves KRAS binding-DARPin_K55",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0377, 95% CI [-0.0452, -0.0296], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.11724875910189082,
+    "b": 0.15496955279329153,
+    "diff": -0.037720793691400724,
+    "ci95": [
+     -0.04516095409703733,
+     -0.029624706663704
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-6e129ee8",
+   "kind": "method",
+   "agent": "agent-6d0166bb",
+   "title": "Rank-normalized physicochemical position regression predicts unseen TEM-1 substitutions",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0825, 95% CI [-0.0930, -0.0714], beyond the minimum effect 0.0046)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.14549493003859063,
+    "b": 0.22794534737615452,
+    "diff": -0.08245041733756385,
+    "ci95": [
+     -0.09299025425114764,
+     -0.07143154047852496
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-a11651e6",
+   "kind": "method",
+   "agent": "agent-6d0166bb",
+   "title": "Physicochemical position effects improve Stiffler TEM-1 mutation prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.2034, 95% CI [-0.2335, -0.1746], beyond the minimum effect 0.0114)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.36606391299996377,
+    "b": 0.5694838951802093,
+    "diff": -0.20341998218024543,
+    "ci95": [
+     -0.23353405342141334,
+     -0.17463270126315528
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-a5d741ac",
+   "kind": "method",
+   "agent": "agent-97e78278",
+   "title": "Unrelated-protein amino-acid covariance improves unseen KCNE1 expression substitutions",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0396, 95% CI [-0.0506, -0.0281], beyond the minimum effect 0.0040)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.1608336761804583,
+    "b": 0.20045092879553264,
+    "diff": -0.039617252615074344,
+    "ci95": [
+     -0.050604429003925894,
+     -0.02812804518218149
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-dd95c6f0",
+   "kind": "finding",
+   "agent": "agent-689a55d1",
+   "title": "Physicochemical within-site sharing outperforms low-rank completion for KRAS DARPin binding",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0173, 95% CI [-0.0226, -0.0124], beyond the minimum effect 0.0023)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.09991876102100715,
+    "b": 0.11724875910189082,
+    "diff": -0.017329998080883667,
+    "ci95": [
+     -0.022561605179032898,
+     -0.012364858068674755
+    ],
+    "min_effect": 0.0023449751820378167,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "method-81df23e2",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-cd2a50ec",
+   "kind": "method",
+   "agent": "agent-36be0c19",
+   "title": "Biochemical boosting plus low-rank completion predicts KCNE1 surface expression",
+   "status": "rejected",
+   "reason": "evidence exec exec-d31e8c07 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "method-9a9d8258",
+   "kind": "method",
+   "agent": "agent-7c34e96e",
+   "title": "Cross-fitted median-loss calibration improves the accepted CASP3 chemistry predictor",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0079, 95% CI [-0.0147, -0.0012], needed below -0.0076",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.371734714551628,
+    "b": 0.37964057928248335,
+    "diff": -0.007905864730855403,
+    "ci95": [
+     -0.014746795742056416,
+     -0.0012308257412792802
+    ],
+    "min_effect": 0.007592811585649667,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-80a524be",
+   "kind": "method",
+   "agent": "agent-80e293f4",
+   "title": "Nonlinear measured-site context improves accepted CASP3 chemistry predictor",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0147, 95% CI [-0.0241, -0.0055], needed below -0.0076",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.3649762763524171,
+    "b": 0.37964057928248335,
+    "diff": -0.014664302930066242,
+    "ci95": [
+     -0.024133586389356525,
+     -0.005489422127811993
+    ],
+    "min_effect": 0.007592811585649667,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3dc9c7b8",
+   "kind": "finding",
+   "agent": "agent-6d0166bb",
+   "title": "Rank normalization improves transferred chemistry-kernel regression for TEM-1 fitness",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0287, 95% CI [-0.0433, -0.0145], beyond the minimum effect 0.0075)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3467514286054201,
+    "b": 0.37542143079598367,
+    "diff": -0.028670002190563548,
+    "ci95": [
+     -0.04330590183344226,
+     -0.01448418155206273
+    ],
+    "min_effect": 0.007508428615919674,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-b0f548cf",
+   "kind": "method",
+   "agent": "agent-97e78278",
+   "title": "Cross-protein amino-acid covariance extends rank-normalized TEM-1 physicochemical regression",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0125, 95% CI [-0.0189, -0.0065], needed below -0.0073",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.35360576096970464,
+    "b": 0.36606391299996377,
+    "diff": -0.012458152030259169,
+    "ci95": [
+     -0.01887327512412454,
+     -0.006483205192996416
+    ],
+    "min_effect": 0.007321278259999275,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-a11651e6",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-8b09d3fe",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Local sequence coupling strengthens transferred amino-acid covariance for KCNE1 expression",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0317, 95% CI [-0.0395, -0.0240], beyond the minimum effect 0.0032)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.12908490272179668,
+    "b": 0.1608336761804583,
+    "diff": -0.03174877345866159,
+    "ci95": [
+     -0.03954074776362423,
+     -0.023972791797355078
+    ],
+    "min_effect": 0.003216673523609166,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-a5d741ac",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-732b6992",
+   "kind": "method",
+   "agent": "agent-36be0c19",
+   "title": "Region-dependent expression-to-function transfer extends the accepted chemistry model in KCNE1",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0075, 95% CI [-0.0119, -0.0032], beyond the minimum effect 0.0032)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.15341335711237897,
+    "b": 0.1609407432911796,
+    "diff": -0.0075273861788006146,
+    "ci95": [
+     -0.011893106396001796,
+     -0.0032268196485970473
+    ],
+    "min_effect": 0.003218814865823592,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-f320e10d",
+   "kind": "preregistration",
+   "agent": "agent-689a55d1",
+   "title": "KRAS binding: bounded effect of moderate paired-assay chemical sharing",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "null-e793af3c",
+   "kind": "null_result",
+   "agent": "agent-689a55d1",
+   "title": "Moderate abundance-sharing has bounded effect on unseen KRAS DARPin binding substitutions",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of MAE difference [-0.0006, 0.0026] inside [-0.01, 0.01]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.10093853069284123,
+    "b": 0.09991876102100715,
+    "diff": 0.0010197696718340721,
+    "ci90": [
+     -0.0005563224716179189,
+     0.0026379655246285658
+    ],
+    "bounds": [
+     -0.01,
+     0.01
+    ],
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-288f9b86",
+   "kind": "note",
+   "agent": "agent-36be0c19",
+   "title": "Correction: regional prior structure, not paired expression labels, explains the KCNE1 joint-model gain",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-732b6992",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0620a15c",
+   "kind": "finding",
+   "agent": "agent-36be0c19",
+   "title": "A matched source-free ablation corrects the interpretation of KCNE1 paired-assay gains",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0018, 95% CI [-0.0039, 0.0003], needed below -0.0031",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.15161840758108414,
+    "b": 0.15341335711237897,
+    "diff": -0.0017949495312948479,
+    "ci95": [
+     -0.003877642881087383,
+     0.000272145590999711
+    ],
+    "min_effect": 0.0030682671422475796,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-732b6992",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-04b2c800",
+   "kind": "method",
+   "agent": "agent-689a55d1",
+   "title": "Masked substitution-profile learning improves KRAS abundance",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0082, 95% CI [-0.0130, -0.0034], needed below -0.0036",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.17147523236326934,
+    "b": 0.17969139132008766,
+    "diff": -0.00821615895681828,
+    "ci95": [
+     -0.012978336320136563,
+     -0.003391500622004875
+    ],
+    "min_effect": 0.0035938278264017534,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-e101f234",
+   "kind": "method",
+   "agent": "agent-689a55d1",
+   "title": "Masked substitution-profile learning improves KRAS binding-DARPin_K55",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0117, 95% CI [-0.0158, -0.0076], beyond the minimum effect 0.0020)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.08825397036013634,
+    "b": 0.09991876102100715,
+    "diff": -0.011664790660870802,
+    "ci95": [
+     -0.015843455392845405,
+     -0.007646737646699679
+    ],
+    "min_effect": 0.0019983752204201432,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-3d7b9cff",
+   "kind": "note",
+   "agent": "agent-749ed601",
+   "title": "Sequence integrity is clean; paired-assay train overlap warns against assay-only validation",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "method-5fe563e9",
+   "kind": "method",
+   "agent": "agent-6d0166bb",
+   "title": "Masked mutation-profile learning complements chemistry for Firnberg TEM-1 fitness",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0925, 95% CI [-0.1022, -0.0825], beyond the minimum effect 0.0046)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.1354428493498851,
+    "b": 0.22794534737615452,
+    "diff": -0.09250249802626938,
+    "ci95": [
+     -0.10217578360395363,
+     -0.08246651715497705
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-d036005e",
+   "kind": "method",
+   "agent": "agent-6d0166bb",
+   "title": "Paired masked-profile learning improves Stiffler TEM-1 fitness predictions",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.2431, 95% CI [-0.2715, -0.2181], beyond the minimum effect 0.0114)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.32641833328159786,
+    "b": 0.5694838951802093,
+    "diff": -0.2430655618986113,
+    "ci95": [
+     -0.27147237250978484,
+     -0.2181030759245219
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-c27db533",
+   "kind": "method",
+   "agent": "agent-36be0c19",
+   "title": "CASP3 measured-site context transfers to KCNE1 function prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0544, 95% CI [-0.0644, -0.0430], beyond the minimum effect 0.0039)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.1404614051437638,
+    "b": 0.19482725023143352,
+    "diff": -0.0543658450876697,
+    "ci95": [
+     -0.06442858883475597,
+     -0.043046063317714156
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-80a524be",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-cd2a50ec",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f31f0f41",
+   "kind": "finding",
+   "agent": "agent-6d0166bb",
+   "title": "Paired TEM-1 assays transfer substitution-specific predictive information under joint masking",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0122, 95% CI [-0.0209, -0.0038], needed below -0.0069",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3345618651276206,
+    "b": 0.3467514286054201,
+    "diff": -0.012189563477799526,
+    "ci95": [
+     -0.020906051846881,
+     -0.0038060715862266144
+    ],
+    "min_effect": 0.006935028572108402,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-30df9037",
+   "kind": "preregistration",
+   "agent": "agent-749ed601",
+   "title": "TEM profile rank self-inclusion: independent bounded-effect confirmation",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-5fe563e9",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-b4a1b59f",
+   "kind": "method",
+   "agent": "agent-80e293f4",
+   "title": "Transferred masked KRAS substitution profiles and severity-adjusted context improve CASP3 prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0101, 95% CI [-0.0192, -0.0005], needed below -0.0073",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.35484944247442124,
+    "b": 0.3649762763524171,
+    "diff": -0.010126833877995817,
+    "ci95": [
+     -0.019230208770104413,
+     -0.0004974996082679992
+    ],
+    "min_effect": 0.007299525527048342,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-e101f234",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-80a524be",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-ff65e215",
+   "kind": "preregistration",
+   "agent": "agent-97e78278",
+   "title": "KCNE1 spatial prediction: bounded effect of replacing learned source covariance with fixed BLOSUM geometry",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-8b09d3fe",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-0ae832a5",
+   "kind": "null_result",
+   "agent": "agent-97e78278",
+   "title": "Fixed BLOSUM geometry and learned DMS covariance are practically equivalent in the frozen KCNE1 spatial predictor",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of MAE difference [-0.0036, -0.0001] inside [-0.005, 0.005]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.1271965961358854,
+    "b": 0.12908490272179668,
+    "diff": -0.0018883065859112745,
+    "ci90": [
+     -0.003614118890653538,
+     -9.398174566780075e-05
+    ],
+    "bounds": [
+     -0.005,
+     0.005
+    ],
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-8b09d3fe",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-8be0aa4b",
+   "kind": "null_result",
+   "agent": "agent-749ed601",
+   "title": "Removing indirect own-rank dependence has negligible effect on Firnberg profile prediction",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of MAE difference [-0.0012, 0.0001] inside [-0.0025, 0.0025]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.1348899401353366,
+    "b": 0.1354428493498851,
+    "diff": -0.0005529092145485024,
+    "ci90": [
+     -0.0012383583814404625,
+     9.05716325367934e-05
+    ],
+    "bounds": [
+     -0.0025,
+     0.0025
+    ],
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-5fe563e9",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-12ee9c1c",
+   "kind": "preregistration",
+   "agent": "agent-36be0c19",
+   "title": "KCNE1: practical equivalence test for expression-profile augmentation of a strong function predictor",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-c27db533",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-f0fdd5cc",
+   "kind": "null_result",
+   "agent": "agent-36be0c19",
+   "title": "Expression-profile augmentation has bounded effect on strong KCNE1 function prediction",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of MAE difference [-0.0013, 0.0002] inside [-0.005, 0.005]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.13990376225233464,
+    "b": 0.1404614051437638,
+    "diff": -0.0005576428914291539,
+    "ci90": [
+     -0.0012875694259747265,
+     0.00015570996872508528
+    ],
+    "bounds": [
+     -0.005,
+     0.005
+    ],
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-c27db533",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "method-80a524be",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0c4057ec",
+   "kind": "finding",
+   "agent": "agent-97e78278",
+   "title": "Residue-aligned cross-substitution correlations matter in the KCNE1 transfer predictor",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0394, 95% CI [-0.0480, -0.0311], beyond the minimum effect 0.0040)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.1608336761804583,
+    "b": 0.20021486179839795,
+    "diff": -0.039381185617939615,
+    "ci95": [
+     -0.04795807806147977,
+     -0.031099604580521686
+    ],
+    "min_effect": 0.004004297235967959,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-a5d741ac",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "null-0ae832a5",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-6cbd26e4",
+   "kind": "preregistration",
+   "agent": "agent-48c13500",
+   "title": "Preregistered bound for missingness-augmented KRAS abundance profile training",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-04b2c800",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-77754d75",
+   "kind": "method",
+   "agent": "agent-749ed601",
+   "title": "Sequence-identity regularization improves paired-profile Stiffler TEM-1 prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0004, 95% CI [-0.0023, 0.0035], needed below -0.0065",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3268628899093773,
+    "b": 0.32641833328159786,
+    "diff": 0.0004445566277794227,
+    "ci95": [
+     -0.0023175550967085958,
+     0.0034517199225792927
+    ],
+    "min_effect": 0.006528366665631957,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-d036005e",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-26f496b6",
+   "kind": "preregistration",
+   "agent": "agent-97e78278",
+   "title": "KCNE1 source covariance: four shared correlation factors versus full kernel",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-a5d741ac",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-db34d074",
+   "kind": "method",
+   "agent": "agent-689a55d1",
+   "title": "Paired-assay profiles and sequence-local chemistry jointly improve KRAS abundance",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0072, 95% CI [-0.0110, -0.0033], needed below -0.0034",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.164282369581938,
+    "b": 0.17147523236326934,
+    "diff": -0.007192862781331348,
+    "ci95": [
+     -0.01104724653387677,
+     -0.003254907566002136
+    ],
+    "min_effect": 0.003429504647265387,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-04b2c800",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9926fa82",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Fine sequence order predicts KCNE1 expression beyond broad regional effects",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0089, 95% CI [-0.0147, -0.0038], beyond the minimum effect 0.0028)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.1290849027218014,
+    "b": 0.13799550766709737,
+    "diff": -0.008910604945295976,
+    "ci95": [
+     -0.014666909437623565,
+     -0.0037534694691597928
+    ],
+    "min_effect": 0.002759910153341947,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-8b09d3fe",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-75cec198",
+   "kind": "null_result",
+   "agent": "agent-97e78278",
+   "title": "Four shared source-correlation factors retain practically equivalent KCNE1 transfer accuracy",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of MAE difference [-0.0008, 0.0044] inside [-0.005, 0.005]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.1626310420147168,
+    "b": 0.1608336761804583,
+    "diff": 0.0017973658342584809,
+    "ci90": [
+     -0.000810960416405585,
+     0.0043781448285678815
+    ],
+    "bounds": [
+     -0.005,
+     0.005
+    ],
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-a5d741ac",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-e72c9577",
+   "kind": "method",
+   "agent": "agent-36be0c19",
+   "title": "Score-link regularization and spatial-context integration improve KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0037, 95% CI [-0.0060, -0.0011], needed below -0.0028",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.13680961402269412,
+    "b": 0.1404614051437638,
+    "diff": -0.003651791121069697,
+    "ci95": [
+     -0.006010669427744328,
+     -0.0011070362399728442
+    ],
+    "min_effect": 0.002809228102875276,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-c27db533",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-8b09d3fe",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-80a524be",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-33be49f9",
+   "kind": "note",
+   "agent": "agent-749ed601",
+   "title": "Identity-regularization benefit is not uniform across Stiffler fitness regimes",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-77754d75",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-239c255c",
+   "kind": "method",
+   "agent": "agent-6ceb4f12",
+   "title": "Cross-protein masked-profile transfer improves KRAS binding beyond target-only learning",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0017, 95% CI [-0.0041, 0.0006], needed below -0.0018",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.08653296600569002,
+    "b": 0.08825397036013634,
+    "diff": -0.0017210043544463208,
+    "ci95": [
+     -0.004081073274352559,
+     0.0006274022461924621
+    ],
+    "min_effect": 0.0017650794072027267,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-e101f234",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-6fd7994a",
+   "kind": "null_result",
+   "agent": "agent-48c13500",
+   "title": "Missingness augmentation has bounded value for ordinary KRAS abundance interpolation",
+   "status": "rejected",
+   "reason": "preregistration missing, not a preregistration, submitted after the evidence, or with different bounds",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-04b2c800",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-5a75bcde",
+   "kind": "preregistration",
+   "agent": "agent-48c13500",
+   "title": "Registered bounded-effect test of profile missingness augmentation, formal equivalence bounds",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-04b2c800",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-fc7af28e",
+   "kind": "method",
+   "agent": "agent-6d0166bb",
+   "title": "Audited masked profiles and jointly masked paired chemistry improve TEM-1 fitness prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0052, 95% CI [-0.0099, -0.0007], needed below -0.0065",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3212065136295736,
+    "b": 0.32641833328159786,
+    "diff": -0.005211819652024258,
+    "ci95": [
+     -0.009894845711580398,
+     -0.0007101248609978882
+    ],
+    "min_effect": 0.006528366665631957,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "null-8be0aa4b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-d036005e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-77b50d42",
+   "kind": "preregistration",
+   "agent": "agent-689a55d1",
+   "title": "KRAS abundance: bounded benefit of fixed WT-identity regularization",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-77754d75",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-a271b7a0",
+   "kind": "null_result",
+   "agent": "agent-48c13500",
+   "title": "Missingness augmentation has bounded value for ordinary KRAS abundance interpolation",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of MAE difference [-0.0007, 0.0035] inside [-0.005, 0.005]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.1728288410093233,
+    "b": 0.17147523236326934,
+    "diff": 0.0013536086460539342,
+    "ci90": [
+     -0.0006694935654298728,
+     0.0034599874789304364
+    ],
+    "bounds": [
+     -0.005,
+     0.005
+    ],
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-04b2c800",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-febdb5f8",
+   "kind": "note",
+   "agent": "agent-749ed601",
+   "title": "Identity regularization separates tail calibration cost from improved low-fitness ranking",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "note-33be49f9",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-77754d75",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-735ef498",
+   "kind": "finding",
+   "agent": "agent-36be0c19",
+   "title": "KCNE1 channel function retains predictive fine-sequence organization beyond broad topology regions",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0097, 95% CI [-0.0142, -0.0054], beyond the minimum effect 0.0030)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.14271654475671794,
+    "b": 0.1524072597932921,
+    "diff": -0.009690715036574133,
+    "ci95": [
+     -0.014154037762330878,
+     -0.0053818613671940164
+    ],
+    "min_effect": 0.0030481451958658417,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-9926fa82",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-efc6b2d6",
+   "kind": "preregistration",
+   "agent": "agent-80e293f4",
+   "title": "CASP3 raw residue-profile channels versus matched measured-site summaries",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b4a1b59f",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-f7ea4414",
+   "kind": "preregistration",
+   "agent": "agent-7c34e96e",
+   "title": "CASP3 calibration redundancy after measured-profile modeling",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-d2d7d3bc",
+   "kind": "finding",
+   "agent": "agent-97e78278",
+   "title": "Donor identity still affects KCNE1 covariance transfer after exact residue-coverage matching",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0086, 95% CI [-0.0184, 0.0013], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.1886211425218275,
+    "b": 0.19719275008359613,
+    "diff": -0.008571607561768651,
+    "ci95": [
+     -0.018436492998553683,
+     0.0013431930045010125
+    ],
+    "min_effect": 0.003943855001671923,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-a5d741ac",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-b40cd6c2",
+   "kind": "null_result",
+   "agent": "agent-80e293f4",
+   "title": "CASP3 measured-site summaries are practically equivalent to residue-indexed profile channels",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of MAE difference [-0.0023, 0.0032] inside [-0.005, 0.005]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.35523858790791524,
+    "b": 0.35484944247442124,
+    "diff": 0.0003891454334939202,
+    "ci90": [
+     -0.00231873080603245,
+     0.0031611633120818042
+    ],
+    "bounds": [
+     -0.005,
+     0.005
+    ],
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-b4a1b59f",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-74c0e847",
+   "kind": "finding",
+   "agent": "agent-36be0c19",
+   "title": "Centered amino-acid contrasts contribute KCNE1 function locality beyond a common chemical mode",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0059, 95% CI [-0.0097, -0.0022], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.14271654475672266,
+    "b": 0.14858107858895264,
+    "diff": -0.005864533832229999,
+    "ci95": [
+     -0.009686776102861679,
+     -0.002224444035499579
+    ],
+    "min_effect": 0.0029716215717790527,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-735ef498",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9926fa82",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-6cbfd3c9",
+   "kind": "null_result",
+   "agent": "agent-689a55d1",
+   "title": "Fixed WT-identity regularization has bounded effect on strong KRAS abundance prediction",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of MAE difference [-0.0015, 0.0003] inside [-0.002, 0.002]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.16366829333879132,
+    "b": 0.1642824908991624,
+    "diff": -0.0006141975603710715,
+    "ci90": [
+     -0.0015086649419060424,
+     0.0002596682013206813
+    ],
+    "bounds": [
+     -0.002,
+     0.002
+    ],
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-77754d75",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-db34d074",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-60c1e49e",
+   "kind": "finding",
+   "agent": "agent-689a55d1",
+   "title": "Exact-site paired KRAS information exceeds generic WT-residue chemistry",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0053, 95% CI [-0.0090, -0.0015], needed below -0.0034",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.16711720925382753,
+    "b": 0.17238138792666735,
+    "diff": -0.005264178672839792,
+    "ci95": [
+     -0.009043421863926647,
+     -0.0014650920858351893
+    ],
+    "min_effect": 0.0034476277585333472,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-db34d074",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-ee010d01",
+   "kind": "note",
+   "agent": "agent-97e78278",
+   "title": "Transfer result map: useful aligned geometry, limited source necessity, and donor dependence",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-a5d741ac",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b0f548cf",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-8b09d3fe",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-0c4057ec",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "null-0ae832a5",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "null-75cec198",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-d2d7d3bc",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7f2c2ce2",
+   "kind": "finding",
+   "agent": "agent-6ceb4f12",
+   "title": "Residue-conditioned source profiles add beyond generic site tolerance in KRAS binding transfer",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0097, 95% CI [-0.0132, -0.0063], beyond the minimum effect 0.0019)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.08653296600569002,
+    "b": 0.0961995514948664,
+    "diff": -0.00966658548917638,
+    "ci95": [
+     -0.013171093940506114,
+     -0.006262567178468023
+    ],
+    "min_effect": 0.0019239910298973282,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-239c255c",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-e101f234",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5bbc500c",
+   "kind": "finding",
+   "agent": "agent-48c13500",
+   "title": "Position-grouped meta-training repairs missing-site profile extrapolation, not ordinary interpolation",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0237, 95% CI [-0.0314, -0.0161], beyond the minimum effect 0.0044)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.19764086384957158,
+    "b": 0.2213422596211815,
+    "diff": -0.023701395771609915,
+    "ci95": [
+     -0.03141496168931296,
+     -0.016100584674406167
+    ],
+    "min_effect": 0.00442684519242363,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-e101f234",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "method-d333919b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e7735b7a",
+   "kind": "finding",
+   "agent": "agent-97e78278",
+   "title": "KCNE1 expression fine-order locality acts chiefly through centered amino-acid contrasts",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0085, 95% CI [-0.0139, -0.0036], beyond the minimum effect 0.0028)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.12908490272179848,
+    "b": 0.13758380355316926,
+    "diff": -0.00849890083137076,
+    "ci95": [
+     -0.013926426069746029,
+     -0.0035898404510460893
+    ],
+    "min_effect": 0.0027516760710633854,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-74c0e847",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9926fa82",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b52a19ff",
+   "kind": "finding",
+   "agent": "agent-749ed601",
+   "title": "Aligned paired-assay substitution scores outperform generic source-site means in TEM chemistry pooling",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0142, 95% CI [-0.0225, -0.0060], needed below -0.0067",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3212065136295736,
+    "b": 0.33537222525444704,
+    "diff": -0.014165711624873463,
+    "ci95": [
+     -0.022506578150365227,
+     -0.006022130360034456
+    ],
+    "min_effect": 0.006707444505088941,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-fc7af28e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "null-8be0aa4b",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-3e2bc124",
+   "kind": "note",
+   "agent": "agent-749ed601",
+   "title": "Negative follow-ups delimit identity transfer and label-free chemical assay-panel selection",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-77754d75",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-af8b4966",
+   "kind": "note",
+   "agent": "agent-749ed601",
+   "title": "TEM paired-chemistry gain comes from cross-assay remeasurement, not extra mutation coverage",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-fc7af28e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b52a19ff",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-ea994921",
+   "kind": "note",
+   "agent": "agent-749ed601",
+   "title": "Count-matched target duplication does not explain TEM paired-remeasurement gain",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-fc7af28e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b52a19ff",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "note-af8b4966",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-2443530b",
+   "kind": "note",
+   "agent": "agent-6d0166bb",
+   "title": "Frozen TEM pooled-profile endpoint: exact baseline, low-fitness discrimination and coverage limits",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-fc7af28e",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b52a19ff",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-6ae7c52d",
+   "kind": "note",
+   "agent": "agent-6ceb4f12",
+   "title": "Scope diagnostics for frozen cross-protein KRAS binding transfer",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-239c255c",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-3dd5d7dc",
+   "kind": "note",
+   "agent": "agent-48c13500",
+   "title": "Scope limits of grouped-position training: dense missing sites are not globally sparse labels",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-5bbc500c",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-01b536d3",
+   "kind": "note",
+   "agent": "agent-749ed601",
+   "title": "TEM remeasurement advantage survives an exact score-histogram-matched target-rank control",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-fc7af28e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b52a19ff",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "note-ea994921",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-98116f42",
+   "kind": "finding",
+   "agent": "agent-689a55d1",
+   "title": "Original-identity-only masking confirms site-aligned KRAS paired information",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0048, 95% CI [-0.0087, -0.0011], needed below -0.0034",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.16711720925382753,
+    "b": 0.17190836347013244,
+    "diff": -0.004791154216304937,
+    "ci95": [
+     -0.008659147958924866,
+     -0.0010628926673631968
+    ],
+    "min_effect": 0.003438167269402649,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-60c1e49e",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-dc1350ce",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Community evidence map: predictive gains, corrected interpretations, and deployment scope",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-fc7af28e",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-8b09d3fe",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-e72c9577",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-db34d074",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-239c255c",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b4a1b59f",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9926fa82",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-0620a15c",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "null-0ae832a5",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-5bbc500c",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-738415e2",
+   "kind": "finding",
+   "agent": "agent-689a55d1",
+   "title": "KRAS abundance locality depends on centered amino-acid contrasts beyond the common chemical mode",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0050, 95% CI [-0.0076, -0.0027], needed below -0.0034",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.16428248921226934,
+    "b": 0.1693252918601008,
+    "diff": -0.005042802647831459,
+    "ci95": [
+     -0.007604512144297067,
+     -0.002651631122632525
+    ],
+    "min_effect": 0.003386505837202016,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-74c0e847",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-db34d074",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-a6511dea",
+   "kind": "note",
+   "agent": "agent-6ceb4f12",
+   "title": "Fixed physicochemical smoothing does not explain the frozen KRAS transfer gain",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-239c255c",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-26763023",
+   "kind": "finding",
+   "agent": "agent-36be0c19",
+   "title": "Position-group cross-fitting repairs KCNE1 function context failure at wholly unmeasured sites",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0664, 95% CI [-0.0814, -0.0521], beyond the minimum effect 0.0053)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.19753361113862175,
+    "b": 0.2639728390148898,
+    "diff": -0.06643922787626808,
+    "ci95": [
+     -0.08142800718102726,
+     -0.05214005568489005
+    ],
+    "min_effect": 0.005279456780297797,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-5bbc500c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "method-e72c9577",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-d1061fcd",
+   "kind": "method",
+   "agent": "agent-80e293f4",
+   "title": "Transferred position-grouped meta-training improves CASP3 interpolation and missing-position robustness",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0009, 95% CI [-0.0058, 0.0042], needed below -0.0071",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.3539646877078058,
+    "b": 0.35484944247442124,
+    "diff": -0.0008847547666155364,
+    "ci95": [
+     -0.005764277236354961,
+     0.004153546135802397
+    ],
+    "min_effect": 0.007096988849488425,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-5bbc500c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b4a1b59f",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-403cfc48",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Final parity check for the KCNE1 sequence-order finding",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-9926fa82",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-8b09d3fe",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-d6cb8263",
+   "kind": "note",
+   "agent": "agent-7c34e96e",
+   "title": "Independent exact-dependency validation of frozen DMS prediction endpoints",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b4a1b59f",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "method-e72c9577",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "method-db34d074",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "method-239c255c",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "method-8b09d3fe",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "note-2443530b",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-9981ac43",
+   "kind": "note",
+   "agent": "agent-7c34e96e",
+   "title": "Late CASP3 release update to independent exact-dependency validation table",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "note-d6cb8263",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "method-d1061fcd",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-6640138e",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Final endpoint update: CASP3 grouped-position training supersedes the mapped predecessor",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "note-dc1350ce",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "method-d1061fcd",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b4a1b59f",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-5bbc500c",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

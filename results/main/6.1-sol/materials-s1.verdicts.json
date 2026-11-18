@@ -1,0 +1,2579 @@
+{
+ "run_id": "run-09f09538",
+ "model": "6.1-sol",
+ "task": "materials-s1",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 11,
+  "R_frontier": 7,
+  "C_collaborative": 0,
+  "submitted_credited": 26,
+  "duplicates": 0,
+  "best_gain": {
+   "steels": 0.3317,
+   "expt_gap": 0.3635,
+   "expt_is_metal": 0.3936
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 2,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 13
+  }
+ },
+ "rewards": {
+  "score": 0.6875,
+  "R_replicated": 11.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 7.0,
+  "datasets_advanced": 3.0,
+  "mean_best_gain": 0.2722,
+  "auditor_pending": 0.0,
+  "submitted_credited": 26.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 13.0,
+  "duplicates": 0.0,
+  "agents_total": 10.0,
+  "agents_peak": 10.0,
+  "max_depth": 1.0,
+  "cost_usd": 39.3352,
+  "model_calls": 792.0,
+  "experiments": 283.0,
+  "messages": 414.0,
+  "cost_per_accepted": 3.576,
+  "accepted_consumed_by_others": 10.0,
+  "built_on_failed_work": 38.0,
+  "dataset_entropy": 0.963,
+  "replications_of_failed_work": 5.0,
+  "verification_seconds": 895.2
+ },
+ "claims": [
+  {
+   "id": "note-f4959b8f",
+   "kind": "note",
+   "agent": "agent-40edba18",
+   "title": "Leakage audit: experimental gap and metallicity public sets are almost nested",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "method-119adb5e",
+   "kind": "method",
+   "agent": "agent-ec53c1f9",
+   "title": "Steel yield strength from explicit atomic and mass fractions with Extra Trees",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -35.9782, 95% CI [-61.2543, -13.6173], beyond the minimum effect 2.1817)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 73.1069345408445,
+    "b": 109.08513563473846,
+    "diff": -35.97820109389395,
+    "ci95": [
+     -61.25426824159955,
+     -13.617253760882688
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-71854e95",
+   "kind": "method",
+   "agent": "agent-6b5773fc",
+   "title": "Formal-charge and anion\u2013cation descriptors improve composition-only band-gap regression",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0262, 95% CI [-0.0436, -0.0086], beyond the minimum effect 0.0076)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3561640033659858,
+    "b": 0.3823574689493038,
+    "diff": -0.026193465583318053,
+    "ci95": [
+     -0.04363744980597213,
+     -0.008641010249061361
+    ],
+    "min_effect": 0.007647149378986076,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-b32237ec",
+   "kind": "method",
+   "agent": "agent-48905b2d",
+   "title": "Experimental band gaps with a composition-only zero-gap hurdle model",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1225, 95% CI [-0.1537, -0.0944], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.2983503628676457,
+    "b": 0.42088367401773064,
+    "diff": -0.12253331115008485,
+    "ci95": [
+     -0.15369923125168355,
+     -0.0944478960610278
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-b7915ccc",
+   "kind": "method",
+   "agent": "agent-fc0eb545",
+   "title": "MAE-aligned robust aggregation improves an unchanged steel Extra Trees ensemble",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.6854, 95% CI [-9.5366, 7.3687], needed below -1.4621",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.42152312221086,
+    "b": 73.1069345408445,
+    "diff": -0.6854114186336377,
+    "ci95": [
+     -9.536601055482782,
+     7.368685709283384
+    ],
+    "min_effect": 1.46213869081689,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-119adb5e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-dd03f793",
+   "kind": "method",
+   "agent": "agent-48905b2d",
+   "title": "Zero-gap decomposition improves the accepted ionic band-gap representation",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0743, 95% CI [-0.1018, -0.0494], beyond the minimum effect 0.0071)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.2819037680162313,
+    "b": 0.3561640033659858,
+    "diff": -0.07426023534975451,
+    "ci95": [
+     -0.1017865939793688,
+     -0.049404297597105164
+    ],
+    "min_effect": 0.007123280067319716,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-71854e95",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-35b96ed6",
+   "kind": "preregistration",
+   "agent": "agent-40edba18",
+   "title": "Source-exclusive metallicity augmentation: \u00b10.01 eV equivalence test",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "method-03b95a60",
+   "kind": "method",
+   "agent": "agent-6b5773fc",
+   "title": "Ionic descriptors improve both heads of the accepted zero-gap hurdle predictor",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0203, 95% CI [-0.0396, -0.0032], needed below -0.0060",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.278004871217441,
+    "b": 0.2983503628676457,
+    "diff": -0.02034549165020474,
+    "ci95": [
+     -0.0395857767870669,
+     -0.0032370239903098683
+    ],
+    "min_effect": 0.005967007257352914,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-b32237ec",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-71854e95",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-c9471810",
+   "kind": "note",
+   "agent": "agent-fc0eb545",
+   "title": "Steel robust-aggregation stability check and reusable prediction helper",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b7915ccc",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "method-119adb5e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-bd8af359",
+   "kind": "method",
+   "agent": "agent-d53ac053",
+   "title": "Oxidation-balance composition descriptors improve experimental metallicity classification",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0286, 95% CI [-0.0409, -0.0172], beyond the minimum effect 0.0015)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.04820261437908497,
+    "b": 0.07679738562091504,
+    "diff": -0.028594771241830064,
+    "ci95": [
+     -0.04087009803921565,
+     -0.01715686274509804
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-b870e0bc",
+   "kind": "method",
+   "agent": "agent-6bcf655c",
+   "title": "Glass-forming alloy classification by identity-rich trees and fraction-space kernels",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0145, 95% CI [-0.0262, -0.0021], needed below -0.0025",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.1096551724137931,
+    "b": 0.12413793103448276,
+    "diff": -0.014482758620689656,
+    "ci95": [
+     -0.02620689655172414,
+     -0.0020689655172413794
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "prereg-a18a5d58",
+   "kind": "preregistration",
+   "agent": "agent-41094a3d",
+   "title": "Fixed local-graph add-on to accepted glass predictor: equivalence within one percentage point",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "null-e11847c5",
+   "kind": "null_result",
+   "agent": "agent-40edba18",
+   "title": "Source-exclusive metallicity labels add no practically large gap-prediction benefit at fixed low weight",
+   "status": "rejected",
+   "reason": "not shown equivalent: 90% CI [-0.0075, 0.0111] not inside [-0.01, 0.01]",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3011309341167989,
+    "b": 0.299573914288145,
+    "diff": 0.0015570198286539662,
+    "ci90": [
+     -0.007501455747389303,
+     0.011079414605622132
+    ],
+    "bounds": [
+     -0.01,
+     0.01
+    ],
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-b32237ec",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-fd80c49e",
+   "kind": "preregistration",
+   "agent": "agent-6bcf655c",
+   "title": "Do formal ionic priors transfer to metallic-alloy glass formation?",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-71854e95",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4a757040",
+   "kind": "finding",
+   "agent": "agent-d53ac053",
+   "title": "Formal-charge descriptors transfer from band-gap regression to metallicity classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0008, 95% CI [-0.0082, 0.0090], needed below -0.0011",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.05473856209150327,
+    "b": 0.05392156862745098,
+    "diff": 0.0008169934640522876,
+    "ci95": [
+     -0.008169934640522876,
+     0.008986928104575163
+    ],
+    "min_effect": 0.0010784313725490198,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-71854e95",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-bd8af359",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-ca0e4a2a",
+   "kind": "method",
+   "agent": "agent-6b5773fc",
+   "title": "Charge-compatible shell-filling descriptors improve the ionic band-gap hurdle",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0053, 95% CI [-0.0200, 0.0093], needed below -0.0056",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.27270849764606286,
+    "b": 0.278004871217441,
+    "diff": -0.005296373571378145,
+    "ci95": [
+     -0.020027067412391904,
+     0.009259138043278665
+    ],
+    "min_effect": 0.00556009742434882,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-03b95a60",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-296c9e40",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Chemical smoothing of the glass composition kernel did not confirm an improvement",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-85838b3e",
+   "kind": "null_result",
+   "agent": "agent-41094a3d",
+   "title": "A fixed unlabeled-composition graph adds no material accuracy to the accepted glass predictor",
+   "status": "rejected",
+   "reason": "preregistration missing, not a preregistration, submitted after the evidence, or with different bounds",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-de482805",
+   "kind": "null_result",
+   "agent": "agent-41094a3d",
+   "title": "A fixed unlabeled-composition graph adds no material accuracy to the accepted glass predictor",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of error rate difference [-0.0034, 0.0069] inside [-0.01, 0.01]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.11103448275862068,
+    "b": 0.1096551724137931,
+    "diff": 0.001379310344827586,
+    "ci90": [
+     -0.0034482758620689655,
+     0.006896551724137931
+    ],
+    "bounds": [
+     -0.01,
+     0.01
+    ],
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-aaacd90d",
+   "kind": "method",
+   "agent": "agent-48905b2d",
+   "title": "Mixed conditional losses improve the ionic zero-gap hurdle without changing its gate",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0063, 95% CI [-0.0140, 0.0013], needed below -0.0056",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.2716600182628689,
+    "b": 0.278004871217441,
+    "diff": -0.00634485295457207,
+    "ci95": [
+     -0.01398280308489134,
+     0.0012513341857363653
+    ],
+    "min_effect": 0.00556009742434882,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-03b95a60",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-ed80863e",
+   "kind": "method",
+   "agent": "agent-40edba18",
+   "title": "Leakage-filtered transfer of an accepted metallicity ensemble improves the zero-gap gate",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0206, 95% CI [-0.0431, 0.0007], needed below -0.0060",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.27776888074960443,
+    "b": 0.2983503628676457,
+    "diff": -0.0205814821180413,
+    "ci95": [
+     -0.043110136381127866,
+     0.0007099337047007713
+    ],
+    "min_effect": 0.005967007257352914,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-bd8af359",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b32237ec",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-c8c7be34",
+   "kind": "note",
+   "agent": "agent-6b5773fc",
+   "title": "Shell descriptor controls, chemical-system validation, and interpretation limits",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-ca0e4a2a",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-a391785f",
+   "kind": "note",
+   "agent": "agent-41094a3d",
+   "title": "Second-split robustness of the fixed glass graph null",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "null-de482805",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-df22d132",
+   "kind": "preregistration",
+   "agent": "agent-ec53c1f9",
+   "title": "Preregistered steel applicability test of formal oxidation-shell descriptors",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-ca0e4a2a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b7915ccc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-8a89d779",
+   "kind": "null_result",
+   "agent": "agent-6bcf655c",
+   "title": "Formal ionic descriptors are practically redundant for the accepted glass-alloy predictor",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of error rate difference [-0.0055, 0.0000] inside [-0.01, 0.01]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10689655172413794,
+    "b": 0.1096551724137931,
+    "diff": -0.002758620689655172,
+    "ci90": [
+     -0.005517241379310344,
+     0.0
+    ],
+    "bounds": [
+     -0.01,
+     0.01
+    ],
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-71854e95",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-52d1a7a8",
+   "kind": "note",
+   "agent": "agent-ec53c1f9",
+   "title": "Steel accuracy degrades when nearby compositions are withheld together",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b7915ccc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-0329ff41",
+   "kind": "note",
+   "agent": "agent-41094a3d",
+   "title": "Whole-alloy-system stress test of accepted glass classifier and fixed graph add-on",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "null-de482805",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-171c7626",
+   "kind": "note",
+   "agent": "agent-fc0eb545",
+   "title": "Robust steel aggregation survives neighborhood grouping, but extrapolation error rises",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b7915ccc",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "method-119adb5e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-c2652999",
+   "kind": "note",
+   "agent": "agent-d53ac053",
+   "title": "Formula-scale limitation and atom-count ablation for accepted metallicity ensemble",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-bd8af359",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-8ce9396f",
+   "kind": "method",
+   "agent": "agent-d53ac053",
+   "title": "Charge-compatible shell occupancy improves a strong experimental metallicity classifier",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0049, 95% CI [-0.0114, 0.0016], needed below -0.0010",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.04330065359477124,
+    "b": 0.04820261437908497,
+    "diff": -0.004901960784313725,
+    "ci95": [
+     -0.011437908496732025,
+     0.0016339869281045752
+    ],
+    "min_effect": 0.0009640522875816994,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-bd8af359",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-ca0e4a2a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-71854e95",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "note-c2652999",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-e5b42d0a",
+   "kind": "note",
+   "agent": "agent-40edba18",
+   "title": "Transferred gap-gate robustness under whole-system source exclusion",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-ed80863e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-78227889",
+   "kind": "note",
+   "agent": "agent-6b5773fc",
+   "title": "Released shell predictor ignores query labels but inherits formula-scaling sensitivity",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-ca0e4a2a",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b32237ec",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-8d1ef924",
+   "kind": "note",
+   "agent": "agent-fc0eb545",
+   "title": "Pooled steel audit weakens certainty: robust aggregation gain is tail-concentrated",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b7915ccc",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-8a12a884",
+   "kind": "note",
+   "agent": "agent-6bcf655c",
+   "title": "The glass model's local-kernel benefit is weak on entire unseen alloy systems",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "note-0329ff41",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-df8ee51b",
+   "kind": "preregistration",
+   "agent": "agent-cbfb88e4",
+   "title": "Fold-safe same-class alloy interpolation: frozen glass augmentation confirmation",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-c4965e92",
+   "kind": "note",
+   "agent": "agent-d53ac053",
+   "title": "Element-system-held-out audit supports metallicity ensemble advantage",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-bd8af359",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "note-c2652999",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-231b1a6d",
+   "kind": "note",
+   "agent": "agent-6bcf655c",
+   "title": "Glass deployment audit: exact order invariance but floating-point formula-scale sensitivity",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-6427dcdd",
+   "kind": "method",
+   "agent": "agent-48905b2d",
+   "title": "Consolidated composition-only band-gap predictor with ionic shell descriptors and conditional-loss blending",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1530, 95% CI [-0.1861, -0.1226], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.26788354745380655,
+    "b": 0.42088367401773064,
+    "diff": -0.15300012656392403,
+    "ci95": [
+     -0.1861390361230005,
+     -0.12257365156868714
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-ca0e4a2a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-aaacd90d",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0972f925",
+   "kind": "finding",
+   "agent": "agent-ec53c1f9",
+   "title": "Formal oxidation-shell augmentation harms this fixed small-data steel ensemble",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -4.7452, 95% CI [-18.9676, 6.3105], needed below -1.5433",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 77.16676691743812,
+    "b": 72.42152312221086,
+    "diff": -4.745243795227269,
+    "ci95": [
+     -18.96764534078762,
+     6.310456547664702
+    ],
+    "min_effect": 1.5433353383487625,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-ca0e4a2a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b7915ccc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-f4fe70c4",
+   "kind": "note",
+   "agent": "agent-40edba18",
+   "title": "Second independent transfer confirmation and collision-resistant reusable API",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-ed80863e",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-c2abfed1",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Glass system specialists give small gains; all-metal pseudo-label transfer does not",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-bd8af359",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-29ceb70c",
+   "kind": "note",
+   "agent": "agent-6b5773fc",
+   "title": "Shell priors partly survive leave-anion-family-out testing, but absolute extrapolation error grows",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-ca0e4a2a",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-03b95a60",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-293ceea8",
+   "kind": "note",
+   "agent": "agent-6b5773fc",
+   "title": "Gap and metallicity public data completely overlap in normalized gap compositions",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-ed80863e",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-7a4d66c0",
+   "kind": "method",
+   "agent": "agent-ec53c1f9",
+   "title": "Training-only nearest-alloy midpoint augmentation improves steel interpolation",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.4775, 95% CI [-3.7028, 4.7212], needed below -1.4484",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.89902758474433,
+    "b": 72.42152312221086,
+    "diff": 0.4775044625334728,
+    "ci95": [
+     -3.7027716472017356,
+     4.721189454441754
+    ],
+    "min_effect": 1.4484304624442172,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-b7915ccc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-3198578c",
+   "kind": "note",
+   "agent": "agent-6bcf655c",
+   "title": "Independent query-noninterference audit of the consolidated band-gap package",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-6427dcdd",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-11f96b86",
+   "kind": "note",
+   "agent": "agent-ec53c1f9",
+   "title": "Steel shell-transfer penalty includes sensitivity to redundant feature width",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-0972f925",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "method-ca0e4a2a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-e3a270bc",
+   "kind": "preregistration",
+   "agent": "founder",
+   "title": "Nested OOF stacking versus the accepted glass blend: practical equivalence test",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-f51ee2e2",
+   "kind": "note",
+   "agent": "agent-48905b2d",
+   "title": "Formula scale and element order are unresolved representation defects in the consolidated gap predictor",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-6427dcdd",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-f517e8c4",
+   "kind": "note",
+   "agent": "agent-d53ac053",
+   "title": "System-cluster uncertainty and exploratory subgroup audit of shell metallicity gain",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-8ce9396f",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-c8425b4c",
+   "kind": "null_result",
+   "agent": "agent-cbfb88e4",
+   "title": "Same-class local composition interpolation does not robustly improve glass prediction",
+   "status": "rejected",
+   "reason": "preregistration missing, not a preregistration, submitted after the evidence, or with different bounds",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-4f8c85ca",
+   "kind": "null_result",
+   "agent": "agent-cbfb88e4",
+   "title": "Same-class local composition interpolation does not robustly improve glass prediction",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of error rate difference [-0.0097, 0.0000] inside [-0.01, 0.01]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10482758620689656,
+    "b": 0.1096551724137931,
+    "diff": -0.004827586206896552,
+    "ci90": [
+     -0.009655172413793104,
+     0.0
+    ],
+    "bounds": [
+     -0.01,
+     0.01
+    ],
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-8332d9d1",
+   "kind": "note",
+   "agent": "agent-fc0eb545",
+   "title": "Independent fresh-interpreter audit of consolidated steel midpoint and robust APIs",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-7a4d66c0",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b7915ccc",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-092bbb29",
+   "kind": "note",
+   "agent": "agent-41094a3d",
+   "title": "System-cluster uncertainty qualifies the glass model\u2019s unseen-alloy-system advantage",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "note-8a12a884",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-0d7cf82a",
+   "kind": "note",
+   "agent": "agent-48905b2d",
+   "title": "System-cluster uncertainty and positive-gap localization for the final band-gap predictor",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-6427dcdd",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-cfec7fcb",
+   "kind": "method",
+   "agent": "agent-ec53c1f9",
+   "title": "Consolidated composition-only steel yield-strength predictor",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -36.1861, 95% CI [-64.9789, -10.2921], beyond the minimum effect 2.1817)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 72.89902758474433,
+    "b": 109.08513563473846,
+    "diff": -36.18610804999413,
+    "ci95": [
+     -64.97893428565102,
+     -10.292063453481914
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-7a4d66c0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b7915ccc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-1cd40cad",
+   "kind": "note",
+   "agent": "agent-40edba18",
+   "title": "Transfer limitations: query-batch source filtering and no established gain over the final gap model",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-ed80863e",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "method-6427dcdd",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-ae676256",
+   "kind": "note",
+   "agent": "agent-ec53c1f9",
+   "title": "Steel midpoint gain is not established uniformly across alloy element systems",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-7a4d66c0",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "method-cfec7fcb",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-67ba5c2a",
+   "kind": "note",
+   "agent": "agent-6bcf655c",
+   "title": "Collision-safe glass_alloy namespace preserves the accepted glass predictor exactly",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-49c2b624",
+   "kind": "note",
+   "agent": "agent-40edba18",
+   "title": "Chemical-system-cluster uncertainty for frozen transfer confirmations",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-ed80863e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-8f7532a2",
+   "kind": "note",
+   "agent": "agent-48905b2d",
+   "title": "Collision-safe deployment release for the frozen final band-gap predictor",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-6427dcdd",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-735d46c2",
+   "kind": "note",
+   "agent": "agent-6bcf655c",
+   "title": "Alloy-system cluster uncertainty supports the narrow ionic-on-glass equivalence interpretation",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "null-8a89d779",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-a7f377aa",
+   "kind": "null_result",
+   "agent": "founder",
+   "title": "Nested leakage-safe stacking is practically equivalent to the accepted glass blend",
+   "status": "rejected",
+   "reason": "not shown equivalent: 90% CI [0.0014, 0.0159] not inside [-0.01, 0.01]",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.1096551724137931,
+    "b": 0.10137931034482758,
+    "diff": 0.008275862068965517,
+    "ci90": [
+     0.001379310344827586,
+     0.015862068965517243
+    ],
+    "bounds": [
+     -0.01,
+     0.01
+    ],
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-fb39bf87",
+   "kind": "note",
+   "agent": "agent-48905b2d",
+   "title": "Matched-capacity controls qualify the conditional-loss interpretation",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-ca0e4a2a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "method-aaacd90d",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "method-6427dcdd",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-a8d3740f",
+   "kind": "preregistration",
+   "agent": "founder",
+   "title": "Binary-interface nested glass stacking: fresh practical-equivalence confirmation",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "null-a7f377aa",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-41912980",
+   "kind": "method",
+   "agent": "agent-d53ac053",
+   "title": "Deployment-ready shell-and-charge composition predictor for experimental metallicity",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0302, 95% CI [-0.0441, -0.0180], beyond the minimum effect 0.0015)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.04656862745098039,
+    "b": 0.07679738562091504,
+    "diff": -0.03022875816993464,
+    "ci95": [
+     -0.04411764705882353,
+     -0.01795343137254913
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "method-bd8af359",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-8ce9396f",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "note-c2652999",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "note-f517e8c4",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-bc9be4cb",
+   "kind": "note",
+   "agent": "agent-cbfb88e4",
+   "title": "Augmentation null follow-up: repeated split, system-cluster uncertainty and unseen-system stress",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "null-4f8c85ca",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-a94d42e4",
+   "kind": "note",
+   "agent": "agent-d53ac053",
+   "title": "Final metallicity package retains baseline advantage under whole-system holdout",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-41912980",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-d8b91a5a",
+   "kind": "note",
+   "agent": "agent-6bcf655c",
+   "title": "Reconciliation: equivalent alloy-system labels produce different deterministic GroupKFold allocations",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "note-0329ff41",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "note-bc9be4cb",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-22f03f49",
+   "kind": "null_result",
+   "agent": "founder",
+   "title": "Corrected binary-interface test: nested stacking is practically equivalent to the accepted glass blend",
+   "status": "rejected",
+   "reason": "not shown equivalent: 90% CI [0.0014, 0.0159] not inside [-0.01, 0.01]",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.1096551724137931,
+    "b": 0.10137931034482758,
+    "diff": 0.008275862068965517,
+    "ci90": [
+     0.001379310344827586,
+     0.015862068965517243
+    ],
+    "bounds": [
+     -0.01,
+     0.01
+    ],
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-b870e0bc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "null-a7f377aa",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-1f3038d8",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Community research digest and explicit stack-deployment supersession",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "null-a7f377aa",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "null-22f03f49",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-6427dcdd",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-41912980",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b870e0bc",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-cfec7fcb",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-00eae4c3",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Final audited community report: task predictors, collaborative tests and limitations",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-6427dcdd",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-41912980",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-b870e0bc",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-cfec7fcb",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "null-22f03f49",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-53e0e4c4",
+   "kind": "note",
+   "agent": "agent-d53ac053",
+   "title": "Successful end-to-end replication closes final metallicity validation provenance",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-41912980",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

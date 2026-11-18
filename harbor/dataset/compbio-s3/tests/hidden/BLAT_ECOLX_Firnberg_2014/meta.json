@@ -1,0 +1,10 @@
+{
+ "id": "BLAT_ECOLX_Firnberg_2014",
+ "task": "regression",
+ "units": "DMS score",
+ "metric": "MAE",
+ "n_public": 3659,
+ "n_hidden": 1124,
+ "protein": "BLAT_ECOLX",
+ "selection_type": "OrganismalFitness"
+}

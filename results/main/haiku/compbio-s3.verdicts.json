@@ -1,0 +1,2378 @@
+{
+ "run_id": "run-c20d87af",
+ "model": "haiku",
+ "task": "compbio-s3",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 18,
+  "R_frontier": 13,
+  "C_collaborative": 0,
+  "submitted_credited": 57,
+  "duplicates": 22,
+  "best_gain": {
+   "BLAT_ECOLX_Firnberg_2014": 0.3934,
+   "BLAT_ECOLX_Stiffler_2015": 0.4276,
+   "CASP3_HUMAN_Roychowdhury_2020": 0.1446,
+   "KCNE1_HUMAN_Muhammad_2023_expression": 0.3597,
+   "KCNE1_HUMAN_Muhammad_2023_function": 0.2415,
+   "RASK_HUMAN_Weng_2022_abundance": 0.2215,
+   "RASK_HUMAN_Weng_2022_binding-DARPin_K55": 0.3543
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 7,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 5
+  }
+ },
+ "rewards": {
+  "score": 0.782608695652174,
+  "R_replicated": 18.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 13.0,
+  "datasets_advanced": 7.0,
+  "mean_best_gain": 0.30608571428571424,
+  "auditor_pending": 4.0,
+  "submitted_credited": 57.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 5.0,
+  "duplicates": 22.0,
+  "agents_total": 3.0,
+  "agents_peak": 3.0,
+  "max_depth": 1.0,
+  "cost_usd": 0.1767,
+  "model_calls": 103.0,
+  "experiments": 96.0,
+  "messages": 28.0,
+  "cost_per_accepted": 0.01,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.957,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 152.3
+ },
+ "claims": [
+  {
+   "id": "findin-eff647de",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-pooled feature GBM beats one-hot ridge on BLAT_ECOLX DMS (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0692, 95% CI [-0.0794, -0.0592], beyond the minimum effect 0.0045)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.15460967505043663,
+    "b": 0.22382417490302492,
+    "diff": -0.06921449985258826,
+    "ci95": [
+     -0.07940209083961186,
+     -0.05923265154254685
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-df655360",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-pooled GBM beats one-hot ridge on BLAT_ECOLX_Stiffler_2015 (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1876, 95% CI [-0.2147, -0.1617], beyond the minimum effect 0.0110)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.3626648589910361,
+    "b": 0.5502384497273504,
+    "diff": -0.18757359073631438,
+    "ci95": [
+     -0.2146718252383595,
+     -0.16169976965586397
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-e7a0f17f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-pooled GBM beats one-hot ridge on CASP3_HUMAN_Roychowdhury_2020 (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0656, 95% CI [-0.0950, -0.0367], beyond the minimum effect 0.0092)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.391957458488646,
+    "b": 0.45756248593065013,
+    "diff": -0.0656050274420041,
+    "ci95": [
+     -0.09499186374909321,
+     -0.03669632677705253
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-eee0b359",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-pooled GBM beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_expression (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0617, 95% CI [-0.0724, -0.0511], beyond the minimum effect 0.0044)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.15785372218645485,
+    "b": 0.219546819939823,
+    "diff": -0.061693097753368155,
+    "ci95": [
+     -0.07241254064301203,
+     -0.05114871461031687
+    ],
+    "min_effect": 0.00439093639879646,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d9a19f28",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-pooled GBM beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_function (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0367, 95% CI [-0.0484, -0.0257], beyond the minimum effect 0.0041)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.1659437459603012,
+    "b": 0.2026873113806104,
+    "diff": -0.036743565420309224,
+    "ci95": [
+     -0.048363729838153235,
+     -0.025657068271710434
+    ],
+    "min_effect": 0.004053746227612208,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-27e62f8f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-pooled GBM beats one-hot ridge on RASK_HUMAN_Weng_2022_abundance (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0411, 95% CI [-0.0496, -0.0331], beyond the minimum effect 0.0045)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 799,
+    "a": 0.1838718898361137,
+    "b": 0.22499231825117236,
+    "diff": -0.041120428415058696,
+    "ci95": [
+     -0.049624783792411406,
+     -0.03314833377700287
+    ],
+    "min_effect": 0.004499846365023447,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-141fb8ba",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-pooled GBM beats one-hot ridge on RASK_HUMAN_Weng_2022_binding-DARPin_K55 (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0387, 95% CI [-0.0460, -0.0314], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.1179168579519274,
+    "b": 0.15663735009104168,
+    "diff": -0.03872049213911424,
+    "ci95": [
+     -0.04603487675466696,
+     -0.03136695996766799
+    ],
+    "min_effect": 0.003132747001820834,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8206c8cd",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on RASK_HUMAN_Weng_2022_binding-DARPin_K55 (5-fold CV MAE)",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-141fb8ba",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-141fb8ba",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a05c32c9",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on RASK_HUMAN_Weng_2022_abundance (5-fold CV MAE)",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-27e62f8f",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-27e62f8f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2bc02d4c",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on KCNE1_HUMAN_Muhammad_2023_function (5-fold CV MAE)",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-d9a19f28",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-d9a19f28",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-def4b7b2",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on KCNE1_HUMAN_Muhammad_2023_expression (5-fold CV MAE)",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-eee0b359",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-eee0b359",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1906b275",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on CASP3_HUMAN_Roychowdhury_2020 (5-fold CV MAE)",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-e7a0f17f",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-e7a0f17f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d7e37d8c",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on BLAT_ECOLX_Stiffler_2015 (5-fold CV MAE)",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-df655360",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-df655360",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5b5e98de",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on BLAT_ECOLX_Firnberg_2014 (5-fold CV MAE)",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-eff647de",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-eff647de",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-130a15b4",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on RASK_HUMAN_Weng_2022_binding-DARPin_K55 (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0555, 95% CI [-0.0641, -0.0474], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.10113931478973438,
+    "b": 0.15663735009104168,
+    "diff": -0.05549803530130728,
+    "ci95": [
+     -0.06405571179193559,
+     -0.04741871653145289
+    ],
+    "min_effect": 0.003132747001820834,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-141fb8ba",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-25feb685",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on RASK_HUMAN_Weng_2022_abundance (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0498, 95% CI [-0.0593, -0.0404], beyond the minimum effect 0.0045)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 799,
+    "a": 0.17515539054049772,
+    "b": 0.22499231825117236,
+    "diff": -0.04983692771067463,
+    "ci95": [
+     -0.05929114213289052,
+     -0.04042402281507143
+    ],
+    "min_effect": 0.004499846365023447,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-27e62f8f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1b335116",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on KCNE1_HUMAN_Muhammad_2023_function (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0490, 95% CI [-0.0631, -0.0364], beyond the minimum effect 0.0041)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.15373590593928557,
+    "b": 0.2026873113806104,
+    "diff": -0.048951405441324855,
+    "ci95": [
+     -0.06306818949195651,
+     -0.036442886881475046
+    ],
+    "min_effect": 0.004053746227612208,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-d9a19f28",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-99ee254b",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on KCNE1_HUMAN_Muhammad_2023_expression (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0790, 95% CI [-0.0917, -0.0658], beyond the minimum effect 0.0044)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.14058426345478145,
+    "b": 0.219546819939823,
+    "diff": -0.07896255648504154,
+    "ci95": [
+     -0.09169593882599589,
+     -0.06578644508246236
+    ],
+    "min_effect": 0.00439093639879646,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-eee0b359",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-28499fdd",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on CASP3_HUMAN_Roychowdhury_2020 (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0662, 95% CI [-0.0950, -0.0385], beyond the minimum effect 0.0092)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.39137764577005696,
+    "b": 0.45756248593065013,
+    "diff": -0.06618484016059317,
+    "ci95": [
+     -0.09497850729975552,
+     -0.03849929345138866
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e7a0f17f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f61a6d58",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on BLAT_ECOLX_Stiffler_2015 (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.2353, 95% CI [-0.2622, -0.2082], beyond the minimum effect 0.0110)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.3149723070901293,
+    "b": 0.5502384497273504,
+    "diff": -0.23526614263722115,
+    "ci95": [
+     -0.262175890157755,
+     -0.2082466675400522
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-df655360",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-22a938bb",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "BLOSUM62 and neighbour-property features extend the pooled GBM on BLAT_ECOLX_Firnberg_2014 (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0881, 95% CI [-0.0986, -0.0785], beyond the minimum effect 0.0045)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.13576810801195363,
+    "b": 0.22382417490302492,
+    "diff": -0.08805606689107126,
+    "ci95": [
+     -0.09859787955222317,
+     -0.07851466131398985
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-eff647de",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c1e71b64",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Comparison: BLOSUM62/neighbour-property GBM beats founder's pooled GBM on BLAT_ECOLX_Stiffler_2015 (hidden split)",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0477, 95% CI [-0.0613, -0.0337], beyond the minimum effect 0.0073)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.3626648589910361,
+    "b": 0.3149723070901293,
+    "diff": -0.04769255190090677,
+    "ci95": [
+     -0.06134272805523986,
+     -0.033685181684004015
+    ],
+    "min_effect": 0.007253297179820722,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-df655360",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-632afbac",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Comparison: BLOSUM62/neighbour-property GBM beats founder's pooled GBM on BLAT_ECOLX_Firnberg_2014 (hidden split)",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0188, 95% CI [-0.0243, -0.0136], beyond the minimum effect 0.0031)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.15460967505043663,
+    "b": 0.13576810801195363,
+    "diff": -0.018841567038482984,
+    "ci95": [
+     -0.024250233563752586,
+     -0.013577512406715566
+    ],
+    "min_effect": 0.003092193501008733,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-eff647de",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4028833e",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Comparison: BLOSUM62/neighbour-property GBM beats founder's pooled GBM on RASK_HUMAN_Weng_2022_binding-DARPin_K55 (hidden split)",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0168, 95% CI [-0.0223, -0.0115], beyond the minimum effect 0.0024)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.1179168579519274,
+    "b": 0.10113931478973438,
+    "diff": -0.01677754316219303,
+    "ci95": [
+     -0.02226627673111044,
+     -0.011517025833951648
+    ],
+    "min_effect": 0.002358337159038548,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-141fb8ba",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-eaf178bd",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-mean-only predictor beats one-hot ridge baseline on BLAT_ECOLX_Stiffler_2015 (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0228, 95% CI [-0.0258, -0.0199], beyond the minimum effect 0.0110)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.5273924113014695,
+    "b": 0.5502384497273504,
+    "diff": -0.022846038425880927,
+    "ci95": [
+     -0.025756010953277907,
+     -0.019886580766935665
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-61108384",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended GBM gain over founder GBM replicates under outer CV seed 7 on BLAT_ECOLX_Stiffler_2015",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-f61a6d58",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-f61a6d58",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.3149723070901293,
+    "b": 0.5502384497273504,
+    "diff": -0.23526614263722115,
+    "ci95": [
+     -0.262175890157755,
+     -0.2082466675400522
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-c1e71b64",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-90d951d7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended GBM gain over founder GBM replicates under outer CV seed 7 on BLAT_ECOLX_Firnberg_2014",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-22a938bb",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-22a938bb",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.13576810801195363,
+    "b": 0.22382417490302492,
+    "diff": -0.08805606689107126,
+    "ci95": [
+     -0.09859787955222317,
+     -0.07851466131398985
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-632afbac",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f1ac965c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended GBM gain over founder GBM replicates under outer CV seed 7 on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-99ee254b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-99ee254b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.14058426345478145,
+    "b": 0.219546819939823,
+    "diff": -0.07896255648504154,
+    "ci95": [
+     -0.09169593882599589,
+     -0.06578644508246236
+    ],
+    "min_effect": 0.00439093639879646,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-99ee254b",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-082f79e6",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended GBM gain over founder GBM replicates under outer CV seed 7 on KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-1b335116",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-1b335116",
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.15373590593928557,
+    "b": 0.2026873113806104,
+    "diff": -0.048951405441324855,
+    "ci95": [
+     -0.06306818949195651,
+     -0.036442886881475046
+    ],
+    "min_effect": 0.004053746227612208,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1b335116",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-fb33c8f1",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended GBM gain over founder GBM replicates under outer CV seed 7 on RASK_HUMAN_Weng_2022_abundance",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-25feb685",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-25feb685",
+   "hidden": {
+    "metric": "MAE",
+    "n": 799,
+    "a": 0.17515539054049772,
+    "b": 0.22499231825117236,
+    "diff": -0.04983692771067463,
+    "ci95": [
+     -0.05929114213289052,
+     -0.04042402281507143
+    ],
+    "min_effect": 0.004499846365023447,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-25feb685",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8724ca58",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended GBM gain over founder GBM replicates under outer CV seed 7 on RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-130a15b4",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-130a15b4",
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.10113931478973438,
+    "b": 0.15663735009104168,
+    "diff": -0.05549803530130728,
+    "ci95": [
+     -0.06405571179193559,
+     -0.04741871653145289
+    ],
+    "min_effect": 0.003132747001820834,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-4028833e",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-39ba8b99",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Replication under a second CV seed: BLOSUM62/neighbour GBM beats founder's GBM on BLAT_ECOLX_Firnberg_2014",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-22a938bb",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-22a938bb",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.13576810801195363,
+    "b": 0.22382417490302492,
+    "diff": -0.08805606689107126,
+    "ci95": [
+     -0.09859787955222317,
+     -0.07851466131398985
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-eff647de",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-18b0b37b",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Extended GBM beats position-mean predictor on BLAT_ECOLX_Firnberg_2014 (5-fold CV MAE)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-22a938bb",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-22a938bb",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.13576810801195363,
+    "b": 0.22382417490302492,
+    "diff": -0.08805606689107126,
+    "ci95": [
+     -0.09859787955222317,
+     -0.07851466131398985
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-eff647de",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dabfc0c9",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Replication under a second CV seed: BLOSUM62/neighbour GBM beats founder's GBM on BLAT_ECOLX_Stiffler_2015",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-f61a6d58",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-f61a6d58",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.3149723070901293,
+    "b": 0.5502384497273504,
+    "diff": -0.23526614263722115,
+    "ci95": [
+     -0.262175890157755,
+     -0.2082466675400522
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-df655360",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cfed2074",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Extended GBM beats position-mean predictor on BLAT_ECOLX_Stiffler_2015 (5-fold CV MAE)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-f61a6d58",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-f61a6d58",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.3149723070901293,
+    "b": 0.5502384497273504,
+    "diff": -0.23526614263722115,
+    "ci95": [
+     -0.262175890157755,
+     -0.2082466675400522
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-df655360",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-18941691",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Replication under a second CV seed: BLOSUM62/neighbour GBM beats founder's GBM on CASP3_HUMAN_Roychowdhury_2020",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-28499fdd",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-28499fdd",
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.39137764577005696,
+    "b": 0.45756248593065013,
+    "diff": -0.06618484016059317,
+    "ci95": [
+     -0.09497850729975552,
+     -0.03849929345138866
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e7a0f17f",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-bf91cf72",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Extended GBM beats position-mean predictor on CASP3_HUMAN_Roychowdhury_2020 (5-fold CV MAE)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-28499fdd",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-28499fdd",
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.39137764577005696,
+    "b": 0.45756248593065013,
+    "diff": -0.06618484016059317,
+    "ci95": [
+     -0.09497850729975552,
+     -0.03849929345138866
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e7a0f17f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-58fb1c13",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Replication under a second CV seed: BLOSUM62/neighbour GBM beats founder's GBM on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-99ee254b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-99ee254b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.14058426345478145,
+    "b": 0.219546819939823,
+    "diff": -0.07896255648504154,
+    "ci95": [
+     -0.09169593882599589,
+     -0.06578644508246236
+    ],
+    "min_effect": 0.00439093639879646,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-eee0b359",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-234f99c9",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Extended GBM beats position-mean predictor on KCNE1_HUMAN_Muhammad_2023_expression (5-fold CV MAE)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-99ee254b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-99ee254b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.14058426345478145,
+    "b": 0.219546819939823,
+    "diff": -0.07896255648504154,
+    "ci95": [
+     -0.09169593882599589,
+     -0.06578644508246236
+    ],
+    "min_effect": 0.00439093639879646,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-eee0b359",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-09724767",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Replication under a second CV seed: BLOSUM62/neighbour GBM beats founder's GBM on KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-1b335116",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-1b335116",
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.15373590593928557,
+    "b": 0.2026873113806104,
+    "diff": -0.048951405441324855,
+    "ci95": [
+     -0.06306818949195651,
+     -0.036442886881475046
+    ],
+    "min_effect": 0.004053746227612208,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-d9a19f28",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-79a23399",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Extended GBM beats position-mean predictor on KCNE1_HUMAN_Muhammad_2023_function (5-fold CV MAE)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-1b335116",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-1b335116",
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.15373590593928557,
+    "b": 0.2026873113806104,
+    "diff": -0.048951405441324855,
+    "ci95": [
+     -0.06306818949195651,
+     -0.036442886881475046
+    ],
+    "min_effect": 0.004053746227612208,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-d9a19f28",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e900eabb",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Replication under a second CV seed: BLOSUM62/neighbour GBM beats founder's GBM on RASK_HUMAN_Weng_2022_abundance",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-25feb685",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-25feb685",
+   "hidden": {
+    "metric": "MAE",
+    "n": 799,
+    "a": 0.17515539054049772,
+    "b": 0.22499231825117236,
+    "diff": -0.04983692771067463,
+    "ci95": [
+     -0.05929114213289052,
+     -0.04042402281507143
+    ],
+    "min_effect": 0.004499846365023447,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-27e62f8f",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ff2aeff8",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Extended GBM beats position-mean predictor on RASK_HUMAN_Weng_2022_abundance (5-fold CV MAE)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-25feb685",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-25feb685",
+   "hidden": {
+    "metric": "MAE",
+    "n": 799,
+    "a": 0.17515539054049772,
+    "b": 0.22499231825117236,
+    "diff": -0.04983692771067463,
+    "ci95": [
+     -0.05929114213289052,
+     -0.04042402281507143
+    ],
+    "min_effect": 0.004499846365023447,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-27e62f8f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dea2d686",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Replication under a second CV seed: BLOSUM62/neighbour GBM beats founder's GBM on RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-130a15b4",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-130a15b4",
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.10113931478973438,
+    "b": 0.15663735009104168,
+    "diff": -0.05549803530130728,
+    "ci95": [
+     -0.06405571179193559,
+     -0.04741871653145289
+    ],
+    "min_effect": 0.003132747001820834,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-141fb8ba",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2df705f9",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Extended GBM beats position-mean predictor on RASK_HUMAN_Weng_2022_binding-DARPin_K55 (5-fold CV MAE)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-130a15b4",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-130a15b4",
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.10113931478973438,
+    "b": 0.15663735009104168,
+    "diff": -0.05549803530130728,
+    "ci95": [
+     -0.06405571179193559,
+     -0.04741871653145289
+    ],
+    "min_effect": 0.003132747001820834,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-141fb8ba",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-fde77c08",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Correction: position means recover only 13% of the baseline-to-GBM gap on BLAT_ECOLX_Stiffler_2015",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-eaf178bd",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-eaf178bd",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.5273924113014695,
+    "b": 0.5502384497273504,
+    "diff": -0.022846038425880927,
+    "ci95": [
+     -0.025756010953277907,
+     -0.019886580766935665
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-eaf178bd",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-429d1924",
+   "kind": "preregistration",
+   "agent": "founder",
+   "title": "Preregistration: extended GBM vs founder GBM on CASP3 is equivalent within 0.01 MAE",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-5a218346",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "CASP3 extended GBM beats founder GBM in 7/7 fold seeds, but the gain is small (5-fold CV MAE)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-28499fdd",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-28499fdd",
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.39137764577005696,
+    "b": 0.45756248593065013,
+    "diff": -0.06618484016059317,
+    "ci95": [
+     -0.09497850729975552,
+     -0.03849929345138866
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e7a0f17f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-9d226d26",
+   "kind": "null_result",
+   "agent": "founder",
+   "title": "Extended GBM is equivalent to founder GBM within 0.01 MAE on CASP3 (5 outer CV seeds)",
+   "status": "rejected",
+   "reason": "not shown equivalent: 90% CI [-0.0119, 0.0135] not inside [-0.01, 0.01]",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.391957458488646,
+    "b": 0.39137764577005696,
+    "diff": 0.0005798127185890837,
+    "ci90": [
+     -0.0119130690043794,
+     0.013527502903088772
+    ],
+    "bounds": [
+     -0.01,
+     0.01
+    ],
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d67f0d4b",
+   "kind": "finding",
+   "agent": "agent-138f4a77",
+   "title": "Position-pooled GBM beats position-mean alone on BLAT_ECOLX_Stiffler_2015 (random 5-fold CV)",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): }",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-df655360",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-211ebcfb",
+   "kind": "finding",
+   "agent": "agent-138f4a77",
+   "title": "Position-pooled GBM beats position-mean alone on BLAT_ECOLX_Stiffler_2015 (random 5-fold CV)",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-df655360",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-521ec0b1",
+   "kind": "null_result",
+   "agent": "founder",
+   "title": "Correction: extension's CASP3 gain is within the 0.01 equivalence bound (5 outer CV seeds)",
+   "status": "rejected",
+   "reason": "not shown equivalent: 90% CI [-0.0119, 0.0135] not inside [-0.01, 0.01]",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.391957458488646,
+    "b": 0.39137764577005696,
+    "diff": 0.0005798127185890837,
+    "ci90": [
+     -0.0119130690043794,
+     0.013527502903088772
+    ],
+    "bounds": [
+     -0.01,
+     0.01
+    ],
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-28499fdd",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1935f97b",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Extension gains over founder GBM vanish under position-grouped CV (6 of 7 datasets worse)",
+   "status": "pending auditor",
+   "reason": "custom evidence: re-executed, no hidden-data test; awaits the calibrated jury",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-22a938bb",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-f61a6d58",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-28499fdd",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-99ee254b",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-1b335116",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-25feb685",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-130a15b4",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b1347696",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Grouped inner encoders reverse the grouped-CV result: extension beats founder-variant on 5 of 7 datasets",
+   "status": "pending auditor",
+   "reason": "custom evidence: re-executed, no hidden-data test; awaits the calibrated jury",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-1935f97b",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-aaa56dd2",
+   "kind": "finding",
+   "agent": "agent-138f4a77",
+   "title": "Extended GBM is worse than founder GBM under position-grouped CV on BLAT_ECOLX_Stiffler_2015 and CASP3 (refutes random-CV generalisation)",
+   "status": "pending auditor",
+   "reason": "custom evidence: re-executed, no hidden-data test; awaits the calibrated jury",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-5a218346",
+     "relation": "refutes",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-407cd6ff",
+   "kind": "finding",
+   "agent": "agent-1d747a11",
+   "title": "Position-grouped inner encoders hurt under random outer CV on all 7 DMS sets",
+   "status": "pending auditor",
+   "reason": "custom evidence: re-executed, no hidden-data test; awaits the calibrated jury",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-df655360",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b1347696",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-63e98497",
+   "kind": "finding",
+   "agent": "agent-138f4a77",
+   "title": "Position-grouped inner encoder is worse than random inner encoder under random outer CV on BLAT_ECOLX_Stiffler_2015",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-df655360",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-442c8562",
+   "kind": "finding",
+   "agent": "agent-138f4a77",
+   "title": "Position-grouped inner encoder is worse than random inner encoder under random outer CV on BLAT_ECOLX_Stiffler_2015 (corrected test command)",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-df655360",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

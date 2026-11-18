@@ -1,0 +1,4 @@
+gpt-6-luna compbio-s1 21ff73ca-6ac3-4a7c-b282-a010311de31a
+gpt-6-luna compbio-solo-s1 5aef0cca-8284-406d-86ec-a83939a7a06e
+gpt-6-luna aiml-s1,aiml-solo-s1,materials-s1,materials-solo-s1 7a197db1-c1ff-4197-b73a-2fe8a6560a4b
+claude-haiku-5-5 aiml-s1,aiml-solo-s1,compbio-s1,compbio-solo-s1,materials-s1,materials-solo-s1 a6b43909-f002-4b93-9726-3cbfd42c8d10

@@ -1,0 +1,2367 @@
+{
+ "run_id": "run-a195093c",
+ "model": "6-luna",
+ "task": "compbio-solo-s2",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 12,
+  "R_frontier": 5,
+  "C_collaborative": 0,
+  "submitted_credited": 62,
+  "duplicates": 5,
+  "best_gain": {
+   "BLAT_ECOLX_Stiffler_2015": 0.2088,
+   "BLAT_ECOLX_Firnberg_2014": 0.1966,
+   "CASP3_HUMAN_Roychowdhury_2020": 0.126,
+   "RASK_HUMAN_Weng_2022_binding-DARPin_K55": 0.0634
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 45
+  }
+ },
+ "rewards": {
+  "score": 0.7058823529411765,
+  "R_replicated": 12.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 5.0,
+  "datasets_advanced": 4.0,
+  "mean_best_gain": 0.08497142857142857,
+  "auditor_pending": 0.0,
+  "submitted_credited": 62.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 45.0,
+  "duplicates": 5.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 1.9035,
+  "model_calls": 179.0,
+  "experiments": 185.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.159,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 14.0,
+  "dataset_entropy": 0.955,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 75.1
+ },
+ "claims": [
+  {
+   "id": "findin-517e17dd",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-assay TEM-1 measurements improve mutation fitness prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-318c009c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Firnberg measurements improve Stiffler TEM-1 fitness prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a2822f67",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-assay transfer generalizes across held-out TEM-1 positions",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c680cb24",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-assay transfer generalizes across held-out TEM-1 positions",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ec208537",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Weaker ridge regularization improves KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0052, 95% CI [-0.0065, -0.0037], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.19057618492807016,
+    "b": 0.19574548321929827,
+    "diff": -0.005169298291228071,
+    "ci95": [
+     -0.006547729852719302,
+     -0.003698490569736849
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-9e55a199",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Weaker ridge regularization improves KRAS binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0023, 95% CI [-0.0035, -0.0012], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.14911117767661686,
+    "b": 0.15144308384541866,
+    "diff": -0.0023319061688017876,
+    "ci95": [
+     -0.0034741166646749147,
+     -0.0011927406929713854
+    ],
+    "min_effect": 0.0030288616769083734,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-74ce2dab",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Weaker ridge regularization improves Stiffler TEM-1 prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0225, 95% CI [-0.0253, -0.0196], beyond the minimum effect 0.0113)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.5426841804682035,
+    "b": 0.5651530003744037,
+    "diff": -0.022468819906200317,
+    "ci95": [
+     -0.02531285130005961,
+     -0.019621693371164557
+    ],
+    "min_effect": 0.011303060007488075,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8df59be4",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Shared substitution features improve Firnberg TEM-1 prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0427, 95% CI [-0.0509, -0.0346], beyond the minimum effect 0.0044)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.1751463997793372,
+    "b": 0.21788639431814416,
+    "diff": -0.04273999453880696,
+    "ci95": [
+     -0.050930424984643126,
+     -0.03464184661312035
+    ],
+    "min_effect": 0.004357727886362884,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-25200bf2",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Shared substitution features improve Stiffler TEM-1 prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1172, 95% CI [-0.1381, -0.0966], beyond the minimum effect 0.0113)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.44797050016057244,
+    "b": 0.5651530003744037,
+    "diff": -0.11718250021383149,
+    "ci95": [
+     -0.13809496847031796,
+     -0.09664621745146663
+    ],
+    "min_effect": 0.011303060007488075,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d4f1a2b0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Shared substitution features improve CASP3 activity prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0563, 95% CI [-0.0824, -0.0315], beyond the minimum effect 0.0093)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 399,
+    "a": 0.4070542000532214,
+    "b": 0.46339928325376123,
+    "diff": -0.05634508320053984,
+    "ci95": [
+     -0.08235944649275637,
+     -0.03150060085622087
+    ],
+    "min_effect": 0.009267985665075225,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-590c51dc",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Shared substitution features improve KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0056, 95% CI [-0.0040, 0.0150], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.2013217042463158,
+    "b": 0.19574548321929827,
+    "diff": 0.0055762210270175454,
+    "ci95": [
+     -0.003973214303271927,
+     0.015034437167149127
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-38ce6cb9",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Shared substitution features improve KRAS binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0039, 95% CI [-0.0104, 0.0024], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.14753541815847393,
+    "b": 0.15144308384541866,
+    "diff": -0.003907665686944706,
+    "ci95": [
+     -0.010436151660139613,
+     0.0023957388058475295
+    ],
+    "min_effect": 0.0030288616769083734,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-39461460",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Shared substitution features improve held-out Firnberg TEM-1 prediction",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-8df59be4",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-8df59be4",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.1751463997793372,
+    "b": 0.21788639431814416,
+    "diff": -0.04273999453880696,
+    "ci95": [
+     -0.050930424984643126,
+     -0.03464184661312035
+    ],
+    "min_effect": 0.004357727886362884,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-f9fe3db8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Shared substitution features improve held-out Stiffler TEM-1 prediction",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-25200bf2",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-25200bf2",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.44797050016057244,
+    "b": 0.5651530003744037,
+    "diff": -0.11718250021383149,
+    "ci95": [
+     -0.13809496847031796,
+     -0.09664621745146663
+    ],
+    "min_effect": 0.011303060007488075,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-5d5c484e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Shared substitution features improve held-out CASP3 prediction",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-d4f1a2b0",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-d4f1a2b0",
+   "hidden": {
+    "metric": "MAE",
+    "n": 399,
+    "a": 0.4070542000532214,
+    "b": 0.46339928325376123,
+    "diff": -0.05634508320053984,
+    "ci95": [
+     -0.08235944649275637,
+     -0.03150060085622087
+    ],
+    "min_effect": 0.009267985665075225,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-82668ab0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Shared substitution features improve held-out KRAS binding prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0096, 95% CI [-0.0124, -0.0069], beyond the minimum effect 0.0030)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.14184165617680133,
+    "b": 0.15144308384541866,
+    "diff": -0.009601427668617298,
+    "ci95": [
+     -0.012382272204356799,
+     -0.006888135482048691
+    ],
+    "min_effect": 0.0030288616769083734,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ecaed877",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Companion-assay transfer improves Firnberg TEM-1 prediction",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-8df59be4",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-8df59be4",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.1751463997793372,
+    "b": 0.21788639431814416,
+    "diff": -0.04273999453880696,
+    "ci95": [
+     -0.050930424984643126,
+     -0.03464184661312035
+    ],
+    "min_effect": 0.004357727886362884,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-221279f7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Companion-assay transfer improves Stiffler TEM-1 prediction",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-25200bf2",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-25200bf2",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.44797050016057244,
+    "b": 0.5651530003744037,
+    "diff": -0.11718250021383149,
+    "ci95": [
+     -0.13809496847031796,
+     -0.09664621745146663
+    ],
+    "min_effect": 0.011303060007488075,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-967db466",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "DARPin K55 measurements improve KRAS abundance prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0034, 95% CI [-0.0116, 0.0049], needed below -0.0042",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.2077733728964633,
+    "b": 0.2111900104445317,
+    "diff": -0.00341663754806843,
+    "ci95": [
+     -0.011562647860702394,
+     0.004940545971802443
+    ],
+    "min_effect": 0.004223800208890634,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a3f4312c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KRAS abundance measurements improve DARPin K55 binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0039, 95% CI [-0.0104, 0.0024], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.14753541815847393,
+    "b": 0.15144308384541866,
+    "diff": -0.003907665686944706,
+    "ci95": [
+     -0.010436151660139613,
+     0.0023957388058475295
+    ],
+    "min_effect": 0.0030288616769083734,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ebd1b378",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Calibrated Stiffler scores predict held-out Firnberg TEM-1 fitness",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0044",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.21788722463463134,
+    "b": 0.21788639431814416,
+    "diff": 8.303164871565985e-07,
+    "ci95": [
+     -4.129322701068239e-08,
+     1.6899856048025216e-06
+    ],
+    "min_effect": 0.004357727886362884,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-f57f0536",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Calibrated Firnberg scores predict held-out Stiffler TEM-1 fitness",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0113",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.5651563398020667,
+    "b": 0.5651530003744037,
+    "diff": 3.3394276629527587e-06,
+    "ci95": [
+     1.6868771860041781e-06,
+     5.099986287749e-06
+    ],
+    "min_effect": 0.011303060007488075,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-12bfeba8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KRAS binding scores improve abundance prediction beyond ridge",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0055, 95% CI [-0.0124, 0.0014], needed below -0.0042",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.2056450384633459,
+    "b": 0.2111900104445317,
+    "diff": -0.005544971981185804,
+    "ci95": [
+     -0.01242313982997586,
+     0.0014454882954543851
+    ],
+    "min_effect": 0.004223800208890634,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-4e89ddb9",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KRAS abundance scores improve DARPin K55 binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0046, 95% CI [-0.0104, 0.0009], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.1467955208446749,
+    "b": 0.15144308384541866,
+    "diff": -0.004647563000743738,
+    "ci95": [
+     -0.010357875296356078,
+     0.0009044322062046853
+    ],
+    "min_effect": 0.0030288616769083734,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-02467657",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Sequence residual correction improves KRAS abundance prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0042",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.21119079897389675,
+    "b": 0.2111900104445317,
+    "diff": 7.885293650794856e-07,
+    "ci95": [
+     -1.0495847288341084e-06,
+     2.651762701720954e-06
+    ],
+    "min_effect": 0.004223800208890634,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-4aaa37b3",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Sequence residual correction improves KRAS DARPin binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.15144297753516897,
+    "b": 0.15144308384541866,
+    "diff": -1.0631024967256357e-07,
+    "ci95": [
+     -1.867441396190594e-06,
+     1.6274891622836605e-06
+    ],
+    "min_effect": 0.0030288616769083734,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-2d23e134",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Spline-calibrated Stiffler scores predict Firnberg TEM-1 fitness",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0044",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.21788722463463134,
+    "b": 0.21788639431814416,
+    "diff": 8.303164871565985e-07,
+    "ci95": [
+     -4.129322701068239e-08,
+     1.6899856048025216e-06
+    ],
+    "min_effect": 0.004357727886362884,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-70426320",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Spline-calibrated Firnberg scores predict Stiffler TEM-1 fitness",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0113",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.5651563398020667,
+    "b": 0.5651530003744037,
+    "diff": 3.3394276629527587e-06,
+    "ci95": [
+     1.6868771860041781e-06,
+     5.099986287749e-06
+    ],
+    "min_effect": 0.011303060007488075,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-cf4fdbba",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Shared amino-acid substitution features improve CASP3 prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0467, 95% CI [-0.0764, -0.0177], beyond the minimum effect 0.0093)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 399,
+    "a": 0.4166679766501964,
+    "b": 0.46339928325376123,
+    "diff": -0.046731306603564934,
+    "ci95": [
+     -0.07639671473091765,
+     -0.017702941613271805
+    ],
+    "min_effect": 0.009267985665075225,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-6476db5c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Expression scores and cross-fitted sequence residuals improve KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.1957448626403509,
+    "b": 0.19574548321929827,
+    "diff": -6.205789473661264e-07,
+    "ci95": [
+     -2.541979385962803e-06,
+     1.278755263162767e-06
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-2c5cac6a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-fitted spline residual correction improves KRAS abundance prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0042",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.21119079897389675,
+    "b": 0.2111900104445317,
+    "diff": 7.885293650794856e-07,
+    "ci95": [
+     -1.0495847288341084e-06,
+     2.651762701720954e-06
+    ],
+    "min_effect": 0.004223800208890634,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-887648e6",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cross-fitted spline residual correction improves KRAS DARPin K55 binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.15144297753516897,
+    "b": 0.15144308384541866,
+    "diff": -1.0631024967256357e-07,
+    "ci95": [
+     -1.867441396190594e-06,
+     1.6274891622836605e-06
+    ],
+    "min_effect": 0.0030288616769083734,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-3a9ff5b2",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Shared substitution features improve Firnberg TEM-1 fitness prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0402, 95% CI [-0.0491, -0.0315], beyond the minimum effect 0.0044)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.17770347034109363,
+    "b": 0.21788639431814416,
+    "diff": -0.04018292397705053,
+    "ci95": [
+     -0.04908257082234051,
+     -0.0315105856996106
+    ],
+    "min_effect": 0.004357727886362884,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-1682a4e9",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Shared substitution features improve Stiffler TEM-1 fitness prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1140, 95% CI [-0.1371, -0.0920], beyond the minimum effect 0.0113)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.4511414167981717,
+    "b": 0.5651530003744037,
+    "diff": -0.11401158357623213,
+    "ci95": [
+     -0.13711238072419518,
+     -0.092017349222979
+    ],
+    "min_effect": 0.011303060007488075,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-574abb9d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Spline transfer with sequence fallback predicts Firnberg TEM-1 fitness",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0044",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.21788722463463134,
+    "b": 0.21788639431814416,
+    "diff": 8.303164871565985e-07,
+    "ci95": [
+     -4.129322701068239e-08,
+     1.6899856048025216e-06
+    ],
+    "min_effect": 0.004357727886362884,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-2d23e134",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3fdc9712",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Spline transfer with sequence fallback predicts Stiffler TEM-1 fitness",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0113",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.5651563398020667,
+    "b": 0.5651530003744037,
+    "diff": 3.3394276629527587e-06,
+    "ci95": [
+     1.6868771860041781e-06,
+     5.099986287749e-06
+    ],
+    "min_effect": 0.011303060007488075,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-70426320",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dc7c52e8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Substitution-aware residual correction improves KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.1957448626403509,
+    "b": 0.19574548321929827,
+    "diff": -6.205789473661264e-07,
+    "ci95": [
+     -2.541979385962803e-06,
+     1.278755263162767e-06
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-6476db5c",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d2fc8720",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 function scores modestly improve expression prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 571,
+    "a": 0.19740004308581438,
+    "b": 0.19740022438178634,
+    "diff": -1.8129597197956026e-07,
+    "ci95": [
+     -7.059903677734057e-07,
+     3.426138353784003e-07
+    ],
+    "min_effect": 0.003948004487635727,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b759a142",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Substitution identity modestly improves KCNE1 expression prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0032, 95% CI [-0.0063, -0.0003], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 571,
+    "a": 0.19416874304378284,
+    "b": 0.19740022438178634,
+    "diff": -0.0032314813380035032,
+    "ci95": [
+     -0.006250430195884414,
+     -0.0003053017694395837
+    ],
+    "min_effect": 0.003948004487635727,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-92f5ef0e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Substitution identity improves KRAS abundance prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0091, 95% CI [-0.0146, -0.0036], needed below -0.0042",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.2020541360602869,
+    "b": 0.2111900104445317,
+    "diff": -0.009135874384244827,
+    "ci95": [
+     -0.014595169646178088,
+     -0.003563330389973153
+    ],
+    "min_effect": 0.004223800208890634,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-d9407f29",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Substitution identity improves KRAS DARPin K55 binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0041, 95% CI [-0.0105, 0.0021], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.14732103422869036,
+    "b": 0.15144308384541866,
+    "diff": -0.004122049616728281,
+    "ci95": [
+     -0.010467383406159918,
+     0.0021066747153634987
+    ],
+    "min_effect": 0.0030288616769083734,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-bca77bf8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Substitution-aware residual correction improves KRAS K55 binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.15144297753516897,
+    "b": 0.15144308384541866,
+    "diff": -1.0631024967256357e-07,
+    "ci95": [
+     -1.867441396190594e-06,
+     1.6274891622836605e-06
+    ],
+    "min_effect": 0.0030288616769083734,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-887648e6",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f63c7164",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A fixed two-scale substitution-feature blend improves CASP3 prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0561, 95% CI [-0.0784, -0.0346], beyond the minimum effect 0.0093)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 399,
+    "a": 0.40726204488454965,
+    "b": 0.46339928325376123,
+    "diff": -0.056137238369211695,
+    "ci95": [
+     -0.07837971548853326,
+     -0.03457528475381726
+    ],
+    "min_effect": 0.009267985665075225,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-cf4fdbba",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f2d0bdbf",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Substitution identity improves KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0055, 95% CI [-0.0040, 0.0150], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.20127398038638594,
+    "b": 0.19574548321929827,
+    "diff": 0.005528497167087717,
+    "ci95": [
+     -0.003992425778103503,
+     0.01496614104892105
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-dc7c52e8",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f2fc22c8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical mutation descriptors improve CASP3 activity prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0584, 95% CI [-0.0851, -0.0331], beyond the minimum effect 0.0093)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 399,
+    "a": 0.40501546389261844,
+    "b": 0.46339928325376123,
+    "diff": -0.05838381936114286,
+    "ci95": [
+     -0.08514899577206493,
+     -0.033076364300132124
+    ],
+    "min_effect": 0.009267985665075225,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-cf4fdbba",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-65fc5e76",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical mutation descriptors improve KRAS abundance prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0096, 95% CI [-0.0158, -0.0028], needed below -0.0042",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.2015800364588454,
+    "b": 0.2111900104445317,
+    "diff": -0.009609973985686289,
+    "ci95": [
+     -0.015810670393699103,
+     -0.0028125163010017827
+    ],
+    "min_effect": 0.004223800208890634,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-92f5ef0e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2306b855",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical mutation descriptors improve KRAS DARPin K55 binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0076, 95% CI [-0.0128, -0.0026], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.1438077286296476,
+    "b": 0.15144308384541866,
+    "diff": -0.007635355215771061,
+    "ci95": [
+     -0.01284228274447684,
+     -0.002604211131407095
+    ],
+    "min_effect": 0.0030288616769083734,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-d9407f29",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-fffa97d4",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical mutation descriptors improve KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0044, 95% CI [-0.0120, 0.0030], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.19129944303824561,
+    "b": 0.19574548321929827,
+    "diff": -0.004446040181052631,
+    "ci95": [
+     -0.012033559604289472,
+     0.0030095666023070133
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-f2d0bdbf",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cbab3cf1",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Firnberg scores strongly improve held-out Stiffler TEM-1 fitness prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0113",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.5651563398020667,
+    "b": 0.5651530003744037,
+    "diff": 3.3394276629527587e-06,
+    "ci95": [
+     1.6868771860041781e-06,
+     5.099986287749e-06
+    ],
+    "min_effect": 0.011303060007488075,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ed5fb860",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Stiffler scores improve held-out Firnberg TEM-1 fitness prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0044",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.21788722463463134,
+    "b": 0.21788639431814416,
+    "diff": 8.303164871565985e-07,
+    "ci95": [
+     -4.129322701068239e-08,
+     1.6899856048025216e-06
+    ],
+    "min_effect": 0.004357727886362884,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-cbab3cf1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b07eca2d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 expression scores improve function prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0000, 95% CI [-0.0000, 0.0000], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.1957448626403509,
+    "b": 0.19574548321929827,
+    "diff": -6.205789473661264e-07,
+    "ci95": [
+     -2.541979385962803e-06,
+     1.278755263162767e-06
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-f2d0bdbf",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d28cbd6f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical mutation descriptors improve KCNE1 expression prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0000, 95% CI [-0.0073, 0.0073], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 571,
+    "a": 0.19737401755341505,
+    "b": 0.19740022438178634,
+    "diff": -2.6206828371281488e-05,
+    "ci95": [
+     -0.007280486602057801,
+     0.0073309191800350225
+    ],
+    "min_effect": 0.003948004487635727,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b759a142",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9bc66cba",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical mutation descriptors improve Firnberg TEM-1 fitness prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0428, 95% CI [-0.0511, -0.0348], beyond the minimum effect 0.0044)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.17505364413040597,
+    "b": 0.21788639431814416,
+    "diff": -0.042832750187738196,
+    "ci95": [
+     -0.051093610288492124,
+     -0.034815484043697185
+    ],
+    "min_effect": 0.004357727886362884,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-679a4c59",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical mutation descriptors improve Stiffler TEM-1 fitness prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1180, 95% CI [-0.1395, -0.0972], beyond the minimum effect 0.0113)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.4471242621008744,
+    "b": 0.5651530003744037,
+    "diff": -0.11802873827352942,
+    "ci95": [
+     -0.1394728704414825,
+     -0.09715795433137722
+    ],
+    "min_effect": 0.011303060007488075,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-cbab3cf1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-45bed86d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical descriptors add signal beyond substitution identity for Stiffler TEM-1",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0009, 95% CI [-0.0025, 0.0005], needed below -0.0090",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.4480647234368045,
+    "b": 0.4471242621008744,
+    "diff": -0.0009404613359300549,
+    "ci95": [
+     -0.002501234818195558,
+     0.0005432396303735999
+    ],
+    "min_effect": 0.00896129446873609,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-679a4c59",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-91dce59a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Stiffler physicochemical-feature gain replicates across validation splits",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0009, 95% CI [-0.0025, 0.0005], needed below -0.0090",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.4480647234368045,
+    "b": 0.4471242621008744,
+    "diff": -0.0009404613359300549,
+    "ci95": [
+     -0.002501234818195558,
+     0.0005432396303735999
+    ],
+    "min_effect": 0.00896129446873609,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-45bed86d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c713b8b7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features improve Stiffler prediction for unseen substitution classes",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0278, 95% CI [0.0223, 0.0333], needed below -0.0114",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.5711236065055644,
+    "b": 0.5989519181295708,
+    "diff": 0.027828311624006355,
+    "ci95": [
+     0.022299303117189976,
+     0.033317481783008744
+    ],
+    "min_effect": 0.011422472130111288,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-91dce59a",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-410f3437",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features improve KCNE1 function prediction for unseen substitutions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0042, 95% CI [0.0013, 0.0068], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.1957274673140351,
+    "b": 0.19988713516666667,
+    "diff": 0.0041596678526315805,
+    "ci95": [
+     0.001326055308157896,
+     0.006832920248859648
+    ],
+    "min_effect": 0.003914549346280702,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c713b8b7",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-35b7cf59",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features improve KCNE1 expression prediction for unseen substitutions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0059, 95% CI [0.0025, 0.0093], needed below -0.0040",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 571,
+    "a": 0.19892817934851137,
+    "b": 0.2048406145288967,
+    "diff": 0.005912435180385289,
+    "ci95": [
+     0.0025484891896672564,
+     0.009324456180647981
+    ],
+    "min_effect": 0.003978563586970228,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-410f3437",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f519b304",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features improve KRAS abundance prediction for unseen substitutions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0063, 95% CI [0.0042, 0.0085], needed below -0.0042",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.2112622257251844,
+    "b": 0.2175406735522224,
+    "diff": 0.006278447827038015,
+    "ci95": [
+     0.004166684816011424,
+     0.008464162308993549
+    ],
+    "min_effect": 0.004225244514503688,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c19decfc",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features improve KRAS binding prediction for unseen substitutions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0078, 95% CI [0.0056, 0.0099], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.15198031179193666,
+    "b": 0.15979553231124755,
+    "diff": 0.007815220519310887,
+    "ci95": [
+     0.005632599254003237,
+     0.009853118799873523
+    ],
+    "min_effect": 0.0030396062358387333,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-85b84a06",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features improve Firnberg prediction for unseen substitutions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0082, 95% CI [0.0064, 0.0100], needed below -0.0044",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.22074993075874072,
+    "b": 0.22894884995028997,
+    "diff": 0.008198919191549294,
+    "ci95": [
+     0.0063761246876139184,
+     0.010018316571255178
+    ],
+    "min_effect": 0.004414998615174815,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9bc66cba",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

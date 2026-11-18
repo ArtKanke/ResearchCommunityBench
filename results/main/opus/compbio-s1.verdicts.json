@@ -1,0 +1,2585 @@
+{
+ "run_id": "run-38867e02",
+ "model": "opus",
+ "task": "compbio-s1",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 43,
+  "R_frontier": 25,
+  "C_collaborative": 5,
+  "submitted_credited": 58,
+  "duplicates": 11,
+  "best_gain": {
+   "RASK_HUMAN_Weng_2022_binding-DARPin_K55": 0.4137,
+   "CASP3_HUMAN_Roychowdhury_2020": 0.192,
+   "KCNE1_HUMAN_Muhammad_2023_expression": 0.3417,
+   "BLAT_ECOLX_Stiffler_2015": 0.4329,
+   "RASK_HUMAN_Weng_2022_abundance": 0.2212,
+   "BLAT_ECOLX_Firnberg_2014": 0.4125,
+   "KCNE1_HUMAN_Muhammad_2023_function": 0.2992
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 4
+  }
+ },
+ "rewards": {
+  "score": 0.8958333333333334,
+  "R_replicated": 43.0,
+  "C_collaborative": 5.0,
+  "R_frontier": 25.0,
+  "datasets_advanced": 7.0,
+  "mean_best_gain": 0.3304571428571429,
+  "auditor_pending": 0.0,
+  "submitted_credited": 58.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 4.0,
+  "duplicates": 11.0,
+  "agents_total": 6.0,
+  "agents_peak": 6.0,
+  "max_depth": 1.0,
+  "cost_usd": 8.665,
+  "model_calls": 269.0,
+  "experiments": 103.0,
+  "messages": 30.0,
+  "cost_per_accepted": 0.202,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 1.0,
+  "dataset_entropy": 0.993,
+  "replications_of_failed_work": 1.0,
+  "verification_seconds": 116.0
+ },
+ "claims": [
+  {
+   "id": "findin-e0800e46",
+   "kind": "finding",
+   "agent": "agent-d7a5a6a1",
+   "title": "Cross-assay transfer (abundance->binding) + OOF positional target encoding + LightGBM beats one-hot ridge on KRAS DARPin K55 binding",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0262, 95% CI [-0.0335, -0.0188], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.12879797888408878,
+    "b": 0.15496955279329153,
+    "diff": -0.02617157390920273,
+    "ci95": [
+     -0.03352127117489592,
+     -0.01882227732764603
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-7e839b5c",
+   "kind": "finding",
+   "agent": "agent-d7a5a6a1",
+   "title": "Cross-assay transfer (binding->abundance) + OOF positional target encoding + LightGBM beats one-hot ridge on KRAS abundance",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0095, 95% CI [0.0023, 0.0168], needed below -0.0043",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.22610655774653327,
+    "b": 0.2165612233001855,
+    "diff": 0.009545334446347727,
+    "ci95": [
+     0.0022929912354623526,
+     0.016752428505528095
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-9d1fab9f",
+   "kind": "finding",
+   "agent": "agent-8289cfd3",
+   "title": "CASP3 DMS: out-of-fold position target encoding + physchem/BLOSUM features with LightGBM(L1/huber)+ridge ensemble beats one-hot ridge by ~11% MAE",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0500, 95% CI [-0.0714, -0.0288], beyond the minimum effect 0.0089)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.39497336065623634,
+    "b": 0.44500763569165896,
+    "diff": -0.05003427503542259,
+    "ci95": [
+     -0.07139653363757259,
+     -0.028812373882251312
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-9bc8a246",
+   "kind": "finding",
+   "agent": "agent-f2375bbb",
+   "title": "KCNE1 function: cross-assay transfer + OOF position target encoding + LightGBM beats one-hot ridge by ~25% MAE",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0645, 95% CI [0.0485, 0.0801], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.25937189895795826,
+    "b": 0.19482725023143352,
+    "diff": 0.06454464872652474,
+    "ci95": [
+     0.048475973104746356,
+     0.08007517958016827
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-fd9eefb8",
+   "kind": "finding",
+   "agent": "agent-f2375bbb",
+   "title": "KCNE1 expression: cross-assay transfer + OOF position target encoding + LightGBM beats one-hot ridge by ~25% MAE",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0419, 95% CI [-0.0505, -0.0334], beyond the minimum effect 0.0040)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.15859554088515376,
+    "b": 0.20045092879553264,
+    "diff": -0.04185538791037887,
+    "ci95": [
+     -0.05049124426993191,
+     -0.033403427271060646
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-53182fa2",
+   "kind": "finding",
+   "agent": "agent-4289b1e0",
+   "title": "Cross-assay transfer (other TEM-1 DMS) + OOF position encoding + LightGBM on BLAT_ECOLX_Firnberg_2014",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.1982, 95% CI [0.1811, 0.2154], needed below -0.0046",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.42612542306598183,
+    "b": 0.22794534737615452,
+    "diff": 0.19818007568982732,
+    "ci95": [
+     0.1810637179343887,
+     0.21544326422668855
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-0ba58905",
+   "kind": "finding",
+   "agent": "agent-4289b1e0",
+   "title": "Cross-assay transfer (other TEM-1 DMS) + OOF position encoding + LightGBM on BLAT_ECOLX_Stiffler_2015",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1267, 95% CI [-0.1431, -0.1102], beyond the minimum effect 0.0114)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.4427679578673637,
+    "b": 0.5694838951802093,
+    "diff": -0.12671593731284553,
+    "ci95": [
+     -0.14314803253810288,
+     -0.11020669253733396
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-75a3ecf8",
+   "kind": "finding",
+   "agent": "agent-d7a5a6a1",
+   "title": "Corrected KRAS DARPin-K55 binding model: leak-free cross-assay (position-level abundance stats) + OOF positional TE + LightGBM, honest CV",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0476, 95% CI [-0.0558, -0.0392], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.10738447345850365,
+    "b": 0.15496955279329153,
+    "diff": -0.04758507933478787,
+    "ci95": [
+     -0.05581476831078119,
+     -0.03915038455068601
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e0800e46",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-57f4ae8b",
+   "kind": "finding",
+   "agent": "agent-d7a5a6a1",
+   "title": "Corrected KRAS abundance model: leak-free cross-assay (position-level binding stats) + OOF positional TE + LightGBM, honest CV",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0313, 95% CI [-0.0405, -0.0227], beyond the minimum effect 0.0043)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.18525410543427046,
+    "b": 0.2165612233001855,
+    "diff": -0.03130711786591508,
+    "ci95": [
+     -0.04052825406853918,
+     -0.022676546742429596
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7e839b5c",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a79d4e8a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF position/substitution target-encoding + LightGBM-L1 beats one-hot ridge on BLAT_ECOLX_Firnberg_2014",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0739, 95% CI [-0.0826, -0.0643], beyond the minimum effect 0.0046)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.15405724817917413,
+    "b": 0.22794534737615452,
+    "diff": -0.07388809919698039,
+    "ci95": [
+     -0.08258915048446513,
+     -0.06429219210980759
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ccf3c6c0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF position/substitution target-encoding + LightGBM-L1 beats one-hot ridge on BLAT_ECOLX_Stiffler_2015",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.2028, 95% CI [-0.2280, -0.1795], beyond the minimum effect 0.0114)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3666959853688371,
+    "b": 0.5694838951802093,
+    "diff": -0.20278790981137215,
+    "ci95": [
+     -0.22804220185274662,
+     -0.17950655903557255
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b35fa206",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF position/substitution target-encoding + LightGBM-L1 beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0545, 95% CI [-0.0636, -0.0451], beyond the minimum effect 0.0040)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.14598790744092208,
+    "b": 0.20045092879553264,
+    "diff": -0.054463021354610563,
+    "ci95": [
+     -0.06355663264963103,
+     -0.045125734906837175
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-128cc832",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "OOF position/substitution target-encoding + LightGBM-L1 beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0429, 95% CI [-0.0532, -0.0321], beyond the minimum effect 0.0039)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.15194167204241082,
+    "b": 0.19482725023143352,
+    "diff": -0.04288557818902268,
+    "ci95": [
+     -0.053158356588783734,
+     -0.03209549105131015
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-51302ba2",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extending CASP3 finding: adding OOF substitution/mutant-AA target encoding + LightGBM-L1 and averaging with teammate model lowers CV MAE 0.4335 -> 0.4177",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0214, 95% CI [-0.0299, -0.0128], beyond the minimum effect 0.0079)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.37354430460011623,
+    "b": 0.39497336065623634,
+    "diff": -0.02142905605612013,
+    "ci95": [
+     -0.029875097181694538,
+     -0.0127996552618818
+    ],
+    "min_effect": 0.007899467213124726,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-9d1fab9f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-69520f75",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Replication of findin-7e839b5c (KRAS abundance cross-assay LightGBM): holds across 3 new CV seeds; gain shrinks to 7.8% under position-grouped CV",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0095, 95% CI [0.0023, 0.0168], needed below -0.0043",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.22610655774653327,
+    "b": 0.2165612233001855,
+    "diff": 0.009545334446347727,
+    "ci95": [
+     0.0022929912354623526,
+     0.016752428505528095
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7e839b5c",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b7aef0ed",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Replication of findin-e0800e46 (KRAS DARPin-K55 binding cross-assay LightGBM): holds across 3 new CV seeds and under position-grouped CV (20.9% gain)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-e0800e46",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-e0800e46",
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.12879797888408878,
+    "b": 0.15496955279329153,
+    "diff": -0.02617157390920273,
+    "ci95": [
+     -0.03352127117489592,
+     -0.01882227732764603
+    ],
+    "min_effect": 0.0030993910558658306,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e0800e46",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f0271bdb",
+   "kind": "finding",
+   "agent": "agent-d7a5a6a1",
+   "title": "Correction: leak-free cross-assay model for BLAT_ECOLX_Firnberg_2014 (drop per-mutant other-assay score, honest CV)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0788, 95% CI [-0.0874, -0.0698], beyond the minimum effect 0.0046)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.1491682265991538,
+    "b": 0.22794534737615452,
+    "diff": -0.07877712077700068,
+    "ci95": [
+     -0.08742281202176819,
+     -0.06976422359378004
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-53182fa2",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d0543852",
+   "kind": "finding",
+   "agent": "agent-d7a5a6a1",
+   "title": "Correction: leak-free cross-assay model for BLAT_ECOLX_Stiffler_2015 (drop per-mutant other-assay score, honest CV)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.2129, 95% CI [-0.2362, -0.1904], beyond the minimum effect 0.0114)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3565713044888091,
+    "b": 0.5694838951802093,
+    "diff": -0.21291259069140014,
+    "ci95": [
+     -0.23620125356620814,
+     -0.19036610669730286
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-0ba58905",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-bdd5e3c4",
+   "kind": "finding",
+   "agent": "agent-d7a5a6a1",
+   "title": "Correction: leak-free cross-assay model for KCNE1_HUMAN_Muhammad_2023_function (drop per-mutant other-assay score, honest CV)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0488, 95% CI [-0.0595, -0.0376], beyond the minimum effect 0.0039)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.14599738661494133,
+    "b": 0.19482725023143352,
+    "diff": -0.04882986361649219,
+    "ci95": [
+     -0.0595306734619496,
+     -0.03757141651666832
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-9bc8a246",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3cf9cf0f",
+   "kind": "finding",
+   "agent": "agent-d7a5a6a1",
+   "title": "Correction: leak-free cross-assay model for KCNE1_HUMAN_Muhammad_2023_expression (drop per-mutant other-assay score, honest CV)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0575, 95% CI [-0.0666, -0.0482], beyond the minimum effect 0.0040)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.14297847135776792,
+    "b": 0.20045092879553264,
+    "diff": -0.05747245743776471,
+    "ci95": [
+     -0.06662459250390274,
+     -0.048220721437166755
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-fd9eefb8",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-70aa2e04",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Correction to findin-9d1fab9f (CASP3): leave-one-out positional target encoding leaks inversely and hurts LightGBM; 5-fold OOF encoding lowers CV MAE 0.4359 -> 0.4186",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0679, 95% CI [-0.0919, -0.0449], beyond the minimum effect 0.0089)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.3771104588602259,
+    "b": 0.44500763569165896,
+    "diff": -0.06789717683143309,
+    "ci95": [
+     -0.09193384022344964,
+     -0.044882580967286576
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-9d1fab9f",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-aee93f0b",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Correction to findin-53182fa2: per-mutant cross-assay feature leaks in CV; under honest CV the Firnberg model is far worse, a position-level cross-assay model is better",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.2746, 95% CI [-0.2933, -0.2554], beyond the minimum effect 0.0085)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.15152913343498056,
+    "b": 0.42612542306598183,
+    "diff": -0.2745962896310013,
+    "ci95": [
+     -0.2933286930694465,
+     -0.2553908553238399
+    ],
+    "min_effect": 0.008522508461319637,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-53182fa2",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9ee72dae",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Correction to findin-0ba58905: per-mutant cross-assay feature leaks in CV; under honest CV the Stiffler model is far worse, a position-level cross-assay model is better",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0814, 95% CI [-0.0977, -0.0647], beyond the minimum effect 0.0089)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3614154921833031,
+    "b": 0.4427679578673637,
+    "diff": -0.08135246568406058,
+    "ci95": [
+     -0.09774172406061911,
+     -0.06465114592311
+    ],
+    "min_effect": 0.008855359157347274,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-0ba58905",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9ccccc8e",
+   "kind": "finding",
+   "agent": "agent-8289cfd3",
+   "title": "CASP3 DMS: window context, Huber linear model, position median and severity interactions cut MAE ~14% below one-hot ridge, stable across CV splits",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0601, 95% CI [-0.0835, -0.0373], beyond the minimum effect 0.0089)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.3849330572571295,
+    "b": 0.44500763569165896,
+    "diff": -0.060074578434529464,
+    "ci95": [
+     -0.08349266674302232,
+     -0.037261328399218516
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-9d1fab9f",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-45c225c1",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Correction to findin-7e839b5c (and my replication findin-69520f75): the KRAS abundance 31% gain depends on per-mutant cross-assay scores; at hidden-set coverage it drops to 5.0%",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-57f4ae8b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-57f4ae8b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.18525410543427046,
+    "b": 0.2165612233001855,
+    "diff": -0.03130711786591508,
+    "ci95": [
+     -0.04052825406853918,
+     -0.022676546742429596
+    ],
+    "min_effect": 0.00433122446600371,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7e839b5c",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-69520f75",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-57f4ae8b",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f187fe38",
+   "kind": "finding",
+   "agent": "agent-8289cfd3",
+   "title": "CASP3: applying the OOF-encoding fix (findin-70aa2e04) to the v2 feature set (window, median, severity interactions, Huber+LGBM) gives CV MAE ~0.41, ~15-16% below one-hot ridge",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0693, 95% CI [-0.0944, -0.0454], beyond the minimum effect 0.0089)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.37573744670193826,
+    "b": 0.44500763569165896,
+    "diff": -0.06927018898972065,
+    "ci95": [
+     -0.09441572764240094,
+     -0.04537639205511208
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-70aa2e04",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9ccccc8e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-51302ba2",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-52c7a6b3",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Refutation of findin-9bc8a246 (KCNE1 function): cross-assay model loses to one-hot ridge once the same-mutant expression score is unavailable, as for hidden mutants",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0645, 95% CI [-0.0801, -0.0485], beyond the minimum effect 0.0052)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.19482679496373057,
+    "b": 0.25937189895795826,
+    "diff": -0.06454510399422768,
+    "ci95": [
+     -0.08007558503094547,
+     -0.04847647335431459
+    ],
+    "min_effect": 0.005187437979159166,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-9bc8a246",
+     "relation": "refutes",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-174961eb",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Refutation of findin-53182fa2 (BLAT Firnberg): cross-assay model is far worse than one-hot ridge without the same-mutant Stiffler score, as for hidden mutants",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.1982, 95% CI [-0.2154, -0.1811], beyond the minimum effect 0.0085)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.22794603284970613,
+    "b": 0.42612542306598183,
+    "diff": -0.1981793902162757,
+    "ci95": [
+     -0.21544251626155422,
+     -0.1810629994332342
+    ],
+    "min_effect": 0.008522508461319637,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-53182fa2",
+     "relation": "refutes",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-449c2e2a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Low-rank matrix completion (soft-impute) of the position x amino-acid fitness matrix as OOF features improves leak-free DMS models on BLAT_ECOLX_Firnberg_2014",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0201, 95% CI [-0.0247, -0.0155], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.13392008161265967,
+    "b": 0.15405724817917413,
+    "diff": -0.020137166566514424,
+    "ci95": [
+     -0.024700318286848405,
+     -0.015459325059568124
+    ],
+    "min_effect": 0.0030811449635834826,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a79d4e8a",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-563cacc4",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Low-rank matrix completion (soft-impute) of the position x amino-acid fitness matrix as OOF features improves leak-free DMS models on BLAT_ECOLX_Stiffler_2015",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0437, 95% CI [-0.0564, -0.0312], beyond the minimum effect 0.0073)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.32295713185597913,
+    "b": 0.3666959853688371,
+    "diff": -0.04373885351285793,
+    "ci95": [
+     -0.05639494576130001,
+     -0.03120632131901098
+    ],
+    "min_effect": 0.007333919707376742,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-ccf3c6c0",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-fa10e31c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Low-rank matrix completion (soft-impute) of the position x amino-acid fitness matrix as OOF features improves leak-free DMS models on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0110, 95% CI [-0.0180, -0.0041], beyond the minimum effect 0.0029)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.13496137150267232,
+    "b": 0.14598790744092208,
+    "diff": -0.011026535938249784,
+    "ci95": [
+     -0.01798498138885625,
+     -0.0040701860534228165
+    ],
+    "min_effect": 0.0029197581488184417,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b35fa206",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2892465b",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Low-rank matrix completion (soft-impute) of the position x amino-acid fitness matrix as OOF features improves leak-free DMS models on KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0120, 95% CI [-0.0174, -0.0061], beyond the minimum effect 0.0030)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.13995214393590016,
+    "b": 0.15194167204241082,
+    "diff": -0.011989528106510657,
+    "ci95": [
+     -0.017371495094591544,
+     -0.0061421859082947585
+    ],
+    "min_effect": 0.0030388334408482168,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-128cc832",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8097f797",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Low-rank matrix completion (soft-impute) of the position x amino-acid fitness matrix as OOF features improves leak-free DMS models on RASK_HUMAN_Weng_2022_abundance",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0221, 95% CI [-0.0309, -0.0138], beyond the minimum effect 0.0039)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.17370900708387785,
+    "b": 0.19580595572655587,
+    "diff": -0.02209694864267806,
+    "ci95": [
+     -0.030909327049290808,
+     -0.013773203620455724
+    ],
+    "min_effect": 0.003916119114531117,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-57f4ae8b",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-367196f2",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Low-rank matrix completion (soft-impute) of the position x amino-acid fitness matrix as OOF features improves leak-free DMS models on RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0149, 95% CI [-0.0204, -0.0095], beyond the minimum effect 0.0021)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.092051006777159,
+    "b": 0.1069207094997273,
+    "diff": -0.014869702722568323,
+    "ci95": [
+     -0.020438489771904808,
+     -0.009471442777275754
+    ],
+    "min_effect": 0.002138414189994546,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-75a3ecf8",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c27feefa",
+   "kind": "finding",
+   "agent": "agent-4289b1e0",
+   "title": "Leak-free BLOSUM-kernel + out-of-fold other-assay features improve the corrected cross-assay TEM-1 model on BLAT_ECOLX_Firnberg_2014 by ~9%",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0926, 95% CI [-0.1023, -0.0822], beyond the minimum effect 0.0046)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.13530912862305006,
+    "b": 0.22794534737615452,
+    "diff": -0.09263621875310443,
+    "ci95": [
+     -0.10226432578655954,
+     -0.0822230468906972
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f0271bdb",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-53182fa2",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0327d2b9",
+   "kind": "finding",
+   "agent": "agent-4289b1e0",
+   "title": "Leak-free BLOSUM-kernel + out-of-fold other-assay features improve the corrected cross-assay TEM-1 model on BLAT_ECOLX_Stiffler_2015 by ~9%",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.2380, 95% CI [-0.2660, -0.2115], beyond the minimum effect 0.0114)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3314579134985678,
+    "b": 0.5694838951802093,
+    "diff": -0.23802598168164146,
+    "ci95": [
+     -0.2660444173214701,
+     -0.21150625446345966
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-d0543852",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-0ba58905",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f6f677f7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extending findin-f0271bdb: OOF low-rank matrix-completion features improve the leak-free cross-assay model on BLAT_ECOLX_Firnberg_2014",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0144, 95% CI [-0.0185, -0.0104], beyond the minimum effect 0.0030)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.1339313722446401,
+    "b": 0.14835495905277987,
+    "diff": -0.01442358680813977,
+    "ci95": [
+     -0.01849298949458763,
+     -0.01041175410825993
+    ],
+    "min_effect": 0.0029670991810555975,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f0271bdb",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c429058b",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extending findin-d0543852: OOF low-rank matrix-completion features improve the leak-free cross-assay model on BLAT_ECOLX_Stiffler_2015",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0302, 95% CI [-0.0406, -0.0196], beyond the minimum effect 0.0071)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.32371793278087546,
+    "b": 0.35390289332050484,
+    "diff": -0.03018496053962939,
+    "ci95": [
+     -0.04062714074375976,
+     -0.019644665126510863
+    ],
+    "min_effect": 0.007078057866410097,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-d0543852",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-943735b6",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extending findin-3cf9cf0f: OOF low-rank matrix-completion features improve the leak-free cross-assay model on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0105, 95% CI [-0.0167, -0.0040], beyond the minimum effect 0.0029)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.13242880552460065,
+    "b": 0.14297847135776792,
+    "diff": -0.010549665833167294,
+    "ci95": [
+     -0.016678343553436007,
+     -0.004010144181425606
+    ],
+    "min_effect": 0.0028595694271553586,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-3cf9cf0f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c71afe08",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extending findin-57f4ae8b: OOF low-rank matrix-completion features improve the leak-free cross-assay model on RASK_HUMAN_Weng_2022_abundance",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0166, 95% CI [-0.0237, -0.0100], beyond the minimum effect 0.0037)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.1686632865318878,
+    "b": 0.18525410543427046,
+    "diff": -0.016590818902382665,
+    "ci95": [
+     -0.02373678170120591,
+     -0.009980679635789457
+    ],
+    "min_effect": 0.0037050821086854094,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-57f4ae8b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4aef7f5d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extending findin-75a3ecf8: OOF low-rank matrix-completion features improve the leak-free cross-assay model on RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0165, 95% CI [-0.0222, -0.0112], beyond the minimum effect 0.0021)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.09085927324659568,
+    "b": 0.10738447345850365,
+    "diff": -0.016525200211907953,
+    "ci95": [
+     -0.02215400768105359,
+     -0.011244417373766144
+    ],
+    "min_effect": 0.002147689469170073,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-75a3ecf8",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-67fd1e88",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Replication of findin-128cc832 (founder TE+LightGBM on KCNE1_HUMAN_Muhammad_2023_function): holds on fresh CV seeds; it is the leak-free alternative where the cross-assay model was refuted",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-128cc832",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-128cc832",
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.15194167204241082,
+    "b": 0.19482725023143352,
+    "diff": -0.04288557818902268,
+    "ci95": [
+     -0.053158356588783734,
+     -0.03209549105131015
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-128cc832",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1b886334",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Replication of findin-a79d4e8a (founder TE+LightGBM on BLAT_ECOLX_Firnberg_2014): holds on fresh CV seeds; it is the leak-free alternative where the cross-assay model was refuted",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-a79d4e8a",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-a79d4e8a",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.15405724817917413,
+    "b": 0.22794534737615452,
+    "diff": -0.07388809919698039,
+    "ci95": [
+     -0.08258915048446513,
+     -0.06429219210980759
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a79d4e8a",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-957e6224",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Extension of findin-b35fa206 on KCNE1_HUMAN_Muhammad_2023_expression: adding honest position-level cross-assay stats to the founder TE+LightGBM model (small gain)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0554, 95% CI [-0.0640, -0.0465], beyond the minimum effect 0.0040)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.14506654275082664,
+    "b": 0.20045092879553264,
+    "diff": -0.055384386044706,
+    "ci95": [
+     -0.06397428825815447,
+     -0.04653152269958903
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b35fa206",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1e446d79",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Extension of findin-ccf3c6c0 on BLAT_ECOLX_Stiffler_2015: adding honest position-level cross-assay stats to the founder TE+LightGBM model (small gain)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.2084, 95% CI [-0.2322, -0.1860], beyond the minimum effect 0.0114)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.36104120490064606,
+    "b": 0.5694838951802093,
+    "diff": -0.20844269027956314,
+    "ci95": [
+     -0.23223286412892966,
+     -0.18597782928023585
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-ccf3c6c0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d3575444",
+   "kind": "finding",
+   "agent": "agent-f2375bbb",
+   "title": "CASP3: KCNE1 pipeline (OOF smoothed position target encoding + window, BLOSUM/physchem, LightGBM L1 3-seed, no ridge blend) reaches -13.9% MAE vs one-hot ridge",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0854, 95% CI [-0.1129, -0.0599], beyond the minimum effect 0.0089)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.3595578315224884,
+    "b": 0.44500763569165896,
+    "diff": -0.08544980416917052,
+    "ci95": [
+     -0.11290276340035925,
+     -0.059858981108887904
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-9d1fab9f",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cd0b9612",
+   "kind": "finding",
+   "agent": "agent-f2375bbb",
+   "title": "Corrected KCNE1 function model: drop leaky same-mutant cross-assay feature, keep position-level cross-assay stats + OOF position TE + LightGBM (num_leaves 31)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0519, 95% CI [-0.0627, -0.0402], beyond the minimum effect 0.0039)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.14297618000259135,
+    "b": 0.19482725023143352,
+    "diff": -0.05185107022884215,
+    "ci95": [
+     -0.06267984472752762,
+     -0.04023879906063074
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-9bc8a246",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-06bd530e",
+   "kind": "finding",
+   "agent": "agent-f2375bbb",
+   "title": "Corrected KCNE1 expression model: drop leaky same-mutant cross-assay feature, keep position-level cross-assay stats + OOF position TE + LightGBM (num_leaves 31)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0628, 95% CI [-0.0726, -0.0526], beyond the minimum effect 0.0040)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.1376523545461475,
+    "b": 0.20045092879553264,
+    "diff": -0.06279857424938515,
+    "ci95": [
+     -0.0726243161484912,
+     -0.05262964417868343
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-fd9eefb8",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-220f038a",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Replication of findin-c27feefa (honest BLOSUM-kernel cross-assay TEM-1 model on BLAT_ECOLX_Firnberg_2014): holds on a fresh CV seed and beats the founder TE+LightGBM model",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-c27feefa",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-c27feefa",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1191,
+    "a": 0.13530912862305006,
+    "b": 0.22794534737615452,
+    "diff": -0.09263621875310443,
+    "ci95": [
+     -0.10226432578655954,
+     -0.0822230468906972
+    ],
+    "min_effect": 0.00455890694752309,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-c27feefa",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2573ab05",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Replication of findin-0327d2b9 (honest BLOSUM-kernel cross-assay TEM-1 model on BLAT_ECOLX_Stiffler_2015): holds on a fresh CV seed and beats the founder TE+LightGBM model",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-0327d2b9",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-0327d2b9",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1243,
+    "a": 0.3314579134985678,
+    "b": 0.5694838951802093,
+    "diff": -0.23802598168164146,
+    "ci95": [
+     -0.2660444173214701,
+     -0.21150625446345966
+    ],
+    "min_effect": 0.011389677903604185,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-0327d2b9",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-6b102e19",
+   "kind": "finding",
+   "agent": "agent-f2375bbb",
+   "title": "KCNE1 function: founder's OOF soft-impute matrix-completion features added to the leak-free position-TE + cross-assay-position-stats LightGBM model",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0583, 95% CI [-0.0701, -0.0458], beyond the minimum effect 0.0039)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.13653535880034565,
+    "b": 0.19482725023143352,
+    "diff": -0.05829189143108785,
+    "ci95": [
+     -0.07009807903801436,
+     -0.04581405836123375
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-2892465b",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-cd0b9612",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3e3d046e",
+   "kind": "finding",
+   "agent": "agent-f2375bbb",
+   "title": "KCNE1 expression: founder's OOF soft-impute matrix-completion features added to the leak-free position-TE + cross-assay-position-stats LightGBM model",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0685, 95% CI [-0.0801, -0.0563], beyond the minimum effect 0.0040)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 582,
+    "a": 0.13196061787701535,
+    "b": 0.20045092879553264,
+    "diff": -0.06849031091851727,
+    "ci95": [
+     -0.08011515001928646,
+     -0.056314234938987365
+    ],
+    "min_effect": 0.004009018575910653,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-fa10e31c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-06bd530e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a2779242",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Replication of findin-367196f2 (soft-impute matrix-completion features, RASK_HUMAN_Weng_2022_binding-DARPin_K55): holds on fresh CV seeds 11/22",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-367196f2",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-367196f2",
+   "hidden": {
+    "metric": "MAE",
+    "n": 753,
+    "a": 0.092051006777159,
+    "b": 0.1069207094997273,
+    "diff": -0.014869702722568323,
+    "ci95": [
+     -0.020438489771904808,
+     -0.009471442777275754
+    ],
+    "min_effect": 0.002138414189994546,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-367196f2",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b119f487",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Replication of findin-8097f797 (soft-impute matrix-completion features, RASK_HUMAN_Weng_2022_abundance): holds on fresh CV seeds 11/22",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-8097f797",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-8097f797",
+   "hidden": {
+    "metric": "MAE",
+    "n": 744,
+    "a": 0.17370900708387785,
+    "b": 0.19580595572655587,
+    "diff": -0.02209694864267806,
+    "ci95": [
+     -0.030909327049290808,
+     -0.013773203620455724
+    ],
+    "min_effect": 0.003916119114531117,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-8097f797",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9b590ed5",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Replication of findin-2892465b (soft-impute matrix-completion features, KCNE1_HUMAN_Muhammad_2023_function): holds on fresh CV seeds 11/22",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-2892465b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-2892465b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.13995214393590016,
+    "b": 0.15194167204241082,
+    "diff": -0.011989528106510657,
+    "ci95": [
+     -0.017371495094591544,
+     -0.0061421859082947585
+    ],
+    "min_effect": 0.0030388334408482168,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-2892465b",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7bc75cd8",
+   "kind": "finding",
+   "agent": "agent-8289cfd3",
+   "title": "CASP3: 50/50 blend of OOF-encoded v3 model with founder TE+LightGBM-L1 model (findin-51302ba2, consumed via --input) gives CV MAE ~0.408, ~16% below one-hot ridge",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0790, 95% CI [-0.1035, -0.0553], beyond the minimum effect 0.0089)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.36602476381106835,
+    "b": 0.44500763569165896,
+    "diff": -0.07898287188059061,
+    "ci95": [
+     -0.1035312761920085,
+     -0.05529853617546336
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-51302ba2",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-70aa2e04",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2885a82f",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Replication of findin-6b102e19 (corrected KCNE1 function model + soft-impute MC): holds on a fresh seed; masking validation mutants from other-assay position stats changes nothing",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-6b102e19",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-6b102e19",
+   "hidden": {
+    "metric": "MAE",
+    "n": 579,
+    "a": 0.13653535880034565,
+    "b": 0.19482725023143352,
+    "diff": -0.05829189143108785,
+    "ci95": [
+     -0.07009807903801436,
+     -0.04581405836123375
+    ],
+    "min_effect": 0.0038965450046286707,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-6b102e19",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-21cdfa60",
+   "kind": "finding",
+   "agent": "agent-52b37853",
+   "title": "Replication of findin-d3575444 (CASP3 LightGBM pipeline without cross-assay features): ~13% gain over one-hot ridge holds on fresh CV seeds 11 and 22",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-d3575444",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-d3575444",
+   "hidden": {
+    "metric": "MAE",
+    "n": 404,
+    "a": 0.3595578315224884,
+    "b": 0.44500763569165896,
+    "diff": -0.08544980416917052,
+    "ci95": [
+     -0.11290276340035925,
+     -0.059858981108887904
+    ],
+    "min_effect": 0.00890015271383318,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-d3575444",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

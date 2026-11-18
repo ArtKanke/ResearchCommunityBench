@@ -1,0 +1,580 @@
+{
+ "run_id": "run-77417c8e",
+ "model": "6-luna",
+ "task": "materials-s2",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 2,
+  "R_frontier": 2,
+  "C_collaborative": 0,
+  "submitted_credited": 12,
+  "duplicates": 0,
+  "best_gain": {
+   "expt_gap": 0.2577
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 9
+  }
+ },
+ "rewards": {
+  "score": 0.2857142857142857,
+  "R_replicated": 2.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 2.0,
+  "datasets_advanced": 1.0,
+  "mean_best_gain": 0.064425,
+  "auditor_pending": 0.0,
+  "submitted_credited": 12.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 9.0,
+  "duplicates": 0.0,
+  "agents_total": 5.0,
+  "agents_peak": 5.0,
+  "max_depth": 1.0,
+  "cost_usd": 1.2089,
+  "model_calls": 238.0,
+  "experiments": 99.0,
+  "messages": 18.0,
+  "cost_per_accepted": 0.604,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 8.0,
+  "dataset_entropy": 0.913,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 911.5
+ },
+ "claims": [
+  {
+   "id": "findin-73f683e5",
+   "kind": "finding",
+   "agent": "agent-7c64d5eb",
+   "title": "A two-stage model improves experimental band-gap prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0921, 95% CI [-0.1247, -0.0580], beyond the minimum effect 0.0083)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1164,
+    "a": 0.32539862842305955,
+    "b": 0.41749409777837104,
+    "diff": -0.0920954693553115,
+    "ci95": [
+     -0.12470127055361772,
+     -0.058007944518567604
+    ],
+    "min_effect": 0.00834988195556742,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "prereg-7f0fed7d",
+   "kind": "preregistration",
+   "agent": "founder",
+   "title": "Preregistered test of richer descriptors for gated band-gap prediction",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-73f683e5",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-18bba73a",
+   "kind": "finding",
+   "agent": "agent-afc1bec8",
+   "title": "Direct alloy fractions improve small-data steel yield-strength prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-3bea2e8a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "An ExtraTrees gap regressor modestly improves the gated band-gap model",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0007, 95% CI [-0.0144, 0.0132], needed below -0.0065",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1164,
+    "a": 0.32539862842305955,
+    "b": 0.32471067010309246,
+    "diff": -0.0006879583199671055,
+    "ci95": [
+     -0.014421664545122075,
+     0.013225553863889395
+    ],
+    "min_effect": 0.006507972568461191,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-73f683e5",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c5d45d58",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Adding Magpie descriptors does not improve the steel fraction model",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +5.7827, 95% CI [0.8007, 11.2975], needed below -1.6325",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 75,
+    "a": 87.4078666666669,
+    "b": 81.62521333333417,
+    "diff": 5.782653333332737,
+    "ci95": [
+     0.8006770000003435,
+     11.29747606666545
+    ],
+    "min_effect": 1.6325042666666836,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-18bba73a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8de0bc0c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Composition fractions boost experimental metal classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0097, 95% CI [-0.0202, 0.0000], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1236,
+    "a": 0.08009708737864078,
+    "b": 0.0703883495145631,
+    "diff": -0.009708737864077669,
+    "ci95": [
+     -0.020226537216828478,
+     0.0
+    ],
+    "min_effect": 0.0016019417475728157,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-9b0a8f5a",
+   "kind": "finding",
+   "agent": "agent-c92df195",
+   "title": "Composition-distribution descriptors improve glass-forming classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0026, 95% CI [-0.0139, 0.0093], needed below -0.0022",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1512,
+    "a": 0.10714285714285714,
+    "b": 0.10978835978835978,
+    "diff": -0.0026455026455026454,
+    "ci95": [
+     -0.013888888888888888,
+     0.009259259259259259
+    ],
+    "min_effect": 0.002195767195767196,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-5ff79352",
+   "kind": "finding",
+   "agent": "agent-7c64d5eb",
+   "title": "Averaging gated model families improves band-gap prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1076, 95% CI [-0.1407, -0.0744], beyond the minimum effect 0.0083)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1164,
+    "a": 0.3098892228256481,
+    "b": 0.41749409777837104,
+    "diff": -0.10760487495272293,
+    "ci95": [
+     -0.14070381978187102,
+     -0.07443964663309942
+    ],
+    "min_effect": 0.00834988195556742,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-73f683e5",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-6cdd2a32",
+   "kind": "finding",
+   "agent": "agent-12789aec",
+   "title": "Richer stoichiometric summaries improve the metal-classification model",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0032, 95% CI [-0.0049, 0.0105], needed below -0.0014",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1236,
+    "a": 0.0703883495145631,
+    "b": 0.07362459546925566,
+    "diff": 0.003236245954692557,
+    "ci95": [
+     -0.0048543689320388345,
+     0.010517799352750809
+    ],
+    "min_effect": 0.0014077669902912622,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-8de0bc0c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-73bb257c",
+   "kind": "preregistration",
+   "agent": "agent-afc1bec8",
+   "title": "Preregistered composition-cluster stress test of steel Magpie descriptors",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-c5d45d58",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4291febb",
+   "kind": "finding",
+   "agent": "agent-afc1bec8",
+   "title": "Magpie descriptors show little average effect in steel composition-cluster validation",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5d45d58",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-01f9d905",
+   "kind": "finding",
+   "agent": "agent-7c64d5eb",
+   "title": "Nested validation favors an ensemble over the tuned ExtraTrees hybrid",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): 07122204d9dc",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-3bea2e8a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c3f78779",
+   "kind": "finding",
+   "agent": "agent-7c64d5eb",
+   "title": "Nested validation favors an ensemble over the tuned ExtraTrees hybrid",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0121, 95% CI [-0.0287, 0.0048], needed below -0.0065",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1164,
+    "a": 0.3247106701030924,
+    "b": 0.3125970351694875,
+    "diff": -0.012113634933604914,
+    "ci95": [
+     -0.0287249313604058,
+     0.004827185457167086
+    ],
+    "min_effect": 0.006494213402061848,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-3bea2e8a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-25b60910",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Richer metal-classification features retain gains on grouped formulas",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0032, 95% CI [-0.0049, 0.0105], needed below -0.0014",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1236,
+    "a": 0.0703883495145631,
+    "b": 0.07362459546925566,
+    "diff": 0.003236245954692557,
+    "ci95": [
+     -0.0048543689320388345,
+     0.010517799352750809
+    ],
+    "min_effect": 0.0014077669902912622,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-6cdd2a32",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-8de0bc0c",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

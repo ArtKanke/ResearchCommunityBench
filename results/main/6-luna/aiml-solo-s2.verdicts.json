@@ -1,0 +1,264 @@
+{
+ "run_id": "run-1ffe8f1c",
+ "model": "6-luna",
+ "task": "aiml-solo-s2",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 3,
+  "R_frontier": 2,
+  "C_collaborative": 0,
+  "submitted_credited": 6,
+  "duplicates": 0,
+  "best_gain": {
+   "agnews": 0.1045
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 3
+  }
+ },
+ "rewards": {
+  "score": 0.375,
+  "R_replicated": 3.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 2.0,
+  "datasets_advanced": 1.0,
+  "mean_best_gain": 0.05225,
+  "auditor_pending": 0.0,
+  "submitted_credited": 6.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 3.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.1447,
+  "model_calls": 41.0,
+  "experiments": 26.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.048,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.0,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 145.7
+ },
+ "claims": [
+  {
+   "id": "findin-958ed535",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Word and character TF-IDF improves AG News validation error",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0063, 95% CI [-0.0099, -0.0025], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08052631578947368,
+    "b": 0.0868421052631579,
+    "diff": -0.00631578947368421,
+    "ci95": [
+     -0.009868421052631578,
+     -0.0025
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-4e87cab5",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Character n-grams improve matched AG News classifier",
+   "status": "accepted",
+   "reason": "hidden error rate: arm b beats the other arm (difference -0.0080, 95% CI [-0.0112, -0.0047], beyond the minimum effect 0.0018)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08855263157894737,
+    "b": 0.08052631578947368,
+    "diff": -0.008026315789473683,
+    "ci95": [
+     -0.01118421052631579,
+     -0.004736842105263158
+    ],
+    "min_effect": 0.0017710526315789475,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-0ab11ff5",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Naive Bayes-SVM reweighting improves AG News error",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0028, 95% CI [-0.0062, 0.0007], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08052631578947368,
+    "b": 0.07776315789473684,
+    "diff": -0.002763157894736842,
+    "ci95": [
+     -0.0061842105263157894,
+     0.0006578947368421052
+    ],
+    "min_effect": 0.0016105263157894737,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-e8a4cfe0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Naive Bayes-SVM gain replicates on three additional splits",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0028, 95% CI [-0.0062, 0.0007], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08052631578947368,
+    "b": 0.07776315789473684,
+    "diff": -0.002763157894736842,
+    "ci95": [
+     -0.0061842105263157894,
+     0.0006578947368421052
+    ],
+    "min_effect": 0.0016105263157894737,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-dca9d103",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Naive Bayes-SVM classifier for AG News prediction",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0091, 95% CI [-0.0133, -0.0050], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07776315789473684,
+    "b": 0.0868421052631579,
+    "diff": -0.009078947368421053,
+    "ci95": [
+     -0.013289473684210526,
+     -0.005
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-183c475a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Paired bootstrap qualifies the AG News single-split gain",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0028, 95% CI [-0.0062, 0.0007], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08052631578947368,
+    "b": 0.07776315789473684,
+    "diff": -0.002763157894736842,
+    "ci95": [
+     -0.0061842105263157894,
+     0.0006578947368421052
+    ],
+    "min_effect": 0.0016105263157894737,
+    "pass": false
+   },
+   "relations": []
+  }
+ ]
+}

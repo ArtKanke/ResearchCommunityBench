@@ -1,0 +1,510 @@
+{
+ "run_id": "run-f1647495",
+ "model": "6.1-sol",
+ "task": "aiml-solo-s1",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 6,
+  "R_frontier": 3,
+  "C_collaborative": 0,
+  "submitted_credited": 8,
+  "duplicates": 0,
+  "best_gain": {
+   "cifar10": 0.3433,
+   "agnews": 0.0333
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 1,
+   "not_replicated_on_hidden": 1
+  }
+ },
+ "rewards": {
+  "score": 0.5454545454545454,
+  "R_replicated": 6.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 3.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.1883,
+  "auditor_pending": 0.0,
+  "submitted_credited": 8.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 1.0,
+  "not_replicated": 1.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 2.1758,
+  "model_calls": 59.0,
+  "experiments": 29.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.363,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.954,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 886.4
+ },
+ "claims": [
+  {
+   "id": "method-44f8b134",
+   "kind": "method",
+   "agent": "founder",
+   "title": "A compact residual classifier with Cutout and flip averaging for CIFAR-10",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0157, 95% CI [-0.0196, -0.0115], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0443,
+    "b": 0.06,
+    "diff": -0.015700000000000013,
+    "ci95": [
+     -0.01960000000000001,
+     -0.011500000000000012
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-e6ce98f1",
+   "kind": "method",
+   "agent": "founder",
+   "title": "Complementary word and character margin models for AG News",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0128, 95% CI [-0.0168, -0.0084], beyond the minimum effect 0.0019)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.0843421052631579,
+    "b": 0.09710526315789474,
+    "diff": -0.012763157894736843,
+    "ci95": [
+     -0.016845394736842097,
+     -0.008421052631578947
+    ],
+    "min_effect": 0.0019421052631578947,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-aa51b5b9",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Horizontal-flip logit averaging improves a fixed CIFAR-10 residual classifier",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0041, 95% CI [-0.0067, -0.0016], beyond the minimum effect 0.0010)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0443,
+    "b": 0.0484,
+    "diff": -0.0041,
+    "ci95": [
+     -0.0067,
+     -0.0016
+    ],
+    "min_effect": 0.000968,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "note-fa36e0cf",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Exploratory AG News model-selection record and unsuccessful class weighting",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-df108ace",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Linear margin training improves AG News over matched logistic regression",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0104, 95% CI [-0.0134, -0.0072], beyond the minimum effect 0.0019)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.08394736842105263,
+    "b": 0.0943421052631579,
+    "diff": -0.010394736842105264,
+    "ci95": [
+     -0.013421052631578948,
+     -0.007236842105263158
+    ],
+    "min_effect": 0.001886842105263158,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-44d492f4",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Cutout and Mixup models have complementary CIFAR-10 errors",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0049, 95% CI [-0.0071, -0.0028], beyond the minimum effect 0.0009)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0394,
+    "b": 0.0443,
+    "diff": -0.0049,
+    "ci95": [
+     -0.0071,
+     -0.0027975000000000135
+    ],
+    "min_effect": 0.000886,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-96ca8e79",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "A longer cosine schedule improves the compact Cutout image classifier",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0039, 95% CI [-0.0069, -0.0009], beyond the minimum effect 0.0009)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0404,
+    "b": 0.0443,
+    "diff": -0.0039,
+    "ci95": [
+     -0.0069,
+     -0.0009
+    ],
+    "min_effect": 0.000886,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "method-65b286a3",
+   "kind": "method",
+   "agent": "founder",
+   "title": "All-public-data word/character TF-IDF margin ensemble for AG News",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0050, 95% CI [-0.0084, -0.0016], needed below -0.0017",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.0818421052631579,
+    "b": 0.0868421052631579,
+    "diff": -0.005,
+    "ci95": [
+     -0.008421052631578947,
+     -0.0015789473684210526
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "method-e6ce98f1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-c51855e1",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Synthesis, unsuccessful variants, and validation limitations",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-e6ce98f1",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-aa51b5b9",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-44d492f4",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-df108ace",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-96ca8e79",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-2f52c2f1",
+   "kind": "method",
+   "agent": "founder",
+   "title": "All-public-data compact Cutout/Mixup ensemble for CIFAR-10",
+   "status": "rejected",
+   "reason": "claimed numbers do not reproduce within 10% on rerun",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-44f8b134",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-44d492f4",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-96ca8e79",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-e9900e57",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Additional split robustness for the AG News margin-model recipe",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-df108ace",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-fe9a9edf",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Regularization control for the AG News logistic comparator",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-df108ace",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-81fe1815",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Final prediction packages and evaluator-contract verification",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "method-65b286a3",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "method-2f52c2f1",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    },
+    {
+     "target": "note-c51855e1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

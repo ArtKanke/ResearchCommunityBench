@@ -1,0 +1,550 @@
+{
+ "run_id": "run-8d316da2",
+ "model": "haiku",
+ "task": "compbio-solo-s3",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 14,
+  "R_frontier": 12,
+  "C_collaborative": 0,
+  "submitted_credited": 14,
+  "duplicates": 0,
+  "best_gain": {
+   "BLAT_ECOLX_Firnberg_2014": 0.3275,
+   "BLAT_ECOLX_Stiffler_2015": 0.3605,
+   "CASP3_HUMAN_Roychowdhury_2020": 0.1298,
+   "KCNE1_HUMAN_Muhammad_2023_expression": 0.3011,
+   "KCNE1_HUMAN_Muhammad_2023_function": 0.1925,
+   "RASK_HUMAN_Weng_2022_abundance": 0.2118,
+   "RASK_HUMAN_Weng_2022_binding-DARPin_K55": 0.3221
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 0
+  }
+ },
+ "rewards": {
+  "score": 0.7368421052631579,
+  "R_replicated": 14.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 12.0,
+  "datasets_advanced": 7.0,
+  "mean_best_gain": 0.2636142857142857,
+  "auditor_pending": 0.0,
+  "submitted_credited": 14.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 0.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.0217,
+  "model_calls": 15.0,
+  "experiments": 6.0,
+  "messages": 1.0,
+  "cost_per_accepted": 0.002,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 1.0,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 38.4
+ },
+ "claims": [
+  {
+   "id": "findin-99210696",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Feature-rich gradient boosting beats one-hot ridge on BLAT_ECOLX_Firnberg_2014",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0682, 95% CI [-0.0779, -0.0590], beyond the minimum effect 0.0045)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.1555758495773506,
+    "b": 0.22382417490302492,
+    "diff": -0.0682483253256743,
+    "ci95": [
+     -0.07786419772455651,
+     -0.058975945028792255
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-5e7330f8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Feature-rich gradient boosting beats one-hot ridge on BLAT_ECOLX_Stiffler_2015",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1865, 95% CI [-0.2109, -0.1637], beyond the minimum effect 0.0110)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.36376075451339057,
+    "b": 0.5502384497273504,
+    "diff": -0.18647769521395985,
+    "ci95": [
+     -0.21087411096087014,
+     -0.1636810801735317
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-583a8d11",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Feature-rich gradient boosting beats one-hot ridge on CASP3_HUMAN_Roychowdhury_2020",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0594, 95% CI [-0.0886, -0.0321], beyond the minimum effect 0.0092)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.3981574523767806,
+    "b": 0.45756248593065013,
+    "diff": -0.059405033553869536,
+    "ci95": [
+     -0.08863191224340664,
+     -0.03206572608908143
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-7ebce13a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Feature-rich gradient boosting beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0618, 95% CI [-0.0733, -0.0509], beyond the minimum effect 0.0044)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.1577158113442706,
+    "b": 0.219546819939823,
+    "diff": -0.06183100859555241,
+    "ci95": [
+     -0.07327750169617629,
+     -0.050877871093412914
+    ],
+    "min_effect": 0.00439093639879646,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-62d78fad",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Feature-rich gradient boosting beats one-hot ridge on KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0373, 95% CI [-0.0499, -0.0249], beyond the minimum effect 0.0041)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.16541989003415317,
+    "b": 0.2026873113806104,
+    "diff": -0.03726742134645725,
+    "ci95": [
+     -0.04991013776141345,
+     -0.024937360002090927
+    ],
+    "min_effect": 0.004053746227612208,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-f6f75eea",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Feature-rich gradient boosting beats one-hot ridge on RASK_HUMAN_Weng_2022_abundance",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0394, 95% CI [-0.0479, -0.0310], beyond the minimum effect 0.0045)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 799,
+    "a": 0.18561691766348973,
+    "b": 0.22499231825117236,
+    "diff": -0.03937540058768261,
+    "ci95": [
+     -0.04792776190780887,
+     -0.031028610849095903
+    ],
+    "min_effect": 0.004499846365023447,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-1ca06a21",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Feature-rich gradient boosting beats one-hot ridge on RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0366, 95% CI [-0.0448, -0.0284], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.11999867204601769,
+    "b": 0.15663735009104168,
+    "diff": -0.03663867804502397,
+    "ci95": [
+     -0.04481049255621285,
+     -0.028384286787736468
+    ],
+    "min_effect": 0.003132747001820834,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-1a9240ed",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Class-shrunk position features + gradient boosting beat one-hot ridge on held-out BLAT_ECOLX_Firnberg_2014",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0733, 95% CI [-0.0833, -0.0640], beyond the minimum effect 0.0045)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.15052503004432846,
+    "b": 0.22382417490302492,
+    "diff": -0.07329914485869644,
+    "ci95": [
+     -0.08330192202053412,
+     -0.06404765896145366
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-69fb8424",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Class-shrunk position features + gradient boosting beat one-hot ridge on held-out BLAT_ECOLX_Stiffler_2015",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1984, 95% CI [-0.2235, -0.1738], beyond the minimum effect 0.0110)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.3518850772382261,
+    "b": 0.5502384497273504,
+    "diff": -0.19835337248912432,
+    "ci95": [
+     -0.22346150232357623,
+     -0.1738099214984093
+    ],
+    "min_effect": 0.011004768994547007,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-60364eba",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Class-shrunk position features + gradient boosting beat one-hot ridge on held-out CASP3_HUMAN_Roychowdhury_2020",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0509, 95% CI [-0.0802, -0.0239], beyond the minimum effect 0.0092)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.4066776146356567,
+    "b": 0.45756248593065013,
+    "diff": -0.050884871294993424,
+    "ci95": [
+     -0.08022565165901258,
+     -0.02389165423544019
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-96daa7ca",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Class-shrunk position features + gradient boosting beat one-hot ridge on held-out KCNE1_HUMAN_Muhammad_2023_expression",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0661, 95% CI [-0.0787, -0.0530], beyond the minimum effect 0.0044)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.15345051305183355,
+    "b": 0.219546819939823,
+    "diff": -0.06609630688798945,
+    "ci95": [
+     -0.07871632593838997,
+     -0.05299059158582291
+    ],
+    "min_effect": 0.00439093639879646,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-107d8638",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Class-shrunk position features + gradient boosting beat one-hot ridge on held-out KCNE1_HUMAN_Muhammad_2023_function",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0390, 95% CI [-0.0514, -0.0270], beyond the minimum effect 0.0041)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.16367557253117282,
+    "b": 0.2026873113806104,
+    "diff": -0.03901173884943758,
+    "ci95": [
+     -0.05139443105561551,
+     -0.02696242533704782
+    ],
+    "min_effect": 0.004053746227612208,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-2ede4d2c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Class-shrunk position features + gradient boosting beat one-hot ridge on held-out RASK_HUMAN_Weng_2022_abundance",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0477, 95% CI [-0.0567, -0.0384], beyond the minimum effect 0.0045)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 799,
+    "a": 0.17733603162830122,
+    "b": 0.22499231825117236,
+    "diff": -0.04765628662287112,
+    "ci95": [
+     -0.05666934244553317,
+     -0.03840966697763545
+    ],
+    "min_effect": 0.004499846365023447,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-6be44bc1",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Class-shrunk position features + gradient boosting beat one-hot ridge on held-out RASK_HUMAN_Weng_2022_binding-DARPin_K55",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0505, 95% CI [-0.0591, -0.0415], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.10618140109325702,
+    "b": 0.15663735009104168,
+    "diff": -0.05045594899778464,
+    "ci95": [
+     -0.05906825152980968,
+     -0.04148271453992059
+    ],
+    "min_effect": 0.003132747001820834,
+    "pass": true
+   },
+   "relations": []
+  }
+ ]
+}

@@ -1,0 +1,362 @@
+[
+ {
+  "file": "main-claude-haiku-5-5-aiml-solo-1.json",
+  "title": "Claude Haiku 5.5 \u00b7 AI/ML \u00b7 solo \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-aiml-solo-2.json",
+  "title": "Claude Haiku 5.5 \u00b7 AI/ML \u00b7 solo \u00b7 run 2",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-aiml-solo-3.json",
+  "title": "Claude Haiku 5.5 \u00b7 AI/ML \u00b7 solo \u00b7 run 3",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-aiml-team-1.json",
+  "title": "Claude Haiku 5.5 \u00b7 AI/ML \u00b7 community \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-aiml-team-2.json",
+  "title": "Claude Haiku 5.5 \u00b7 AI/ML \u00b7 community \u00b7 run 2",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-aiml-team-3.json",
+  "title": "Claude Haiku 5.5 \u00b7 AI/ML \u00b7 community \u00b7 run 3",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-compbio-solo-1.json",
+  "title": "Claude Haiku 5.5 \u00b7 Biology \u00b7 solo \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-compbio-solo-2.json",
+  "title": "Claude Haiku 5.5 \u00b7 Biology \u00b7 solo \u00b7 run 2",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-compbio-solo-3.json",
+  "title": "Claude Haiku 5.5 \u00b7 Biology \u00b7 solo \u00b7 run 3",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-compbio-team-1.json",
+  "title": "Claude Haiku 5.5 \u00b7 Biology \u00b7 community \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-compbio-team-2.json",
+  "title": "Claude Haiku 5.5 \u00b7 Biology \u00b7 community \u00b7 run 2",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-compbio-team-3.json",
+  "title": "Claude Haiku 5.5 \u00b7 Biology \u00b7 community \u00b7 run 3",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-materials-solo-1.json",
+  "title": "Claude Haiku 5.5 \u00b7 Materials science \u00b7 solo \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-materials-solo-2.json",
+  "title": "Claude Haiku 5.5 \u00b7 Materials science \u00b7 solo \u00b7 run 2",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-materials-solo-3.json",
+  "title": "Claude Haiku 5.5 \u00b7 Materials science \u00b7 solo \u00b7 run 3",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-materials-team-1.json",
+  "title": "Claude Haiku 5.5 \u00b7 Materials science \u00b7 community \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-materials-team-2.json",
+  "title": "Claude Haiku 5.5 \u00b7 Materials science \u00b7 community \u00b7 run 2",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-haiku-5-5-materials-team-3.json",
+  "title": "Claude Haiku 5.5 \u00b7 Materials science \u00b7 community \u00b7 run 3",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-opus-5-5-aiml-solo-1.json",
+  "title": "Claude Opus 5.5 \u00b7 AI/ML \u00b7 solo \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-opus-5-5-aiml-team-1.json",
+  "title": "Claude Opus 5.5 \u00b7 AI/ML \u00b7 community \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-opus-5-5-compbio-solo-1.json",
+  "title": "Claude Opus 5.5 \u00b7 Biology \u00b7 solo \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-opus-5-5-compbio-team-1.json",
+  "title": "Claude Opus 5.5 \u00b7 Biology \u00b7 community \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-opus-5-5-materials-solo-1.json",
+  "title": "Claude Opus 5.5 \u00b7 Materials science \u00b7 solo \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-claude-opus-5-5-materials-team-1.json",
+  "title": "Claude Opus 5.5 \u00b7 Materials science \u00b7 community \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-1-sol-aiml-solo-1.json",
+  "title": "GPT-6.1 Sol \u00b7 AI/ML \u00b7 solo \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-1-sol-aiml-team-1.json",
+  "title": "GPT-6.1 Sol \u00b7 AI/ML \u00b7 community \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-1-sol-compbio-solo-1.json",
+  "title": "GPT-6.1 Sol \u00b7 Biology \u00b7 solo \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-1-sol-compbio-team-1.json",
+  "title": "GPT-6.1 Sol \u00b7 Biology \u00b7 community \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-1-sol-materials-solo-1.json",
+  "title": "GPT-6.1 Sol \u00b7 Materials science \u00b7 solo \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-1-sol-materials-team-1.json",
+  "title": "GPT-6.1 Sol \u00b7 Materials science \u00b7 community \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-aiml-solo-1.json",
+  "title": "GPT-6 Luna \u00b7 AI/ML \u00b7 solo \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-aiml-solo-2.json",
+  "title": "GPT-6 Luna \u00b7 AI/ML \u00b7 solo \u00b7 run 2",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-aiml-solo-3.json",
+  "title": "GPT-6 Luna \u00b7 AI/ML \u00b7 solo \u00b7 run 3",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-aiml-team-1.json",
+  "title": "GPT-6 Luna \u00b7 AI/ML \u00b7 community \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-aiml-team-2.json",
+  "title": "GPT-6 Luna \u00b7 AI/ML \u00b7 community \u00b7 run 2",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-aiml-team-3.json",
+  "title": "GPT-6 Luna \u00b7 AI/ML \u00b7 community \u00b7 run 3",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-compbio-solo-1.json",
+  "title": "GPT-6 Luna \u00b7 Biology \u00b7 solo \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-compbio-solo-2.json",
+  "title": "GPT-6 Luna \u00b7 Biology \u00b7 solo \u00b7 run 2",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-compbio-solo-3.json",
+  "title": "GPT-6 Luna \u00b7 Biology \u00b7 solo \u00b7 run 3",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-compbio-team-1.json",
+  "title": "GPT-6 Luna \u00b7 Biology \u00b7 community \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-compbio-team-2.json",
+  "title": "GPT-6 Luna \u00b7 Biology \u00b7 community \u00b7 run 2",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-compbio-team-3.json",
+  "title": "GPT-6 Luna \u00b7 Biology \u00b7 community \u00b7 run 3",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-materials-solo-1.json",
+  "title": "GPT-6 Luna \u00b7 Materials science \u00b7 solo \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-materials-solo-2.json",
+  "title": "GPT-6 Luna \u00b7 Materials science \u00b7 solo \u00b7 run 2",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-materials-solo-3.json",
+  "title": "GPT-6 Luna \u00b7 Materials science \u00b7 solo \u00b7 run 3",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-materials-team-1.json",
+  "title": "GPT-6 Luna \u00b7 Materials science \u00b7 community \u00b7 run 1",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-materials-team-2.json",
+  "title": "GPT-6 Luna \u00b7 Materials science \u00b7 community \u00b7 run 2",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "main-gpt-6-luna-materials-team-3.json",
+  "title": "GPT-6 Luna \u00b7 Materials science \u00b7 community \u00b7 run 3",
+  "source": "real",
+  "benchmark": "v1"
+ },
+ {
+  "file": "long-claude-haiku-5-5-aiml-solo-1.json",
+  "title": "Claude Haiku 5.5 \u00b7 Machine learning \u00b7 solo \u00b7 6 hours",
+  "source": "real",
+  "benchmark": "long"
+ },
+ {
+  "file": "long-claude-haiku-5-5-aiml-team-1.json",
+  "title": "Claude Haiku 5.5 \u00b7 Machine learning \u00b7 team \u00b7 6 hours",
+  "source": "real",
+  "benchmark": "long"
+ },
+ {
+  "file": "long-claude-haiku-5-5-compbio-solo-1.json",
+  "title": "Claude Haiku 5.5 \u00b7 Protein biology \u00b7 solo \u00b7 6 hours",
+  "source": "real",
+  "benchmark": "long"
+ },
+ {
+  "file": "long-claude-haiku-5-5-compbio-team-1.json",
+  "title": "Claude Haiku 5.5 \u00b7 Protein biology \u00b7 team \u00b7 6 hours",
+  "source": "real",
+  "benchmark": "long"
+ },
+ {
+  "file": "long-claude-haiku-5-5-materials-solo-1.json",
+  "title": "Claude Haiku 5.5 \u00b7 Materials science \u00b7 solo \u00b7 6 hours",
+  "source": "real",
+  "benchmark": "long"
+ },
+ {
+  "file": "long-claude-haiku-5-5-materials-team-1.json",
+  "title": "Claude Haiku 5.5 \u00b7 Materials science \u00b7 team \u00b7 6 hours",
+  "source": "real",
+  "benchmark": "long"
+ },
+ {
+  "file": "long-gpt-6-luna-aiml-solo-1.json",
+  "title": "GPT-6 Luna \u00b7 Machine learning \u00b7 solo \u00b7 6 hours",
+  "source": "real",
+  "benchmark": "long"
+ },
+ {
+  "file": "long-gpt-6-luna-aiml-team-1.json",
+  "title": "GPT-6 Luna \u00b7 Machine learning \u00b7 team \u00b7 6 hours",
+  "source": "real",
+  "benchmark": "long"
+ },
+ {
+  "file": "long-gpt-6-luna-compbio-solo-1.json",
+  "title": "GPT-6 Luna \u00b7 Protein biology \u00b7 solo \u00b7 6 hours",
+  "source": "real",
+  "benchmark": "long"
+ },
+ {
+  "file": "long-gpt-6-luna-compbio-team-1.json",
+  "title": "GPT-6 Luna \u00b7 Protein biology \u00b7 team \u00b7 6 hours",
+  "source": "real",
+  "benchmark": "long"
+ },
+ {
+  "file": "long-gpt-6-luna-materials-solo-1.json",
+  "title": "GPT-6 Luna \u00b7 Materials science \u00b7 solo \u00b7 6 hours",
+  "source": "real",
+  "benchmark": "long"
+ },
+ {
+  "file": "long-gpt-6-luna-materials-team-1.json",
+  "title": "GPT-6 Luna \u00b7 Materials science \u00b7 team \u00b7 6 hours",
+  "source": "real",
+  "benchmark": "long"
+ }
+]

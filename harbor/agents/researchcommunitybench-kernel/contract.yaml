@@ -1,0 +1,35 @@
+name: researchcommunitybench-kernel
+install_cmd: ""
+final_output: /lab/logs
+defaults:
+  model:
+    type: str
+    required: false
+    default: anthropic/claude-haiku-5-5
+    description: LiteLLM model id, e.g. anthropic/claude-opus-5-5 or openai/gpt-6.1-sol
+kwargs:
+  mode:
+    type: str
+    required: false
+    default: community
+    choices: [community, solo]
+  minutes:
+    type: int
+    required: false
+    default: 120
+  max_live:
+    type: int
+    required: false
+    default: 50
+  effort:
+    type: str
+    required: false
+    default: medium
+    choices: [low, medium, high, xhigh]
+    description: Reasoning effort, the same for every model (Claude output_config.effort, OpenAI reasoning_effort)
+  ceiling_usd:
+    type: float
+    required: false
+    default: 100.0
+    description: Safety ceiling on model spend for one institute (not a research budget); the run stops if reached
+run_cmd: bash /bundle/researchcommunitybench-kernel/start.sh "{model}" "{mode}" "{minutes}" "{max_live}" "{ceiling_usd}" "{problem_statement_path}" "{task_id}" "{effort}"

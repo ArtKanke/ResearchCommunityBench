@@ -1,0 +1,377 @@
+{
+ "run_id": "run-035c67b1",
+ "model": "haiku",
+ "task": "materials-solo-s2",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 3,
+  "R_frontier": 2,
+  "C_collaborative": 0,
+  "submitted_credited": 10,
+  "duplicates": 1,
+  "best_gain": {
+   "expt_gap": 0.1187,
+   "steels": 0.2381
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 2,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 4
+  }
+ },
+ "rewards": {
+  "score": 0.375,
+  "R_replicated": 3.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 2.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.0892,
+  "auditor_pending": 0.0,
+  "submitted_credited": 10.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 2.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 4.0,
+  "duplicates": 1.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.0324,
+  "model_calls": 27.0,
+  "experiments": 20.0,
+  "messages": 1.0,
+  "cost_per_accepted": 0.011,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.985,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 274.1
+ },
+ "claims": [
+  {
+   "id": "findin-15382590",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM on extended Magpie-style composition features beats the HGB baseline on experimental band gaps (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0458, 95% CI [-0.0624, -0.0284], beyond the minimum effect 0.0083)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1164,
+    "a": 0.3716849533796731,
+    "b": 0.41749409777837104,
+    "diff": -0.045809144398697946,
+    "ci95": [
+     -0.06240772130865493,
+     -0.02835121413964378
+    ],
+    "min_effect": 0.00834988195556742,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a870a739",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM on extended Magpie-style composition features beats the HGB baseline on experimental metallicity classification (5-fold CV error)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0081, 95% CI [-0.0186, 0.0024], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1236,
+    "a": 0.07200647249190939,
+    "b": 0.08009708737864078,
+    "diff": -0.008090614886731391,
+    "ci95": [
+     -0.0186084142394822,
+     0.0024271844660194173
+    ],
+    "min_effect": 0.0016019417475728157,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a303b8e7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM on Magpie-style composition features beats the HGB baseline on Citrine steel yield strength (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -27.5732, 95% CI [-47.2168, -9.9317], beyond the minimum effect 2.3161)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 75,
+    "a": 88.2300329428,
+    "b": 115.8032555697671,
+    "diff": -27.573222626967116,
+    "ci95": [
+     -47.21683479712978,
+     -9.931665047048211
+    ],
+    "min_effect": 2.3160651113953423,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-53b56cf1",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM on Magpie-style composition features beats the HGB baseline on Matbench glass-forming ability (5-fold CV error)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0079, 95% CI [-0.0185, 0.0026], needed below -0.0022",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1512,
+    "a": 0.10185185185185185,
+    "b": 0.10978835978835978,
+    "diff": -0.007936507936507936,
+    "ci95": [
+     -0.018518518518518517,
+     0.0026455026455026454
+    ],
+    "min_effect": 0.002195767195767196,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c3889eb1",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Fitting LightGBM on log(1+gap) improves expt_gap band-gap regression over the HGB baseline across three CV fold seeds",
+   "status": "rejected",
+   "reason": "mis-cited evidence: cv_mae_baseline_hgb is recorded in exec-af461e31 but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-e91419eb",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Fitting LightGBM on log(1+gap) improves expt_gap band-gap regression over the base LightGBM across three CV fold seeds",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0496, 95% CI [-0.0733, -0.0265], beyond the minimum effect 0.0083)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1164,
+    "a": 0.3679426411605678,
+    "b": 0.41749409777837104,
+    "diff": -0.04955145661780325,
+    "ci95": [
+     -0.073310815220466,
+     -0.02652920588313618
+    ],
+    "min_effect": 0.00834988195556742,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-08f23167",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM on Magpie-style composition features beats the HGB baseline on Matbench glass-forming ability across three CV fold seeds",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0079, 95% CI [-0.0185, 0.0026], needed below -0.0022",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1512,
+    "a": 0.10185185185185185,
+    "b": 0.10978835978835978,
+    "diff": -0.007936507936507936,
+    "ci95": [
+     -0.018518518518518517,
+     0.0026455026455026454
+    ],
+    "min_effect": 0.002195767195767196,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-5abf34a3",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM on Magpie-style composition features beats the HGB baseline on Matbench steel yield strength across three CV fold seeds",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-a303b8e7",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-a303b8e7",
+   "hidden": {
+    "metric": "MAE",
+    "n": 75,
+    "a": 88.2300329428,
+    "b": 115.8032555697671,
+    "diff": -27.573222626967116,
+    "ci95": [
+     -47.21683479712978,
+     -9.931665047048211
+    ],
+    "min_effect": 2.3160651113953423,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-82c4ee5e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM on Magpie-style composition features beats the HGB baseline on experimental metallicity classification across three CV fold seeds",
+   "status": "rejected",
+   "reason": "mis-cited evidence: cv_lgbm_glass is recorded in exec-4c4cb0cc but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-514b121c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "LightGBM on Magpie-style composition features beats the HGB baseline on experimental metallicity classification across three CV fold seeds",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0081, 95% CI [-0.0186, 0.0024], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1236,
+    "a": 0.07200647249190939,
+    "b": 0.08009708737864078,
+    "diff": -0.008090614886731391,
+    "ci95": [
+     -0.0186084142394822,
+     0.0024271844660194173
+    ],
+    "min_effect": 0.0016019417475728157,
+    "pass": false
+   },
+   "relations": []
+  }
+ ]
+}

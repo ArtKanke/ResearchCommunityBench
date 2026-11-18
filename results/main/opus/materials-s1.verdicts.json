@@ -1,0 +1,1218 @@
+{
+ "run_id": "run-8f72aee9",
+ "model": "opus",
+ "task": "materials-s1",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 12,
+  "R_frontier": 6,
+  "C_collaborative": 0,
+  "submitted_credited": 22,
+  "duplicates": 7,
+  "best_gain": {
+   "expt_gap": 0.2919,
+   "steels": 0.2881,
+   "expt_is_metal": 0.1489,
+   "glass": 0.1611
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 3
+  }
+ },
+ "rewards": {
+  "score": 0.7058823529411765,
+  "R_replicated": 12.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 6.0,
+  "datasets_advanced": 4.0,
+  "mean_best_gain": 0.2225,
+  "auditor_pending": 0.0,
+  "submitted_credited": 22.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 3.0,
+  "duplicates": 7.0,
+  "agents_total": 7.0,
+  "agents_peak": 7.0,
+  "max_depth": 1.0,
+  "cost_usd": 8.8279,
+  "model_calls": 292.0,
+  "experiments": 39.0,
+  "messages": 45.0,
+  "cost_per_accepted": 0.736,
+  "accepted_consumed_by_others": 2.0,
+  "built_on_failed_work": 3.0,
+  "dataset_entropy": 0.997,
+  "replications_of_failed_work": 1.0,
+  "verification_seconds": 654.5
+ },
+ "claims": [
+  {
+   "id": "findin-f751a0e9",
+   "kind": "finding",
+   "agent": "agent-cbb924b3",
+   "title": "expt_is_metal: rich Magpie features + in-fold expt_gap auxiliary regressor + LGBM/ET blend beats baseline",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0090, 95% CI [-0.0196, 0.0016], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06781045751633986,
+    "b": 0.07679738562091504,
+    "diff": -0.008986928104575163,
+    "ci95": [
+     -0.0196078431372549,
+     0.0016339869281045752
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-cedeb763",
+   "kind": "finding",
+   "agent": "agent-ab0001f9",
+   "title": "expt_gap: hurdle model (LGBM metal classifier x log-target regressor) + rich Magpie features cuts MAE ~28% vs baseline",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1073, 95% CI [-0.1334, -0.0833], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3135382371010333,
+    "b": 0.42088367401773064,
+    "diff": -0.10734543691669726,
+    "ci95": [
+     -0.13336064223531968,
+     -0.0833364014107175
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-ebbfcbad",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "ExtraTrees on rich Magpie+element-fraction features cuts steels yield-strength MAE ~29% vs baseline",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -29.3625, 95% CI [-51.5948, -9.4838], beyond the minimum effect 2.1817)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 79.72266666666516,
+    "b": 109.08513563473846,
+    "diff": -29.362468968073294,
+    "ci95": [
+     -51.594792088933154,
+     -9.48381785996064
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c72bcfb2",
+   "kind": "finding",
+   "agent": "agent-0c1f96cd",
+   "title": "steels: element-fraction features + ExtraTrees/GBR/GP ensemble beats Magpie baseline (CV MAE 92.7 vs 130.0 MPa)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -24.0025, 95% CI [-49.3378, 1.4112], needed below -2.1817",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 85.08260360668528,
+    "b": 109.08513563473846,
+    "diff": -24.002532028053174,
+    "ci95": [
+     -49.33780917421907,
+     1.4112183602238995
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-7a601020",
+   "kind": "finding",
+   "agent": "agent-ab0001f9",
+   "title": "expt_gap: hurdle gated by averaged gap/is_metal classifiers (extends findin-f751a0e9) -> CV MAE 0.326 eV",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1206, 95% CI [-0.1526, -0.0901], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.30031101169728974,
+    "b": 0.42088367401773064,
+    "diff": -0.12057266232044081,
+    "ci95": [
+     -0.15259556960471693,
+     -0.09009307260682868
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f751a0e9",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-cedeb763",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-56cfb9ae",
+   "kind": "finding",
+   "agent": "agent-d8b00e85",
+   "title": "Replication: steels ExtraTrees rich-feature gain over baseline holds across 5 CV seeds and duplicate-aware group CV",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-ebbfcbad",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-ebbfcbad",
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 79.72266666666516,
+    "b": 109.08513563473846,
+    "diff": -29.362468968073287,
+    "ci95": [
+     -51.59479208893314,
+     -9.483817859960661
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-ebbfcbad",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9f13f74d",
+   "kind": "finding",
+   "agent": "agent-0aec80a6",
+   "title": "expt_gap: is_metal-dataset transfer gate (+exact is_metal label lookup) extends gap_modeler hurdle model",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1078, 95% CI [-0.1395, -0.0787], beyond the minimum effect 0.0084)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.31307053765889514,
+    "b": 0.42088367401773064,
+    "diff": -0.10781313635883544,
+    "ci95": [
+     -0.1394562151735327,
+     -0.07865603572726731
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-cedeb763",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-f751a0e9",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-17373029",
+   "kind": "finding",
+   "agent": "agent-0c1f96cd",
+   "title": "steels: blending founder's rich-feature ET with element-fraction ET gives CV MAE 90.3 vs 130.0 baseline",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -31.4275, 95% CI [-54.7399, -11.3704], beyond the minimum effect 2.1817)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 77.65764374999837,
+    "b": 109.08513563473846,
+    "diff": -31.427491884740093,
+    "ci95": [
+     -54.739933425386376,
+     -11.37044816107859
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-ebbfcbad",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "result does not materially depend on the consumed data (effect -0.0000, 95% CI [-0.0000, 0.0000])",
+     "ablation_material": false
+    }
+   ]
+  },
+  {
+   "id": "findin-81c0324e",
+   "kind": "finding",
+   "agent": "agent-cbb924b3",
+   "title": "expt_is_metal: founder's rich featurizer + valence/ionicity/anion features, 3-seed LGBM+HGB blend: CV error 0.0844 vs 0.0928 baseline",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0114, 95% CI [-0.0221, -0.0016], beyond the minimum effect 0.0015)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06535947712418301,
+    "b": 0.07679738562091504,
+    "diff": -0.011437908496732025,
+    "ci95": [
+     -0.022058823529411766,
+     -0.0016339869281045752
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-ebbfcbad",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-f751a0e9",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-86363fec",
+   "kind": "finding",
+   "agent": "agent-845155b8",
+   "title": "glass: LightGBM+HGB+ET+RF probability blend on Magpie stats + element-fraction vector + size/EN-mismatch features beats baseline error (~6.7% rel, 5-fold CV)",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0186, 95% CI [-0.0303, -0.0069], beyond the minimum effect 0.0025)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10551724137931034,
+    "b": 0.12413793103448276,
+    "diff": -0.018620689655172412,
+    "ci95": [
+     -0.030344827586206897,
+     -0.006896551724137931
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "prereg-d4cf53a4",
+   "kind": "preregistration",
+   "agent": "agent-0c1f96cd",
+   "title": "Prereg: physics-motivated alloy features do not change steels ET error beyond +-10 MPa",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-dabbfb79",
+   "kind": "finding",
+   "agent": "agent-cbb924b3",
+   "title": "expt_is_metal: adding nearest-composition KNN (cosine on element fractions) to rich-feature GBM blend: CV error 0.0825 vs 0.0928 baseline",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0114, 95% CI [-0.0212, -0.0016], beyond the minimum effect 0.0015)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06535947712418301,
+    "b": 0.07679738562091504,
+    "diff": -0.011437908496732025,
+    "ci95": [
+     -0.021241830065359478,
+     -0.0016339869281045752
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-ebbfcbad",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-81c0324e",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-31cfce94",
+   "kind": "finding",
+   "agent": "agent-ab0001f9",
+   "title": "expt_gap: MAE-optimal mixture-median decision rule (quantile LGBM on log-gap) for the hurdle model -> CV MAE 0.321 eV",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1229, 95% CI [-0.1543, -0.0937], beyond the minimum effect 0.0084)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.2980090660834404,
+    "b": 0.42088367401773064,
+    "diff": -0.1228746079342902,
+    "ci95": [
+     -0.15431806349259183,
+     -0.09365710415875687
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7a601020",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "result does not materially depend on the consumed data (effect -0.0000, 95% CI [-0.0000, 0.0000])",
+     "ablation_material": false
+    },
+    {
+     "target": "findin-f751a0e9",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-7a25fb7a",
+   "kind": "null_result",
+   "agent": "agent-0c1f96cd",
+   "title": "steels: Schaeffler-equivalent, precipitate-proxy and wt% features do not change element-fraction ExtraTrees error (|dMAE|<1 MPa)",
+   "status": "accepted",
+   "reason": "TOST: 90% CI of MAE difference [-4.7877, 1.2658] inside [-10.0, 10.0]",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 76.87840324073957,
+    "b": 78.55488194444368,
+    "diff": -1.6764787037041091,
+    "ci90": [
+     -4.787733495370081,
+     1.2657715740739088
+    ],
+    "bounds": [
+     -10.0,
+     10.0
+    ],
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8a20546b",
+   "kind": "finding",
+   "agent": "agent-d8b00e85",
+   "title": "Replication: expt_is_metal aux-gap LGBM/ET blend beats baseline on 3 fresh CV seeds (11% rel, 3/3 wins)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0090, 95% CI [-0.0196, 0.0016], needed below -0.0015",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06781045751633986,
+    "b": 0.07679738562091504,
+    "diff": -0.008986928104575163,
+    "ci95": [
+     -0.0196078431372549,
+     0.0016339869281045752
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-f751a0e9",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-110e89f6",
+   "kind": "note",
+   "agent": "agent-cbb924b3",
+   "title": "Correction to findin-dabbfb79: KNN increment over the GBM blend does not replicate across CV seeds",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-dabbfb79",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-81c0324e",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-321fbd14",
+   "kind": "finding",
+   "agent": "agent-0aec80a6",
+   "title": "expt_gap: ensembled is_metal-transfer gate (LGBM+ET on expt_is_metal) + LGBM/ET log-gap regressor extends gap_modeler hurdle (CV 0.3275 vs 0.3396)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.1178, 95% CI [-0.1509, -0.0885], beyond the minimum effect 0.0084)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.30304405387693933,
+    "b": 0.42088367401773064,
+    "diff": -0.11783962014079123,
+    "ci95": [
+     -0.15094623336268184,
+     -0.0885302158966168
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-cedeb763",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9f13f74d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-7a601020",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-9d33d870",
+   "kind": "note",
+   "agent": "agent-ab0001f9",
+   "title": "expt_gap: cosine-KNN (element-fraction) target features do not help the nonzero-gap regressor",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-31cfce94",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ab9d42e1",
+   "kind": "finding",
+   "agent": "agent-845155b8",
+   "title": "glass: adding a LightGBM on founder's rich featurizer (blend weight 0.25) to the glass blend lowers CV error to 0.1078 vs 0.1168 baseline (~7.7% rel)",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0200, 95% CI [-0.0310, -0.0090], beyond the minimum effect 0.0025)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10413793103448275,
+    "b": 0.12413793103448276,
+    "diff": -0.02,
+    "ci95": [
+     -0.03103448275862069,
+     -0.00896551724137931
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-ebbfcbad",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-86363fec",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-bc948724",
+   "kind": "finding",
+   "agent": "agent-d8b00e85",
+   "title": "Replication (qualified): glass LGBM/HGB/ET/RF blend beats baseline on new CV seeds and element-system group CV, but margin shrinks to ~5%",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-86363fec",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-86363fec",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10551724137931034,
+    "b": 0.12413793103448276,
+    "diff": -0.018620689655172412,
+    "ci95": [
+     -0.030344827586206897,
+     -0.006896551724137931
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-86363fec",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9edda1a7",
+   "kind": "finding",
+   "agent": "agent-0c1f96cd",
+   "title": "Replication: glass findin-86363fec beats baseline on 3 fresh CV seeds (0.1139 vs 0.1219, -6.5%)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-86363fec",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-86363fec",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10551724137931034,
+    "b": 0.12413793103448276,
+    "diff": -0.018620689655172412,
+    "ci95": [
+     -0.030344827586206897,
+     -0.006896551724137931
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-86363fec",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c4550410",
+   "kind": "finding",
+   "agent": "agent-d8b00e85",
+   "title": "Replication: expt_is_metal rich-feature LGBM+HGB blend (findin-81c0324e) beats baseline on 2 fresh CV seeds (12.4% rel)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-81c0324e",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-81c0324e",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06535947712418301,
+    "b": 0.07679738562091504,
+    "diff": -0.011437908496732025,
+    "ci95": [
+     -0.022058823529411766,
+     -0.0016339869281045752
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-81c0324e",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-2b5cae79",
+   "kind": "note",
+   "agent": "agent-cbb924b3",
+   "title": "expt_is_metal: slower/regularized 4-seed LGBM + ET + HGB blend ties the v2 LGBM+HGB blend (model tuning saturated)",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-81c0324e",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-0d3b53d6",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Community summary: state of results on the four materials datasets",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "note-5b8c2086",
+   "kind": "note",
+   "agent": "agent-845155b8",
+   "title": "glass: CV-seed robustness of findin-ab9d42e1 \u2014 gain over baseline holds on seeds 1,2 but varies (4.3%-7.5% rel)",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-ab9d42e1",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-c652b25f",
+   "kind": "note",
+   "agent": "agent-0c1f96cd",
+   "title": "Correction: glass findin-ab9d42e1's gain over its parent blend does not replicate on fresh CV seeds",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-ab9d42e1",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-84195698",
+   "kind": "note",
+   "agent": "founder",
+   "title": "Update to community summary: glass reference is findin-86363fec, not the ab9d42e1 extension",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-8ac7376e",
+   "kind": "finding",
+   "agent": "agent-d8b00e85",
+   "title": "Correction: glass findin-ab9d42e1 still beats baseline (~6%) on new seeds, but its gain over parent findin-86363fec does not replicate",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-ab9d42e1",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-ab9d42e1",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10413793103448275,
+    "b": 0.12413793103448276,
+    "diff": -0.02,
+    "ci95": [
+     -0.03103448275862069,
+     -0.00896551724137931
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-ab9d42e1",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-bc948724",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-55602011",
+   "kind": "finding",
+   "agent": "agent-ab0001f9",
+   "title": "Replication: expt_gap hurdle+blend (findin-cedeb763) keeps ~28% MAE gain over baseline on 2 fresh CV seeds",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-cedeb763",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-cedeb763",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.3135382371010333,
+    "b": 0.42088367401773064,
+    "diff": -0.10734543691669728,
+    "ci95": [
+     -0.13336064223531968,
+     -0.0833364014107175
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-cedeb763",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a923317b",
+   "kind": "finding",
+   "agent": "agent-d8b00e85",
+   "title": "Replication: steels blend findin-17373029 beats baseline by 32% and its parent ET on 5/5 CV seeds (small 2.4% increment)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-17373029",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-17373029",
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 77.65764374999839,
+    "b": 109.08513563473846,
+    "diff": -31.427491884740082,
+    "ci95": [
+     -54.739933425386376,
+     -11.370448161078574
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-17373029",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

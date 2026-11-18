@@ -1,0 +1,161 @@
+{
+ "run_id": "run-6acaec57",
+ "model": "haiku",
+ "task": "materials-solo-s1",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 3,
+  "R_frontier": 3,
+  "C_collaborative": 0,
+  "submitted_credited": 3,
+  "duplicates": 0,
+  "best_gain": {
+   "expt_gap": 0.0801,
+   "expt_is_metal": 0.1489,
+   "steels": 0.2563
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 0
+  }
+ },
+ "rewards": {
+  "score": 0.375,
+  "R_replicated": 3.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 3.0,
+  "datasets_advanced": 3.0,
+  "mean_best_gain": 0.12132499999999999,
+  "auditor_pending": 0.0,
+  "submitted_credited": 3.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 0.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.0246,
+  "model_calls": 28.0,
+  "experiments": 11.0,
+  "messages": 1.0,
+  "cost_per_accepted": 0.008,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 1.0,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 187.2
+ },
+ "claims": [
+  {
+   "id": "findin-165a3900",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Adding extended composition features and a HistGB+ExtraTrees ensemble lowers expt_gap MAE vs. the Magpie-lite baseline",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0337, 95% CI [-0.0514, -0.0172], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.38716487990309434,
+    "b": 0.42088367401773064,
+    "diff": -0.03371879411463625,
+    "ci95": [
+     -0.051386207869645296,
+     -0.01715240583880107
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-0682d00e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended composition features with a HistGB+ExtraTrees probability ensemble lower expt_is_metal error vs. the Magpie-lite baseline",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0114, 95% CI [-0.0212, -0.0016], beyond the minimum effect 0.0015)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06535947712418301,
+    "b": 0.07679738562091504,
+    "diff": -0.011437908496732025,
+    "ci95": [
+     -0.021241830065359478,
+     -0.0016339869281045752
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-fad49c36",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended composition features with a HistGB+ExtraTrees ensemble lower steels yield-strength MAE vs. the Magpie-lite baseline",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -27.9540, 95% CI [-48.6272, -10.7704], beyond the minimum effect 2.1817)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 81.13114989672478,
+    "b": 109.08513563473846,
+    "diff": -27.953985738013685,
+    "ci95": [
+     -48.62715119780734,
+     -10.770352098735943
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": true
+   },
+   "relations": []
+  }
+ ]
+}

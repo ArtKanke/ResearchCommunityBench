@@ -1,0 +1,4766 @@
+{
+ "format": "rcb-results/1",
+ "generated": "2026-11-18T07:02+00:00",
+ "models": [
+  {
+   "key": "claude-haiku-5-5",
+   "name": "Claude Haiku 5.5",
+   "lab": "Anthropic"
+  },
+  {
+   "key": "claude-opus-5-5",
+   "name": "Claude Opus 5.5",
+   "lab": "Anthropic"
+  },
+  {
+   "key": "gpt-6-luna",
+   "name": "GPT-6 Luna",
+   "lab": "OpenAI"
+  },
+  {
+   "key": "gpt-6-1-sol",
+   "name": "GPT-6.1 Sol",
+   "lab": "OpenAI"
+  }
+ ],
+ "domains": [
+  {
+   "key": "materials",
+   "name": "Materials science"
+  },
+  {
+   "key": "compbio",
+   "name": "Computational biology"
+  },
+  {
+   "key": "aiml",
+   "name": "AI/ML on GPU"
+  }
+ ],
+ "datasets": [
+  {
+   "id": "main",
+   "label": "Main run",
+   "status": "main",
+   "minutes": 60,
+   "preliminary": false,
+   "seeds": 3,
+   "source": "results/main_summary.json",
+   "rows": [
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "aiml",
+     "mode": "solo",
+     "n": 3,
+     "m": {
+      "R": {
+       "mean": 2.0,
+       "se": 0.0
+      },
+      "C": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "submitted": {
+       "mean": 3.0,
+       "se": 0.5774
+      },
+      "not_replicated": {
+       "mean": 0.6667,
+       "se": 0.3333
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "cost": {
+       "mean": 0.028,
+       "se": 0.0039
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": 0.0
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "calls": {
+       "mean": 23.3333,
+       "se": 3.283
+      },
+      "experiments": {
+       "mean": 11.6667,
+       "se": 3.283
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "session_share": {
+       "mean": 0.3943,
+       "se": 0.0417
+      },
+      "frontier": {
+       "mean": 2.0,
+       "se": 0.0
+      },
+      "datasets_advanced": {
+       "mean": 1.3333,
+       "se": 0.3333
+      },
+      "best_gain": {
+       "mean": 0.1099,
+       "se": 0.0144
+      }
+     }
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "aiml",
+     "mode": "team",
+     "n": 3,
+     "m": {
+      "R": {
+       "mean": 2.0,
+       "se": 0.5774
+      },
+      "C": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "submitted": {
+       "mean": 4.3333,
+       "se": 0.8819
+      },
+      "not_replicated": {
+       "mean": 1.6667,
+       "se": 0.8819
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "duplicates": {
+       "mean": 0.6667,
+       "se": 0.6667
+      },
+      "cost": {
+       "mean": 0.0607,
+       "se": 0.0116
+      },
+      "agents": {
+       "mean": 2.3333,
+       "se": 0.3333
+      },
+      "messages": {
+       "mean": 11.0,
+       "se": 4.5826
+      },
+      "calls": {
+       "mean": 52.3333,
+       "se": 8.9505
+      },
+      "experiments": {
+       "mean": 14.6667,
+       "se": 3.1798
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "built_on_failed": {
+       "mean": 0.6667,
+       "se": 0.6667
+      },
+      "replicated_failed": {
+       "mean": 0.3333,
+       "se": 0.3333
+      },
+      "session_share": {
+       "mean": 0.6473,
+       "se": 0.0341
+      },
+      "frontier": {
+       "mean": 1.6667,
+       "se": 0.3333
+      },
+      "datasets_advanced": {
+       "mean": 1.6667,
+       "se": 0.3333
+      },
+      "best_gain": {
+       "mean": 0.1041,
+       "se": 0.0339
+      }
+     }
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "compbio",
+     "mode": "solo",
+     "n": 3,
+     "m": {
+      "R": {
+       "mean": 8.0,
+       "se": 3.2146
+      },
+      "C": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "submitted": {
+       "mean": 8.3333,
+       "se": 2.9627
+      },
+      "not_replicated": {
+       "mean": 0.3333,
+       "se": 0.3333
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "cost": {
+       "mean": 0.0214,
+       "se": 0.001
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": 0.0
+      },
+      "messages": {
+       "mean": 0.3333,
+       "se": 0.3333
+      },
+      "calls": {
+       "mean": 15.0,
+       "se": 2.8868
+      },
+      "experiments": {
+       "mean": 7.3333,
+       "se": 0.8819
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "session_share": {
+       "mean": 0.0927,
+       "se": 0.0127
+      },
+      "frontier": {
+       "mean": 7.3333,
+       "se": 2.6034
+      },
+      "datasets_advanced": {
+       "mean": 5.6667,
+       "se": 1.3333
+      },
+      "best_gain": {
+       "mean": 0.1918,
+       "se": 0.0729
+      }
+     }
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "compbio",
+     "mode": "team",
+     "n": 3,
+     "m": {
+      "R": {
+       "mean": 10.0,
+       "se": 4.0
+      },
+      "C": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "submitted": {
+       "mean": 27.3333,
+       "se": 14.9703
+      },
+      "not_replicated": {
+       "mean": 4.3333,
+       "se": 2.3333
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "duplicates": {
+       "mean": 7.6667,
+       "se": 7.1725
+      },
+      "cost": {
+       "mean": 0.1184,
+       "se": 0.0355
+      },
+      "agents": {
+       "mean": 3.0,
+       "se": 0.0
+      },
+      "messages": {
+       "mean": 18.6667,
+       "se": 5.2068
+      },
+      "calls": {
+       "mean": 75.0,
+       "se": 14.7422
+      },
+      "experiments": {
+       "mean": 40.6667,
+       "se": 27.7208
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "session_share": {
+       "mean": 0.2903,
+       "se": 0.0568
+      },
+      "frontier": {
+       "mean": 7.3333,
+       "se": 2.9627
+      },
+      "datasets_advanced": {
+       "mean": 5.3333,
+       "se": 1.2019
+      },
+      "best_gain": {
+       "mean": 0.2027,
+       "se": 0.0648
+      }
+     }
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "materials",
+     "mode": "solo",
+     "n": 3,
+     "m": {
+      "R": {
+       "mean": 2.3333,
+       "se": 0.6667
+      },
+      "C": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "submitted": {
+       "mean": 6.3333,
+       "se": 2.0276
+      },
+      "not_replicated": {
+       "mean": 3.0,
+       "se": 1.5275
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "duplicates": {
+       "mean": 0.3333,
+       "se": 0.3333
+      },
+      "cost": {
+       "mean": 0.0269,
+       "se": 0.0027
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": 0.0
+      },
+      "messages": {
+       "mean": 0.6667,
+       "se": 0.3333
+      },
+      "calls": {
+       "mean": 24.3333,
+       "se": 3.1798
+      },
+      "experiments": {
+       "mean": 16.0,
+       "se": 2.6458
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "session_share": {
+       "mean": 0.3833,
+       "se": 0.0652
+      },
+      "frontier": {
+       "mean": 2.0,
+       "se": 0.5774
+      },
+      "datasets_advanced": {
+       "mean": 2.0,
+       "se": 0.5774
+      },
+      "best_gain": {
+       "mean": 0.0774,
+       "se": 0.0294
+      }
+     }
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "materials",
+     "mode": "team",
+     "n": 3,
+     "m": {
+      "R": {
+       "mean": 3.3333,
+       "se": 0.3333
+      },
+      "C": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "submitted": {
+       "mean": 14.0,
+       "se": 1.7321
+      },
+      "not_replicated": {
+       "mean": 6.6667,
+       "se": 2.9059
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "duplicates": {
+       "mean": 2.0,
+       "se": 0.0
+      },
+      "cost": {
+       "mean": 0.1288,
+       "se": 0.0147
+      },
+      "agents": {
+       "mean": 4.0,
+       "se": 0.5774
+      },
+      "messages": {
+       "mean": 19.3333,
+       "se": 0.8819
+      },
+      "calls": {
+       "mean": 111.3333,
+       "se": 12.4677
+      },
+      "experiments": {
+       "mean": 47.0,
+       "se": 7.7675
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "built_on_failed": {
+       "mean": 1.6667,
+       "se": 0.3333
+      },
+      "replicated_failed": {
+       "mean": 1.0,
+       "se": 0.5774
+      },
+      "session_share": {
+       "mean": 0.5917,
+       "se": 0.0379
+      },
+      "frontier": {
+       "mean": 2.3333,
+       "se": 0.6667
+      },
+      "datasets_advanced": {
+       "mean": 2.0,
+       "se": 0.5774
+      },
+      "best_gain": {
+       "mean": 0.0857,
+       "se": 0.0334
+      }
+     }
+    },
+    {
+     "model": "claude-opus-5-5",
+     "domain": "aiml",
+     "mode": "solo",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 1.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 4.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 3.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 0.986,
+       "se": null
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 37.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 5.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 1.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.643,
+       "se": null
+      },
+      "frontier": {
+       "mean": 1.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 1.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.0766,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "claude-opus-5-5",
+     "domain": "aiml",
+     "mode": "team",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 7.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 10.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 0.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 1.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 1.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 5.761,
+       "se": null
+      },
+      "agents": {
+       "mean": 6.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 39.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 244.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 35.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 4.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.866,
+       "se": null
+      },
+      "frontier": {
+       "mean": 3.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 2.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.201,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "claude-opus-5-5",
+     "domain": "compbio",
+     "mode": "solo",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 4.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 13.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 9.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 0.5747,
+       "se": null
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 22.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 4.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.152,
+       "se": null
+      },
+      "frontier": {
+       "mean": 4.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 4.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.1055,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "claude-opus-5-5",
+     "domain": "compbio",
+     "mode": "team",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 43.0,
+       "se": null
+      },
+      "C": {
+       "mean": 5.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 58.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 4.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 11.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 8.665,
+       "se": null
+      },
+      "agents": {
+       "mean": 6.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 30.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 269.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 103.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 1.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 1.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.831,
+       "se": null
+      },
+      "frontier": {
+       "mean": 25.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 7.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.3305,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "claude-opus-5-5",
+     "domain": "materials",
+     "mode": "solo",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 3.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 7.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 4.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 1.0057,
+       "se": null
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 1.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 30.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 15.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 1.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 1.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.659,
+       "se": null
+      },
+      "frontier": {
+       "mean": 3.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 3.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.1356,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "claude-opus-5-5",
+     "domain": "materials",
+     "mode": "team",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 12.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 22.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 3.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 7.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 8.8279,
+       "se": null
+      },
+      "agents": {
+       "mean": 7.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 45.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 292.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 39.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 2.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 3.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 1.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.774,
+       "se": null
+      },
+      "frontier": {
+       "mean": 6.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 4.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.2225,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "aiml",
+     "mode": "solo",
+     "n": 3,
+     "m": {
+      "R": {
+       "mean": 2.0,
+       "se": 0.5774
+      },
+      "C": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "submitted": {
+       "mean": 5.6667,
+       "se": 0.8819
+      },
+      "not_replicated": {
+       "mean": 2.0,
+       "se": 1.0
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "duplicates": {
+       "mean": 1.0,
+       "se": 0.5774
+      },
+      "cost": {
+       "mean": 0.1539,
+       "se": 0.0147
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": 0.0
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "calls": {
+       "mean": 41.3333,
+       "se": 2.0276
+      },
+      "experiments": {
+       "mean": 23.6667,
+       "se": 2.3333
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "built_on_failed": {
+       "mean": 0.6667,
+       "se": 0.6667
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "session_share": {
+       "mean": 0.9893,
+       "se": 0.0102
+      },
+      "frontier": {
+       "mean": 1.3333,
+       "se": 0.3333
+      },
+      "datasets_advanced": {
+       "mean": 1.0,
+       "se": 0.0
+      },
+      "best_gain": {
+       "mean": 0.0513,
+       "se": 0.004
+      }
+     }
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "aiml",
+     "mode": "team",
+     "n": 3,
+     "m": {
+      "R": {
+       "mean": 2.0,
+       "se": 0.5774
+      },
+      "C": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "submitted": {
+       "mean": 16.0,
+       "se": 2.6458
+      },
+      "not_replicated": {
+       "mean": 12.3333,
+       "se": 3.4801
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "duplicates": {
+       "mean": 0.6667,
+       "se": 0.6667
+      },
+      "cost": {
+       "mean": 0.5319,
+       "se": 0.1205
+      },
+      "agents": {
+       "mean": 4.0,
+       "se": 0.0
+      },
+      "messages": {
+       "mean": 27.6667,
+       "se": 7.8811
+      },
+      "calls": {
+       "mean": 169.0,
+       "se": 23.5443
+      },
+      "experiments": {
+       "mean": 49.3333,
+       "se": 8.1718
+      },
+      "consumed": {
+       "mean": 0.6667,
+       "se": 0.3333
+      },
+      "built_on_failed": {
+       "mean": 7.3333,
+       "se": 3.283
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "session_share": {
+       "mean": 1.0,
+       "se": 0.0
+      },
+      "frontier": {
+       "mean": 1.6667,
+       "se": 0.3333
+      },
+      "datasets_advanced": {
+       "mean": 1.6667,
+       "se": 0.3333
+      },
+      "best_gain": {
+       "mean": 0.085,
+       "se": 0.0364
+      }
+     }
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "compbio",
+     "mode": "solo",
+     "n": 3,
+     "m": {
+      "R": {
+       "mean": 6.0,
+       "se": 3.4641
+      },
+      "C": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "submitted": {
+       "mean": 40.0,
+       "se": 11.3725
+      },
+      "not_replicated": {
+       "mean": 32.3333,
+       "se": 7.8387
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "duplicates": {
+       "mean": 1.6667,
+       "se": 1.6667
+      },
+      "cost": {
+       "mean": 1.1891,
+       "se": 0.361
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": 0.0
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "calls": {
+       "mean": 125.3333,
+       "se": 26.8473
+      },
+      "experiments": {
+       "mean": 113.6667,
+       "se": 35.8345
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "built_on_failed": {
+       "mean": 4.6667,
+       "se": 4.6667
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "session_share": {
+       "mean": 0.995,
+       "se": 0.0029
+      },
+      "frontier": {
+       "mean": 2.6667,
+       "se": 1.453
+      },
+      "datasets_advanced": {
+       "mean": 2.3333,
+       "se": 1.2019
+      },
+      "best_gain": {
+       "mean": 0.0505,
+       "se": 0.0258
+      }
+     }
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "compbio",
+     "mode": "team",
+     "n": 3,
+     "m": {
+      "R": {
+       "mean": 18.3333,
+       "se": 2.6667
+      },
+      "C": {
+       "mean": 0.3333,
+       "se": 0.3333
+      },
+      "submitted": {
+       "mean": 142.0,
+       "se": 17.9258
+      },
+      "not_replicated": {
+       "mean": 103.0,
+       "se": 22.2785
+      },
+      "not_reproducible": {
+       "mean": 4.0,
+       "se": 4.0
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "duplicates": {
+       "mean": 6.3333,
+       "se": 2.9627
+      },
+      "cost": {
+       "mean": 7.586,
+       "se": 0.8602
+      },
+      "agents": {
+       "mean": 7.3333,
+       "se": 1.2019
+      },
+      "messages": {
+       "mean": 30.6667,
+       "se": 6.6416
+      },
+      "calls": {
+       "mean": 881.3333,
+       "se": 95.9311
+      },
+      "experiments": {
+       "mean": 392.0,
+       "se": 22.5906
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "built_on_failed": {
+       "mean": 134.6667,
+       "se": 39.0313
+      },
+      "replicated_failed": {
+       "mean": 1.6667,
+       "se": 1.6667
+      },
+      "session_share": {
+       "mean": 1.0,
+       "se": 0.0
+      },
+      "frontier": {
+       "mean": 7.3333,
+       "se": 1.2019
+      },
+      "datasets_advanced": {
+       "mean": 4.6667,
+       "se": 0.3333
+      },
+      "best_gain": {
+       "mean": 0.0976,
+       "se": 0.021
+      }
+     }
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "materials",
+     "mode": "solo",
+     "n": 3,
+     "m": {
+      "R": {
+       "mean": 2.6667,
+       "se": 0.8819
+      },
+      "C": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "submitted": {
+       "mean": 6.6667,
+       "se": 0.3333
+      },
+      "not_replicated": {
+       "mean": 3.3333,
+       "se": 1.2019
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "duplicates": {
+       "mean": 0.6667,
+       "se": 0.6667
+      },
+      "cost": {
+       "mean": 0.1491,
+       "se": 0.0557
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": 0.0
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "calls": {
+       "mean": 43.6667,
+       "se": 4.7022
+      },
+      "experiments": {
+       "mean": 28.3333,
+       "se": 5.4569
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "built_on_failed": {
+       "mean": 0.3333,
+       "se": 0.3333
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "session_share": {
+       "mean": 0.9993,
+       "se": 0.0007
+      },
+      "frontier": {
+       "mean": 2.3333,
+       "se": 0.8819
+      },
+      "datasets_advanced": {
+       "mean": 2.0,
+       "se": 0.5774
+      },
+      "best_gain": {
+       "mean": 0.1162,
+       "se": 0.0454
+      }
+     }
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "materials",
+     "mode": "team",
+     "n": 2,
+     "m": {
+      "R": {
+       "mean": 3.5,
+       "se": 1.5
+      },
+      "C": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "submitted": {
+       "mean": 14.5,
+       "se": 2.5
+      },
+      "not_replicated": {
+       "mean": 9.5,
+       "se": 0.5
+      },
+      "not_reproducible": {
+       "mean": 0.5,
+       "se": 0.5
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "duplicates": {
+       "mean": 0.5,
+       "se": 0.5
+      },
+      "cost": {
+       "mean": 0.9658,
+       "se": 0.2432
+      },
+      "agents": {
+       "mean": 5.0,
+       "se": 0.0
+      },
+      "messages": {
+       "mean": 14.5,
+       "se": 3.5
+      },
+      "calls": {
+       "mean": 219.0,
+       "se": 19.0
+      },
+      "experiments": {
+       "mean": 94.0,
+       "se": 5.0
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "built_on_failed": {
+       "mean": 6.5,
+       "se": 1.5
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": 0.0
+      },
+      "session_share": {
+       "mean": 1.0,
+       "se": 0.0
+      },
+      "frontier": {
+       "mean": 2.5,
+       "se": 0.5
+      },
+      "datasets_advanced": {
+       "mean": 1.0,
+       "se": 0.0
+      },
+      "best_gain": {
+       "mean": 0.0751,
+       "se": 0.0107
+      }
+     }
+    },
+    {
+     "model": "gpt-6-1-sol",
+     "domain": "aiml",
+     "mode": "solo",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 6.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 8.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 1.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 1.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 2.1758,
+       "se": null
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 59.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 29.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.988,
+       "se": null
+      },
+      "frontier": {
+       "mean": 3.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 2.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.1883,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "gpt-6-1-sol",
+     "domain": "aiml",
+     "mode": "team",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 3.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 8.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 3.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 2.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 11.7664,
+       "se": null
+      },
+      "agents": {
+       "mean": 7.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 201.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 362.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 65.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 3.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 1.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 1.0,
+       "se": null
+      },
+      "frontier": {
+       "mean": 2.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 2.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.2649,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "gpt-6-1-sol",
+     "domain": "compbio",
+     "mode": "solo",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 37.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 51.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 14.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 9.0514,
+       "se": null
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 130.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 97.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.997,
+       "se": null
+      },
+      "frontier": {
+       "mean": 14.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 7.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.346,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "gpt-6-1-sol",
+     "domain": "compbio",
+     "mode": "team",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 29.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 51.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 19.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 2.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 59.4251,
+       "se": null
+      },
+      "agents": {
+       "mean": 10.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 477.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 1026.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 424.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 9.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 33.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 5.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.991,
+       "se": null
+      },
+      "frontier": {
+       "mean": 14.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 7.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.3117,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "gpt-6-1-sol",
+     "domain": "materials",
+     "mode": "solo",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 4.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 5.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 1.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 2.7366,
+       "se": null
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 76.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 51.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 1.0,
+       "se": null
+      },
+      "frontier": {
+       "mean": 3.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 3.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.223,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "gpt-6-1-sol",
+     "domain": "materials",
+     "mode": "team",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 11.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 26.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 13.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 39.3352,
+       "se": null
+      },
+      "agents": {
+       "mean": 10.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 414.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 792.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 283.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 10.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 38.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 5.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 1.0,
+       "se": null
+      },
+      "frontier": {
+       "mean": 7.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 3.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.2722,
+       "se": null
+      }
+     }
+    }
+   ],
+   "runs": [
+    {
+     "model": "gpt-6-1-sol",
+     "domain": "aiml",
+     "mode": "team",
+     "seed": 1,
+     "R": 3.0,
+     "C": 0.0,
+     "submitted": 8.0,
+     "not_replicated": 3.0,
+     "not_reproducible": 2.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 11.7664,
+     "agents": 7.0,
+     "messages": 201.0,
+     "calls": 362.0,
+     "experiments": 65.0,
+     "consumed": 3.0,
+     "built_on_failed": 1.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 2.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.2649
+    },
+    {
+     "model": "gpt-6-1-sol",
+     "domain": "aiml",
+     "mode": "solo",
+     "seed": 1,
+     "R": 6.0,
+     "C": 0.0,
+     "submitted": 8.0,
+     "not_replicated": 1.0,
+     "not_reproducible": 1.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 2.1758,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 59.0,
+     "experiments": 29.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.988,
+     "frontier": 3.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.1883
+    },
+    {
+     "model": "gpt-6-1-sol",
+     "domain": "compbio",
+     "mode": "team",
+     "seed": 1,
+     "R": 29.0,
+     "C": 0.0,
+     "submitted": 51.0,
+     "not_replicated": 19.0,
+     "not_reproducible": 2.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 59.4251,
+     "agents": 10.0,
+     "messages": 477.0,
+     "calls": 1026.0,
+     "experiments": 424.0,
+     "consumed": 9.0,
+     "built_on_failed": 33.0,
+     "replicated_failed": 5.0,
+     "session_share": 0.991,
+     "frontier": 14.0,
+     "datasets_advanced": 7.0,
+     "best_gain": 0.3116714285714286
+    },
+    {
+     "model": "gpt-6-1-sol",
+     "domain": "compbio",
+     "mode": "solo",
+     "seed": 1,
+     "R": 37.0,
+     "C": 0.0,
+     "submitted": 51.0,
+     "not_replicated": 14.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 9.0514,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 130.0,
+     "experiments": 97.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.997,
+     "frontier": 14.0,
+     "datasets_advanced": 7.0,
+     "best_gain": 0.34604285714285715
+    },
+    {
+     "model": "gpt-6-1-sol",
+     "domain": "materials",
+     "mode": "team",
+     "seed": 1,
+     "R": 11.0,
+     "C": 0.0,
+     "submitted": 26.0,
+     "not_replicated": 13.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 39.3352,
+     "agents": 10.0,
+     "messages": 414.0,
+     "calls": 792.0,
+     "experiments": 283.0,
+     "consumed": 10.0,
+     "built_on_failed": 38.0,
+     "replicated_failed": 5.0,
+     "session_share": 1.0,
+     "frontier": 7.0,
+     "datasets_advanced": 3.0,
+     "best_gain": 0.2722
+    },
+    {
+     "model": "gpt-6-1-sol",
+     "domain": "materials",
+     "mode": "solo",
+     "seed": 1,
+     "R": 4.0,
+     "C": 0.0,
+     "submitted": 5.0,
+     "not_replicated": 1.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 2.7366,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 76.0,
+     "experiments": 51.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 3.0,
+     "datasets_advanced": 3.0,
+     "best_gain": 0.223025
+    },
+    {
+     "model": "claude-opus-5-5",
+     "domain": "aiml",
+     "mode": "team",
+     "seed": 1,
+     "R": 7.0,
+     "C": 0.0,
+     "submitted": 10.0,
+     "not_replicated": 0.0,
+     "not_reproducible": 1.0,
+     "fabrication": 0.0,
+     "duplicates": 1.0,
+     "cost": 5.761,
+     "agents": 6.0,
+     "messages": 39.0,
+     "calls": 244.0,
+     "experiments": 35.0,
+     "consumed": 4.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.866,
+     "frontier": 3.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.201
+    },
+    {
+     "model": "claude-opus-5-5",
+     "domain": "aiml",
+     "mode": "solo",
+     "seed": 1,
+     "R": 1.0,
+     "C": 0.0,
+     "submitted": 4.0,
+     "not_replicated": 3.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.986,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 37.0,
+     "experiments": 5.0,
+     "consumed": 0.0,
+     "built_on_failed": 1.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.643,
+     "frontier": 1.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.07665
+    },
+    {
+     "model": "claude-opus-5-5",
+     "domain": "compbio",
+     "mode": "team",
+     "seed": 1,
+     "R": 43.0,
+     "C": 5.0,
+     "submitted": 58.0,
+     "not_replicated": 4.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 11.0,
+     "cost": 8.665,
+     "agents": 6.0,
+     "messages": 30.0,
+     "calls": 269.0,
+     "experiments": 103.0,
+     "consumed": 0.0,
+     "built_on_failed": 1.0,
+     "replicated_failed": 1.0,
+     "session_share": 0.831,
+     "frontier": 25.0,
+     "datasets_advanced": 7.0,
+     "best_gain": 0.3304571428571429
+    },
+    {
+     "model": "claude-opus-5-5",
+     "domain": "compbio",
+     "mode": "solo",
+     "seed": 1,
+     "R": 4.0,
+     "C": 0.0,
+     "submitted": 13.0,
+     "not_replicated": 9.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.5747,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 22.0,
+     "experiments": 4.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.152,
+     "frontier": 4.0,
+     "datasets_advanced": 4.0,
+     "best_gain": 0.10547142857142856
+    },
+    {
+     "model": "claude-opus-5-5",
+     "domain": "materials",
+     "mode": "team",
+     "seed": 1,
+     "R": 12.0,
+     "C": 0.0,
+     "submitted": 22.0,
+     "not_replicated": 3.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 7.0,
+     "cost": 8.8279,
+     "agents": 7.0,
+     "messages": 45.0,
+     "calls": 292.0,
+     "experiments": 39.0,
+     "consumed": 2.0,
+     "built_on_failed": 3.0,
+     "replicated_failed": 1.0,
+     "session_share": 0.774,
+     "frontier": 6.0,
+     "datasets_advanced": 4.0,
+     "best_gain": 0.2225
+    },
+    {
+     "model": "claude-opus-5-5",
+     "domain": "materials",
+     "mode": "solo",
+     "seed": 1,
+     "R": 3.0,
+     "C": 0.0,
+     "submitted": 7.0,
+     "not_replicated": 4.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 1.0057,
+     "agents": 1.0,
+     "messages": 1.0,
+     "calls": 30.0,
+     "experiments": 15.0,
+     "consumed": 0.0,
+     "built_on_failed": 1.0,
+     "replicated_failed": 1.0,
+     "session_share": 0.659,
+     "frontier": 3.0,
+     "datasets_advanced": 3.0,
+     "best_gain": 0.1356
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "aiml",
+     "mode": "team",
+     "seed": 1,
+     "R": 3.0,
+     "C": 0.0,
+     "submitted": 17.0,
+     "not_replicated": 13.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.7054,
+     "agents": 4.0,
+     "messages": 40.0,
+     "calls": 195.0,
+     "experiments": 57.0,
+     "consumed": 1.0,
+     "built_on_failed": 9.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 2.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.062349999999999996
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "aiml",
+     "mode": "team",
+     "seed": 2,
+     "R": 1.0,
+     "C": 0.0,
+     "submitted": 20.0,
+     "not_replicated": 18.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.5899,
+     "agents": 4.0,
+     "messages": 30.0,
+     "calls": 190.0,
+     "experiments": 58.0,
+     "consumed": 0.0,
+     "built_on_failed": 12.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 1.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.03635
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "aiml",
+     "mode": "team",
+     "seed": 3,
+     "R": 2.0,
+     "C": 0.0,
+     "submitted": 11.0,
+     "not_replicated": 6.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 2.0,
+     "cost": 0.3004,
+     "agents": 4.0,
+     "messages": 13.0,
+     "calls": 122.0,
+     "experiments": 33.0,
+     "consumed": 1.0,
+     "built_on_failed": 1.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 2.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.1563
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "aiml",
+     "mode": "solo",
+     "seed": 1,
+     "R": 1.0,
+     "C": 0.0,
+     "submitted": 4.0,
+     "not_replicated": 0.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 2.0,
+     "cost": 0.1342,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 38.0,
+     "experiments": 19.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.999,
+     "frontier": 1.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.04395
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "aiml",
+     "mode": "solo",
+     "seed": 2,
+     "R": 3.0,
+     "C": 0.0,
+     "submitted": 6.0,
+     "not_replicated": 3.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.1447,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 41.0,
+     "experiments": 26.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 2.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.05225
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "aiml",
+     "mode": "solo",
+     "seed": 3,
+     "R": 2.0,
+     "C": 0.0,
+     "submitted": 7.0,
+     "not_replicated": 3.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 1.0,
+     "cost": 0.1827,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 45.0,
+     "experiments": 26.0,
+     "consumed": 0.0,
+     "built_on_failed": 2.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.969,
+     "frontier": 1.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.0576
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "compbio",
+     "mode": "team",
+     "seed": 1,
+     "R": 13.0,
+     "C": 0.0,
+     "submitted": 174.0,
+     "not_replicated": 140.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 5.0,
+     "cost": 9.2971,
+     "agents": 8.0,
+     "messages": 42.0,
+     "calls": 1073.0,
+     "experiments": 437.0,
+     "consumed": 0.0,
+     "built_on_failed": 200.0,
+     "replicated_failed": 5.0,
+     "session_share": 1.0,
+     "frontier": 5.0,
+     "datasets_advanced": 5.0,
+     "best_gain": 0.1367857142857143
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "compbio",
+     "mode": "team",
+     "seed": 2,
+     "R": 21.0,
+     "C": 0.0,
+     "submitted": 140.0,
+     "not_replicated": 106.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 2.0,
+     "cost": 6.8841,
+     "agents": 5.0,
+     "messages": 19.0,
+     "calls": 793.0,
+     "experiments": 373.0,
+     "consumed": 0.0,
+     "built_on_failed": 139.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 9.0,
+     "datasets_advanced": 5.0,
+     "best_gain": 0.06507142857142857
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "compbio",
+     "mode": "team",
+     "seed": 3,
+     "R": 21.0,
+     "C": 1.0,
+     "submitted": 112.0,
+     "not_replicated": 63.0,
+     "not_reproducible": 12.0,
+     "fabrication": 0.0,
+     "duplicates": 12.0,
+     "cost": 6.5767,
+     "agents": 9.0,
+     "messages": 31.0,
+     "calls": 778.0,
+     "experiments": 366.0,
+     "consumed": 0.0,
+     "built_on_failed": 65.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 8.0,
+     "datasets_advanced": 4.0,
+     "best_gain": 0.09101428571428571
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "compbio",
+     "mode": "solo",
+     "seed": 1,
+     "R": 0.0,
+     "C": 0.0,
+     "submitted": 34.0,
+     "not_replicated": 34.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.9232,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 100.0,
+     "experiments": 72.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.99,
+     "frontier": 0.0,
+     "datasets_advanced": 0.0,
+     "best_gain": 0.0
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "compbio",
+     "mode": "solo",
+     "seed": 2,
+     "R": 12.0,
+     "C": 0.0,
+     "submitted": 62.0,
+     "not_replicated": 45.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 5.0,
+     "cost": 1.9035,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 179.0,
+     "experiments": 185.0,
+     "consumed": 0.0,
+     "built_on_failed": 14.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 5.0,
+     "datasets_advanced": 4.0,
+     "best_gain": 0.08497142857142857
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "compbio",
+     "mode": "solo",
+     "seed": 3,
+     "R": 6.0,
+     "C": 0.0,
+     "submitted": 24.0,
+     "not_replicated": 18.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.7407,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 97.0,
+     "experiments": 84.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.995,
+     "frontier": 3.0,
+     "datasets_advanced": 3.0,
+     "best_gain": 0.06651428571428572
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "materials",
+     "mode": "team",
+     "seed": 2,
+     "R": 2.0,
+     "C": 0.0,
+     "submitted": 12.0,
+     "not_replicated": 9.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 1.2089,
+     "agents": 5.0,
+     "messages": 18.0,
+     "calls": 238.0,
+     "experiments": 99.0,
+     "consumed": 0.0,
+     "built_on_failed": 8.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 2.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.064425
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "materials",
+     "mode": "team",
+     "seed": 3,
+     "R": 5.0,
+     "C": 0.0,
+     "submitted": 17.0,
+     "not_replicated": 10.0,
+     "not_reproducible": 1.0,
+     "fabrication": 0.0,
+     "duplicates": 1.0,
+     "cost": 0.7226,
+     "agents": 5.0,
+     "messages": 11.0,
+     "calls": 200.0,
+     "experiments": 89.0,
+     "consumed": 0.0,
+     "built_on_failed": 5.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 3.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.085775
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "materials",
+     "mode": "solo",
+     "seed": 1,
+     "R": 4.0,
+     "C": 0.0,
+     "submitted": 7.0,
+     "not_replicated": 1.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 2.0,
+     "cost": 0.2605,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 53.0,
+     "experiments": 39.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 4.0,
+     "datasets_advanced": 3.0,
+     "best_gain": 0.17812499999999998
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "materials",
+     "mode": "solo",
+     "seed": 2,
+     "R": 3.0,
+     "C": 0.0,
+     "submitted": 7.0,
+     "not_replicated": 4.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0961,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 38.0,
+     "experiments": 21.0,
+     "consumed": 0.0,
+     "built_on_failed": 1.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.998,
+     "frontier": 2.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.14277499999999999
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "materials",
+     "mode": "solo",
+     "seed": 3,
+     "R": 1.0,
+     "C": 0.0,
+     "submitted": 6.0,
+     "not_replicated": 5.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0907,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 40.0,
+     "experiments": 25.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 1.0,
+     "frontier": 1.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.02775
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "aiml",
+     "mode": "team",
+     "seed": 1,
+     "R": 3.0,
+     "C": 0.0,
+     "submitted": 6.0,
+     "not_replicated": 3.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0634,
+     "agents": 2.0,
+     "messages": 8.0,
+     "calls": 52.0,
+     "experiments": 20.0,
+     "consumed": 0.0,
+     "built_on_failed": 2.0,
+     "replicated_failed": 1.0,
+     "session_share": 0.697,
+     "frontier": 2.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.13795
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "aiml",
+     "mode": "team",
+     "seed": 2,
+     "R": 2.0,
+     "C": 0.0,
+     "submitted": 4.0,
+     "not_replicated": 0.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 2.0,
+     "cost": 0.0394,
+     "agents": 2.0,
+     "messages": 5.0,
+     "calls": 37.0,
+     "experiments": 9.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.582,
+     "frontier": 2.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.13795
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "aiml",
+     "mode": "team",
+     "seed": 3,
+     "R": 1.0,
+     "C": 0.0,
+     "submitted": 3.0,
+     "not_replicated": 2.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0792,
+     "agents": 3.0,
+     "messages": 20.0,
+     "calls": 68.0,
+     "experiments": 15.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.663,
+     "frontier": 1.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.03635
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "aiml",
+     "mode": "solo",
+     "seed": 1,
+     "R": 2.0,
+     "C": 0.0,
+     "submitted": 4.0,
+     "not_replicated": 1.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0282,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 25.0,
+     "experiments": 10.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.419,
+     "frontier": 2.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.11165
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "aiml",
+     "mode": "solo",
+     "seed": 2,
+     "R": 2.0,
+     "C": 0.0,
+     "submitted": 2.0,
+     "not_replicated": 0.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0211,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 17.0,
+     "experiments": 7.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.313,
+     "frontier": 2.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.08415
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "aiml",
+     "mode": "solo",
+     "seed": 3,
+     "R": 2.0,
+     "C": 0.0,
+     "submitted": 3.0,
+     "not_replicated": 1.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0346,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 28.0,
+     "experiments": 18.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.451,
+     "frontier": 2.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.1338
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "compbio",
+     "mode": "team",
+     "seed": 1,
+     "R": 6.0,
+     "C": 0.0,
+     "submitted": 9.0,
+     "not_replicated": 0.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 1.0,
+     "cost": 0.0542,
+     "agents": 3.0,
+     "messages": 10.0,
+     "calls": 53.0,
+     "experiments": 10.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.233,
+     "frontier": 6.0,
+     "datasets_advanced": 6.0,
+     "best_gain": 0.21882857142857143
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "compbio",
+     "mode": "team",
+     "seed": 2,
+     "R": 6.0,
+     "C": 0.0,
+     "submitted": 16.0,
+     "not_replicated": 8.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.1243,
+     "agents": 3.0,
+     "messages": 18.0,
+     "calls": 69.0,
+     "experiments": 16.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.234,
+     "frontier": 3.0,
+     "datasets_advanced": 3.0,
+     "best_gain": 0.08328571428571428
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "compbio",
+     "mode": "team",
+     "seed": 3,
+     "R": 18.0,
+     "C": 0.0,
+     "submitted": 57.0,
+     "not_replicated": 5.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 22.0,
+     "cost": 0.1767,
+     "agents": 3.0,
+     "messages": 28.0,
+     "calls": 103.0,
+     "experiments": 96.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.404,
+     "frontier": 13.0,
+     "datasets_advanced": 7.0,
+     "best_gain": 0.30608571428571424
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "compbio",
+     "mode": "solo",
+     "seed": 1,
+     "R": 7.0,
+     "C": 0.0,
+     "submitted": 7.0,
+     "not_replicated": 0.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0231,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 20.0,
+     "experiments": 9.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.081,
+     "frontier": 7.0,
+     "datasets_advanced": 7.0,
+     "best_gain": 0.2658285714285714
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "compbio",
+     "mode": "solo",
+     "seed": 2,
+     "R": 3.0,
+     "C": 0.0,
+     "submitted": 4.0,
+     "not_replicated": 1.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0195,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 10.0,
+     "experiments": 7.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.118,
+     "frontier": 3.0,
+     "datasets_advanced": 3.0,
+     "best_gain": 0.04592857142857143
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "compbio",
+     "mode": "solo",
+     "seed": 3,
+     "R": 14.0,
+     "C": 0.0,
+     "submitted": 14.0,
+     "not_replicated": 0.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0217,
+     "agents": 1.0,
+     "messages": 1.0,
+     "calls": 15.0,
+     "experiments": 6.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.079,
+     "frontier": 12.0,
+     "datasets_advanced": 7.0,
+     "best_gain": 0.2636142857142857
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "materials",
+     "mode": "team",
+     "seed": 1,
+     "R": 3.0,
+     "C": 0.0,
+     "submitted": 11.0,
+     "not_replicated": 2.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 2.0,
+     "cost": 0.1166,
+     "agents": 4.0,
+     "messages": 18.0,
+     "calls": 109.0,
+     "experiments": 51.0,
+     "consumed": 0.0,
+     "built_on_failed": 1.0,
+     "replicated_failed": 1.0,
+     "session_share": 0.588,
+     "frontier": 3.0,
+     "datasets_advanced": 3.0,
+     "best_gain": 0.10525
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "materials",
+     "mode": "team",
+     "seed": 2,
+     "R": 4.0,
+     "C": 0.0,
+     "submitted": 14.0,
+     "not_replicated": 6.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 2.0,
+     "cost": 0.1581,
+     "agents": 5.0,
+     "messages": 19.0,
+     "calls": 134.0,
+     "experiments": 58.0,
+     "consumed": 0.0,
+     "built_on_failed": 2.0,
+     "replicated_failed": 2.0,
+     "session_share": 0.528,
+     "frontier": 3.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.13140000000000002
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "materials",
+     "mode": "team",
+     "seed": 3,
+     "R": 3.0,
+     "C": 0.0,
+     "submitted": 17.0,
+     "not_replicated": 12.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 2.0,
+     "cost": 0.1116,
+     "agents": 3.0,
+     "messages": 21.0,
+     "calls": 91.0,
+     "experiments": 32.0,
+     "consumed": 0.0,
+     "built_on_failed": 2.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.659,
+     "frontier": 1.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.020575
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "materials",
+     "mode": "solo",
+     "seed": 1,
+     "R": 3.0,
+     "C": 0.0,
+     "submitted": 3.0,
+     "not_replicated": 0.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0246,
+     "agents": 1.0,
+     "messages": 1.0,
+     "calls": 28.0,
+     "experiments": 11.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.433,
+     "frontier": 3.0,
+     "datasets_advanced": 3.0,
+     "best_gain": 0.12132499999999999
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "materials",
+     "mode": "solo",
+     "seed": 2,
+     "R": 3.0,
+     "C": 0.0,
+     "submitted": 10.0,
+     "not_replicated": 4.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 1.0,
+     "cost": 0.0324,
+     "agents": 1.0,
+     "messages": 1.0,
+     "calls": 27.0,
+     "experiments": 20.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.254,
+     "frontier": 2.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.0892
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "materials",
+     "mode": "solo",
+     "seed": 3,
+     "R": 1.0,
+     "C": 0.0,
+     "submitted": 6.0,
+     "not_replicated": 5.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0238,
+     "agents": 1.0,
+     "messages": 0.0,
+     "calls": 18.0,
+     "experiments": 17.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "session_share": 0.463,
+     "frontier": 1.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.0217
+    }
+   ],
+   "errored": [
+    "gpt-6-luna/materials-s1"
+   ],
+   "infra_failed": [
+    {
+     "model": "gpt-6-luna",
+     "task": "materials-s1",
+     "domain": "materials",
+     "mode": "team",
+     "seed": 1,
+     "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+     "valkyrie_task_id": "5bb1a66a-e4b5-440b-96e7-7c16876e0c21",
+     "reason": "Valkyrie verifier failed after the 60-minute session (Modal sandbox connection refused); excluded by decision made before rescoring. Rescored offline: 11 accepted, best gain 0.22"
+    }
+   ],
+   "conditions": "60 minutes, effort high, up to 50 live researchers; Sol and Opus 1 seed, Luna and Haiku 3 seeds"
+  },
+  {
+   "id": "long",
+   "label": "6-hour runs",
+   "status": "main",
+   "minutes": 360,
+   "seeds": 1,
+   "source": "results/long/*/*.verdicts.json",
+   "rows": [
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "aiml",
+     "mode": "solo",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 3.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 4.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 0.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 1.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 0.0863,
+       "se": null
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": null
+      },
+      "agents_peak": {
+       "mean": 1.0,
+       "se": null
+      },
+      "depth": {
+       "mean": 0.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 44.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 20.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "entropy": {
+       "mean": 1.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.2467,
+       "se": null
+      },
+      "frontier": {
+       "mean": 2.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 2.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.135,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "aiml",
+     "mode": "team",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 6.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 19.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 3.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 8.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 1.1237,
+       "se": null
+      },
+      "agents": {
+       "mean": 5.0,
+       "se": null
+      },
+      "agents_peak": {
+       "mean": 5.0,
+       "se": null
+      },
+      "depth": {
+       "mean": 1.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 90.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 345.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 94.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 3.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 1.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "entropy": {
+       "mean": 0.949,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.3483,
+       "se": null
+      },
+      "frontier": {
+       "mean": 3.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 2.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.1475,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "compbio",
+     "mode": "solo",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 0.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 19.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 17.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 0.1,
+       "se": null
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": null
+      },
+      "agents_peak": {
+       "mean": 1.0,
+       "se": null
+      },
+      "depth": {
+       "mean": 0.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 2.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 37.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 15.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "entropy": {
+       "mean": 0.928,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.0667,
+       "se": null
+      },
+      "frontier": {
+       "mean": 0.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 0.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.0,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "compbio",
+     "mode": "team",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 30.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 58.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 17.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 1.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 1.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 0.7654,
+       "se": null
+      },
+      "agents": {
+       "mean": 3.0,
+       "se": null
+      },
+      "agents_peak": {
+       "mean": 3.0,
+       "se": null
+      },
+      "depth": {
+       "mean": 1.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 30.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 164.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 72.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 9.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 1.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 1.0,
+       "se": null
+      },
+      "entropy": {
+       "mean": 0.946,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.258,
+       "se": null
+      },
+      "frontier": {
+       "mean": 15.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 6.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.2348,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "materials",
+     "mode": "solo",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 2.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 5.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 2.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 1.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 0.0466,
+       "se": null
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": null
+      },
+      "agents_peak": {
+       "mean": 1.0,
+       "se": null
+      },
+      "depth": {
+       "mean": 0.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 1.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 34.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 21.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "entropy": {
+       "mean": 0.961,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.2002,
+       "se": null
+      },
+      "frontier": {
+       "mean": 2.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 2.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.1143,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "materials",
+     "mode": "team",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 5.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 16.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 9.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 2.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 0.5324,
+       "se": null
+      },
+      "agents": {
+       "mean": 3.0,
+       "se": null
+      },
+      "agents_peak": {
+       "mean": 3.0,
+       "se": null
+      },
+      "depth": {
+       "mean": 1.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 18.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 139.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 119.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 3.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 3.0,
+       "se": null
+      },
+      "entropy": {
+       "mean": 1.0,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.7837,
+       "se": null
+      },
+      "frontier": {
+       "mean": 3.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 3.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.1055,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "aiml",
+     "mode": "solo",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 6.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 9.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 0.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 3.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 1.0197,
+       "se": null
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": null
+      },
+      "agents_peak": {
+       "mean": 1.0,
+       "se": null
+      },
+      "depth": {
+       "mean": 0.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 115.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 75.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "entropy": {
+       "mean": 0.764,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.9969,
+       "se": null
+      },
+      "frontier": {
+       "mean": 3.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 2.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.2495,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "aiml",
+     "mode": "team",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 12.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 54.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 31.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 4.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 0.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 4.6256,
+       "se": null
+      },
+      "agents": {
+       "mean": 7.0,
+       "se": null
+      },
+      "agents_peak": {
+       "mean": 7.0,
+       "se": null
+      },
+      "depth": {
+       "mean": 1.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 30.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 631.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 282.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 4.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 36.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "entropy": {
+       "mean": 0.796,
+       "se": null
+      },
+      "session_share": {
+       "mean": 1.0,
+       "se": null
+      },
+      "frontier": {
+       "mean": 5.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 2.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.1863,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "compbio",
+     "mode": "solo",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 25.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 121.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 87.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 7.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 4.3332,
+       "se": null
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": null
+      },
+      "agents_peak": {
+       "mean": 1.0,
+       "se": null
+      },
+      "depth": {
+       "mean": 0.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 401.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 376.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 2.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "entropy": {
+       "mean": 0.977,
+       "se": null
+      },
+      "session_share": {
+       "mean": 1.0,
+       "se": null
+      },
+      "frontier": {
+       "mean": 10.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 6.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.1156,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "compbio",
+     "mode": "team",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 71.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 336.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 190.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 1.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 1.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 36.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 26.055,
+       "se": null
+      },
+      "agents": {
+       "mean": 19.0,
+       "se": null
+      },
+      "agents_peak": {
+       "mean": 13.0,
+       "se": null
+      },
+      "depth": {
+       "mean": 2.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 79.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 2870.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 1074.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 13.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 357.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 3.0,
+       "se": null
+      },
+      "entropy": {
+       "mean": 0.971,
+       "se": null
+      },
+      "session_share": {
+       "mean": 1.0,
+       "se": null
+      },
+      "frontier": {
+       "mean": 15.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 5.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.093,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "materials",
+     "mode": "solo",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 1.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 25.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 23.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 1.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 1.9064,
+       "se": null
+      },
+      "agents": {
+       "mean": 1.0,
+       "se": null
+      },
+      "agents_peak": {
+       "mean": 1.0,
+       "se": null
+      },
+      "depth": {
+       "mean": 0.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 0.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 204.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 139.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "entropy": {
+       "mean": 0.979,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.9979,
+       "se": null
+      },
+      "frontier": {
+       "mean": 1.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 1.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.0602,
+       "se": null
+      }
+     }
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "materials",
+     "mode": "team",
+     "n": 1,
+     "m": {
+      "R": {
+       "mean": 22.0,
+       "se": null
+      },
+      "C": {
+       "mean": 0.0,
+       "se": null
+      },
+      "submitted": {
+       "mean": 127.0,
+       "se": null
+      },
+      "not_replicated": {
+       "mean": 45.0,
+       "se": null
+      },
+      "not_reproducible": {
+       "mean": 0.0,
+       "se": null
+      },
+      "fabrication": {
+       "mean": 0.0,
+       "se": null
+      },
+      "duplicates": {
+       "mean": 40.0,
+       "se": null
+      },
+      "cost": {
+       "mean": 12.0036,
+       "se": null
+      },
+      "agents": {
+       "mean": 16.0,
+       "se": null
+      },
+      "agents_peak": {
+       "mean": 15.0,
+       "se": null
+      },
+      "depth": {
+       "mean": 2.0,
+       "se": null
+      },
+      "messages": {
+       "mean": 48.0,
+       "se": null
+      },
+      "calls": {
+       "mean": 1525.0,
+       "se": null
+      },
+      "experiments": {
+       "mean": 618.0,
+       "se": null
+      },
+      "consumed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "built_on_failed": {
+       "mean": 96.0,
+       "se": null
+      },
+      "replicated_failed": {
+       "mean": 0.0,
+       "se": null
+      },
+      "entropy": {
+       "mean": 0.964,
+       "se": null
+      },
+      "session_share": {
+       "mean": 0.8471,
+       "se": null
+      },
+      "frontier": {
+       "mean": 7.0,
+       "se": null
+      },
+      "datasets_advanced": {
+       "mean": 4.0,
+       "se": null
+      },
+      "best_gain": {
+       "mean": 0.277,
+       "se": null
+      }
+     }
+    }
+   ],
+   "preliminary": false,
+   "verdicts": 12,
+   "tasks": 12,
+   "runs": [
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "aiml",
+     "mode": "team",
+     "seed": 1,
+     "R": 6.0,
+     "C": 0.0,
+     "submitted": 19.0,
+     "not_replicated": 3.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 8.0,
+     "cost": 1.1237,
+     "agents": 5.0,
+     "agents_peak": 5.0,
+     "depth": 1.0,
+     "messages": 90.0,
+     "calls": 345.0,
+     "experiments": 94.0,
+     "consumed": 3.0,
+     "built_on_failed": 1.0,
+     "replicated_failed": 0.0,
+     "entropy": 0.949,
+     "session_share": 0.3483240673143519,
+     "frontier": 3.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.1475
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "aiml",
+     "mode": "solo",
+     "seed": 1,
+     "R": 3.0,
+     "C": 0.0,
+     "submitted": 4.0,
+     "not_replicated": 0.0,
+     "not_reproducible": 1.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.0863,
+     "agents": 1.0,
+     "agents_peak": 1.0,
+     "depth": 0.0,
+     "messages": 0.0,
+     "calls": 44.0,
+     "experiments": 20.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "entropy": 1.0,
+     "session_share": 0.24670906430412035,
+     "frontier": 2.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.135
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "compbio",
+     "mode": "team",
+     "seed": 1,
+     "R": 30.0,
+     "C": 0.0,
+     "submitted": 58.0,
+     "not_replicated": 17.0,
+     "not_reproducible": 1.0,
+     "fabrication": 0.0,
+     "duplicates": 1.0,
+     "cost": 0.7654,
+     "agents": 3.0,
+     "agents_peak": 3.0,
+     "depth": 1.0,
+     "messages": 30.0,
+     "calls": 164.0,
+     "experiments": 72.0,
+     "consumed": 9.0,
+     "built_on_failed": 1.0,
+     "replicated_failed": 1.0,
+     "entropy": 0.946,
+     "session_share": 0.25797279213,
+     "frontier": 15.0,
+     "datasets_advanced": 6.0,
+     "best_gain": 0.2348142857142857
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "compbio",
+     "mode": "solo",
+     "seed": 1,
+     "R": 0.0,
+     "C": 0.0,
+     "submitted": 19.0,
+     "not_replicated": 17.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 0.1,
+     "agents": 1.0,
+     "agents_peak": 1.0,
+     "depth": 0.0,
+     "messages": 2.0,
+     "calls": 37.0,
+     "experiments": 15.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "entropy": 0.928,
+     "session_share": 0.06673593025990741,
+     "frontier": 0.0,
+     "datasets_advanced": 0.0,
+     "best_gain": 0.0
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "materials",
+     "mode": "team",
+     "seed": 1,
+     "R": 5.0,
+     "C": 0.0,
+     "submitted": 16.0,
+     "not_replicated": 9.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 2.0,
+     "cost": 0.5324,
+     "agents": 3.0,
+     "agents_peak": 3.0,
+     "depth": 1.0,
+     "messages": 18.0,
+     "calls": 139.0,
+     "experiments": 119.0,
+     "consumed": 0.0,
+     "built_on_failed": 3.0,
+     "replicated_failed": 3.0,
+     "entropy": 1.0,
+     "session_share": 0.7837026515398611,
+     "frontier": 3.0,
+     "datasets_advanced": 3.0,
+     "best_gain": 0.105475
+    },
+    {
+     "model": "claude-haiku-5-5",
+     "domain": "materials",
+     "mode": "solo",
+     "seed": 1,
+     "R": 2.0,
+     "C": 0.0,
+     "submitted": 5.0,
+     "not_replicated": 2.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 1.0,
+     "cost": 0.0466,
+     "agents": 1.0,
+     "agents_peak": 1.0,
+     "depth": 0.0,
+     "messages": 1.0,
+     "calls": 34.0,
+     "experiments": 21.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "entropy": 0.961,
+     "session_share": 0.20016977755074078,
+     "frontier": 2.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.11427499999999999
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "aiml",
+     "mode": "team",
+     "seed": 1,
+     "R": 12.0,
+     "C": 0.0,
+     "submitted": 54.0,
+     "not_replicated": 31.0,
+     "not_reproducible": 4.0,
+     "fabrication": 0.0,
+     "duplicates": 0.0,
+     "cost": 4.6256,
+     "agents": 7.0,
+     "agents_peak": 7.0,
+     "depth": 1.0,
+     "messages": 30.0,
+     "calls": 631.0,
+     "experiments": 282.0,
+     "consumed": 4.0,
+     "built_on_failed": 36.0,
+     "replicated_failed": 0.0,
+     "entropy": 0.796,
+     "session_share": 1.0,
+     "frontier": 5.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.1863
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "aiml",
+     "mode": "solo",
+     "seed": 1,
+     "R": 6.0,
+     "C": 0.0,
+     "submitted": 9.0,
+     "not_replicated": 0.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 3.0,
+     "cost": 1.0197,
+     "agents": 1.0,
+     "agents_peak": 1.0,
+     "depth": 0.0,
+     "messages": 0.0,
+     "calls": 115.0,
+     "experiments": 75.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "entropy": 0.764,
+     "session_share": 0.9968818566585648,
+     "frontier": 3.0,
+     "datasets_advanced": 2.0,
+     "best_gain": 0.24955
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "compbio",
+     "mode": "team",
+     "seed": 1,
+     "R": 71.0,
+     "C": 0.0,
+     "submitted": 336.0,
+     "not_replicated": 190.0,
+     "not_reproducible": 1.0,
+     "fabrication": 1.0,
+     "duplicates": 36.0,
+     "cost": 26.055,
+     "agents": 19.0,
+     "agents_peak": 13.0,
+     "depth": 2.0,
+     "messages": 79.0,
+     "calls": 2870.0,
+     "experiments": 1074.0,
+     "consumed": 13.0,
+     "built_on_failed": 357.0,
+     "replicated_failed": 3.0,
+     "entropy": 0.971,
+     "session_share": 1.0,
+     "frontier": 15.0,
+     "datasets_advanced": 5.0,
+     "best_gain": 0.09297142857142858
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "compbio",
+     "mode": "solo",
+     "seed": 1,
+     "R": 25.0,
+     "C": 0.0,
+     "submitted": 121.0,
+     "not_replicated": 87.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 7.0,
+     "cost": 4.3332,
+     "agents": 1.0,
+     "agents_peak": 1.0,
+     "depth": 0.0,
+     "messages": 0.0,
+     "calls": 401.0,
+     "experiments": 376.0,
+     "consumed": 0.0,
+     "built_on_failed": 2.0,
+     "replicated_failed": 0.0,
+     "entropy": 0.977,
+     "session_share": 1.0,
+     "frontier": 10.0,
+     "datasets_advanced": 6.0,
+     "best_gain": 0.11564285714285714
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "materials",
+     "mode": "team",
+     "seed": 1,
+     "R": 22.0,
+     "C": 0.0,
+     "submitted": 127.0,
+     "not_replicated": 45.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 40.0,
+     "cost": 12.0036,
+     "agents": 16.0,
+     "agents_peak": 15.0,
+     "depth": 2.0,
+     "messages": 48.0,
+     "calls": 1525.0,
+     "experiments": 618.0,
+     "consumed": 0.0,
+     "built_on_failed": 96.0,
+     "replicated_failed": 0.0,
+     "entropy": 0.964,
+     "session_share": 0.847100198219861,
+     "frontier": 7.0,
+     "datasets_advanced": 4.0,
+     "best_gain": 0.27695000000000003
+    },
+    {
+     "model": "gpt-6-luna",
+     "domain": "materials",
+     "mode": "solo",
+     "seed": 1,
+     "R": 1.0,
+     "C": 0.0,
+     "submitted": 25.0,
+     "not_replicated": 23.0,
+     "not_reproducible": 0.0,
+     "fabrication": 0.0,
+     "duplicates": 1.0,
+     "cost": 1.9064,
+     "agents": 1.0,
+     "agents_peak": 1.0,
+     "depth": 0.0,
+     "messages": 0.0,
+     "calls": 204.0,
+     "experiments": 139.0,
+     "consumed": 0.0,
+     "built_on_failed": 0.0,
+     "replicated_failed": 0.0,
+     "entropy": 0.979,
+     "session_share": 0.9979202636698611,
+     "frontier": 1.0,
+     "datasets_advanced": 1.0,
+     "best_gain": 0.06025
+    }
+   ],
+   "errored": []
+  }
+ ]
+}

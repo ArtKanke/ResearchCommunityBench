@@ -1,0 +1,38 @@
+# ResearchCommunityBench: a research community (solo) in aiml, seed 2.
+artifacts = ["/lab/store"]
+
+[task]
+name = "researchcommunitybench/aiml-solo-s2"
+description = "Open-ended research community: verified research output and collaboration"
+keywords = ["research-agents", "multi-agent", "science", "verification"]
+
+[metadata]
+domain = "aiml"
+mode = "solo"
+seed = 2
+minutes = 60
+
+[environment]
+build_timeout_sec = 3600
+cpus = 8
+memory_mb = 32768
+network_mode = "public"
+gpus = 1
+gpu_types = ["a10"]
+
+[agent]
+timeout_sec = 4200
+network_mode = "allowlist"
+allowed_hosts = ["api.anthropic.com", "api.openai.com"]
+
+[verifier]
+timeout_sec = 10800
+environment_mode = "separate"
+network_mode = "no-network"
+
+[verifier.environment]
+cpus = 8
+memory_mb = 32768
+network_mode = "no-network"
+gpus = 1
+gpu_types = ["a10"]

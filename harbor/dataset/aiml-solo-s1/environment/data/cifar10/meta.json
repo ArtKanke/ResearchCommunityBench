@@ -1,0 +1,20 @@
+{
+ "id": "cifar10",
+ "task": "classification",
+ "units": "",
+ "metric": "error rate",
+ "n_public": 50000,
+ "n_hidden": 10000,
+ "classes": [
+  "airplane",
+  "automobile",
+  "bird",
+  "cat",
+  "deer",
+  "dog",
+  "frog",
+  "horse",
+  "ship",
+  "truck"
+ ]
+}

@@ -1,0 +1,5636 @@
+{
+ "run_id": "run-ce7267d5",
+ "model": "6-luna",
+ "task": "compbio-s2",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 21,
+  "R_frontier": 9,
+  "C_collaborative": 0,
+  "submitted_credited": 140,
+  "duplicates": 2,
+  "best_gain": {
+   "KCNE1_HUMAN_Muhammad_2023_function": 0.0397,
+   "BLAT_ECOLX_Stiffler_2015": 0.1481,
+   "RASK_HUMAN_Weng_2022_binding-DARPin_K55": 0.1099,
+   "RASK_HUMAN_Weng_2022_abundance": -0.0013,
+   "CASP3_HUMAN_Roychowdhury_2020": 0.1044,
+   "KCNE1_HUMAN_Muhammad_2023_expression": 0.0534
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 3,
+   "failed_live_checks": 8,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 106
+  }
+ },
+ "rewards": {
+  "score": 0.8076923076923077,
+  "R_replicated": 21.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 9.0,
+  "datasets_advanced": 5.0,
+  "mean_best_gain": 0.06507142857142857,
+  "auditor_pending": 0.0,
+  "submitted_credited": 140.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 3.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 106.0,
+  "duplicates": 2.0,
+  "agents_total": 5.0,
+  "agents_peak": 5.0,
+  "max_depth": 1.0,
+  "cost_usd": 6.8841,
+  "model_calls": 793.0,
+  "experiments": 373.0,
+  "messages": 19.0,
+  "cost_per_accepted": 0.328,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 139.0,
+  "dataset_entropy": 0.943,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 746.6
+ },
+ "claims": [
+  {
+   "id": "findin-32937e3e",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Paired-assay KRAS transfer improves abundance prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0476, 95% CI [0.0380, 0.0573], needed below -0.0042",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.2588140617750269,
+    "b": 0.2111900104445317,
+    "diff": 0.0476240513304952,
+    "ci95": [
+     0.03796236095703704,
+     0.057260869013748654
+    ],
+    "min_effect": 0.004223800208890634,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-e87184b1",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Paired-assay KRAS transfer improves DARPin_K55 binding prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0232, 95% CI [0.0146, 0.0318], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.17466392793905347,
+    "b": 0.15144308384541866,
+    "diff": 0.023220844093634847,
+    "ci95": [
+     0.01459295817618396,
+     0.03181521909922869
+    ],
+    "min_effect": 0.0030288616769083734,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b0b6cdc0",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Physicochemical substitution features improve BLAT fitness prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-18c9c448",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "KRAS paired-assay transfer generalizes across held-out mutation positions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0232, 95% CI [0.0146, 0.0318], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.15144330030166042,
+    "b": 0.17466392793905347,
+    "diff": 0.02322062763739306,
+    "ci95": [
+     0.014592741665250977,
+     0.03181500888783908
+    ],
+    "min_effect": 0.0030288660060332085,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-e87184b1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9b0b8508",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Position-specific transfer improves KRAS abundance prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0022, 95% CI [-0.0049, 0.0096], needed below -0.0051",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.25662495502190014,
+    "b": 0.2588140617750269,
+    "diff": 0.0021891067531267464,
+    "ci95": [
+     -0.004864405530784242,
+     0.009569962618434203
+    ],
+    "min_effect": 0.005132499100438003,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-85c123e5",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Position-specific transfer improves KRAS DARPin_K55 prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0020, 95% CI [-0.0048, 0.0097], needed below -0.0035",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.17266878113754294,
+    "b": 0.17466392793905347,
+    "diff": 0.0019951468015105282,
+    "ci95": [
+     -0.004799974576542806,
+     0.009650153551708623
+    ],
+    "min_effect": 0.003453375622750859,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-40494080",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Calibrated Stiffler-to-Firnberg transfer improves BLAT fitness prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-c40b7718",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Calibrated Firnberg-to-Stiffler transfer improves BLAT fitness prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-67858e63",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Physicochemical mutation features improve KCNE1 expression prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-2b1b1f79",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "KCNE1 expression scores improve function prediction across mutation sites",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-f4eaf2af",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Correction: KCNE1 paired-assay transfer code",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0362, 95% CI [0.0268, 0.0454], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.19574466004385963,
+    "b": 0.23194609656315787,
+    "diff": 0.036201436519298254,
+    "ci95": [
+     0.026847376377938607,
+     0.04536680805114036
+    ],
+    "min_effect": 0.0039148932008771925,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-2b1b1f79",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-924e0645",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Cross-assay transfer outperforms physicochemical ridge on Stiffler BLAT",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0837, 95% CI [0.0589, 0.1093], needed below -0.0096",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.4814341182763832,
+    "b": 0.56515460159062,
+    "diff": 0.08372048331423688,
+    "ci95": [
+     0.05893135423334242,
+     0.10930636742699999
+    ],
+    "min_effect": 0.009628682365527665,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-31536a5e",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Cross-assay transfer outperforms physicochemical ridge on Firnberg BLAT",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0213, 95% CI [0.0124, 0.0307], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.19661027944471418,
+    "b": 0.21788720579204637,
+    "diff": 0.021276926347332227,
+    "ci95": [
+     0.012365514649602527,
+     0.03073494842374958
+    ],
+    "min_effect": 0.003932205588894283,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e3e1b403",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "BLAT cross-assay transfer generalizes to held-out mutation positions",
+   "status": "rejected",
+   "reason": "mis-cited evidence: grouped_position_folds is recorded in exec-03d3dd7d, exec-6b111a3d, exec-4cca406a but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-c40b7718",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a7f30e26",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Correction: BLAT transfer on held-out mutation positions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0113",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.56515460159062,
+    "b": 0.56515460159062,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.0113030920318124,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c40b7718",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-e3e1b403",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3c734b27",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "BLAT physicochemical features improve KRAS binding transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0878558d",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Stiffler-to-Firnberg transfer generalizes to held-out mutation positions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0044",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.21788720579204637,
+    "b": 0.21788720579204637,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.004357744115840927,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-40494080",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1abf8f10",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Physicochemical features strengthen grouped-site KRAS transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-18c9c448",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-3c734b27",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f113003e",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Corrected held-out test for Stiffler-to-Firnberg transfer",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-40494080",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-40494080",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4ba9bc2a",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Corrected held-out test for Firnberg-to-Stiffler transfer",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-c40b7718",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-c40b7718",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-89a9758a",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Physicochemical features improve reciprocal KRAS abundance transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-18c9c448",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-1abf8f10",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3c7e547e",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Cross-fitted assay transfer improves KCNE1 function prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0078, 95% CI [-0.0102, -0.0052], beyond the minimum effect 0.0039)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.18796670486823785,
+    "b": 0.19574548321929827,
+    "diff": -0.007778778351060395,
+    "ci95": [
+     -0.010246463017108028,
+     -0.005225203681225909
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-26cafff9",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Reproducible JSON-backed physicochemical KRAS binding extension",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-1abf8f10",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7dee3f98",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Firnberg transfer gain is stable across held-out-position partitions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0044",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.21788720579204637,
+    "b": 0.21788720579204637,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.004357744115840927,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-0878558d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0082a0c7",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Reproducible Stiffler-to-Firnberg transfer prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-40494080",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-fd1908ef",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Reproducible Firnberg-to-Stiffler transfer prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c40b7718",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-142614d5",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Leakage-resistant assay transfer improves KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "mis-cited evidence: validation_splits is recorded in exec-781e9651, exec-aaa8ab8e, exec-7ef840f7 but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-fa317476",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Isotonic cross-assay calibration alone transfers across held-out BLAT sites",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0044",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1207,
+    "a": 0.21788720579204637,
+    "b": 0.21788720579204637,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.004357744115840927,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-40494080",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7a4d6ebb",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Cross-fitted counterpart-assay transfer improves KCNE1 function prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0070, 95% CI [-0.0094, -0.0046], beyond the minimum effect 0.0039)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.1887847077245614,
+    "b": 0.19574548321929827,
+    "diff": -0.006960775494736848,
+    "ci95": [
+     -0.009360754772017548,
+     -0.004560230290964917
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-31dfcd0b",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Firnberg-to-Stiffler transfer is stable across held-out-position partitions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0113",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.56515460159062,
+    "b": 0.56515460159062,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.0113030920318124,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a7f30e26",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dcb694b7",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Isotonic cross-assay calibration alone transfers across held-out BLAT sites",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0113",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.56515460159062,
+    "b": 0.56515460159062,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.0113030920318124,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c40b7718",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-349063cd",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Physicochemical fallback modestly improves Stiffler transfer",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-c40b7718",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-c40b7718",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-556c5d8e",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Physicochemical fallback modestly improves Stiffler transfer",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-c40b7718",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-c40b7718",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-44edef88",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Paired expression measurements improve KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0051, 95% CI [-0.0065, -0.0035], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.19067803459122806,
+    "b": 0.19574548321929827,
+    "diff": -0.005067448628070173,
+    "ci95": [
+     -0.006528571230614029,
+     -0.00351856086666667
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9f7208b1",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Position-specific chemistry robustly improves grouped KRAS binding transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-26cafff9",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-e87184b1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-430fe653",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Physicochemical fallback modestly improves Stiffler transfer",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0837, 95% CI [-0.1093, -0.0589], beyond the minimum effect 0.0113)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1258,
+    "a": 0.56515460159062,
+    "b": 0.4814341182763832,
+    "diff": -0.08372048331423688,
+    "ci95": [
+     -0.109306367427,
+     -0.05893135423334242
+    ],
+    "min_effect": 0.0113030920318124,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-47004e5c",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Paired function measurements improve KCNE1 expression prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0007, 95% CI [-0.0003, 0.0018], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 571,
+    "a": 0.19811158631523643,
+    "b": 0.19740022438178634,
+    "diff": 0.0007113619334500868,
+    "ci95": [
+     -0.0003459430239054296,
+     0.0018214718010507917
+    ],
+    "min_effect": 0.003948004487635727,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-72a86f41",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Position-specific chemistry robustly improves reciprocal KRAS abundance transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-89a9758a",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9f7208b1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4ee4c631",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features extend paired-assay transfer for KRAS binding",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0234, 95% CI [-0.0293, -0.0175], beyond the minimum effect 0.0035)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.17466593665718752,
+    "b": 0.1512880733195673,
+    "diff": -0.023377863337620194,
+    "ci95": [
+     -0.029256637423222702,
+     -0.01754574252067411
+    ],
+    "min_effect": 0.0034933187331437506,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e87184b1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0dedbb7c",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "KRAS physicochemical feature gain is robust across held-out-position partitions",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0353, 95% CI [-0.0445, -0.0260], beyond the minimum effect 0.0035)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.17362814573294763,
+    "b": 0.13834764298022398,
+    "diff": -0.03528050275272366,
+    "ci95": [
+     -0.04450898355053932,
+     -0.0260214277665284
+    ],
+    "min_effect": 0.0034725629146589525,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-3c734b27",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f8cfaa1a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features improve KRAS transfer across held-out positions",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-4ee4c631",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-4ee4c631",
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.17466593665718752,
+    "b": 0.1512880733195673,
+    "diff": -0.023377863337620194,
+    "ci95": [
+     -0.029256637423222702,
+     -0.01754574252067411
+    ],
+    "min_effect": 0.0034933187331437506,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e87184b1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d386d5c4",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features improve KRAS abundance transfer across positions",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0382, 95% CI [-0.0496, -0.0270], beyond the minimum effect 0.0052)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.2588192390170904,
+    "b": 0.22057515917501663,
+    "diff": -0.03824407984207373,
+    "ci95": [
+     -0.049624849562225196,
+     -0.027015083204942572
+    ],
+    "min_effect": 0.0051763847803418086,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-02ffc078",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Cross-assay transfer improves Firnberg prediction with scarce labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c40b7718",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-eb8db242",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Cross-assay transfer improves Stiffler prediction with scarce labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c40b7718",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e01b9551",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Physicochemical features robustly improve KRAS abundance transfer",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-9b0b8508",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-9b0b8508",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1e362995",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Position interactions improve paired-assay transfer for KCNE1 function",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0002, 95% CI [-0.0007, 0.0010], needed below -0.0038",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.19052798480526315,
+    "b": 0.19067803459122806,
+    "diff": 0.00015004978596491712,
+    "ci95": [
+     -0.0006909401805263081,
+     0.0009975036428947388
+    ],
+    "min_effect": 0.003810559696105263,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b4e5eca4",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Physicochemical features robustly improve KRAS abundance transfer",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0373, 95% CI [-0.0489, -0.0261], beyond the minimum effect 0.0052)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.2588140617750269,
+    "b": 0.22147212604402505,
+    "diff": -0.037341935731001835,
+    "ci95": [
+     -0.04891013053158948,
+     -0.026134452185032634
+    ],
+    "min_effect": 0.005176281235500539,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e01b9551",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9b0b8508",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-94e15faf",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features extend KCNE1 paired-assay transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-67858e63",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0d69b050",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Position interactions add value to paired-assay transfer for KCNE1 function",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0002, 95% CI [-0.0007, 0.0010], needed below -0.0038",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.1905278910859649,
+    "b": 0.1906782342578947,
+    "diff": 0.00015034317192982633,
+    "ci95": [
+     -0.0006905373805263158,
+     0.0009981159560526348
+    ],
+    "min_effect": 0.003810557821719298,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-eecea5d6",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features extend reciprocal KCNE1 transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-67858e63",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9b5da45d",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Physicochemical transfer beats one-hot ridge on held-out KRAS mutation positions",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-3c734b27",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-0dedbb7c",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7c348160",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features extend KCNE1 paired-assay transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-67858e63",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-94e15faf",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-af8d7de9",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical features extend reciprocal KCNE1 transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-67858e63",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-eecea5d6",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9bfcc8c8",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Physicochemical transfer improves KRAS abundance prediction over one-hot ridge",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b4e5eca4",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9b0b8508",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cfc7e495",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Firnberg transfer generalizes to held-out mutation positions",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-02ffc078",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-69d9fc9b",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Stiffler transfer generalizes to held-out mutation positions",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-eb8db242",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a144ec11",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Correction: physicochemical transfer beats one-hot ridge on held-out KRAS positions",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0131, 95% CI [-0.0224, -0.0035], beyond the minimum effect 0.0030)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.15144330030166042,
+    "b": 0.13834764298022398,
+    "diff": -0.01309565732143646,
+    "ci95": [
+     -0.022389834798486656,
+     -0.0035402509807308303
+    ],
+    "min_effect": 0.0030288660060332085,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-9b5da45d",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-3c734b27",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a245ca23",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Correction: physicochemical transfer improves KRAS abundance prediction over one-hot ridge",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-9bfcc8c8, findin-9b0b8508, findin-b0b6cdc0",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-9bfcc8c8",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9b0b8508",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1034b444",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Measured counterpart scores outperform predicted scores in KCNE1 function transfer",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0012, 95% CI [-0.0003, 0.0027], needed below -0.0038",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.18948484685789474,
+    "b": 0.19067803459122806,
+    "diff": 0.0011931877333333342,
+    "ci95": [
+     -0.0002874525888596486,
+     0.002673156029035089
+    ],
+    "min_effect": 0.003789696937157895,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-46670cd3",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Correction: physicochemical transfer improves KRAS abundance prediction over one-hot ridge",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0103, 95% CI [-0.0024, 0.0224], needed below -0.0042",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.21119008117548407,
+    "b": 0.22147212604402505,
+    "diff": 0.01028204486854097,
+    "ci95": [
+     -0.0024101471496273063,
+     0.02240498914188953
+    ],
+    "min_effect": 0.0042238016235096815,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a245ca23",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9b0b8508",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-46c8d73b",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Paired expression-assay transfer improves KCNE1 function prediction across 30 splits",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0051, 95% CI [-0.0065, -0.0035], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.19067803459122806,
+    "b": 0.19574548321929827,
+    "diff": -0.005067448628070173,
+    "ci95": [
+     -0.006528571230614029,
+     -0.00351856086666667
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-bbb995cf",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Chemistry features consistently improve grouped KCNE1 function transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-67858e63",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f870358c",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Chemistry features consistently improve reciprocal KCNE1 transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-eecea5d6",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9ddfa6b0",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Firnberg transfer retains its unseen-site advantage with few labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-0878558d",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5391fc6e",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Stiffler transfer retains its unseen-site advantage with few labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a7f30e26",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a47aca20",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical substitution features improve CASP3 activity prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-67858e63",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-90efdc20",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Correction: CASP3 chemistry predictor evaluator code",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0956, 95% CI [-0.1197, -0.0714], beyond the minimum effect 0.0102)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 399,
+    "a": 0.5105694696039584,
+    "b": 0.4150193311980157,
+    "diff": -0.09555013840594272,
+    "ci95": [
+     -0.11972027587102671,
+     -0.07140586478108456
+    ],
+    "min_effect": 0.010211389392079169,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-a47aca20",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5f2e5ce8",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Pooled substitution-property features improve KRAS binding transfer",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0204, 95% CI [0.0120, 0.0295], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.15144330030166042,
+    "b": 0.1718480306903861,
+    "diff": 0.020404730388725662,
+    "ci95": [
+     0.012049167440383058,
+     0.02946898965331044
+    ],
+    "min_effect": 0.0030288660060332085,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9b5da45d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-3c734b27",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-38da79e5",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Firnberg transfer beats physicochemical ridge with scarce labels at unseen sites",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-31536a5e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4c00a999",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Stiffler transfer beats physicochemical ridge with scarce labels at unseen sites",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-31536a5e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1b0a5670",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Nonlinear binding-score features improve KRAS abundance transfer across held-out positions",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e921ff13",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Matched-alpha physicochemical transfer improves KRAS abundance prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0078, 95% CI [-0.0038, 0.0190], needed below -0.0042",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.21119008117548407,
+    "b": 0.21896093590421456,
+    "diff": 0.0077708547287304785,
+    "ci95": [
+     -0.0037898843773479245,
+     0.018973748664420184
+    ],
+    "min_effect": 0.0042238016235096815,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-46670cd3",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9b0b8508",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b0b6cdc0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b3c647e0",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Nonlinear paired-assay transfer beats physicochemical transfer for KRAS abundance",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-0dedbb7c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-1b0a5670",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-73619d03",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Correction: Chemistry features consistently improve grouped KCNE1 function transfer",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0282, 95% CI [-0.0412, -0.0158], beyond the minimum effect 0.0046)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.23197846107192985,
+    "b": 0.20374844416973684,
+    "diff": -0.02823001690219298,
+    "ci95": [
+     -0.04119841103189912,
+     -0.01580517488425439
+    ],
+    "min_effect": 0.004639569221438597,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-bbb995cf",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cb3d37db",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Correction: Chemistry features consistently improve reciprocal KCNE1 transfer",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0402, 95% CI [-0.0497, -0.0310], beyond the minimum effect 0.0045)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 571,
+    "a": 0.22703244203852888,
+    "b": 0.18686363435376532,
+    "diff": -0.04016880768476357,
+    "ci95": [
+     -0.049703024034676004,
+     -0.03098546912110333
+    ],
+    "min_effect": 0.004540648840770578,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f870358c",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a41ea7bf",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Nonlinear paired-assay transfer beats one-hot ridge across held-out KRAS positions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0513, 95% CI [0.0423, 0.0609], needed below -0.0042",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.21119008117548407,
+    "b": 0.26245484382142975,
+    "diff": 0.05126476264594566,
+    "ci95": [
+     0.042336325087505816,
+     0.06089189042022076
+    ],
+    "min_effect": 0.0042238016235096815,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-1b0a5670",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dbafa69b",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Firnberg transfer beats nested-tuned physicochemical ridge on unseen sites",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-31536a5e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7d48efda",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Stiffler transfer beats nested-tuned physicochemical ridge on unseen sites",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-924e0645",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-902fc6b5",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Predicted expression features modestly improve KCNE1 function prediction without paired query scores",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0051, 95% CI [-0.0065, -0.0035], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.19067803459122806,
+    "b": 0.19574548321929827,
+    "diff": -0.005067448628070173,
+    "ci95": [
+     -0.006528571230614029,
+     -0.00351856086666667
+    ],
+    "min_effect": 0.003914909664385966,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c63bee96",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-specific chemistry adds value beyond global features in CASP3",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0171, 95% CI [-0.0309, -0.0039], needed below -0.0086",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 399,
+    "a": 0.43211741600361275,
+    "b": 0.4150193311980157,
+    "diff": -0.017098084805596974,
+    "ci95": [
+     -0.03089643730739835,
+     -0.003873181610097646
+    ],
+    "min_effect": 0.008642348320072255,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a47aca20",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-67858e63",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e477312b",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Binding-assay-only nonlinear transfer predicts KRAS abundance",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-b3c647e0",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-0dedbb7c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b3c647e0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-eb8e4878",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Binding-assay-only nonlinear transfer predicts KRAS abundance",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-0dedbb7c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e8deb756",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "CASP3 physicochemical gain replicates on five new grouped partitions",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a47aca20",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dda9abf8",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Mutation identity absorbs the apparent CASP3 position-chemistry gain",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0041, 95% CI [0.0016, 0.0066], needed below -0.0081",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 399,
+    "a": 0.4070826545967302,
+    "b": 0.40302982478097116,
+    "diff": 0.0040528298157590514,
+    "ci95": [
+     0.0016037313444931592,
+     0.0066242299636437
+    ],
+    "min_effect": 0.008060596495619424,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c63bee96",
+     "relation": "refutes",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-a47aca20",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-74469f81",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Firnberg transfer consistently beats nested-tuned physicochemical ridge",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-dbafa69b",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-31536a5e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-52b2e385",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Stiffler transfer consistently beats nested-tuned physicochemical ridge",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7d48efda",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-924e0645",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9c7c8d51",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "RBF expansion improves assay-only KRAS abundance transfer over linear mapping",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-eb8e4878",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-10a97bbf",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Nonlinear abundance-to-binding transfer improves KRAS binding prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9c7c8d51",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f6cdd94d",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "New CASP3 splits confirm no chemistry gain beyond substitution identity",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-dda9abf8, findin-e8deb756",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-dda9abf8",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-e8deb756",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-21bc1a0a",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Correction: New CASP3 splits show no chemistry gain beyond substitution identity",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-dda9abf8",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-e8deb756",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ebd81101",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Nonlinear isotonic calibration improves Firnberg transfer over linear calibration",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-0878558d",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0b9b3917",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Nonlinear isotonic calibration improves Stiffler transfer over linear calibration",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a7f30e26",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f34ee6a8",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Adding nonlinear paired-assay features improves KRAS abundance prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9c7c8d51",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2ae50b63",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Fold-local nonlinear assay transfer improves KRAS abundance prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-f34ee6a8",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-79a8b0f3",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 function chemistry gain persists after controlling for substitution identity",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0206, 95% CI [-0.0327, -0.0088], beyond the minimum effect 0.0043)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.21669097849824562,
+    "b": 0.19606057714298245,
+    "diff": -0.020630401355263162,
+    "ci95": [
+     -0.032697214435855264,
+     -0.00879127574872807
+    ],
+    "min_effect": 0.004333819569964912,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-bbb995cf",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-cb3d37db",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0857413b",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "KRAS nonlinear transfer gain persists across 20 additional position-held-out repeats",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a41ea7bf",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-fabcef88",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Predicted expression features modestly improve KCNE1 function prediction without paired query scores",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0051, 95% CI [-0.0066, -0.0035], needed below -0.0039",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 570,
+    "a": 0.19574458041228068,
+    "b": 0.19063895332807018,
+    "diff": -0.005105627084210532,
+    "ci95": [
+     -0.0065857273608772035,
+     -0.0035483251646491343
+    ],
+    "min_effect": 0.003914891608245614,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-32937e3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8b21c715",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Cross-assay transfer predicts unseen Firnberg sites with only 1% target labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-74469f81",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-dbafa69b",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7f75f352",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Cross-assay transfer predicts unseen Stiffler sites with only 1% target labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-52b2e385",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-7d48efda",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b5e2fe59",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Paired-assay nonlinear features add to physicochemical KRAS binding prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-0dedbb7c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-2ae50b63",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a6ec729f",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "RBF transfer improves KRAS abundance prediction beyond position interactions",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b4e5eca4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-2ae50b63",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d2e93654",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Firnberg transfer beats grouped-CV-tuned ridge with 1% target labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-8b21c715",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-09da5785",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Stiffler transfer beats grouped-CV-tuned ridge with 1% target labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7f75f352",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-88b672bc",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 expression chemistry gain persists after controlling for substitution identity",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0377, 95% CI [-0.0520, -0.0235], beyond the minimum effect 0.0045)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 571,
+    "a": 0.22528133047635726,
+    "b": 0.1876194356637478,
+    "diff": -0.037661894812609446,
+    "ci95": [
+     -0.05195531751549911,
+     -0.023503443331260938
+    ],
+    "min_effect": 0.004505626609527145,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-cb3d37db",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-73619d03",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c14a8e4d",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Substitution-type residual corrections do not improve Firnberg transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-74469f81",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0f3acfb1",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Substitution-type residual corrections do not improve Stiffler transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-52b2e385",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-92294c99",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Nested grouped CV confirms nonlinear paired-assay gain for KRAS abundance",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b4e5eca4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-a6ec729f",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-90232309",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Paired expression scores add to KCNE1 function prediction with chemistry features",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7c348160",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-46c8d73b",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7052ac7d",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Nested CV finds a modest nonlinear transfer gain for KRAS binding",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b5e2fe59",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f8fac996",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KRAS binding chemistry features add value beyond substitution identity",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0286, 95% CI [-0.0380, -0.0195], beyond the minimum effect 0.0033)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.16511312509814013,
+    "b": 0.13653094164268736,
+    "diff": -0.028582183455452756,
+    "ci95": [
+     -0.03802131329570669,
+     -0.01949371377426523
+    ],
+    "min_effect": 0.0033022625019628027,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-9f7208b1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8f13e5e9",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Stiffler transfer predicts unseen Firnberg sites with about nine labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-d2e93654",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-61149086",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Firnberg transfer predicts unseen Stiffler sites with about nine labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-09da5785",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-af40e7f0",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Stiffler transfer predicts unseen Firnberg sites with about eighteen labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-d2e93654",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-676f6df1",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Firnberg transfer predicts unseen Stiffler sites with about nineteen labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-09da5785",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-405b3d42",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KRAS abundance chemistry features add value beyond substitution identity",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0323, 95% CI [-0.0437, -0.0213], beyond the minimum effect 0.0049)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.24741339402020476,
+    "b": 0.21514158772677722,
+    "diff": -0.032271806293427525,
+    "ci95": [
+     -0.043703613286203986,
+     -0.021332773007542497
+    ],
+    "min_effect": 0.004948267880404095,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-89a9758a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1e710f1e",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Paired abundance scores improve KRAS binding prediction beyond sequence and physicochemistry",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0195, 95% CI [0.0134, 0.0254], needed below -0.0024",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.11974472723874956,
+    "b": 0.1392718406314418,
+    "diff": 0.01952711339269228,
+    "ci95": [
+     0.0134202485910345,
+     0.025403488206621416
+    ],
+    "min_effect": 0.002394894544774991,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b5e2fe59",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-0dedbb7c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c61c1d0b",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "KRAS nonlinear transfer advantage depends on paired-score coverage",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-0857413b",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e0e0b6eb",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Paired expression features modestly improve KCNE1 function prediction beyond chemistry on held-out positions",
+   "status": "rejected",
+   "reason": "mis-cited evidence: grouped_position_folds is recorded in exec-03d3dd7d, exec-6b111a3d, exec-4cca406a but that exec is not listed as evidence; relations claim use of files no evidence exec consumed: findin-90232309",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-7c348160",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-90232309",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8a839d4d",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Paired expression features modestly improve KCNE1 function prediction beyond chemistry on held-out positions",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-7c348160",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9e5c8e70",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Repeated grouped-position tests confirm low-label Firnberg transfer advantage",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-8f13e5e9",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-af40e7f0",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-82771ab8",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Repeated grouped-position tests confirm low-label Stiffler transfer advantage",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-61149086",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-676f6df1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9b880f51",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Paired abundance scores improve KRAS binding prediction across 50 nested grouped-CV folds",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-1e710f1e",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b5e2fe59",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cba5c5af",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KRAS binding chemistry gain persists with nested grouped tuning",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0298, 95% CI [-0.0386, -0.0212], beyond the minimum effect 0.0033)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.16455286258874344,
+    "b": 0.1347999818339106,
+    "diff": -0.029752880754832834,
+    "ci95": [
+     -0.038641398800147525,
+     -0.02117624767213431
+    ],
+    "min_effect": 0.0032910572517748688,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f8fac996",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9f7208b1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1a74a19c",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Paired expression transfer improves KCNE1 function prediction at half the target-label budget",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-8a839d4d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-71aa5249",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "A few Firnberg labels calibrate Stiffler scores for unseen-site prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9e5c8e70",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b11b5908",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "A few Stiffler labels calibrate Firnberg scores for unseen-site prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-82771ab8",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b5432673",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "Fresh KRAS splits replicate coverage-dependent nonlinear transfer",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c61c1d0b",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4a2a8111",
+   "kind": "finding",
+   "agent": "agent-38b802a8",
+   "title": "Position interactions add a small increment to paired KCNE1 assay transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-90232309",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-88d51bc7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KRAS abundance chemistry gain persists with nested grouped tuning",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0368, 95% CI [-0.0470, -0.0268], beyond the minimum effect 0.0050)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.24831088208755162,
+    "b": 0.21146439225980448,
+    "diff": -0.03684648982774716,
+    "ci95": [
+     -0.04698013183250557,
+     -0.02684598541165135
+    ],
+    "min_effect": 0.004966217641751033,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-405b3d42",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-89a9758a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9fa38e0c",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Paired DARPin_K55 scores improve KRAS abundance prediction in nested grouped CV",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b4e5eca4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-9b880f51",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8d26dda0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Correct amino-acid descriptor mapping outperforms a permuted control for KRAS binding",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0497, 95% CI [-0.0623, -0.0381], beyond the minimum effect 0.0037)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.1862184427273654,
+    "b": 0.13652891499603823,
+    "diff": -0.04968952773132716,
+    "ci95": [
+     -0.06227596033376372,
+     -0.038144805318100015
+    ],
+    "min_effect": 0.003724368854547308,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f8fac996",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-718ad262",
+   "kind": "finding",
+   "agent": "agent-df6ebebe",
+   "title": "KRAS abundance-to-binding gains also depend on paired-score coverage",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0195, 95% CI [0.0134, 0.0254], needed below -0.0024",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.11974472723874956,
+    "b": 0.1392718406314418,
+    "diff": 0.01952711339269228,
+    "ci95": [
+     0.0134202485910345,
+     0.025403488206621416
+    ],
+    "min_effect": 0.002394894544774991,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9b880f51",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b220e1cd",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Correct descriptor mapping improves reciprocal KRAS abundance prediction over a permutation control",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0675, 95% CI [-0.0840, -0.0525], beyond the minimum effect 0.0057)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.282674902279527,
+    "b": 0.21513766133571902,
+    "diff": -0.06753724094380797,
+    "ci95": [
+     -0.08398467045088572,
+     -0.052458685631799146
+    ],
+    "min_effect": 0.005653498045590541,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-405b3d42",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5bef0a00",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Stiffler transfer retains its Firnberg prediction advantage at 10% labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9e5c8e70",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-54c6a69e",
+   "kind": "finding",
+   "agent": "agent-b3a9b34e",
+   "title": "Firnberg transfer retains its Stiffler prediction advantage at 10% labels",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-82771ab8",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-5f5d0ffe",
+   "kind": "preregistration",
+   "agent": "agent-38b802a8",
+   "title": "Preregistered test of strict KCNE1 paired-assay transfer",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "null-600e87e0",
+   "kind": "null_result",
+   "agent": "agent-38b802a8",
+   "title": "Predicted KCNE1 expression transfer does not establish a grouped-position gain",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-382c362e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-specific chemistry improves KRAS binding prediction over global substitution descriptors",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0285, 95% CI [-0.0378, -0.0195], beyond the minimum effect 0.0033)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 761,
+    "a": 0.1650010797408205,
+    "b": 0.13652891499603823,
+    "diff": -0.02847216474478229,
+    "ci95": [
+     -0.037818339838451676,
+     -0.019490797376173125
+    ],
+    "min_effect": 0.0033000215948164103,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f8fac996",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2fde30dd",
+   "kind": "finding",
+   "agent": "agent-c4695fb2",
+   "title": "Paired binding scores modestly improve KRAS abundance prediction in nested grouped CV",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9fa38e0c",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-38aefa6b",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-specific chemistry improves reciprocal KRAS abundance prediction over global descriptors",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0320, 95% CI [-0.0436, -0.0211], beyond the minimum effect 0.0049)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.24718548341149849,
+    "b": 0.21513766133571902,
+    "diff": -0.032047822075779456,
+    "ci95": [
+     -0.043580620690956424,
+     -0.02105368099500102
+    ],
+    "min_effect": 0.00494370966822997,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-405b3d42",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e58227ce",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-specific descriptors add a grouped-CV comparison to paired KRAS abundance transfer",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-38aefa6b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-38aefa6b",
+   "hidden": {
+    "metric": "MAE",
+    "n": 756,
+    "a": 0.24718548341149849,
+    "b": 0.21513766133571902,
+    "diff": -0.032047822075779456,
+    "ci95": [
+     -0.043580620690956424,
+     -0.02105368099500102
+    ],
+    "min_effect": 0.00494370966822997,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-9fa38e0c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

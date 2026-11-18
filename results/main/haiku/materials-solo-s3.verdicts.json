@@ -1,0 +1,264 @@
+{
+ "run_id": "run-2f107dea",
+ "model": "haiku",
+ "task": "materials-solo-s3",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 1,
+  "R_frontier": 1,
+  "C_collaborative": 0,
+  "submitted_credited": 6,
+  "duplicates": 0,
+  "best_gain": {
+   "expt_gap": 0.0868
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 5
+  }
+ },
+ "rewards": {
+  "score": 0.16666666666666666,
+  "R_replicated": 1.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 1.0,
+  "datasets_advanced": 1.0,
+  "mean_best_gain": 0.0217,
+  "auditor_pending": 0.0,
+  "submitted_credited": 6.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 5.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.0238,
+  "model_calls": 18.0,
+  "experiments": 17.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.024,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.959,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 402.5
+ },
+ "claims": [
+  {
+   "id": "findin-e380684f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Magpie-lite stats + element fractions with HistGB+ExtraTrees beats baseline on expt_gap (5-fold CV MAE)",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0397, 95% CI [-0.0560, -0.0247], beyond the minimum effect 0.0091)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.41778095865061976,
+    "b": 0.4574966957583235,
+    "diff": -0.03971573710770384,
+    "ci95": [
+     -0.05596472982524162,
+     -0.02467954501417504
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-01c4bdc7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended Magpie-lite features + HistGB/ExtraTrees blend beats baseline on expt_is_metal (5-fold CV error)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0032, 95% CI [-0.0105, 0.0049], needed below -0.0017",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1234,
+    "a": 0.08265802269043761,
+    "b": 0.08589951377633712,
+    "diff": -0.0032414910858995136,
+    "ci95": [
+     -0.01053484602917342,
+     0.004862236628849271
+    ],
+    "min_effect": 0.0017179902755267424,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-47931b34",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended Magpie-lite features + HistGB/ExtraTrees blend beats baseline on glass (5-fold CV error)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0111, 95% CI [-0.0209, -0.0007], needed below -0.0024",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1435,
+    "a": 0.1073170731707317,
+    "b": 0.11846689895470383,
+    "diff": -0.011149825783972125,
+    "ci95": [
+     -0.02092334494773516,
+     -0.0006968641114982578
+    ],
+    "min_effect": 0.0023693379790940767,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b105f28b",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended Magpie-lite features + HistGB/ExtraTrees blend beats baseline on steels yield strength (5-fold CV MAE)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -19.2312, 95% CI [-38.1450, -1.1628], needed below -2.0361",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 76,
+    "a": 82.57541063876727,
+    "b": 101.80660271729003,
+    "diff": -19.231192078522753,
+    "ci95": [
+     -38.14502801788512,
+     -1.1628070092859961
+    ],
+    "min_effect": 2.0361320543458006,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-47b5d26b",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended Magpie-lite ExtraTrees alone beats baseline on steels yield strength (repeated 5-fold CV MAE)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -19.3517, 95% CI [-39.8439, -0.5772], needed below -2.0361",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 76,
+    "a": 82.45491578947369,
+    "b": 101.80660271729003,
+    "diff": -19.351686927816342,
+    "ci95": [
+     -39.843866680811885,
+     -0.5771858002428969
+    ],
+    "min_effect": 2.0361320543458006,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-203f7895",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended Magpie-lite HistGB alone beats baseline on expt_is_metal (repeated 5-fold CV error)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0073, 95% CI [-0.0162, 0.0016], needed below -0.0017",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1234,
+    "a": 0.07860615883306321,
+    "b": 0.08589951377633712,
+    "diff": -0.007293354943273906,
+    "ci95": [
+     -0.01620745542949757,
+     0.0016207455429497568
+    ],
+    "min_effect": 0.0017179902755267424,
+    "pass": false
+   },
+   "relations": []
+  }
+ ]
+}

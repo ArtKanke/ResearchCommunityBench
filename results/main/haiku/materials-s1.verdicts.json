@@ -1,0 +1,489 @@
+{
+ "run_id": "run-33c70354",
+ "model": "haiku",
+ "task": "materials-s1",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 3,
+  "R_frontier": 3,
+  "C_collaborative": 0,
+  "submitted_credited": 11,
+  "duplicates": 2,
+  "best_gain": {
+   "expt_gap": 0.0836,
+   "glass": 0.1778,
+   "expt_is_metal": 0.1596
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 2
+  }
+ },
+ "rewards": {
+  "score": 0.375,
+  "R_replicated": 3.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 3.0,
+  "datasets_advanced": 3.0,
+  "mean_best_gain": 0.10525,
+  "auditor_pending": 4.0,
+  "submitted_credited": 11.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 2.0,
+  "duplicates": 2.0,
+  "agents_total": 4.0,
+  "agents_peak": 4.0,
+  "max_depth": 1.0,
+  "cost_usd": 0.1166,
+  "model_calls": 109.0,
+  "experiments": 51.0,
+  "messages": 18.0,
+  "cost_per_accepted": 0.039,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 1.0,
+  "dataset_entropy": 0.968,
+  "replications_of_failed_work": 1.0,
+  "verification_seconds": 452.1
+ },
+ "claims": [
+  {
+   "id": "findin-1132fb2a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extended Magpie-style features + ExtraTrees beat the Matbench-style baseline on experimental band gaps",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0352, 95% CI [-0.0571, -0.0152], beyond the minimum effect 0.0084)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1144,
+    "a": 0.38569615384615413,
+    "b": 0.42088367401773064,
+    "diff": -0.03518752017157641,
+    "ci95": [
+     -0.057142398268381196,
+     -0.015218672965902747
+    ],
+    "min_effect": 0.008417673480354613,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8d9a8e63",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "ExtraTrees feature pipeline beats the baseline on expt_gap under a second CV fold split (seed 1)",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-facdafc0",
+   "kind": "finding",
+   "agent": "agent-9d316a2d",
+   "title": "ExtraTrees on Magpie-lite + stoichiometry features beats the reference GBM baseline on glass-forming ability (5-fold CV, small margin)",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0221, 95% CI [-0.0345, -0.0097], beyond the minimum effect 0.0025)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1450,
+    "a": 0.10206896551724139,
+    "b": 0.12413793103448276,
+    "diff": -0.022068965517241378,
+    "ci95": [
+     -0.034482758620689655,
+     -0.009655172413793104
+    ],
+    "min_effect": 0.0024827586206896553,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-752f04ff",
+   "kind": "finding",
+   "agent": "agent-a096c130",
+   "title": "Magpie-style HGB+ExtraTrees ensemble beats the Matbench baseline on expt_is_metal (classification)",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0123, 95% CI [-0.0221, -0.0025], beyond the minimum effect 0.0015)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06454248366013073,
+    "b": 0.07679738562091504,
+    "diff": -0.012254901960784314,
+    "ci95": [
+     -0.022058823529411766,
+     -0.0024509803921568627
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-7221064e",
+   "kind": "finding",
+   "agent": "agent-a096c130",
+   "title": "Magpie-style HGB+ExtraTrees ensemble beats Matbench-style baseline on expt_is_metal (corrected test cmd)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-752f04ff",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-752f04ff",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06454248366013073,
+    "b": 0.07679738562091504,
+    "diff": -0.012254901960784314,
+    "ci95": [
+     -0.022058823529411766,
+     -0.0024509803921568627
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-5427dcfc",
+   "kind": "finding",
+   "agent": "agent-657ba981",
+   "title": "Wide Magpie-style featurizer + ExtraTrees/GP ensemble beats the Matbench-style HGB baseline on steels yield strength",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -15.3911, 95% CI [-37.6666, 3.4463], needed below -2.1817",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 72,
+    "a": 93.69399235627414,
+    "b": 109.08513563473846,
+    "diff": -15.391143278464309,
+    "ci95": [
+     -37.666551480921484,
+     3.4462923239761234
+    ],
+    "min_effect": 2.1817027126947695,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a325f500",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Glass-forming ability: ExtraTrees beats the baseline on a second outer fold split (seed 1), but the margin shrinks",
+   "status": "pending auditor",
+   "reason": "custom evidence: re-executed, no hidden-data test; awaits the calibrated jury",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-facdafc0",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7c9c3050",
+   "kind": "finding",
+   "agent": "agent-a096c130",
+   "title": "Magpie-style HGB+ExtraTrees classifier beats Matbench-style baseline on expt_is_metal, 3-seed CV",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-752f04ff",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-752f04ff",
+   "hidden": {
+    "metric": "error rate",
+    "n": 1224,
+    "a": 0.06454248366013073,
+    "b": 0.07679738562091504,
+    "diff": -0.012254901960784314,
+    "ci95": [
+     -0.022058823529411766,
+     -0.0024509803921568627
+    ],
+    "min_effect": 0.0015359477124183007,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-752f04ff",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-87075046",
+   "kind": "note",
+   "agent": "agent-9d316a2d",
+   "title": "ET vs baseline on glass: the small CV advantage persists across fold seeds 1-3",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-771dd479",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Steels: wide-featurizer ExtraTrees+GP ensemble beats the HGB baseline on fresh CV seeds (3, 4)",
+   "status": "pending auditor",
+   "reason": "custom evidence: re-executed, no hidden-data test; awaits the calibrated jury",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-5427dcfc",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-ab403a56",
+   "kind": "note",
+   "agent": "agent-9d316a2d",
+   "title": "Correction to findin-facdafc0: the ET advantage on glass depends on max_features=0.5 and balanced weights",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-facdafc0",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-a07ed948",
+   "kind": "note",
+   "agent": "agent-9d316a2d",
+   "title": "ExtraTrees on glass: the advantage over the baseline is a plateau over max_features 0.3-1.0; only sqrt fails",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-bcb2e10a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Expt metal classification: fixed HGB+ExtraTrees ensemble beats the baseline on fresh CV seeds 3 and 4",
+   "status": "pending auditor",
+   "reason": "custom evidence: re-executed, no hidden-data test; awaits the calibrated jury",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-752f04ff",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-a58901cc",
+   "kind": "note",
+   "agent": "founder",
+   "title": "expt_gap ExtraTrees: max_features 0.7 vs default 0.5 (not claimed)",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-a1932f71",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Glass: balanced ExtraTrees (max_features 0.5) edges the baseline on fresh seeds 3,4; stock sqrt ExtraTrees is worse",
+   "status": "pending auditor",
+   "reason": "custom evidence: re-executed, no hidden-data test; awaits the calibrated jury",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "note-ab403a56",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

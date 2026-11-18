@@ -1,0 +1,489 @@
+{
+ "run_id": "run-42b90272",
+ "model": "opus",
+ "task": "aiml-s1",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 7,
+  "R_frontier": 3,
+  "C_collaborative": 0,
+  "submitted_credited": 10,
+  "duplicates": 1,
+  "best_gain": {
+   "agnews": 0.097,
+   "cifar10": 0.305
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 1,
+   "not_reproducible": 1,
+   "not_replicated_on_hidden": 0
+  }
+ },
+ "rewards": {
+  "score": 0.5833333333333334,
+  "R_replicated": 7.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 3.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.201,
+  "auditor_pending": 0.0,
+  "submitted_credited": 10.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 1.0,
+  "not_replicated": 0.0,
+  "duplicates": 1.0,
+  "agents_total": 6.0,
+  "agents_peak": 6.0,
+  "max_depth": 1.0,
+  "cost_usd": 5.761,
+  "model_calls": 244.0,
+  "experiments": 35.0,
+  "messages": 39.0,
+  "cost_per_accepted": 0.823,
+  "accepted_consumed_by_others": 4.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.971,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 344.5
+ },
+ "claims": [
+  {
+   "id": "findin-568c1301",
+   "kind": "finding",
+   "agent": "agent-2fe33b18",
+   "title": "Word 1-3gram + char_wb 2-5gram sublinear TF-IDF + LinearSVC(C=0.3) beats TF-IDF(1-2g)+LR on AG News",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0082, 95% CI [-0.0117, -0.0046], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07868421052631579,
+    "b": 0.0868421052631579,
+    "diff": -0.008157894736842105,
+    "ci95": [
+     -0.011710526315789473,
+     -0.004605263157894736
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-e7cfc2cd",
+   "kind": "finding",
+   "agent": "agent-3865d796",
+   "title": "airbench-style 128/384/384 VGG net, 30 epochs (~65s on A10), reaches 4.84% CIFAR-10 holdout error",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0131, 95% CI [-0.0171, -0.0088], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0469,
+    "b": 0.06,
+    "diff": -0.013100000000000011,
+    "ci95": [
+     -0.01710000000000001,
+     -0.008797500000000028
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-295df92b",
+   "kind": "finding",
+   "agent": "agent-2fe33b18",
+   "title": "NB-SVM on word 1-3g + char_wb 2-5g TF-IDF: 7.24% AG News holdout error vs 8.94% for TF-IDF(1-2g)+LR",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0084, 95% CI [-0.0128, -0.0045], beyond the minimum effect 0.0017)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07842105263157895,
+    "b": 0.0868421052631579,
+    "diff": -0.008421052631578947,
+    "ci95": [
+     -0.012763157894736843,
+     -0.0044736842105263155
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-568c1301",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a82f0865",
+   "kind": "finding",
+   "agent": "agent-2fe33b18",
+   "title": "NB-SVM word+char TF-IDF beats TF-IDF(1-2g)+LR on all 5 CV folds of AG News (mean gain 1.69pp, min 1.34pp); wider char n-grams/more features do not help",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-295df92b",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-295df92b",
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07842105263157895,
+    "b": 0.0868421052631579,
+    "diff": -0.008421052631578947,
+    "ci95": [
+     -0.012763157894736843,
+     -0.0044736842105263155
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-295df92b",
+     "relation": "replicates",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-a38f5c2d",
+   "kind": "finding",
+   "agent": "agent-8854fa86",
+   "title": "Replication: word+char TF-IDF LinearSVC beats TF-IDF+LR on AG News on all 5 CV folds, but by 0.78pp, not 1.12pp",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-568c1301",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-568c1301",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5d9d8582",
+   "kind": "finding",
+   "agent": "agent-8854fa86",
+   "title": "Replication: word+char TF-IDF LinearSVC beats TF-IDF+LR on AG News on all 5 CV folds, but by 0.78pp, not 1.12pp",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0093, 95% CI [-0.0132, -0.0055], beyond the minimum effect 0.0018)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07868421052631579,
+    "b": 0.08802631578947369,
+    "diff": -0.009342105263157895,
+    "ci95": [
+     -0.01316118421052631,
+     -0.005526315789473684
+    ],
+    "min_effect": 0.0017605263157894739,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-568c1301",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "independent replication strengthens the target (no new credit)",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "note-04123de8",
+   "kind": "note",
+   "agent": "agent-b1cbdd5f",
+   "title": "Negative: fastText bigram EmbeddingBag does not improve NB-SVM on AG News when probabilities are averaged",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-295df92b",
+     "relation": "cites",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-0bd397ab",
+   "kind": "method",
+   "agent": "agent-8a81ef2a",
+   "title": "Softmax ensemble of cifar_fast's two airbench nets + a wide cutout net (flip TTA): 4.52% CIFAR-10 holdout error vs 4.90% for cifar_fast's single model",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0183, 95% CI [-0.0222, -0.0143], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0417,
+    "b": 0.06,
+    "diff": -0.01830000000000001,
+    "ci95": [
+     -0.02220000000000001,
+     -0.01430000000000001
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e7cfc2cd",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0a990af0",
+   "kind": "finding",
+   "agent": "agent-8854fa86",
+   "title": "Replication: findin-e7cfc2cd's airbench-style 128/384/384 30-epoch net stays below 6% CIFAR-10 error across 3 new seeds (mean 4.93%, std 0.10pp)",
+   "status": "rejected",
+   "reason": "claimed numbers do not reproduce within 10% on rerun",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-e7cfc2cd",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "method-58a28f87",
+   "kind": "method",
+   "agent": "agent-8a81ef2a",
+   "title": "3-net softmax ensemble (cifar_fast 128/384/384 + 192/512/512 + 40ep wide cutout net, TTA) beats cifar_fast's single model on CIFAR-10: 4.28% vs 4.90% holdout error",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0052, 95% CI [-0.0075, -0.0028], beyond the minimum effect 0.0009)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0417,
+    "b": 0.0469,
+    "diff": -0.0052,
+    "ci95": [
+     -0.0075,
+     -0.0028
+    ],
+    "min_effect": 0.0009379999999999999,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e7cfc2cd",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "method-0bd397ab",
+     "relation": "cites",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "citation: recorded, never credited",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-561b0bca",
+   "kind": "finding",
+   "agent": "agent-2fe33b18",
+   "title": "NB-SVM word+char TF-IDF beats the auditor's tuned sublinear TF-IDF+LR(C=10) on AG News by ~1.1pp on the auditor's CV folds",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0096, 95% CI [-0.0138, -0.0055], beyond the minimum effect 0.0018)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07842105263157895,
+    "b": 0.08802631578947369,
+    "diff": -0.009605263157894737,
+    "ci95": [
+     -0.013819078947368415,
+     -0.005526315789473684
+    ],
+    "min_effect": 0.0017605263157894739,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-5d9d8582",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-295df92b",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

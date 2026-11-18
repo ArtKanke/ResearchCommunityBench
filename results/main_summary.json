@@ -1,0 +1,4289 @@
+{
+ "benchmark": "ResearchCommunityBench",
+ "dataset": "researchcommunitybench/main@v1 (verifier of v2)",
+ "conditions": "60 minutes, effort high, up to 50 live researchers; Sol and Opus 1 seed, Luna and Haiku 3 seeds",
+ "reverified": 47,
+ "scored": 47,
+ "infra_failed": [
+  {
+   "model": "gpt-6-luna",
+   "task": "materials-s1",
+   "domain": "materials",
+   "mode": "team",
+   "seed": 1,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "5bb1a66a-e4b5-440b-96e7-7c16876e0c21",
+   "reason": "Valkyrie verifier failed after the 60-minute session (Modal sandbox connection refused); excluded by decision made before rescoring. Rescored offline: 11 accepted, best gain 0.22"
+  }
+ ],
+ "rows": [
+  {
+   "model": "claude-haiku-5-5",
+   "domain": "aiml",
+   "mode": "solo",
+   "n": 3,
+   "R_replicated": {
+    "mean": 2.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "R_frontier": {
+    "mean": 2.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "mean_best_gain": {
+    "mean": 0.1099,
+    "se": 0.0144,
+    "n": 3
+   },
+   "datasets_advanced": {
+    "mean": 1.3333,
+    "se": 0.3333,
+    "n": 3
+   },
+   "submitted_credited": {
+    "mean": 3.0,
+    "se": 0.5774,
+    "n": 3
+   },
+   "cost_usd": {
+    "mean": 0.028,
+    "se": 0.0039,
+    "n": 3
+   },
+   "agents_total": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "messages": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "experiments": {
+    "mean": 11.6667,
+    "se": 3.283,
+    "n": 3
+   },
+   "model_calls": {
+    "mean": 23.3333,
+    "se": 3.283,
+    "n": 3
+   },
+   "session_used": {
+    "mean": 0.3943,
+    "se": 0.0417,
+    "n": 3
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_replicated": {
+    "mean": 0.6667,
+    "se": 0.3333,
+    "n": 3
+   },
+   "duplicates": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "built_on_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   }
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "domain": "aiml",
+   "mode": "team",
+   "n": 3,
+   "R_replicated": {
+    "mean": 2.0,
+    "se": 0.5774,
+    "n": 3
+   },
+   "R_frontier": {
+    "mean": 1.6667,
+    "se": 0.3333,
+    "n": 3
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "mean_best_gain": {
+    "mean": 0.1041,
+    "se": 0.0339,
+    "n": 3
+   },
+   "datasets_advanced": {
+    "mean": 1.6667,
+    "se": 0.3333,
+    "n": 3
+   },
+   "submitted_credited": {
+    "mean": 4.3333,
+    "se": 0.8819,
+    "n": 3
+   },
+   "cost_usd": {
+    "mean": 0.0607,
+    "se": 0.0116,
+    "n": 3
+   },
+   "agents_total": {
+    "mean": 2.3333,
+    "se": 0.3333,
+    "n": 3
+   },
+   "messages": {
+    "mean": 11.0,
+    "se": 4.5826,
+    "n": 3
+   },
+   "experiments": {
+    "mean": 14.6667,
+    "se": 3.1798,
+    "n": 3
+   },
+   "model_calls": {
+    "mean": 52.3333,
+    "se": 8.9505,
+    "n": 3
+   },
+   "session_used": {
+    "mean": 0.6473,
+    "se": 0.0341,
+    "n": 3
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_replicated": {
+    "mean": 1.6667,
+    "se": 0.8819,
+    "n": 3
+   },
+   "duplicates": {
+    "mean": 0.6667,
+    "se": 0.6667,
+    "n": 3
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "built_on_failed_work": {
+    "mean": 0.6667,
+    "se": 0.6667,
+    "n": 3
+   },
+   "replications_of_failed_work": {
+    "mean": 0.3333,
+    "se": 0.3333,
+    "n": 3
+   }
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "domain": "compbio",
+   "mode": "solo",
+   "n": 3,
+   "R_replicated": {
+    "mean": 8.0,
+    "se": 3.2146,
+    "n": 3
+   },
+   "R_frontier": {
+    "mean": 7.3333,
+    "se": 2.6034,
+    "n": 3
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "mean_best_gain": {
+    "mean": 0.1918,
+    "se": 0.0729,
+    "n": 3
+   },
+   "datasets_advanced": {
+    "mean": 5.6667,
+    "se": 1.3333,
+    "n": 3
+   },
+   "submitted_credited": {
+    "mean": 8.3333,
+    "se": 2.9627,
+    "n": 3
+   },
+   "cost_usd": {
+    "mean": 0.0214,
+    "se": 0.001,
+    "n": 3
+   },
+   "agents_total": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "messages": {
+    "mean": 0.3333,
+    "se": 0.3333,
+    "n": 3
+   },
+   "experiments": {
+    "mean": 7.3333,
+    "se": 0.8819,
+    "n": 3
+   },
+   "model_calls": {
+    "mean": 15.0,
+    "se": 2.8868,
+    "n": 3
+   },
+   "session_used": {
+    "mean": 0.0927,
+    "se": 0.0127,
+    "n": 3
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_replicated": {
+    "mean": 0.3333,
+    "se": 0.3333,
+    "n": 3
+   },
+   "duplicates": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "built_on_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   }
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "domain": "compbio",
+   "mode": "team",
+   "n": 3,
+   "R_replicated": {
+    "mean": 10.0,
+    "se": 4.0,
+    "n": 3
+   },
+   "R_frontier": {
+    "mean": 7.3333,
+    "se": 2.9627,
+    "n": 3
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "mean_best_gain": {
+    "mean": 0.2027,
+    "se": 0.0648,
+    "n": 3
+   },
+   "datasets_advanced": {
+    "mean": 5.3333,
+    "se": 1.2019,
+    "n": 3
+   },
+   "submitted_credited": {
+    "mean": 27.3333,
+    "se": 14.9703,
+    "n": 3
+   },
+   "cost_usd": {
+    "mean": 0.1184,
+    "se": 0.0355,
+    "n": 3
+   },
+   "agents_total": {
+    "mean": 3.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "messages": {
+    "mean": 18.6667,
+    "se": 5.2068,
+    "n": 3
+   },
+   "experiments": {
+    "mean": 40.6667,
+    "se": 27.7208,
+    "n": 3
+   },
+   "model_calls": {
+    "mean": 75.0,
+    "se": 14.7422,
+    "n": 3
+   },
+   "session_used": {
+    "mean": 0.2903,
+    "se": 0.0568,
+    "n": 3
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_replicated": {
+    "mean": 4.3333,
+    "se": 2.3333,
+    "n": 3
+   },
+   "duplicates": {
+    "mean": 7.6667,
+    "se": 7.1725,
+    "n": 3
+   },
+   "auditor_pending": {
+    "mean": 1.3333,
+    "se": 1.3333,
+    "n": 3
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "built_on_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   }
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "domain": "materials",
+   "mode": "solo",
+   "n": 3,
+   "R_replicated": {
+    "mean": 2.3333,
+    "se": 0.6667,
+    "n": 3
+   },
+   "R_frontier": {
+    "mean": 2.0,
+    "se": 0.5774,
+    "n": 3
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "mean_best_gain": {
+    "mean": 0.0774,
+    "se": 0.0294,
+    "n": 3
+   },
+   "datasets_advanced": {
+    "mean": 2.0,
+    "se": 0.5774,
+    "n": 3
+   },
+   "submitted_credited": {
+    "mean": 6.3333,
+    "se": 2.0276,
+    "n": 3
+   },
+   "cost_usd": {
+    "mean": 0.0269,
+    "se": 0.0027,
+    "n": 3
+   },
+   "agents_total": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "messages": {
+    "mean": 0.6667,
+    "se": 0.3333,
+    "n": 3
+   },
+   "experiments": {
+    "mean": 16.0,
+    "se": 2.6458,
+    "n": 3
+   },
+   "model_calls": {
+    "mean": 24.3333,
+    "se": 3.1798,
+    "n": 3
+   },
+   "session_used": {
+    "mean": 0.3833,
+    "se": 0.0652,
+    "n": 3
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "miscited_evidence": {
+    "mean": 0.6667,
+    "se": 0.6667,
+    "n": 3
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_replicated": {
+    "mean": 3.0,
+    "se": 1.5275,
+    "n": 3
+   },
+   "duplicates": {
+    "mean": 0.3333,
+    "se": 0.3333,
+    "n": 3
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "built_on_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   }
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "domain": "materials",
+   "mode": "team",
+   "n": 3,
+   "R_replicated": {
+    "mean": 3.3333,
+    "se": 0.3333,
+    "n": 3
+   },
+   "R_frontier": {
+    "mean": 2.3333,
+    "se": 0.6667,
+    "n": 3
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "mean_best_gain": {
+    "mean": 0.0857,
+    "se": 0.0334,
+    "n": 3
+   },
+   "datasets_advanced": {
+    "mean": 2.0,
+    "se": 0.5774,
+    "n": 3
+   },
+   "submitted_credited": {
+    "mean": 14.0,
+    "se": 1.7321,
+    "n": 3
+   },
+   "cost_usd": {
+    "mean": 0.1288,
+    "se": 0.0147,
+    "n": 3
+   },
+   "agents_total": {
+    "mean": 4.0,
+    "se": 0.5774,
+    "n": 3
+   },
+   "messages": {
+    "mean": 19.3333,
+    "se": 0.8819,
+    "n": 3
+   },
+   "experiments": {
+    "mean": 47.0,
+    "se": 7.7675,
+    "n": 3
+   },
+   "model_calls": {
+    "mean": 111.3333,
+    "se": 12.4677,
+    "n": 3
+   },
+   "session_used": {
+    "mean": 0.5917,
+    "se": 0.0379,
+    "n": 3
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_replicated": {
+    "mean": 6.6667,
+    "se": 2.9059,
+    "n": 3
+   },
+   "duplicates": {
+    "mean": 2.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "auditor_pending": {
+    "mean": 2.0,
+    "se": 1.1547,
+    "n": 3
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "built_on_failed_work": {
+    "mean": 1.6667,
+    "se": 0.3333,
+    "n": 3
+   },
+   "replications_of_failed_work": {
+    "mean": 1.0,
+    "se": 0.5774,
+    "n": 3
+   }
+  },
+  {
+   "model": "claude-opus-5-5",
+   "domain": "aiml",
+   "mode": "solo",
+   "n": 1,
+   "R_replicated": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "R_frontier": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "mean_best_gain": {
+    "mean": 0.0766,
+    "se": null,
+    "n": 1
+   },
+   "datasets_advanced": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "submitted_credited": {
+    "mean": 4.0,
+    "se": null,
+    "n": 1
+   },
+   "cost_usd": {
+    "mean": 0.986,
+    "se": null,
+    "n": 1
+   },
+   "agents_total": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "messages": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "experiments": {
+    "mean": 5.0,
+    "se": null,
+    "n": 1
+   },
+   "model_calls": {
+    "mean": 37.0,
+    "se": null,
+    "n": 1
+   },
+   "session_used": {
+    "mean": 0.643,
+    "se": null,
+    "n": 1
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_replicated": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "duplicates": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "built_on_failed_work": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   }
+  },
+  {
+   "model": "claude-opus-5-5",
+   "domain": "aiml",
+   "mode": "team",
+   "n": 1,
+   "R_replicated": {
+    "mean": 7.0,
+    "se": null,
+    "n": 1
+   },
+   "R_frontier": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "mean_best_gain": {
+    "mean": 0.201,
+    "se": null,
+    "n": 1
+   },
+   "datasets_advanced": {
+    "mean": 2.0,
+    "se": null,
+    "n": 1
+   },
+   "submitted_credited": {
+    "mean": 10.0,
+    "se": null,
+    "n": 1
+   },
+   "cost_usd": {
+    "mean": 5.761,
+    "se": null,
+    "n": 1
+   },
+   "agents_total": {
+    "mean": 6.0,
+    "se": null,
+    "n": 1
+   },
+   "messages": {
+    "mean": 39.0,
+    "se": null,
+    "n": 1
+   },
+   "experiments": {
+    "mean": 35.0,
+    "se": null,
+    "n": 1
+   },
+   "model_calls": {
+    "mean": 244.0,
+    "se": null,
+    "n": 1
+   },
+   "session_used": {
+    "mean": 0.866,
+    "se": null,
+    "n": 1
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_reproducible": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "not_replicated": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "duplicates": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "accepted_consumed_by_others": {
+    "mean": 4.0,
+    "se": null,
+    "n": 1
+   },
+   "built_on_failed_work": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   }
+  },
+  {
+   "model": "claude-opus-5-5",
+   "domain": "compbio",
+   "mode": "solo",
+   "n": 1,
+   "R_replicated": {
+    "mean": 4.0,
+    "se": null,
+    "n": 1
+   },
+   "R_frontier": {
+    "mean": 4.0,
+    "se": null,
+    "n": 1
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "mean_best_gain": {
+    "mean": 0.1055,
+    "se": null,
+    "n": 1
+   },
+   "datasets_advanced": {
+    "mean": 4.0,
+    "se": null,
+    "n": 1
+   },
+   "submitted_credited": {
+    "mean": 13.0,
+    "se": null,
+    "n": 1
+   },
+   "cost_usd": {
+    "mean": 0.5747,
+    "se": null,
+    "n": 1
+   },
+   "agents_total": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "messages": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "experiments": {
+    "mean": 4.0,
+    "se": null,
+    "n": 1
+   },
+   "model_calls": {
+    "mean": 22.0,
+    "se": null,
+    "n": 1
+   },
+   "session_used": {
+    "mean": 0.152,
+    "se": null,
+    "n": 1
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_replicated": {
+    "mean": 9.0,
+    "se": null,
+    "n": 1
+   },
+   "duplicates": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "built_on_failed_work": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   }
+  },
+  {
+   "model": "claude-opus-5-5",
+   "domain": "compbio",
+   "mode": "team",
+   "n": 1,
+   "R_replicated": {
+    "mean": 43.0,
+    "se": null,
+    "n": 1
+   },
+   "R_frontier": {
+    "mean": 25.0,
+    "se": null,
+    "n": 1
+   },
+   "C_collaborative": {
+    "mean": 5.0,
+    "se": null,
+    "n": 1
+   },
+   "mean_best_gain": {
+    "mean": 0.3305,
+    "se": null,
+    "n": 1
+   },
+   "datasets_advanced": {
+    "mean": 7.0,
+    "se": null,
+    "n": 1
+   },
+   "submitted_credited": {
+    "mean": 58.0,
+    "se": null,
+    "n": 1
+   },
+   "cost_usd": {
+    "mean": 8.665,
+    "se": null,
+    "n": 1
+   },
+   "agents_total": {
+    "mean": 6.0,
+    "se": null,
+    "n": 1
+   },
+   "messages": {
+    "mean": 30.0,
+    "se": null,
+    "n": 1
+   },
+   "experiments": {
+    "mean": 103.0,
+    "se": null,
+    "n": 1
+   },
+   "model_calls": {
+    "mean": 269.0,
+    "se": null,
+    "n": 1
+   },
+   "session_used": {
+    "mean": 0.831,
+    "se": null,
+    "n": 1
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_replicated": {
+    "mean": 4.0,
+    "se": null,
+    "n": 1
+   },
+   "duplicates": {
+    "mean": 11.0,
+    "se": null,
+    "n": 1
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "built_on_failed_work": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "replications_of_failed_work": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   }
+  },
+  {
+   "model": "claude-opus-5-5",
+   "domain": "materials",
+   "mode": "solo",
+   "n": 1,
+   "R_replicated": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "R_frontier": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "mean_best_gain": {
+    "mean": 0.1356,
+    "se": null,
+    "n": 1
+   },
+   "datasets_advanced": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "submitted_credited": {
+    "mean": 7.0,
+    "se": null,
+    "n": 1
+   },
+   "cost_usd": {
+    "mean": 1.0057,
+    "se": null,
+    "n": 1
+   },
+   "agents_total": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "messages": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "experiments": {
+    "mean": 15.0,
+    "se": null,
+    "n": 1
+   },
+   "model_calls": {
+    "mean": 30.0,
+    "se": null,
+    "n": 1
+   },
+   "session_used": {
+    "mean": 0.659,
+    "se": null,
+    "n": 1
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_replicated": {
+    "mean": 4.0,
+    "se": null,
+    "n": 1
+   },
+   "duplicates": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "built_on_failed_work": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "replications_of_failed_work": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   }
+  },
+  {
+   "model": "claude-opus-5-5",
+   "domain": "materials",
+   "mode": "team",
+   "n": 1,
+   "R_replicated": {
+    "mean": 12.0,
+    "se": null,
+    "n": 1
+   },
+   "R_frontier": {
+    "mean": 6.0,
+    "se": null,
+    "n": 1
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "mean_best_gain": {
+    "mean": 0.2225,
+    "se": null,
+    "n": 1
+   },
+   "datasets_advanced": {
+    "mean": 4.0,
+    "se": null,
+    "n": 1
+   },
+   "submitted_credited": {
+    "mean": 22.0,
+    "se": null,
+    "n": 1
+   },
+   "cost_usd": {
+    "mean": 8.8279,
+    "se": null,
+    "n": 1
+   },
+   "agents_total": {
+    "mean": 7.0,
+    "se": null,
+    "n": 1
+   },
+   "messages": {
+    "mean": 45.0,
+    "se": null,
+    "n": 1
+   },
+   "experiments": {
+    "mean": 39.0,
+    "se": null,
+    "n": 1
+   },
+   "model_calls": {
+    "mean": 292.0,
+    "se": null,
+    "n": 1
+   },
+   "session_used": {
+    "mean": 0.774,
+    "se": null,
+    "n": 1
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_replicated": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "duplicates": {
+    "mean": 7.0,
+    "se": null,
+    "n": 1
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "accepted_consumed_by_others": {
+    "mean": 2.0,
+    "se": null,
+    "n": 1
+   },
+   "built_on_failed_work": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "replications_of_failed_work": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   }
+  },
+  {
+   "model": "gpt-6-luna",
+   "domain": "aiml",
+   "mode": "solo",
+   "n": 3,
+   "R_replicated": {
+    "mean": 2.0,
+    "se": 0.5774,
+    "n": 3
+   },
+   "R_frontier": {
+    "mean": 1.3333,
+    "se": 0.3333,
+    "n": 3
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "mean_best_gain": {
+    "mean": 0.0513,
+    "se": 0.004,
+    "n": 3
+   },
+   "datasets_advanced": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "submitted_credited": {
+    "mean": 5.6667,
+    "se": 0.8819,
+    "n": 3
+   },
+   "cost_usd": {
+    "mean": 0.1539,
+    "se": 0.0147,
+    "n": 3
+   },
+   "agents_total": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "messages": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "experiments": {
+    "mean": 23.6667,
+    "se": 2.3333,
+    "n": 3
+   },
+   "model_calls": {
+    "mean": 41.3333,
+    "se": 2.0276,
+    "n": 3
+   },
+   "session_used": {
+    "mean": 0.9893,
+    "se": 0.0102,
+    "n": 3
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_replicated": {
+    "mean": 2.0,
+    "se": 1.0,
+    "n": 3
+   },
+   "duplicates": {
+    "mean": 1.0,
+    "se": 0.5774,
+    "n": 3
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "built_on_failed_work": {
+    "mean": 0.6667,
+    "se": 0.6667,
+    "n": 3
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   }
+  },
+  {
+   "model": "gpt-6-luna",
+   "domain": "aiml",
+   "mode": "team",
+   "n": 3,
+   "R_replicated": {
+    "mean": 2.0,
+    "se": 0.5774,
+    "n": 3
+   },
+   "R_frontier": {
+    "mean": 1.6667,
+    "se": 0.3333,
+    "n": 3
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "mean_best_gain": {
+    "mean": 0.085,
+    "se": 0.0364,
+    "n": 3
+   },
+   "datasets_advanced": {
+    "mean": 1.6667,
+    "se": 0.3333,
+    "n": 3
+   },
+   "submitted_credited": {
+    "mean": 16.0,
+    "se": 2.6458,
+    "n": 3
+   },
+   "cost_usd": {
+    "mean": 0.5319,
+    "se": 0.1205,
+    "n": 3
+   },
+   "agents_total": {
+    "mean": 4.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "messages": {
+    "mean": 27.6667,
+    "se": 7.8811,
+    "n": 3
+   },
+   "experiments": {
+    "mean": 49.3333,
+    "se": 8.1718,
+    "n": 3
+   },
+   "model_calls": {
+    "mean": 169.0,
+    "se": 23.5443,
+    "n": 3
+   },
+   "session_used": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "miscited_evidence": {
+    "mean": 0.3333,
+    "se": 0.3333,
+    "n": 3
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_replicated": {
+    "mean": 12.3333,
+    "se": 3.4801,
+    "n": 3
+   },
+   "duplicates": {
+    "mean": 0.6667,
+    "se": 0.6667,
+    "n": 3
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.6667,
+    "se": 0.3333,
+    "n": 3
+   },
+   "built_on_failed_work": {
+    "mean": 7.3333,
+    "se": 3.283,
+    "n": 3
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   }
+  },
+  {
+   "model": "gpt-6-luna",
+   "domain": "compbio",
+   "mode": "solo",
+   "n": 3,
+   "R_replicated": {
+    "mean": 6.0,
+    "se": 3.4641,
+    "n": 3
+   },
+   "R_frontier": {
+    "mean": 2.6667,
+    "se": 1.453,
+    "n": 3
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "mean_best_gain": {
+    "mean": 0.0505,
+    "se": 0.0258,
+    "n": 3
+   },
+   "datasets_advanced": {
+    "mean": 2.3333,
+    "se": 1.2019,
+    "n": 3
+   },
+   "submitted_credited": {
+    "mean": 40.0,
+    "se": 11.3725,
+    "n": 3
+   },
+   "cost_usd": {
+    "mean": 1.1891,
+    "se": 0.361,
+    "n": 3
+   },
+   "agents_total": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "messages": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "experiments": {
+    "mean": 113.6667,
+    "se": 35.8345,
+    "n": 3
+   },
+   "model_calls": {
+    "mean": 125.3333,
+    "se": 26.8473,
+    "n": 3
+   },
+   "session_used": {
+    "mean": 0.995,
+    "se": 0.0029,
+    "n": 3
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_replicated": {
+    "mean": 32.3333,
+    "se": 7.8387,
+    "n": 3
+   },
+   "duplicates": {
+    "mean": 1.6667,
+    "se": 1.6667,
+    "n": 3
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "built_on_failed_work": {
+    "mean": 4.6667,
+    "se": 4.6667,
+    "n": 3
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   }
+  },
+  {
+   "model": "gpt-6-luna",
+   "domain": "compbio",
+   "mode": "team",
+   "n": 3,
+   "R_replicated": {
+    "mean": 18.3333,
+    "se": 2.6667,
+    "n": 3
+   },
+   "R_frontier": {
+    "mean": 7.3333,
+    "se": 1.2019,
+    "n": 3
+   },
+   "C_collaborative": {
+    "mean": 0.3333,
+    "se": 0.3333,
+    "n": 3
+   },
+   "mean_best_gain": {
+    "mean": 0.0976,
+    "se": 0.021,
+    "n": 3
+   },
+   "datasets_advanced": {
+    "mean": 4.6667,
+    "se": 0.3333,
+    "n": 3
+   },
+   "submitted_credited": {
+    "mean": 142.0,
+    "se": 17.9258,
+    "n": 3
+   },
+   "cost_usd": {
+    "mean": 7.586,
+    "se": 0.8602,
+    "n": 3
+   },
+   "agents_total": {
+    "mean": 7.3333,
+    "se": 1.2019,
+    "n": 3
+   },
+   "messages": {
+    "mean": 30.6667,
+    "se": 6.6416,
+    "n": 3
+   },
+   "experiments": {
+    "mean": 392.0,
+    "se": 22.5906,
+    "n": 3
+   },
+   "model_calls": {
+    "mean": 881.3333,
+    "se": 95.9311,
+    "n": 3
+   },
+   "session_used": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "miscited_evidence": {
+    "mean": 5.3333,
+    "se": 3.383,
+    "n": 3
+   },
+   "not_reproducible": {
+    "mean": 4.0,
+    "se": 4.0,
+    "n": 3
+   },
+   "not_replicated": {
+    "mean": 103.0,
+    "se": 22.2785,
+    "n": 3
+   },
+   "duplicates": {
+    "mean": 6.3333,
+    "se": 2.9627,
+    "n": 3
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "built_on_failed_work": {
+    "mean": 134.6667,
+    "se": 39.0313,
+    "n": 3
+   },
+   "replications_of_failed_work": {
+    "mean": 1.6667,
+    "se": 1.6667,
+    "n": 3
+   }
+  },
+  {
+   "model": "gpt-6-luna",
+   "domain": "materials",
+   "mode": "solo",
+   "n": 3,
+   "R_replicated": {
+    "mean": 2.6667,
+    "se": 0.8819,
+    "n": 3
+   },
+   "R_frontier": {
+    "mean": 2.3333,
+    "se": 0.8819,
+    "n": 3
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "mean_best_gain": {
+    "mean": 0.1162,
+    "se": 0.0454,
+    "n": 3
+   },
+   "datasets_advanced": {
+    "mean": 2.0,
+    "se": 0.5774,
+    "n": 3
+   },
+   "submitted_credited": {
+    "mean": 6.6667,
+    "se": 0.3333,
+    "n": 3
+   },
+   "cost_usd": {
+    "mean": 0.1491,
+    "se": 0.0557,
+    "n": 3
+   },
+   "agents_total": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "messages": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "experiments": {
+    "mean": 28.3333,
+    "se": 5.4569,
+    "n": 3
+   },
+   "model_calls": {
+    "mean": 43.6667,
+    "se": 4.7022,
+    "n": 3
+   },
+   "session_used": {
+    "mean": 0.9993,
+    "se": 0.0007,
+    "n": 3
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "not_replicated": {
+    "mean": 3.3333,
+    "se": 1.2019,
+    "n": 3
+   },
+   "duplicates": {
+    "mean": 0.6667,
+    "se": 0.6667,
+    "n": 3
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   },
+   "built_on_failed_work": {
+    "mean": 0.3333,
+    "se": 0.3333,
+    "n": 3
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 3
+   }
+  },
+  {
+   "model": "gpt-6-luna",
+   "domain": "materials",
+   "mode": "team",
+   "n": 2,
+   "R_replicated": {
+    "mean": 3.5,
+    "se": 1.5,
+    "n": 2
+   },
+   "R_frontier": {
+    "mean": 2.5,
+    "se": 0.5,
+    "n": 2
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 2
+   },
+   "mean_best_gain": {
+    "mean": 0.0751,
+    "se": 0.0107,
+    "n": 2
+   },
+   "datasets_advanced": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 2
+   },
+   "submitted_credited": {
+    "mean": 14.5,
+    "se": 2.5,
+    "n": 2
+   },
+   "cost_usd": {
+    "mean": 0.9658,
+    "se": 0.2432,
+    "n": 2
+   },
+   "agents_total": {
+    "mean": 5.0,
+    "se": 0.0,
+    "n": 2
+   },
+   "messages": {
+    "mean": 14.5,
+    "se": 3.5,
+    "n": 2
+   },
+   "experiments": {
+    "mean": 94.0,
+    "se": 5.0,
+    "n": 2
+   },
+   "model_calls": {
+    "mean": 219.0,
+    "se": 19.0,
+    "n": 2
+   },
+   "session_used": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 2
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 2
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 2
+   },
+   "not_reproducible": {
+    "mean": 0.5,
+    "se": 0.5,
+    "n": 2
+   },
+   "not_replicated": {
+    "mean": 9.5,
+    "se": 0.5,
+    "n": 2
+   },
+   "duplicates": {
+    "mean": 0.5,
+    "se": 0.5,
+    "n": 2
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 2
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 2
+   },
+   "built_on_failed_work": {
+    "mean": 6.5,
+    "se": 1.5,
+    "n": 2
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 2
+   }
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "domain": "aiml",
+   "mode": "solo",
+   "n": 1,
+   "R_replicated": {
+    "mean": 6.0,
+    "se": null,
+    "n": 1
+   },
+   "R_frontier": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "mean_best_gain": {
+    "mean": 0.1883,
+    "se": null,
+    "n": 1
+   },
+   "datasets_advanced": {
+    "mean": 2.0,
+    "se": null,
+    "n": 1
+   },
+   "submitted_credited": {
+    "mean": 8.0,
+    "se": null,
+    "n": 1
+   },
+   "cost_usd": {
+    "mean": 2.1758,
+    "se": null,
+    "n": 1
+   },
+   "agents_total": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "messages": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "experiments": {
+    "mean": 29.0,
+    "se": null,
+    "n": 1
+   },
+   "model_calls": {
+    "mean": 59.0,
+    "se": null,
+    "n": 1
+   },
+   "session_used": {
+    "mean": 0.988,
+    "se": null,
+    "n": 1
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_reproducible": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "not_replicated": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "duplicates": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "built_on_failed_work": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   }
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "domain": "aiml",
+   "mode": "team",
+   "n": 1,
+   "R_replicated": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "R_frontier": {
+    "mean": 2.0,
+    "se": null,
+    "n": 1
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "mean_best_gain": {
+    "mean": 0.2649,
+    "se": null,
+    "n": 1
+   },
+   "datasets_advanced": {
+    "mean": 2.0,
+    "se": null,
+    "n": 1
+   },
+   "submitted_credited": {
+    "mean": 8.0,
+    "se": null,
+    "n": 1
+   },
+   "cost_usd": {
+    "mean": 11.7664,
+    "se": null,
+    "n": 1
+   },
+   "agents_total": {
+    "mean": 7.0,
+    "se": null,
+    "n": 1
+   },
+   "messages": {
+    "mean": 201.0,
+    "se": null,
+    "n": 1
+   },
+   "experiments": {
+    "mean": 65.0,
+    "se": null,
+    "n": 1
+   },
+   "model_calls": {
+    "mean": 362.0,
+    "se": null,
+    "n": 1
+   },
+   "session_used": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_reproducible": {
+    "mean": 2.0,
+    "se": null,
+    "n": 1
+   },
+   "not_replicated": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "duplicates": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "accepted_consumed_by_others": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "built_on_failed_work": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   }
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "domain": "compbio",
+   "mode": "solo",
+   "n": 1,
+   "R_replicated": {
+    "mean": 37.0,
+    "se": null,
+    "n": 1
+   },
+   "R_frontier": {
+    "mean": 14.0,
+    "se": null,
+    "n": 1
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "mean_best_gain": {
+    "mean": 0.346,
+    "se": null,
+    "n": 1
+   },
+   "datasets_advanced": {
+    "mean": 7.0,
+    "se": null,
+    "n": 1
+   },
+   "submitted_credited": {
+    "mean": 51.0,
+    "se": null,
+    "n": 1
+   },
+   "cost_usd": {
+    "mean": 9.0514,
+    "se": null,
+    "n": 1
+   },
+   "agents_total": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "messages": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "experiments": {
+    "mean": 97.0,
+    "se": null,
+    "n": 1
+   },
+   "model_calls": {
+    "mean": 130.0,
+    "se": null,
+    "n": 1
+   },
+   "session_used": {
+    "mean": 0.997,
+    "se": null,
+    "n": 1
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_replicated": {
+    "mean": 14.0,
+    "se": null,
+    "n": 1
+   },
+   "duplicates": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "built_on_failed_work": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   }
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "domain": "compbio",
+   "mode": "team",
+   "n": 1,
+   "R_replicated": {
+    "mean": 29.0,
+    "se": null,
+    "n": 1
+   },
+   "R_frontier": {
+    "mean": 14.0,
+    "se": null,
+    "n": 1
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "mean_best_gain": {
+    "mean": 0.3117,
+    "se": null,
+    "n": 1
+   },
+   "datasets_advanced": {
+    "mean": 7.0,
+    "se": null,
+    "n": 1
+   },
+   "submitted_credited": {
+    "mean": 51.0,
+    "se": null,
+    "n": 1
+   },
+   "cost_usd": {
+    "mean": 59.4251,
+    "se": null,
+    "n": 1
+   },
+   "agents_total": {
+    "mean": 10.0,
+    "se": null,
+    "n": 1
+   },
+   "messages": {
+    "mean": 477.0,
+    "se": null,
+    "n": 1
+   },
+   "experiments": {
+    "mean": 424.0,
+    "se": null,
+    "n": 1
+   },
+   "model_calls": {
+    "mean": 1026.0,
+    "se": null,
+    "n": 1
+   },
+   "session_used": {
+    "mean": 0.991,
+    "se": null,
+    "n": 1
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_reproducible": {
+    "mean": 2.0,
+    "se": null,
+    "n": 1
+   },
+   "not_replicated": {
+    "mean": 19.0,
+    "se": null,
+    "n": 1
+   },
+   "duplicates": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "accepted_consumed_by_others": {
+    "mean": 9.0,
+    "se": null,
+    "n": 1
+   },
+   "built_on_failed_work": {
+    "mean": 33.0,
+    "se": null,
+    "n": 1
+   },
+   "replications_of_failed_work": {
+    "mean": 5.0,
+    "se": null,
+    "n": 1
+   }
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "domain": "materials",
+   "mode": "solo",
+   "n": 1,
+   "R_replicated": {
+    "mean": 4.0,
+    "se": null,
+    "n": 1
+   },
+   "R_frontier": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "mean_best_gain": {
+    "mean": 0.223,
+    "se": null,
+    "n": 1
+   },
+   "datasets_advanced": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "submitted_credited": {
+    "mean": 5.0,
+    "se": null,
+    "n": 1
+   },
+   "cost_usd": {
+    "mean": 2.7366,
+    "se": null,
+    "n": 1
+   },
+   "agents_total": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "messages": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "experiments": {
+    "mean": 51.0,
+    "se": null,
+    "n": 1
+   },
+   "model_calls": {
+    "mean": 76.0,
+    "se": null,
+    "n": 1
+   },
+   "session_used": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_replicated": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "duplicates": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "accepted_consumed_by_others": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "built_on_failed_work": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "replications_of_failed_work": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   }
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "domain": "materials",
+   "mode": "team",
+   "n": 1,
+   "R_replicated": {
+    "mean": 11.0,
+    "se": null,
+    "n": 1
+   },
+   "R_frontier": {
+    "mean": 7.0,
+    "se": null,
+    "n": 1
+   },
+   "C_collaborative": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "mean_best_gain": {
+    "mean": 0.2722,
+    "se": null,
+    "n": 1
+   },
+   "datasets_advanced": {
+    "mean": 3.0,
+    "se": null,
+    "n": 1
+   },
+   "submitted_credited": {
+    "mean": 26.0,
+    "se": null,
+    "n": 1
+   },
+   "cost_usd": {
+    "mean": 39.3352,
+    "se": null,
+    "n": 1
+   },
+   "agents_total": {
+    "mean": 10.0,
+    "se": null,
+    "n": 1
+   },
+   "messages": {
+    "mean": 414.0,
+    "se": null,
+    "n": 1
+   },
+   "experiments": {
+    "mean": 283.0,
+    "se": null,
+    "n": 1
+   },
+   "model_calls": {
+    "mean": 792.0,
+    "se": null,
+    "n": 1
+   },
+   "session_used": {
+    "mean": 1.0,
+    "se": null,
+    "n": 1
+   },
+   "fabrication": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "miscited_evidence": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_reproducible": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "not_replicated": {
+    "mean": 13.0,
+    "se": null,
+    "n": 1
+   },
+   "duplicates": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "auditor_pending": {
+    "mean": 0.0,
+    "se": null,
+    "n": 1
+   },
+   "accepted_consumed_by_others": {
+    "mean": 10.0,
+    "se": null,
+    "n": 1
+   },
+   "built_on_failed_work": {
+    "mean": 38.0,
+    "se": null,
+    "n": 1
+   },
+   "replications_of_failed_work": {
+    "mean": 5.0,
+    "se": null,
+    "n": 1
+   }
+  }
+ ],
+ "team_over_solo": [
+  {
+   "model": "gpt-6.1-sol",
+   "domain": "materials",
+   "R_replicated_team_over_solo": 2.75,
+   "R_frontier_team_over_solo": 2.333,
+   "mean_best_gain_team_over_solo": 1.22,
+   "cost_usd_team_over_solo": 14.374
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "domain": "compbio",
+   "R_replicated_team_over_solo": 0.784,
+   "R_frontier_team_over_solo": 1.0,
+   "mean_best_gain_team_over_solo": 0.901,
+   "cost_usd_team_over_solo": 6.565
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "domain": "aiml",
+   "R_replicated_team_over_solo": 0.5,
+   "R_frontier_team_over_solo": 0.667,
+   "mean_best_gain_team_over_solo": 1.407,
+   "cost_usd_team_over_solo": 5.408
+  },
+  {
+   "model": "claude-opus-5-5",
+   "domain": "materials",
+   "R_replicated_team_over_solo": 4.0,
+   "R_frontier_team_over_solo": 2.0,
+   "mean_best_gain_team_over_solo": 1.641,
+   "cost_usd_team_over_solo": 8.778
+  },
+  {
+   "model": "claude-opus-5-5",
+   "domain": "compbio",
+   "R_replicated_team_over_solo": 10.75,
+   "R_frontier_team_over_solo": 6.25,
+   "mean_best_gain_team_over_solo": 3.133,
+   "cost_usd_team_over_solo": 15.077
+  },
+  {
+   "model": "claude-opus-5-5",
+   "domain": "aiml",
+   "R_replicated_team_over_solo": 7.0,
+   "R_frontier_team_over_solo": 3.0,
+   "mean_best_gain_team_over_solo": 2.622,
+   "cost_usd_team_over_solo": 5.843
+  },
+  {
+   "model": "gpt-6-luna",
+   "domain": "materials",
+   "R_replicated_team_over_solo": 1.312,
+   "R_frontier_team_over_solo": 1.071,
+   "mean_best_gain_team_over_solo": 0.646,
+   "cost_usd_team_over_solo": 6.477
+  },
+  {
+   "model": "gpt-6-luna",
+   "domain": "compbio",
+   "R_replicated_team_over_solo": 3.056,
+   "R_frontier_team_over_solo": 2.75,
+   "mean_best_gain_team_over_solo": 1.933,
+   "cost_usd_team_over_solo": 6.379
+  },
+  {
+   "model": "gpt-6-luna",
+   "domain": "aiml",
+   "R_replicated_team_over_solo": 1.0,
+   "R_frontier_team_over_solo": 1.25,
+   "mean_best_gain_team_over_solo": 1.658,
+   "cost_usd_team_over_solo": 3.457
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "domain": "materials",
+   "R_replicated_team_over_solo": 1.429,
+   "R_frontier_team_over_solo": 1.167,
+   "mean_best_gain_team_over_solo": 1.108,
+   "cost_usd_team_over_solo": 4.781
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "domain": "compbio",
+   "R_replicated_team_over_solo": 1.25,
+   "R_frontier_team_over_solo": 1.0,
+   "mean_best_gain_team_over_solo": 1.057,
+   "cost_usd_team_over_solo": 5.524
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "domain": "aiml",
+   "R_replicated_team_over_solo": 1.0,
+   "R_frontier_team_over_solo": 0.833,
+   "mean_best_gain_team_over_solo": 0.947,
+   "cost_usd_team_over_solo": 2.169
+  }
+ ],
+ "tasks": [
+  {
+   "model": "gpt-6.1-sol",
+   "task": "aiml-s1",
+   "domain": "aiml",
+   "mode": "team",
+   "seed": 1,
+   "valkyrie_run_id": "fa16734c-0657-440e-a6d2-5ad2ece20fd8",
+   "valkyrie_task_id": "569429c7-d88d-4332-b384-dad4537baa00",
+   "source": "reverify",
+   "valkyrie_R_replicated": 3.0,
+   "R_replicated": 3.0,
+   "R_frontier": 2.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.2649,
+   "datasets_advanced": 2.0,
+   "submitted_credited": 8.0,
+   "cost_usd": 11.7664,
+   "agents_total": 7.0,
+   "messages": 201.0,
+   "experiments": 65.0,
+   "model_calls": 362.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 2.0,
+   "not_replicated": 3.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 3.0,
+   "built_on_failed_work": 1.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "task": "aiml-solo-s1",
+   "domain": "aiml",
+   "mode": "solo",
+   "seed": 1,
+   "valkyrie_run_id": "fa16734c-0657-440e-a6d2-5ad2ece20fd8",
+   "valkyrie_task_id": "8ec86839-5b42-4aba-9b0d-fbfbe25f501a",
+   "source": "reverify",
+   "valkyrie_R_replicated": 7.0,
+   "R_replicated": 6.0,
+   "R_frontier": 3.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.1883,
+   "datasets_advanced": 2.0,
+   "submitted_credited": 8.0,
+   "cost_usd": 2.1758,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 29.0,
+   "model_calls": 59.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 1.0,
+   "not_replicated": 1.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.988
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "task": "compbio-s1",
+   "domain": "compbio",
+   "mode": "team",
+   "seed": 1,
+   "valkyrie_run_id": "fa16734c-0657-440e-a6d2-5ad2ece20fd8",
+   "valkyrie_task_id": "d9cc8a73-da3a-48b9-a0c2-8e8f8d6ff069",
+   "source": "reverify",
+   "valkyrie_R_replicated": 29.0,
+   "R_replicated": 29.0,
+   "R_frontier": 14.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.3116714285714286,
+   "datasets_advanced": 7.0,
+   "submitted_credited": 51.0,
+   "cost_usd": 59.4251,
+   "agents_total": 10.0,
+   "messages": 477.0,
+   "experiments": 424.0,
+   "model_calls": 1026.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 2.0,
+   "not_replicated": 19.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 9.0,
+   "built_on_failed_work": 33.0,
+   "replications_of_failed_work": 5.0,
+   "session_used": 0.991
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "task": "compbio-solo-s1",
+   "domain": "compbio",
+   "mode": "solo",
+   "seed": 1,
+   "valkyrie_run_id": "fa16734c-0657-440e-a6d2-5ad2ece20fd8",
+   "valkyrie_task_id": "115d98c7-410d-4842-8f5e-1db91a114a89",
+   "source": "reverify",
+   "valkyrie_R_replicated": 37.0,
+   "R_replicated": 37.0,
+   "R_frontier": 14.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.34604285714285715,
+   "datasets_advanced": 7.0,
+   "submitted_credited": 51.0,
+   "cost_usd": 9.0514,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 97.0,
+   "model_calls": 130.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 14.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.997
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "task": "materials-s1",
+   "domain": "materials",
+   "mode": "team",
+   "seed": 1,
+   "valkyrie_run_id": "fa16734c-0657-440e-a6d2-5ad2ece20fd8",
+   "valkyrie_task_id": "0d1767f2-7959-453a-ad0d-8e5cb9300c02",
+   "source": "reverify",
+   "valkyrie_R_replicated": 11.0,
+   "R_replicated": 11.0,
+   "R_frontier": 7.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.2722,
+   "datasets_advanced": 3.0,
+   "submitted_credited": 26.0,
+   "cost_usd": 39.3352,
+   "agents_total": 10.0,
+   "messages": 414.0,
+   "experiments": 283.0,
+   "model_calls": 792.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 13.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 10.0,
+   "built_on_failed_work": 38.0,
+   "replications_of_failed_work": 5.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6.1-sol",
+   "task": "materials-solo-s1",
+   "domain": "materials",
+   "mode": "solo",
+   "seed": 1,
+   "valkyrie_run_id": "fa16734c-0657-440e-a6d2-5ad2ece20fd8",
+   "valkyrie_task_id": "009c96ce-cbb0-4459-bace-491d20cf3df9",
+   "source": "reverify",
+   "valkyrie_R_replicated": 4.0,
+   "R_replicated": 4.0,
+   "R_frontier": 3.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.223025,
+   "datasets_advanced": 3.0,
+   "submitted_credited": 5.0,
+   "cost_usd": 2.7366,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 51.0,
+   "model_calls": 76.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 1.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "claude-opus-5-5",
+   "task": "aiml-s1",
+   "domain": "aiml",
+   "mode": "team",
+   "seed": 1,
+   "valkyrie_run_id": "818fe65c-9277-4836-927c-c1d2d817d09b",
+   "valkyrie_task_id": "bd649bae-b182-45f4-99d3-873ed0e8e145",
+   "source": "reverify",
+   "valkyrie_R_replicated": 7.0,
+   "R_replicated": 7.0,
+   "R_frontier": 3.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.201,
+   "datasets_advanced": 2.0,
+   "submitted_credited": 10.0,
+   "cost_usd": 5.761,
+   "agents_total": 6.0,
+   "messages": 39.0,
+   "experiments": 35.0,
+   "model_calls": 244.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 1.0,
+   "not_replicated": 0.0,
+   "duplicates": 1.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 4.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.866
+  },
+  {
+   "model": "claude-opus-5-5",
+   "task": "aiml-solo-s1",
+   "domain": "aiml",
+   "mode": "solo",
+   "seed": 1,
+   "valkyrie_run_id": "818fe65c-9277-4836-927c-c1d2d817d09b",
+   "valkyrie_task_id": "b195e5e2-48ee-40a8-8129-170500d0e5c9",
+   "source": "reverify",
+   "valkyrie_R_replicated": 1.0,
+   "R_replicated": 1.0,
+   "R_frontier": 1.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.07665,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 4.0,
+   "cost_usd": 0.986,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 5.0,
+   "model_calls": 37.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 3.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 1.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.643
+  },
+  {
+   "model": "claude-opus-5-5",
+   "task": "compbio-s1",
+   "domain": "compbio",
+   "mode": "team",
+   "seed": 1,
+   "valkyrie_run_id": "818fe65c-9277-4836-927c-c1d2d817d09b",
+   "valkyrie_task_id": "002f15e7-ab86-413b-a771-4e2aadd16b72",
+   "source": "reverify",
+   "valkyrie_R_replicated": 43.0,
+   "R_replicated": 43.0,
+   "R_frontier": 25.0,
+   "C_collaborative": 5.0,
+   "mean_best_gain": 0.3304571428571429,
+   "datasets_advanced": 7.0,
+   "submitted_credited": 58.0,
+   "cost_usd": 8.665,
+   "agents_total": 6.0,
+   "messages": 30.0,
+   "experiments": 103.0,
+   "model_calls": 269.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 4.0,
+   "duplicates": 11.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 1.0,
+   "replications_of_failed_work": 1.0,
+   "session_used": 0.831
+  },
+  {
+   "model": "claude-opus-5-5",
+   "task": "compbio-solo-s1",
+   "domain": "compbio",
+   "mode": "solo",
+   "seed": 1,
+   "valkyrie_run_id": "818fe65c-9277-4836-927c-c1d2d817d09b",
+   "valkyrie_task_id": "9a4a209c-bcdc-42b6-9e2c-9313052b323a",
+   "source": "reverify",
+   "valkyrie_R_replicated": 4.0,
+   "R_replicated": 4.0,
+   "R_frontier": 4.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.10547142857142856,
+   "datasets_advanced": 4.0,
+   "submitted_credited": 13.0,
+   "cost_usd": 0.5747,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 4.0,
+   "model_calls": 22.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 9.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.152
+  },
+  {
+   "model": "claude-opus-5-5",
+   "task": "materials-s1",
+   "domain": "materials",
+   "mode": "team",
+   "seed": 1,
+   "valkyrie_run_id": "818fe65c-9277-4836-927c-c1d2d817d09b",
+   "valkyrie_task_id": "f21af6e1-2f4c-42e8-ac8f-248d76b185cf",
+   "source": "reverify",
+   "valkyrie_R_replicated": 12.0,
+   "R_replicated": 12.0,
+   "R_frontier": 6.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.2225,
+   "datasets_advanced": 4.0,
+   "submitted_credited": 22.0,
+   "cost_usd": 8.8279,
+   "agents_total": 7.0,
+   "messages": 45.0,
+   "experiments": 39.0,
+   "model_calls": 292.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 3.0,
+   "duplicates": 7.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 2.0,
+   "built_on_failed_work": 3.0,
+   "replications_of_failed_work": 1.0,
+   "session_used": 0.774
+  },
+  {
+   "model": "claude-opus-5-5",
+   "task": "materials-solo-s1",
+   "domain": "materials",
+   "mode": "solo",
+   "seed": 1,
+   "valkyrie_run_id": "818fe65c-9277-4836-927c-c1d2d817d09b",
+   "valkyrie_task_id": "3b48a4b8-05c3-4db3-b7ba-3c29dd0c9962",
+   "source": "reverify",
+   "valkyrie_R_replicated": 3.0,
+   "R_replicated": 3.0,
+   "R_frontier": 3.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.1356,
+   "datasets_advanced": 3.0,
+   "submitted_credited": 7.0,
+   "cost_usd": 1.0057,
+   "agents_total": 1.0,
+   "messages": 1.0,
+   "experiments": 15.0,
+   "model_calls": 30.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 4.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 1.0,
+   "replications_of_failed_work": 1.0,
+   "session_used": 0.659
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "aiml-s1",
+   "domain": "aiml",
+   "mode": "team",
+   "seed": 1,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "894e2f65-be72-43d5-9c47-4cacf350b2a3",
+   "source": "reverify",
+   "valkyrie_R_replicated": 3.0,
+   "R_replicated": 3.0,
+   "R_frontier": 2.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.062349999999999996,
+   "datasets_advanced": 2.0,
+   "submitted_credited": 17.0,
+   "cost_usd": 0.7054,
+   "agents_total": 4.0,
+   "messages": 40.0,
+   "experiments": 57.0,
+   "model_calls": 195.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 1.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 13.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 1.0,
+   "built_on_failed_work": 9.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "aiml-s2",
+   "domain": "aiml",
+   "mode": "team",
+   "seed": 2,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "d1dd125c-1c4c-4f53-bbe7-323459f0b516",
+   "source": "reverify",
+   "valkyrie_R_replicated": 1.0,
+   "R_replicated": 1.0,
+   "R_frontier": 1.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.03635,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 20.0,
+   "cost_usd": 0.5899,
+   "agents_total": 4.0,
+   "messages": 30.0,
+   "experiments": 58.0,
+   "model_calls": 190.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 18.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 12.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "aiml-s3",
+   "domain": "aiml",
+   "mode": "team",
+   "seed": 3,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "e8a4c3bb-c30a-4455-8b2d-6ed71ed35a9b",
+   "source": "reverify",
+   "valkyrie_R_replicated": 2.0,
+   "R_replicated": 2.0,
+   "R_frontier": 2.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.1563,
+   "datasets_advanced": 2.0,
+   "submitted_credited": 11.0,
+   "cost_usd": 0.3004,
+   "agents_total": 4.0,
+   "messages": 13.0,
+   "experiments": 33.0,
+   "model_calls": 122.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 6.0,
+   "duplicates": 2.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 1.0,
+   "built_on_failed_work": 1.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "aiml-solo-s1",
+   "domain": "aiml",
+   "mode": "solo",
+   "seed": 1,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "68201423-97af-494f-8f3a-1ea713270b4f",
+   "source": "reverify",
+   "valkyrie_R_replicated": 1.0,
+   "R_replicated": 1.0,
+   "R_frontier": 1.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.04395,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 4.0,
+   "cost_usd": 0.1342,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 19.0,
+   "model_calls": 38.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 0.0,
+   "duplicates": 2.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.999
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "aiml-solo-s2",
+   "domain": "aiml",
+   "mode": "solo",
+   "seed": 2,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "a3dbe922-5931-432d-a017-55ce8d377d12",
+   "source": "reverify",
+   "valkyrie_R_replicated": 3.0,
+   "R_replicated": 3.0,
+   "R_frontier": 2.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.05225,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 6.0,
+   "cost_usd": 0.1447,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 26.0,
+   "model_calls": 41.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 3.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "aiml-solo-s3",
+   "domain": "aiml",
+   "mode": "solo",
+   "seed": 3,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "2ddad772-42b0-434d-bbfa-45b1d058ebee",
+   "source": "reverify",
+   "valkyrie_R_replicated": 2.0,
+   "R_replicated": 2.0,
+   "R_frontier": 1.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.0576,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 7.0,
+   "cost_usd": 0.1827,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 26.0,
+   "model_calls": 45.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 3.0,
+   "duplicates": 1.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 2.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.969
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "compbio-s1",
+   "domain": "compbio",
+   "mode": "team",
+   "seed": 1,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "42172be9-e414-44c7-a44e-385f74d77e5e",
+   "source": "reverify",
+   "valkyrie_R_replicated": 13.0,
+   "R_replicated": 13.0,
+   "R_frontier": 5.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.1367857142857143,
+   "datasets_advanced": 5.0,
+   "submitted_credited": 174.0,
+   "cost_usd": 9.2971,
+   "agents_total": 8.0,
+   "messages": 42.0,
+   "experiments": 437.0,
+   "model_calls": 1073.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 12.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 140.0,
+   "duplicates": 5.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 200.0,
+   "replications_of_failed_work": 5.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "compbio-s2",
+   "domain": "compbio",
+   "mode": "team",
+   "seed": 2,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "0c5fb50c-8437-4f9c-a29c-ecef0a7a05c3",
+   "source": "reverify",
+   "valkyrie_R_replicated": 21.0,
+   "R_replicated": 21.0,
+   "R_frontier": 9.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.06507142857142857,
+   "datasets_advanced": 5.0,
+   "submitted_credited": 140.0,
+   "cost_usd": 6.8841,
+   "agents_total": 5.0,
+   "messages": 19.0,
+   "experiments": 373.0,
+   "model_calls": 793.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 3.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 106.0,
+   "duplicates": 2.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 139.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "compbio-s3",
+   "domain": "compbio",
+   "mode": "team",
+   "seed": 3,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "605f7756-6208-4b2c-8ca3-42a32bc37589",
+   "source": "reverify",
+   "valkyrie_R_replicated": 21.0,
+   "R_replicated": 21.0,
+   "R_frontier": 8.0,
+   "C_collaborative": 1.0,
+   "mean_best_gain": 0.09101428571428571,
+   "datasets_advanced": 4.0,
+   "submitted_credited": 112.0,
+   "cost_usd": 6.5767,
+   "agents_total": 9.0,
+   "messages": 31.0,
+   "experiments": 366.0,
+   "model_calls": 778.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 1.0,
+   "not_reproducible": 12.0,
+   "not_replicated": 63.0,
+   "duplicates": 12.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 65.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "compbio-solo-s1",
+   "domain": "compbio",
+   "mode": "solo",
+   "seed": 1,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "05d8c0b4-14f1-4949-a607-d52b11d0da99",
+   "source": "reverify",
+   "valkyrie_R_replicated": 0.0,
+   "R_replicated": 0.0,
+   "R_frontier": 0.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.0,
+   "datasets_advanced": 0.0,
+   "submitted_credited": 34.0,
+   "cost_usd": 0.9232,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 72.0,
+   "model_calls": 100.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 34.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.99
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "compbio-solo-s2",
+   "domain": "compbio",
+   "mode": "solo",
+   "seed": 2,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "26971795-7aed-424a-a555-50f3ccfd8ea7",
+   "source": "reverify",
+   "valkyrie_R_replicated": 12.0,
+   "R_replicated": 12.0,
+   "R_frontier": 5.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.08497142857142857,
+   "datasets_advanced": 4.0,
+   "submitted_credited": 62.0,
+   "cost_usd": 1.9035,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 185.0,
+   "model_calls": 179.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 45.0,
+   "duplicates": 5.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 14.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "compbio-solo-s3",
+   "domain": "compbio",
+   "mode": "solo",
+   "seed": 3,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "88ca1c3c-4076-476e-820c-283352d80f3d",
+   "source": "reverify",
+   "valkyrie_R_replicated": 6.0,
+   "R_replicated": 6.0,
+   "R_frontier": 3.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.06651428571428572,
+   "datasets_advanced": 3.0,
+   "submitted_credited": 24.0,
+   "cost_usd": 0.7407,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 84.0,
+   "model_calls": 97.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 18.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.995
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "materials-s2",
+   "domain": "materials",
+   "mode": "team",
+   "seed": 2,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "171a8eb1-d59e-49cf-bd75-7e1e61afb9e6",
+   "source": "reverify",
+   "valkyrie_R_replicated": 2.0,
+   "R_replicated": 2.0,
+   "R_frontier": 2.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.064425,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 12.0,
+   "cost_usd": 1.2089,
+   "agents_total": 5.0,
+   "messages": 18.0,
+   "experiments": 99.0,
+   "model_calls": 238.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 9.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 8.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "materials-s3",
+   "domain": "materials",
+   "mode": "team",
+   "seed": 3,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "2a71526a-b05e-4828-b538-e1fad3e08b77",
+   "source": "reverify",
+   "valkyrie_R_replicated": 5.0,
+   "R_replicated": 5.0,
+   "R_frontier": 3.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.085775,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 17.0,
+   "cost_usd": 0.7226,
+   "agents_total": 5.0,
+   "messages": 11.0,
+   "experiments": 89.0,
+   "model_calls": 200.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 1.0,
+   "not_replicated": 10.0,
+   "duplicates": 1.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 5.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "materials-solo-s1",
+   "domain": "materials",
+   "mode": "solo",
+   "seed": 1,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "2125cf7c-566d-4134-8e23-819b1a6aa172",
+   "source": "reverify",
+   "valkyrie_R_replicated": 4.0,
+   "R_replicated": 4.0,
+   "R_frontier": 4.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.17812499999999998,
+   "datasets_advanced": 3.0,
+   "submitted_credited": 7.0,
+   "cost_usd": 0.2605,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 39.0,
+   "model_calls": 53.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 1.0,
+   "duplicates": 2.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "materials-solo-s2",
+   "domain": "materials",
+   "mode": "solo",
+   "seed": 2,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "c7189147-9566-4cbb-9c68-06e378de893a",
+   "source": "reverify",
+   "valkyrie_R_replicated": 3.0,
+   "R_replicated": 3.0,
+   "R_frontier": 2.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.14277499999999999,
+   "datasets_advanced": 2.0,
+   "submitted_credited": 7.0,
+   "cost_usd": 0.0961,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 21.0,
+   "model_calls": 38.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 4.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 1.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.998
+  },
+  {
+   "model": "gpt-6-luna",
+   "task": "materials-solo-s3",
+   "domain": "materials",
+   "mode": "solo",
+   "seed": 3,
+   "valkyrie_run_id": "38df2b16-a025-4888-b38b-064c7edcf433",
+   "valkyrie_task_id": "8a4bbd42-17ec-4f42-865d-a825484e2eb5",
+   "source": "reverify",
+   "valkyrie_R_replicated": 1.0,
+   "R_replicated": 1.0,
+   "R_frontier": 1.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.02775,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 6.0,
+   "cost_usd": 0.0907,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 25.0,
+   "model_calls": 40.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 5.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 1.0
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "aiml-s1",
+   "domain": "aiml",
+   "mode": "team",
+   "seed": 1,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "99073404-3df0-4839-9092-64c9d2ed65d2",
+   "source": "reverify",
+   "valkyrie_R_replicated": 3.0,
+   "R_replicated": 3.0,
+   "R_frontier": 2.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.13795,
+   "datasets_advanced": 2.0,
+   "submitted_credited": 6.0,
+   "cost_usd": 0.0634,
+   "agents_total": 2.0,
+   "messages": 8.0,
+   "experiments": 20.0,
+   "model_calls": 52.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 3.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 2.0,
+   "replications_of_failed_work": 1.0,
+   "session_used": 0.697
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "aiml-s2",
+   "domain": "aiml",
+   "mode": "team",
+   "seed": 2,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "b0d6866e-87d2-4839-9129-fe602c022645",
+   "source": "reverify",
+   "valkyrie_R_replicated": 2.0,
+   "R_replicated": 2.0,
+   "R_frontier": 2.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.13795,
+   "datasets_advanced": 2.0,
+   "submitted_credited": 4.0,
+   "cost_usd": 0.0394,
+   "agents_total": 2.0,
+   "messages": 5.0,
+   "experiments": 9.0,
+   "model_calls": 37.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 0.0,
+   "duplicates": 2.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.582
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "aiml-s3",
+   "domain": "aiml",
+   "mode": "team",
+   "seed": 3,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "191b55c0-10ef-4759-bf3c-2b6f8f804710",
+   "source": "reverify",
+   "valkyrie_R_replicated": 1.0,
+   "R_replicated": 1.0,
+   "R_frontier": 1.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.03635,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 3.0,
+   "cost_usd": 0.0792,
+   "agents_total": 3.0,
+   "messages": 20.0,
+   "experiments": 15.0,
+   "model_calls": 68.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 2.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.663
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "aiml-solo-s1",
+   "domain": "aiml",
+   "mode": "solo",
+   "seed": 1,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "bad3b1c2-30ca-47d6-99ac-bfaa011ce6e0",
+   "source": "reverify",
+   "valkyrie_R_replicated": 2.0,
+   "R_replicated": 2.0,
+   "R_frontier": 2.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.11165,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 4.0,
+   "cost_usd": 0.0282,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 10.0,
+   "model_calls": 25.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 1.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.419
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "aiml-solo-s2",
+   "domain": "aiml",
+   "mode": "solo",
+   "seed": 2,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "19c39b17-8e6b-4efc-b89a-43ffc301a19c",
+   "source": "reverify",
+   "valkyrie_R_replicated": 2.0,
+   "R_replicated": 2.0,
+   "R_frontier": 2.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.08415,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 2.0,
+   "cost_usd": 0.0211,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 7.0,
+   "model_calls": 17.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 0.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.313
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "aiml-solo-s3",
+   "domain": "aiml",
+   "mode": "solo",
+   "seed": 3,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "0b871320-9a57-4ad7-b6c7-9f24143e322d",
+   "source": "reverify",
+   "valkyrie_R_replicated": 2.0,
+   "R_replicated": 2.0,
+   "R_frontier": 2.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.1338,
+   "datasets_advanced": 2.0,
+   "submitted_credited": 3.0,
+   "cost_usd": 0.0346,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 18.0,
+   "model_calls": 28.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 1.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.451
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "compbio-s1",
+   "domain": "compbio",
+   "mode": "team",
+   "seed": 1,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "7b607ac8-6726-40c9-bbec-f6031d2d6b13",
+   "source": "reverify",
+   "valkyrie_R_replicated": 6.0,
+   "R_replicated": 6.0,
+   "R_frontier": 6.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.21882857142857143,
+   "datasets_advanced": 6.0,
+   "submitted_credited": 9.0,
+   "cost_usd": 0.0542,
+   "agents_total": 3.0,
+   "messages": 10.0,
+   "experiments": 10.0,
+   "model_calls": 53.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 0.0,
+   "duplicates": 1.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.233
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "compbio-s2",
+   "domain": "compbio",
+   "mode": "team",
+   "seed": 2,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "6a585d55-88c9-435f-9221-eb08cdce710c",
+   "source": "reverify",
+   "valkyrie_R_replicated": 6.0,
+   "R_replicated": 6.0,
+   "R_frontier": 3.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.08328571428571428,
+   "datasets_advanced": 3.0,
+   "submitted_credited": 16.0,
+   "cost_usd": 0.1243,
+   "agents_total": 3.0,
+   "messages": 18.0,
+   "experiments": 16.0,
+   "model_calls": 69.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 8.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.234
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "compbio-s3",
+   "domain": "compbio",
+   "mode": "team",
+   "seed": 3,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "f6d2df37-a198-4350-9a52-02b27d9a9db1",
+   "source": "reverify",
+   "valkyrie_R_replicated": 18.0,
+   "R_replicated": 18.0,
+   "R_frontier": 13.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.30608571428571424,
+   "datasets_advanced": 7.0,
+   "submitted_credited": 57.0,
+   "cost_usd": 0.1767,
+   "agents_total": 3.0,
+   "messages": 28.0,
+   "experiments": 96.0,
+   "model_calls": 103.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 5.0,
+   "duplicates": 22.0,
+   "auditor_pending": 4.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.404
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "compbio-solo-s1",
+   "domain": "compbio",
+   "mode": "solo",
+   "seed": 1,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "ca04dbbf-690e-4dfe-a4db-e79fa9dd6414",
+   "source": "reverify",
+   "valkyrie_R_replicated": 7.0,
+   "R_replicated": 7.0,
+   "R_frontier": 7.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.2658285714285714,
+   "datasets_advanced": 7.0,
+   "submitted_credited": 7.0,
+   "cost_usd": 0.0231,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 9.0,
+   "model_calls": 20.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 0.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.081
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "compbio-solo-s2",
+   "domain": "compbio",
+   "mode": "solo",
+   "seed": 2,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "b48e9727-8a52-45ee-8f7a-afca8f4baee8",
+   "source": "reverify",
+   "valkyrie_R_replicated": 3.0,
+   "R_replicated": 3.0,
+   "R_frontier": 3.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.04592857142857143,
+   "datasets_advanced": 3.0,
+   "submitted_credited": 4.0,
+   "cost_usd": 0.0195,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 7.0,
+   "model_calls": 10.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 1.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.118
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "compbio-solo-s3",
+   "domain": "compbio",
+   "mode": "solo",
+   "seed": 3,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "4eb948d4-39ae-4b9d-961d-c96e335b155c",
+   "source": "reverify",
+   "valkyrie_R_replicated": 14.0,
+   "R_replicated": 14.0,
+   "R_frontier": 12.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.2636142857142857,
+   "datasets_advanced": 7.0,
+   "submitted_credited": 14.0,
+   "cost_usd": 0.0217,
+   "agents_total": 1.0,
+   "messages": 1.0,
+   "experiments": 6.0,
+   "model_calls": 15.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 0.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.079
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "materials-s1",
+   "domain": "materials",
+   "mode": "team",
+   "seed": 1,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "bd20c0b2-2983-4b57-a449-ce0a629f944f",
+   "source": "reverify",
+   "valkyrie_R_replicated": 3.0,
+   "R_replicated": 3.0,
+   "R_frontier": 3.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.10525,
+   "datasets_advanced": 3.0,
+   "submitted_credited": 11.0,
+   "cost_usd": 0.1166,
+   "agents_total": 4.0,
+   "messages": 18.0,
+   "experiments": 51.0,
+   "model_calls": 109.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 2.0,
+   "duplicates": 2.0,
+   "auditor_pending": 4.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 1.0,
+   "replications_of_failed_work": 1.0,
+   "session_used": 0.588
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "materials-s2",
+   "domain": "materials",
+   "mode": "team",
+   "seed": 2,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "88a4700a-7a1e-4da0-8f31-38272d60753a",
+   "source": "reverify",
+   "valkyrie_R_replicated": 4.0,
+   "R_replicated": 4.0,
+   "R_frontier": 3.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.13140000000000002,
+   "datasets_advanced": 2.0,
+   "submitted_credited": 14.0,
+   "cost_usd": 0.1581,
+   "agents_total": 5.0,
+   "messages": 19.0,
+   "experiments": 58.0,
+   "model_calls": 134.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 6.0,
+   "duplicates": 2.0,
+   "auditor_pending": 2.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 2.0,
+   "replications_of_failed_work": 2.0,
+   "session_used": 0.528
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "materials-s3",
+   "domain": "materials",
+   "mode": "team",
+   "seed": 3,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "97378e7b-c379-43b3-8106-6c9ef9837957",
+   "source": "reverify",
+   "valkyrie_R_replicated": 3.0,
+   "R_replicated": 3.0,
+   "R_frontier": 1.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.020575,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 17.0,
+   "cost_usd": 0.1116,
+   "agents_total": 3.0,
+   "messages": 21.0,
+   "experiments": 32.0,
+   "model_calls": 91.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 12.0,
+   "duplicates": 2.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 2.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.659
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "materials-solo-s1",
+   "domain": "materials",
+   "mode": "solo",
+   "seed": 1,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "85a9a436-cb38-425e-ba39-f26099c9d471",
+   "source": "reverify",
+   "valkyrie_R_replicated": 3.0,
+   "R_replicated": 3.0,
+   "R_frontier": 3.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.12132499999999999,
+   "datasets_advanced": 3.0,
+   "submitted_credited": 3.0,
+   "cost_usd": 0.0246,
+   "agents_total": 1.0,
+   "messages": 1.0,
+   "experiments": 11.0,
+   "model_calls": 28.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 0.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.433
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "materials-solo-s2",
+   "domain": "materials",
+   "mode": "solo",
+   "seed": 2,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "ce6ff961-7fc1-4008-b66a-a93653c3ae73",
+   "source": "reverify",
+   "valkyrie_R_replicated": 3.0,
+   "R_replicated": 3.0,
+   "R_frontier": 2.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.0892,
+   "datasets_advanced": 2.0,
+   "submitted_credited": 10.0,
+   "cost_usd": 0.0324,
+   "agents_total": 1.0,
+   "messages": 1.0,
+   "experiments": 20.0,
+   "model_calls": 27.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 2.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 4.0,
+   "duplicates": 1.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.254
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "task": "materials-solo-s3",
+   "domain": "materials",
+   "mode": "solo",
+   "seed": 3,
+   "valkyrie_run_id": "5159f884-e733-4e1a-a96d-73071e6eba10",
+   "valkyrie_task_id": "2144da6e-cfb9-44b7-b8ff-0e0316a4e8b3",
+   "source": "reverify",
+   "valkyrie_R_replicated": 1.0,
+   "R_replicated": 1.0,
+   "R_frontier": 1.0,
+   "C_collaborative": 0.0,
+   "mean_best_gain": 0.0217,
+   "datasets_advanced": 1.0,
+   "submitted_credited": 6.0,
+   "cost_usd": 0.0238,
+   "agents_total": 1.0,
+   "messages": 0.0,
+   "experiments": 17.0,
+   "model_calls": 18.0,
+   "fabrication": 0.0,
+   "miscited_evidence": 0.0,
+   "not_reproducible": 0.0,
+   "not_replicated": 5.0,
+   "duplicates": 0.0,
+   "auditor_pending": 0.0,
+   "accepted_consumed_by_others": 0.0,
+   "built_on_failed_work": 0.0,
+   "replications_of_failed_work": 0.0,
+   "session_used": 0.463
+  }
+ ]
+}

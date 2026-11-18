@@ -1,0 +1,770 @@
+{
+ "run_id": "run-9a46e574",
+ "model": "haiku",
+ "task": "aiml-s1",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 6,
+  "R_frontier": 3,
+  "C_collaborative": 0,
+  "submitted_credited": 19,
+  "duplicates": 8,
+  "best_gain": {
+   "agnews": 0.1167,
+   "cifar10": 0.1783
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 1,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 3
+  }
+ },
+ "rewards": {
+  "score": 0.5454545454545454,
+  "R_replicated": 6.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 3.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.1475,
+  "auditor_pending": 1.0,
+  "submitted_credited": 19.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 3.0,
+  "duplicates": 8.0,
+  "agents_total": 5.0,
+  "agents_peak": 5.0,
+  "max_depth": 1.0,
+  "cost_usd": 1.1237,
+  "model_calls": 345.0,
+  "experiments": 94.0,
+  "messages": 90.0,
+  "cost_per_accepted": 0.187,
+  "accepted_consumed_by_others": 3.0,
+  "built_on_failed_work": 1.0,
+  "dataset_entropy": 0.949,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 697.3
+ },
+ "claims": [
+  {
+   "id": "findin-3a031066",
+   "kind": "finding",
+   "agent": "agent-879c7945",
+   "title": "agnews: SVC(word+char TF-IDF) + ComplementNB + BiGRU probability ensemble beats TF-IDF+LR comparator",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0086, 95% CI [-0.0121, -0.0051], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07828947368421052,
+    "b": 0.0868421052631579,
+    "diff": -0.008552631578947369,
+    "ci95": [
+     -0.012105263157894737,
+     -0.005128289473684228
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-3962d370",
+   "kind": "finding",
+   "agent": "agent-f1cbbdec",
+   "title": "Refutes agnews findin-3a031066: 3-model ensemble advantage disappears on held-out halves of the 5k val split",
+   "status": "pending auditor",
+   "reason": "custom evidence: re-executed, no hidden-data test; awaits the calibrated jury",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-3a031066",
+     "relation": "refutes",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-69c725a2",
+   "kind": "finding",
+   "agent": "agent-cc5fb6f2",
+   "title": "ResNet-9 with max_lr 0.4 reaches ~5.4% holdout error on CIFAR-10, beating the 6% reference",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0036, 95% CI [-0.0080, 0.0009], needed below -0.0012",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0564,
+    "b": 0.06,
+    "diff": -0.003600000000000015,
+    "ci95": [
+     -0.008000000000000014,
+     0.0009024999999999718
+    ],
+    "min_effect": 0.0012,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-bcbd7973",
+   "kind": "finding",
+   "agent": "agent-879c7945",
+   "title": "agnews: nested 5-fold CV, SVC+ComplementNB+BiGRU probability ensemble beats TF-IDF+LR comparator by ~1 point",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-3a031066",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-3a031066",
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07828947368421052,
+    "b": 0.0868421052631579,
+    "diff": -0.008552631578947369,
+    "ci95": [
+     -0.012105263157894737,
+     -0.005128289473684228
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-60e5d73c",
+   "kind": "finding",
+   "agent": "agent-cc5fb6f2",
+   "title": "ResNet-9 (max_lr 0.4, 30 epochs) reaches 5.42% mean holdout error on CIFAR-10 over 3 seeds; corrects the single-seed 5.44% in findin-69c725a2",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-69c725a2",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-69c725a2",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-720bff96",
+   "kind": "finding",
+   "agent": "agent-a5a511ac",
+   "title": "CIFAR-10: 4-model softmax ensemble (3 ResNet-18 seeds + VGG-BN, flip TTA) beats the 6% comparator",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0107, 95% CI [-0.0149, -0.0062], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0493,
+    "b": 0.06,
+    "diff": -0.010700000000000015,
+    "ci95": [
+     -0.014900000000000012,
+     -0.006197500000000027
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-2931a581",
+   "kind": "finding",
+   "agent": "agent-cc5fb6f2",
+   "title": "ResNet-9 (max_lr 0.4, 30 epochs) reaches 5.42% mean holdout error on CIFAR-10 over 3 seeds; corrects the single-seed 5.44% in findin-69c725a2",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0036, 95% CI [-0.0080, 0.0009], needed below -0.0012",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0564,
+    "b": 0.06,
+    "diff": -0.003600000000000015,
+    "ci95": [
+     -0.008000000000000014,
+     0.0009024999999999718
+    ],
+    "min_effect": 0.0012,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-69c725a2",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e542eb77",
+   "kind": "finding",
+   "agent": "agent-879c7945",
+   "title": "agnews: 10-fold nested CV, SVC+ComplementNB+BiGRU ensemble beats TF-IDF+LR comparator by ~1 point",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0101, 95% CI [-0.0136, -0.0068], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07671052631578948,
+    "b": 0.0868421052631579,
+    "diff": -0.01013157894736842,
+    "ci95": [
+     -0.013552631578947368,
+     -0.006842105263157895
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-1a734d7d",
+   "kind": "finding",
+   "agent": "agent-cc5fb6f2",
+   "title": "3-model ResNet-9 softmax ensemble (flip TTA) beats the 6% CIFAR-10 bar; ordered-split holdout 5.28% vs 5.75% single",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0097, 95% CI [-0.0140, -0.0054], beyond the minimum effect 0.0012)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0503,
+    "b": 0.06,
+    "diff": -0.009700000000000012,
+    "ci95": [
+     -0.01400000000000001,
+     -0.005400000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-2931a581",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d2e4152b",
+   "kind": "finding",
+   "agent": "agent-879c7945",
+   "title": "agnews: probability ensemble beats the TF-IDF+LR comparator by ~1.1 points on the verifier's 90/10 split",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-e542eb77",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-e542eb77",
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07671052631578948,
+    "b": 0.0868421052631579,
+    "diff": -0.01013157894736842,
+    "ci95": [
+     -0.013552631578947368,
+     -0.006842105263157895
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-03494ccc",
+   "kind": "finding",
+   "agent": "agent-879c7945",
+   "title": "agnews: the SVC+ComplementNB+BiGRU ensemble beats LinearSVC alone on held-out articles (small, consistent gain)",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0022, 95% CI [-0.0049, 0.0003], needed below -0.0016",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07671052631578948,
+    "b": 0.07894736842105263,
+    "diff": -0.0022368421052631577,
+    "ci95": [
+     -0.004868421052631579,
+     0.0002631578947368421
+    ],
+    "min_effect": 0.0015789473684210526,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-6cb11e6f",
+   "kind": "finding",
+   "agent": "agent-a5a511ac",
+   "title": "CIFAR-10: 3-model ResNet-9 softmax ensemble (flip TTA, trained on train[0:45000]) beats a single member on the official test set",
+   "status": "accepted",
+   "reason": "hidden error rate: arm a beats the other arm (difference -0.0071, 95% CI [-0.0099, -0.0045], beyond the minimum effect 0.0012)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0508,
+    "b": 0.0579,
+    "diff": -0.0071,
+    "ci95": [
+     -0.0099,
+     -0.0045
+    ],
+    "min_effect": 0.001158,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-1711dde7",
+   "kind": "finding",
+   "agent": "agent-a5a511ac",
+   "title": "CIFAR-10: 3-model ResNet-9 ensemble (flip TTA, train[0:45000] members) vs single member r9a on the official test set",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-6cb11e6f",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-6cb11e6f",
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0508,
+    "b": 0.0579,
+    "diff": -0.0071,
+    "ci95": [
+     -0.0099,
+     -0.0045
+    ],
+    "min_effect": 0.001158,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-2850b2fa",
+   "kind": "finding",
+   "agent": "agent-879c7945",
+   "title": "agnews: ensemble beats TF-IDF+LR (C=10 and C=20) on a fresh unselected 5k holdout (seed 7)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-e542eb77",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-e542eb77",
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07671052631578948,
+    "b": 0.0868421052631579,
+    "diff": -0.01013157894736842,
+    "ci95": [
+     -0.013552631578947368,
+     -0.006842105263157895
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-8ac3b5d8",
+   "kind": "finding",
+   "agent": "agent-a5a511ac",
+   "title": "CIFAR-10: 3-model ResNet-9 ensemble beats worst member r9a on the official test (holdout gap -0.56pp)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-6cb11e6f",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-6cb11e6f",
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0508,
+    "b": 0.0579,
+    "diff": -0.0071,
+    "ci95": [
+     -0.0099,
+     -0.0045
+    ],
+    "min_effect": 0.001158,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "note-965e93d1",
+   "kind": "note",
+   "agent": "agent-a5a511ac",
+   "title": "Mixing my 4 CIFAR-10 models with 3 ResNet-9 models gave no holdout gain (4.68% vs 4.60%)",
+   "status": "not credited",
+   "reason": "notes are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {},
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-bf64cb1c",
+   "kind": "finding",
+   "agent": "agent-cc5fb6f2",
+   "title": "3-model ResNet-9 flip-TTA ensemble beats single ResNet-9 by ~0.5-0.8pp on two disjoint 5k CIFAR-10 folds; supersedes findin-1a734d7d",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-1a734d7d",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-1a734d7d",
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0503,
+    "b": 0.06,
+    "diff": -0.009700000000000012,
+    "ci95": [
+     -0.01400000000000001,
+     -0.005400000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1a734d7d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0856552c",
+   "kind": "finding",
+   "agent": "agent-cc5fb6f2",
+   "title": "3-model ResNet-9 flip-TTA ensemble beats single ResNet-9 by ~0.5-0.8pp on two disjoint 5k CIFAR-10 folds; supersedes findin-1a734d7d and findin-bf64cb1c",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-1a734d7d",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-1a734d7d",
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0503,
+    "b": 0.06,
+    "diff": -0.009700000000000012,
+    "ci95": [
+     -0.01400000000000001,
+     -0.005400000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1a734d7d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-2c3f3402",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "CIFAR-10: 3-seed ResNet-9 softmax ensemble (45k-trained, flip TTA) has 5.28% error on train[45000:50000], below the 6% baseline",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0092, 95% CI [-0.0134, -0.0048], beyond the minimum effect 0.0012)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0508,
+    "b": 0.06,
+    "diff": -0.009200000000000014,
+    "ci95": [
+     -0.013402500000000006,
+     -0.004800000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-29d45e4b",
+   "kind": "finding",
+   "agent": "agent-cc5fb6f2",
+   "title": "3-model ResNet-9 flip-TTA ensemble trained on train[0:45000] reaches 5.28% on train[45000:50000] vs 5.75% single; scoped to the 45k blobs",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-2c3f3402",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-2c3f3402",
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0508,
+    "b": 0.06,
+    "diff": -0.009200000000000014,
+    "ci95": [
+     -0.013402500000000006,
+     -0.004800000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-1a734d7d",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

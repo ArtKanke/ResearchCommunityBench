@@ -1,0 +1,264 @@
+{
+ "run_id": "run-f60ff351",
+ "model": "6-luna",
+ "task": "materials-solo-s3",
+ "domain": "materials",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 1,
+  "R_frontier": 1,
+  "C_collaborative": 0,
+  "submitted_credited": 6,
+  "duplicates": 0,
+  "best_gain": {
+   "expt_gap": 0.111
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 5
+  }
+ },
+ "rewards": {
+  "score": 0.16666666666666666,
+  "R_replicated": 1.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 1.0,
+  "datasets_advanced": 1.0,
+  "mean_best_gain": 0.02775,
+  "auditor_pending": 0.0,
+  "submitted_credited": 6.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 5.0,
+  "duplicates": 0.0,
+  "agents_total": 1.0,
+  "agents_peak": 1.0,
+  "max_depth": 0.0,
+  "cost_usd": 0.0907,
+  "model_calls": 40.0,
+  "experiments": 25.0,
+  "messages": 0.0,
+  "cost_per_accepted": 0.091,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.959,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 819.6
+ },
+ "claims": [
+  {
+   "id": "findin-38d6f798",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Composition-statistic ensemble improves experimental band-gap prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0508, 95% CI [-0.0703, -0.0319], beyond the minimum effect 0.0091)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1159,
+    "a": 0.4067223555896704,
+    "b": 0.4574966957583235,
+    "diff": -0.050774340168653176,
+    "ci95": [
+     -0.07033751940122272,
+     -0.03185043659220028
+    ],
+    "min_effect": 0.009149933915166471,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-92377174",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Elemental statistics improve experimental metal classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0081, 95% CI [-0.0162, 0.0000], needed below -0.0017",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1234,
+    "a": 0.07779578606158834,
+    "b": 0.08589951377633712,
+    "diff": -0.008103727714748784,
+    "ci95": [
+     -0.01620745542949757,
+     0.0
+    ],
+    "min_effect": 0.0017179902755267424,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-51f8334d",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Elemental statistics improve metallic-glass formation classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0091, 95% CI [-0.0202, 0.0021], needed below -0.0024",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1435,
+    "a": 0.10940766550522649,
+    "b": 0.11846689895470383,
+    "diff": -0.009059233449477353,
+    "ci95": [
+     -0.020209059233449476,
+     0.0020905923344947735
+    ],
+    "min_effect": 0.0023693379790940767,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-f85cca11",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Composition-statistic ExtraTrees improves steel yield-strength prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -21.1418, 95% CI [-43.8962, -1.2334], needed below -2.0361",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 76,
+    "a": 80.66477631578901,
+    "b": 101.80660271729003,
+    "diff": -21.14182640150103,
+    "ci95": [
+     -43.89622848516332,
+     -1.2333824074560416
+    ],
+    "min_effect": 2.0361320543458006,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-cf8e6507",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Four-seed validation confirms improved experimental metal classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0081, 95% CI [-0.0162, 0.0000], needed below -0.0017",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1234,
+    "a": 0.07779578606158834,
+    "b": 0.08589951377633712,
+    "diff": -0.008103727714748784,
+    "ci95": [
+     -0.01620745542949757,
+     0.0
+    ],
+    "min_effect": 0.0017179902755267424,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-6a5488ef",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Four-seed validation confirms improved glass-forming classification",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0091, 95% CI [-0.0202, 0.0021], needed below -0.0024",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 1435,
+    "a": 0.10940766550522649,
+    "b": 0.11846689895470383,
+    "diff": -0.009059233449477353,
+    "ci95": [
+     -0.020209059233449476,
+     0.0020905923344947735
+    ],
+    "min_effect": 0.0023693379790940767,
+    "pass": false
+   },
+   "relations": []
+  }
+ ]
+}

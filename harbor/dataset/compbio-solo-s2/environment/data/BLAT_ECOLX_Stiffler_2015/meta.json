@@ -1,0 +1,10 @@
+{
+ "id": "BLAT_ECOLX_Stiffler_2015",
+ "task": "regression",
+ "units": "DMS score",
+ "metric": "MAE",
+ "n_public": 3738,
+ "n_hidden": 1258,
+ "protein": "BLAT_ECOLX",
+ "selection_type": "OrganismalFitness"
+}

@@ -1,0 +1,213 @@
+{
+ "run_id": "run-2a3f684f",
+ "model": "haiku",
+ "task": "aiml-s2",
+ "domain": "aiml",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 2,
+  "R_frontier": 2,
+  "C_collaborative": 0,
+  "submitted_credited": 4,
+  "duplicates": 2,
+  "best_gain": {
+   "agnews": 0.0909,
+   "cifar10": 0.185
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 0,
+   "failed_live_checks": 0,
+   "not_reproducible": 0,
+   "not_replicated_on_hidden": 0
+  }
+ },
+ "rewards": {
+  "score": 0.2857142857142857,
+  "R_replicated": 2.0,
+  "C_collaborative": 0.0,
+  "R_frontier": 2.0,
+  "datasets_advanced": 2.0,
+  "mean_best_gain": 0.13795,
+  "auditor_pending": 0.0,
+  "submitted_credited": 4.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 0.0,
+  "not_reproducible": 0.0,
+  "not_replicated": 0.0,
+  "duplicates": 2.0,
+  "agents_total": 2.0,
+  "agents_peak": 2.0,
+  "max_depth": 1.0,
+  "cost_usd": 0.0394,
+  "model_calls": 37.0,
+  "experiments": 9.0,
+  "messages": 5.0,
+  "cost_per_accepted": 0.02,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 0.0,
+  "dataset_entropy": 0.811,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 265.9
+ },
+ "claims": [
+  {
+   "id": "findin-b8e4a7b5",
+   "kind": "finding",
+   "agent": "agent-ac7b56fe",
+   "title": "LinearSVC (C=0.5) on word+char TF-IDF beats TF-IDF+LR baseline on AG News",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0079, 95% CI [-0.0116, -0.0042], beyond the minimum effect 0.0017)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07894736842105263,
+    "b": 0.0868421052631579,
+    "diff": -0.007894736842105263,
+    "ci95": [
+     -0.011578947368421053,
+     -0.004207236842105281
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-64e67ff7",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "ResNet-9-style CNN with GPU augmentation and flip TTA beats the 6% CIFAR-10 reference (proxy 5.28%)",
+   "status": "accepted",
+   "reason": "hidden error rate: model beats the environment baseline (difference -0.0111, 95% CI [-0.0154, -0.0067], beyond the minimum effect 0.0012)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "error rate",
+    "n": 10000,
+    "a": 0.0489,
+    "b": 0.06,
+    "diff": -0.011100000000000011,
+    "ci95": [
+     -0.01540250000000001,
+     -0.006700000000000014
+    ],
+    "min_effect": 0.0012,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-fa87302b",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Replication: LinearSVC on word+char TF-IDF beats TF-IDF+LR on AG News under 5-fold CV, with a smaller gap (0.76 pts)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-b8e4a7b5",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-b8e4a7b5",
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07894736842105263,
+    "b": 0.0868421052631579,
+    "diff": -0.007894736842105263,
+    "ci95": [
+     -0.011578947368421053,
+     -0.004207236842105281
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b8e4a7b5",
+     "relation": "replicates",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "replication not confirmed",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ffaf8517",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Extension: tuning the LR baseline's C does not close the LinearSVC gap on AG News (tuned LR 9.03%, SVC 8.27%)",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-b8e4a7b5",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-b8e4a7b5",
+   "hidden": {
+    "metric": "error rate",
+    "n": 7600,
+    "a": 0.07894736842105263,
+    "b": 0.0868421052631579,
+    "diff": -0.007894736842105263,
+    "ci95": [
+     -0.011578947368421053,
+     -0.004207236842105281
+    ],
+    "min_effect": 0.0017368421052631582,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b8e4a7b5",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}

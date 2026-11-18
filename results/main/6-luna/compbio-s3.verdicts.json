@@ -1,0 +1,4817 @@
+{
+ "run_id": "run-17dfe099",
+ "model": "6-luna",
+ "task": "compbio-s3",
+ "domain": "compbio",
+ "source": "re-verification on Modal in the task's own verifier image (scripts/reverify_modal.py)",
+ "summary": {
+  "R_replicated": 21,
+  "R_frontier": 8,
+  "C_collaborative": 1,
+  "submitted_credited": 112,
+  "duplicates": 12,
+  "best_gain": {
+   "CASP3_HUMAN_Roychowdhury_2020": 0.088,
+   "KCNE1_HUMAN_Muhammad_2023_expression": 0.3253,
+   "KCNE1_HUMAN_Muhammad_2023_function": 0.1738,
+   "BLAT_ECOLX_Stiffler_2015": -0.0,
+   "BLAT_ECOLX_Firnberg_2014": 0.05,
+   "RASK_HUMAN_Weng_2022_abundance": -0.0
+  },
+  "rejected": {
+   "fabrication": 0,
+   "miscited_evidence": 1,
+   "failed_live_checks": 2,
+   "not_reproducible": 12,
+   "not_replicated_on_hidden": 63
+  }
+ },
+ "rewards": {
+  "score": 0.8076923076923077,
+  "R_replicated": 21.0,
+  "C_collaborative": 1.0,
+  "R_frontier": 8.0,
+  "datasets_advanced": 4.0,
+  "mean_best_gain": 0.09101428571428571,
+  "auditor_pending": 0.0,
+  "submitted_credited": 112.0,
+  "fabrication": 0.0,
+  "miscited_evidence": 1.0,
+  "not_reproducible": 12.0,
+  "not_replicated": 63.0,
+  "duplicates": 12.0,
+  "agents_total": 9.0,
+  "agents_peak": 9.0,
+  "max_depth": 1.0,
+  "cost_usd": 6.5767,
+  "model_calls": 778.0,
+  "experiments": 366.0,
+  "messages": 31.0,
+  "cost_per_accepted": 0.313,
+  "accepted_consumed_by_others": 0.0,
+  "built_on_failed_work": 65.0,
+  "dataset_entropy": 0.979,
+  "replications_of_failed_work": 0.0,
+  "verification_seconds": 685.9
+ },
+ "claims": [
+  {
+   "id": "findin-e93a6bdd",
+   "kind": "finding",
+   "agent": "agent-b3cb6ee4",
+   "title": "Position-conditioned mutation encoding improves CASP3 variant prediction in cross-validation",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0286, 95% CI [-0.0464, -0.0105], beyond the minimum effect 0.0092)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.42898876550957393,
+    "b": 0.45756248593065013,
+    "diff": -0.028573720421076233,
+    "ci95": [
+     -0.046435726386477284,
+     -0.010486286763030732
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-560c8565",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Cross-assay calibration improves Firnberg BLAT fitness prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382442841103203,
+    "b": 0.22382417490302492,
+    "diff": 2.535080071179217e-07,
+    "ci95": [
+     7.042942615868028e-08,
+     4.36791814945799e-07
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-4acaf1dc",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Cross-assay calibration improves Stiffler BLAT fitness prediction",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b461079f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Paired-assay transfer improves TEM-1 BLAT variant-effect prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.1809, 95% CI [0.1656, 0.1959], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.4046862321619217,
+    "b": 0.22382417490302492,
+    "diff": 0.1808620572588968,
+    "ci95": [
+     0.1656100606147242,
+     0.1959377486073176
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a07b138b",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "Simple mutation features improve KCNE1 surface-expression prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0066, 95% CI [-0.0114, -0.0018], needed below -0.0044",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.21294662166921863,
+    "b": 0.219546819939823,
+    "diff": -0.006600198270604348,
+    "ci95": [
+     -0.01144641612199285,
+     -0.0017933245245182158
+    ],
+    "min_effect": 0.00439093639879646,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-bf6e13ee",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "Simple mutation features improve KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0108, 95% CI [-0.0181, -0.0035], needed below -0.0041",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.19188688748417804,
+    "b": 0.2026873113806104,
+    "diff": -0.010800423896432402,
+    "ci95": [
+     -0.018115504308556844,
+     -0.0035300993097084257
+    ],
+    "min_effect": 0.004053746227612208,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a52795ca",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "Position-specific mutation-property effects improve KCNE1 expression prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-09485335",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "Position-specific mutation-property effects improve KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-a85b60a1",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KRAS paired-assay transfer ridge outperforms isotonic calibration",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0136, 95% CI [0.0077, 0.0193], needed below -0.0031",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.15663775552725717,
+    "b": 0.17019337788752248,
+    "diff": 0.013555622360265288,
+    "ci95": [
+     0.007741382256682822,
+     0.019265716306021613
+    ],
+    "min_effect": 0.0031327551105451434,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-560c8565",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-6ed20461",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Paired KRAS assay scores improve held-out abundance prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-9a869c2c",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Paired KRAS abundance scores improve held-out DARPin K55 prediction",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-33af81e4",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical mutation features extend CASP3 position-conditioned prediction",
+   "status": "rejected",
+   "reason": "an evidence exec failed; mis-cited evidence: extension_nested_random_5fold_10seeds_mean_mae is recorded in exec-bcf9e53c, exec-59d12259, exec-d2489444 but that exec is not listed as evidence; peer_fixed_random_5fold_10seeds_mean_mae is recorded in exec-bcf9e53c, exec-59d12259, exec-1eab7bff but that exec is not listed as evidence; onehot_baseline_random_5fold_10seeds_mean_mae is recorded in exec-bcf9e53c, exec-59d12259, exec-1eab7bff but that exec is not listed as evidence; extension_position_group_5fold_mean_mae is recorded in exec-bcf9e53c, exec-59d12259, exec-1eab7bff but that exec is not listed as evidence; peer_position_group_5fold_mean_mae is recorded in exec-bcf9e53c, exec-59d12259, exec-1eab7bff but that exec is not listed as evidence",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": false,
+    "quantities_recorded": false,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-e93a6bdd",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5a58629c",
+   "kind": "finding",
+   "agent": "agent-b3cb6ee4",
+   "title": "Local position smoothing improves CASP3 activity prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0270, 95% CI [-0.0462, -0.0064], needed below -0.0092",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.43052586119203,
+    "b": 0.45756248593065013,
+    "diff": -0.027036624738620108,
+    "ci95": [
+     -0.046181302953964706,
+     -0.0063918486056808105
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-44fb881a",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical mutation features extend CASP3 position-conditioned prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0389, 95% CI [-0.0594, -0.0189], beyond the minimum effect 0.0092)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.418613661120026,
+    "b": 0.45756248593065013,
+    "diff": -0.03894882481062414,
+    "ci95": [
+     -0.05936265382085512,
+     -0.018912913747215297
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e93a6bdd",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4f4ec592",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "KCNE1 interaction features outperform transferred CASP3 encoding for expression",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0591, 95% CI [-0.0705, -0.0479], beyond the minimum effect 0.0043)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.15559386188324378,
+    "b": 0.21472183062300884,
+    "diff": -0.05912796873976505,
+    "ci95": [
+     -0.07046697168328961,
+     -0.047903675899287755
+    ],
+    "min_effect": 0.004294436612460177,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e93a6bdd",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-83f76e2b",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "KCNE1 interaction features outperform transferred CASP3 encoding for function",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0257, 95% CI [-0.0389, -0.0125], beyond the minimum effect 0.0039)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.1674575294560478,
+    "b": 0.19311867595385998,
+    "diff": -0.025661146497812117,
+    "ci95": [
+     -0.038865720902575944,
+     -0.01251294853851016
+    ],
+    "min_effect": 0.0038623735190771997,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-e93a6bdd",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-79e59f62",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Paired KCNE1 assay scores modestly improve random-variant prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0730, 95% CI [0.0594, 0.0862], needed below -0.0038",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.19188688748417804,
+    "b": 0.2648958168942935,
+    "diff": 0.07300892941011547,
+    "ci95": [
+     0.05935926222672506,
+     0.08619251199911122
+    ],
+    "min_effect": 0.003837737749683561,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-bf6e13ee",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c0b078ab",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "Position-specific interactions improve KCNE1 expression prediction over additive mutation features",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0617, 95% CI [0.0503, 0.0730], needed below -0.0030",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.21294662166921863,
+    "b": 0.1512771178100447,
+    "diff": 0.06166950385917398,
+    "ci95": [
+     0.050329069218636155,
+     0.07297135394223764
+    ],
+    "min_effect": 0.003025542356200894,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a07b138b",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-17982461",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "Position-specific interactions improve KCNE1 function prediction over additive mutation features",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0238, 95% CI [0.0108, 0.0370], needed below -0.0034",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.19188688748417804,
+    "b": 0.1680491063786246,
+    "diff": 0.023837781105553388,
+    "ci95": [
+     0.010770113801678907,
+     0.03696415709088536
+    ],
+    "min_effect": 0.0033609821275724923,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-09485335",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3488b24e",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Position-specific paired scores improve KRAS abundance transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a85b60a1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9b435b6f",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Position-specific paired scores improve KRAS K55 transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a85b60a1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-6e125bf5",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Physicochemical mutation deltas complement local smoothing for CASP3 random-variant prediction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0044, 95% CI [-0.0309, 0.0220], needed below -0.0086",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.4305259023770262,
+    "b": 0.42609962057782735,
+    "diff": -0.004426281799198837,
+    "ci95": [
+     -0.03089890811921944,
+     0.02199228872748386
+    ],
+    "min_effect": 0.008610518047540525,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-5a58629c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c5a8fce7",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "BLAT transfer gains depend on exact cross-assay variant availability",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.4801, 95% CI [-0.5142, -0.4455], beyond the minimum effect 0.0206)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.550239507159829,
+    "b": 1.030360756617949,
+    "diff": -0.48012124945811957,
+    "ci95": [
+     -0.514226947446923,
+     -0.4455263681185897
+    ],
+    "min_effect": 0.02060721513235898,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b461079f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-5345565a",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "KCNE1 expression paired-score equivalence test",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "prereg-016035af",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "KCNE1 function paired-score equivalence test",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-222e8b3e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-specific paired scores retain a modest KRAS K55 gain on unseen residues",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0118, 95% CI [0.0044, 0.0194], needed below -0.0034",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.17019337788752248,
+    "b": 0.18201758592713155,
+    "diff": 0.011824208039609083,
+    "ci95": [
+     0.004401079802499457,
+     0.01938925509593532
+    ],
+    "min_effect": 0.0034038675577504496,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-9b435b6f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7da47525",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "Nested-tuned physicochemical interactions predict KCNE1 surface expression",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0640, 95% CI [-0.0756, -0.0526], beyond the minimum effect 0.0044)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.15559386188324378,
+    "b": 0.219546819939823,
+    "diff": -0.06395295805657919,
+    "ci95": [
+     -0.07560492410222552,
+     -0.052587865977810504
+    ],
+    "min_effect": 0.00439093639879646,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-f74009c3",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "Nested-tuned physicochemical interactions predict KCNE1 channel function",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0352, 95% CI [-0.0502, -0.0209], beyond the minimum effect 0.0041)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.1674575294560478,
+    "b": 0.2026873113806104,
+    "diff": -0.035229781924562574,
+    "ci95": [
+     -0.05020214629625061,
+     -0.02094328104673131
+    ],
+    "min_effect": 0.004053746227612208,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-56538720",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Repeated assay withholding supports local KRAS abundance transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a85b60a1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-386e46ce",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Repeated assay withholding supports local KRAS K55 transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a85b60a1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-96fc3946",
+   "kind": "null_result",
+   "agent": "agent-35b68dd8",
+   "title": "Paired KCNE1 function score adds no material expression gain",
+   "status": "rejected",
+   "reason": "evidence exec exec-6c84d147 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-a52795ca",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-2f4eafbd",
+   "kind": "null_result",
+   "agent": "agent-35b68dd8",
+   "title": "Paired KCNE1 expression score adds no material function gain",
+   "status": "rejected",
+   "reason": "evidence exec exec-6c84d147 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-09485335",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8bd0d48a",
+   "kind": "finding",
+   "agent": "agent-174b846b",
+   "title": "Position smoothing is more robust than added CASP3 site-specific properties",
+   "status": "rejected",
+   "reason": "test refers to files never uploaded (use the code blob id from lab exec or lab put): 39e6b443ebab",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": false,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-44fb881a",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-5a58629c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-957178ee",
+   "kind": "finding",
+   "agent": "agent-174b846b",
+   "title": "Position smoothing is more robust than added CASP3 site-specific properties",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0270, 95% CI [-0.0462, -0.0064], needed below -0.0092",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.4305259003233268,
+    "b": 0.45756248593065013,
+    "diff": -0.027036585607323256,
+    "ci95": [
+     -0.04618128466959958,
+     -0.006391775772958257
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-44fb881a",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-5a58629c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e3af66b4",
+   "kind": "finding",
+   "agent": "agent-b3cb6ee4",
+   "title": "Physicochemical mutation features extend the CASP3 local smoother",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0403, 95% CI [-0.0614, -0.0199], beyond the minimum effect 0.0092)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.4172891051744134,
+    "b": 0.45756248593065013,
+    "diff": -0.0402733807562367,
+    "ci95": [
+     -0.06135213283341057,
+     -0.019867902300935512
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-44fb881a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-47266c3e",
+   "kind": "finding",
+   "agent": "agent-174b846b",
+   "title": "Position smoothing is more robust than added CASP3 site-specific properties",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0119, 95% CI [-0.0018, 0.0264], needed below -0.0084",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.4305259023770262,
+    "b": 0.418613661120026,
+    "diff": 0.01191224125700018,
+    "ci95": [
+     -0.0018130776882756858,
+     0.026381284615193495
+    ],
+    "min_effect": 0.008372273222400521,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-44fb881a",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-5a58629c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-155dbf7c",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Cross-assay sequence stacking improves random-holdout Firnberg prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: model beats the environment baseline (difference -0.0112, 95% CI [-0.0135, -0.0088], beyond the minimum effect 0.0045)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.2126338127555297,
+    "b": 0.22382417490302492,
+    "diff": -0.011190362147495213,
+    "ci95": [
+     -0.013490974327940901,
+     -0.00878973440783625
+    ],
+    "min_effect": 0.004476483498060498,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-17ce46f2",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Cross-assay sequence stacking improves random-holdout Stiffler prediction",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-e63a7b80",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "KCNE1 expression interaction model beats an equally tuned sequence baseline",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0642, 95% CI [-0.0761, -0.0525], beyond the minimum effect 0.0044)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.21983232353628318,
+    "b": 0.15559386188324378,
+    "diff": -0.06423846165303938,
+    "ci95": [
+     -0.07605397949103475,
+     -0.05248264040288789
+    ],
+    "min_effect": 0.004396646470725664,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-7da47525",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-c0b078ab",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1bdaac08",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "KCNE1 function interaction model beats an equally tuned sequence baseline",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0326, 95% CI [-0.0474, -0.0182], beyond the minimum effect 0.0040)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.20003468787612208,
+    "b": 0.1674575294560478,
+    "diff": -0.03257715842007424,
+    "ci95": [
+     -0.0474396555461271,
+     -0.018170190786897432
+    ],
+    "min_effect": 0.004000693757522442,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-f74009c3",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-17982461",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-34ceab86",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "Site-grouped BLAT audit: isotonic transfer beats paired ridge when exact source scores are available",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.1644, 95% CI [-0.1772, -0.1512], beyond the minimum effect 0.0078)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382455510676158,
+    "b": 0.38826023142348753,
+    "diff": -0.16443567631672598,
+    "ci95": [
+     -0.17715652163818948,
+     -0.1512229098650356
+    ],
+    "min_effect": 0.007765204628469751,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b461079f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5296d4dc",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Quadratic paired-score features further improve KRAS abundance transfer",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-56538720",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-730d5137",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "Corrected: site-grouped BLAT audit of paired-score transfer",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-34ceab86",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-34ceab86",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382455510676158,
+    "b": 0.38826023142348753,
+    "diff": -0.16443567631672598,
+    "ci95": [
+     -0.17715652163818948,
+     -0.1512229098650356
+    ],
+    "min_effect": 0.007765204628469751,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b461079f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-34ceab86",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-958df79e",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "Corrected: site-grouped BLAT transfer is conditional on exact source-variant coverage",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-4acaf1dc, findin-c5a8fce7",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c00e0b86",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "Corrected: site-grouped BLAT transfer is conditional on exact source-variant coverage",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-c5a8fce7",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-c5a8fce7",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.550239507159829,
+    "b": 1.030360756617949,
+    "diff": -0.48012124945811957,
+    "ci95": [
+     -0.514226947446923,
+     -0.4455263681185897
+    ],
+    "min_effect": 0.02060721513235898,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-39e9211a",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "KCNE1 expression paired-score tuned sensitivity",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "prereg-15f64b9d",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "KCNE1 function paired-score tuned sensitivity",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-6bf6625e",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "Corrected: site-grouped BLAT transfer is conditional on exact source-variant coverage",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-c5a8fce7",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-c5a8fce7",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.550239507159829,
+    "b": 1.030360756617949,
+    "diff": -0.48012124945811957,
+    "ci95": [
+     -0.514226947446923,
+     -0.4455263681185897
+    ],
+    "min_effect": 0.02060721513235898,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-03868706",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "KCNE1 expression interaction gains persist against an expanded, equally tuned sequence baseline",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0643, 95% CI [-0.0761, -0.0525], beyond the minimum effect 0.0044)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.21985819360707964,
+    "b": 0.15559386188324378,
+    "diff": -0.06426433172383585,
+    "ci95": [
+     -0.07607712850716997,
+     -0.05249531830666971
+    ],
+    "min_effect": 0.004397163872141593,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-b4074414",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "KCNE1 function interaction gains persist against an expanded, equally tuned sequence baseline",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0325, 95% CI [-0.0474, -0.0181], beyond the minimum effect 0.0040)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.19996965065888692,
+    "b": 0.1674575294560478,
+    "diff": -0.03251212120283905,
+    "ci95": [
+     -0.047392754670005796,
+     -0.01809209754811826
+    ],
+    "min_effect": 0.003999393013177739,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-96ef19c2",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Firnberg paired-assay transfer advantage persists across residue-group partitions",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.2088, 95% CI [-0.2269, -0.1904], beyond the minimum effect 0.0087)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382455510676158,
+    "b": 0.43262587424377225,
+    "diff": -0.20880131913701067,
+    "ci95": [
+     -0.2268637796381228,
+     -0.1904353933252669
+    ],
+    "min_effect": 0.008652517484875446,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-6ae1668d",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Stiffler paired-assay transfer advantage persists across residue-group partitions",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-d84dcd08",
+   "kind": "null_result",
+   "agent": "agent-35b68dd8",
+   "title": "Tuned paired function scores add no material expression gain",
+   "status": "rejected",
+   "reason": "evidence exec exec-47815578 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-a52795ca",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-3f835e8c",
+   "kind": "null_result",
+   "agent": "agent-35b68dd8",
+   "title": "Tuned paired expression scores add no material function gain",
+   "status": "rejected",
+   "reason": "evidence exec exec-47815578 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-09485335",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-ca597689",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "KCNE1 expression paired score beyond interaction model",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "prereg-37d9c307",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "KCNE1 function paired score beyond interaction model",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-103ee77c",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "BLAT transfer gains are concentrated in variants with exact paired-assay measurements",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-c5a8fce7",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-c5a8fce7",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.550239507159829,
+    "b": 1.030360756617949,
+    "diff": -0.48012124945811957,
+    "ci95": [
+     -0.514226947446923,
+     -0.4455263681185897
+    ],
+    "min_effect": 0.02060721513235898,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b461079f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-54633ade",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Nonlinear isotonic calibration outperforms linear transfer for Firnberg",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382455510676158,
+    "b": 0.22382455510676158,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.004476491102135232,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f4ebdfca",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Nonlinear isotonic calibration outperforms linear transfer for Stiffler",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-90d0768f",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "Firnberg BLAT transfer gains are limited to variants with exact Stiffler measurements",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-34ceab86",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-34ceab86",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382455510676158,
+    "b": 0.38826023142348753,
+    "diff": -0.16443567631672598,
+    "ci95": [
+     -0.17715652163818948,
+     -0.1512229098650356
+    ],
+    "min_effect": 0.007765204628469751,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b461079f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-d0200f03",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Fresh repeated splits replicate quadratic KRAS abundance transfer gain",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-5296d4dc",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1bf5d7f9",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "BLAT isotonic transfer retains an advantage with one-quarter source-score coverage",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0196",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.9776311309905982,
+    "b": 0.9776311309905982,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.019552622619811964,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-e1a631e0",
+   "kind": "null_result",
+   "agent": "agent-35b68dd8",
+   "title": "Paired function scores add no material gain beyond KCNE1 expression interactions",
+   "status": "rejected",
+   "reason": "evidence exec exec-0f5baa9f fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-c0b078ab",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-85475072",
+   "kind": "null_result",
+   "agent": "agent-35b68dd8",
+   "title": "Paired expression scores add no material gain beyond KCNE1 function interactions",
+   "status": "rejected",
+   "reason": "evidence exec exec-0f5baa9f fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-17982461",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dad0b997",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 function interaction features improve prediction across held-out mutation sites",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0239, 95% CI [-0.0370, -0.0108], beyond the minimum effect 0.0038)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.19188811521711302,
+    "b": 0.1680341854427731,
+    "diff": -0.023853929774339953,
+    "ci95": [
+     -0.036980805363569624,
+     -0.010780123875979215
+    ],
+    "min_effect": 0.0038377623043422604,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-17982461",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-67fd0d05",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "KCNE1 expression paired-score position-held-out sensitivity",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "prereg-90735767",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "KCNE1 function paired-score position-held-out sensitivity",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-dd3cb9f7",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "Residue-grouped validation exposes BLAT site leakage hidden by random-row splits",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-c5a8fce7",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-c5a8fce7",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.550239507159829,
+    "b": 1.030360756617949,
+    "diff": -0.48012124945811957,
+    "ci95": [
+     -0.514226947446923,
+     -0.4455263681185897
+    ],
+    "min_effect": 0.02060721513235898,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b461079f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-77fdc582",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic transfer remains better with 10% paired calibration data in Firnberg",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382455510676158,
+    "b": 0.22382455510676158,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.004476491102135232,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0f0e19e4",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic transfer remains better with 10% paired calibration data in Stiffler",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-f6fab12e",
+   "kind": "null_result",
+   "agent": "agent-35b68dd8",
+   "title": "Paired function scores do not materially improve position-held-out KCNE1 expression",
+   "status": "rejected",
+   "reason": "evidence exec exec-67c63bac fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-c0b078ab",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-2f95a55c",
+   "kind": "null_result",
+   "agent": "agent-35b68dd8",
+   "title": "Paired expression scores do not materially improve position-held-out KCNE1 function",
+   "status": "rejected",
+   "reason": "evidence exec exec-67c63bac fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-17982461",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cefcdc53",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Position-specific transfer improves KRAS abundance over isotonic calibration",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a85b60a1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-4d499014",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Position-specific transfer improves KRAS K55 over isotonic calibration",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a85b60a1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-23da9a0c",
+   "kind": "finding",
+   "agent": "agent-174b846b",
+   "title": "CASP3 smoothing advantage depends on the validation split",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0119, 95% CI [-0.0264, 0.0018], needed below -0.0086",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.418613661120026,
+    "b": 0.4305259023770262,
+    "diff": -0.01191224125700018,
+    "ci95": [
+     -0.026381284615193505,
+     0.0018130776882756801
+    ],
+    "min_effect": 0.008610518047540525,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-47266c3e",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-44fb881a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-5a58629c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b4ba5b9e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Sparse BLAT isotonic transfer generalizes in the reverse assay direction",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0075",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.37647236662811384,
+    "b": 0.37647236662811384,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.007529447332562277,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5fa19f58",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Quadratic paired-score transfer improves KRAS abundance over isotonic calibration",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a85b60a1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-aed50065",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Quadratic paired-score transfer improves KRAS K55 over isotonic calibration",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-a85b60a1",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b0d1a9d0",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Site-held-out evaluation reverses the KRAS abundance local-transfer advantage",
+   "status": "accepted",
+   "reason": "hidden MAE: arm a beats the other arm (difference -0.0593, 95% CI [-0.0687, -0.0495], beyond the minimum effect 0.0057)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 799,
+    "a": 0.2249924100308845,
+    "b": 0.28431403147147943,
+    "diff": -0.059321621440594954,
+    "ci95": [
+     -0.06865376409564393,
+     -0.04950237966042954
+    ],
+    "min_effect": 0.0056862806294295885,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-cefcdc53",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": true,
+     "reason": "challenge confirmed: the target fails verification, the challenger passes",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-56538720",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-dbe1ab51",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "BLAT transfer requires variant-specific pairing, not just source-score coverage",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0110",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.550239507159829,
+    "b": 0.550239507159829,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.011004790143196582,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b461079f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-3884d0b1",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "Fairly tuned KCNE1 expression paired-score comparison",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "prereg-804fc11c",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "Fairly tuned KCNE1 function paired-score comparison",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-1f951abd",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "Exact sequence and mutation keys agree across paired BLAT assays",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0110",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.550239507159829,
+    "b": 0.550239507159829,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.011004790143196582,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b461079f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e27c0c22",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "KRAS abundance quadratic transfer loses to isotonic calibration at unseen sites",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-5fa19f58",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7f99b733",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic BLAT transfer beats linear calibration with 0.5% paired training data in Firnberg",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-13e64138",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic BLAT transfer beats linear calibration with 0.5% paired training data in Stiffler",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1776ddfa",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Position-specific transfer advantage for KRAS K55 persists across unseen-site partitions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0254, 95% CI [0.0167, 0.0347], needed below -0.0031",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 798,
+    "a": 0.15663775552725717,
+    "b": 0.18201758592713155,
+    "diff": 0.025379830399874376,
+    "ci95": [
+     0.01669791809525852,
+     0.03470878433198776
+    ],
+    "min_effect": 0.0031327551105451434,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-4d499014",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-294aca9e",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Isotonic transfer consistently outperforms position-specific KRAS abundance transfer on unseen sites",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-b0d1a9d0",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-b0d1a9d0",
+   "hidden": {
+    "metric": "MAE",
+    "n": 799,
+    "a": 0.2249924100308845,
+    "b": 0.28431403147147943,
+    "diff": -0.059321621440594954,
+    "ci95": [
+     -0.06865376409564393,
+     -0.04950237966042954
+    ],
+    "min_effect": 0.0056862806294295885,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-cefcdc53",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-a85b60a1",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-bba6ab4d",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "Exact paired variants improve BLAT transfer beyond residue-level source-score structure",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0110",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.550239507159829,
+    "b": 0.550239507159829,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.011004790143196582,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b461079f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-923a27ba",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic transfer improves MAE at most evaluated Firnberg mutation sites",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7f395247",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic transfer improves MAE at most evaluated Stiffler mutation sites",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-7b8c7371",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "CASP3 position-smoothing advantage is robust across unseen-position partitions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0043, 95% CI [-0.0084, 0.0175], needed below -0.0085",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.43052586119203,
+    "b": 0.42627535620152907,
+    "diff": 0.0042505049905009334,
+    "ci95": [
+     -0.008436496687995348,
+     0.017538387274621103
+    ],
+    "min_effect": 0.00852550712403058,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-23da9a0c",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-47266c3e",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-be1c89f0",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Fresh site-held-out splits confirm isotonic calibration is stronger for KRAS abundance",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-5fa19f58",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-e27c0c22",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-0887b9d6",
+   "kind": "finding",
+   "agent": "agent-79c2db0f",
+   "title": "Coarse regional mutation-property interactions improve KCNE1 expression prediction",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0075, 95% CI [-0.0123, -0.0031], beyond the minimum effect 0.0031)",
+   "frontier": true,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.15559386188324378,
+    "b": 0.1481382081176532,
+    "diff": -0.0074556537655906105,
+    "ci95": [
+     -0.012296346428558405,
+     -0.0031223294342898073
+    ],
+    "min_effect": 0.003111877237664876,
+    "pass": true
+   },
+   "relations": []
+  },
+  {
+   "id": "findin-68ecc7e2",
+   "kind": "finding",
+   "agent": "agent-174b846b",
+   "title": "CASP3 physicochemical features reweight the model rather than add linear information",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0104, 95% CI [-0.0211, 0.0003], needed below -0.0086",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.418613661120026,
+    "b": 0.42903194659766325,
+    "diff": -0.010418285477637228,
+    "ci95": [
+     -0.021139386434440934,
+     0.0003180099551559586
+    ],
+    "min_effect": 0.008580638931953264,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-44fb881a",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-f82b4ea3",
+   "kind": "null_result",
+   "agent": "agent-35b68dd8",
+   "title": "Fair nested tuning confirms no material paired-score gain for KCNE1 expression",
+   "status": "rejected",
+   "reason": "evidence exec exec-11f22ff2 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-c0b078ab",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-5b6bf0ec",
+   "kind": "null_result",
+   "agent": "agent-35b68dd8",
+   "title": "Fair nested tuning confirms no material paired-score gain for KCNE1 function",
+   "status": "rejected",
+   "reason": "evidence exec exec-11f22ff2 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-17982461",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-c897e064",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "Fair nested tuning of paired-score KCNE1 expression prediction on held-out positions",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "prereg-e1ab438b",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "Fair nested tuning of paired-score KCNE1 function prediction on held-out positions",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-693755ed",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 function interaction gains persist across independently held-out site partitions",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-b4074414",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-b4074414",
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.19996965065888692,
+    "b": 0.1674575294560478,
+    "diff": -0.03251212120283905,
+    "ci95": [
+     -0.047392754670005796,
+     -0.01809209754811826
+    ],
+    "min_effect": 0.003999393013177739,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-b4074414",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-db70a492",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 expression interaction gains persist across independently held-out site partitions",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-03868706",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-03868706",
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.21985819360707964,
+    "b": 0.15559386188324378,
+    "diff": -0.06426433172383585,
+    "ci95": [
+     -0.07607712850716997,
+     -0.05249531830666971
+    ],
+    "min_effect": 0.004397163872141593,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-03868706",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-701963be",
+   "kind": "finding",
+   "agent": "agent-b3cb6ee4",
+   "title": "CASP3 physicochemical smoother beats baseline on 26% random holdouts",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-e3af66b4",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-e3af66b4",
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.4172891051744134,
+    "b": 0.45756248593065013,
+    "diff": -0.0402733807562367,
+    "ci95": [
+     -0.06135213283341057,
+     -0.019867902300935512
+    ],
+    "min_effect": 0.009151249718613003,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-44fb881a",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-e3af66b4",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-9b374758",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "KRAS paired-assay transfer gains depend on the validation split",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-5fa19f58",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-aed50065",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-32fcedb3",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "Residue-grouped BLAT validation favors isotonic transfer over nested-tuned auxiliary ridge",
+   "status": "rejected",
+   "reason": "relations claim use of files no evidence exec consumed: findin-bba6ab4d",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b461079f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-bba6ab4d",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-595f239f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "Exact-site physicochemical features modestly improve CASP3 smoothing on repeated unseen-position partitions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference -0.0132, 95% CI [-0.0237, -0.0030], needed below -0.0086",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 403,
+    "a": 0.43052586119203,
+    "b": 0.4172891051744134,
+    "diff": -0.013236756017616591,
+    "ci95": [
+     -0.023730798135120443,
+     -0.002968022474128291
+    ],
+    "min_effect": 0.0086105172238406,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-e3af66b4",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-7b8c7371",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-f571fe40",
+   "kind": "finding",
+   "agent": "agent-40004984",
+   "title": "Residue-grouped BLAT validation favors isotonic transfer over nested-tuned auxiliary ridge",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-c5a8fce7",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-c5a8fce7",
+   "hidden": {
+    "metric": "MAE",
+    "n": 1170,
+    "a": 0.550239507159829,
+    "b": 1.030360756617949,
+    "diff": -0.48012124945811957,
+    "ci95": [
+     -0.514226947446923,
+     -0.4455263681185897
+    ],
+    "min_effect": 0.02060721513235898,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-4acaf1dc",
+     "relation": "corrects",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-b461079f",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "prereg-780038f3",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "Evaluator test for fairly tuned KCNE1 expression models",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "prereg-050aa673",
+   "kind": "preregistration",
+   "agent": "agent-35b68dd8",
+   "title": "Evaluator test for fairly tuned KCNE1 function models",
+   "status": "not credited",
+   "reason": "preregistrations are never credited",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": []
+  },
+  {
+   "id": "findin-002e0171",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 function interaction gains persist across independently held-out site partitions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0210, 95% CI [-0.0038, 0.0460], needed below -0.0040",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.1999698163680431,
+    "b": 0.22099700294240338,
+    "diff": 0.021027186574360295,
+    "ci95": [
+     -0.0038405735702770074,
+     0.045984369800039525
+    ],
+    "min_effect": 0.003999396327360862,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-b4074414",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ed8d5f90",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 expression interaction gains persist across independently held-out site partitions",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0937, 95% CI [-0.1081, -0.0786], beyond the minimum effect 0.0051)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.25598638625132747,
+    "b": 0.16230779423489294,
+    "diff": -0.09367859201643446,
+    "ci95": [
+     -0.10814627934482056,
+     -0.07857632450284338
+    ],
+    "min_effect": 0.005119727725026549,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-03868706",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-1ded6832",
+   "kind": "finding",
+   "agent": "agent-db261c9b",
+   "title": "Fresh site holdouts confirm KRAS abundance transfer gains do not generalize to unseen positions",
+   "status": "rejected",
+   "reason": "test crashed on hidden inputs (exit 2)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-5fa19f58",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    },
+    {
+     "target": "findin-aed50065",
+     "relation": "corrects",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "challenge not confirmed by the evaluator",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-e15014f7",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic transfer remains better with 10% paired calibration data in Firnberg",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382455510676158,
+    "b": 0.22382455510676158,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.004476491102135232,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-502af03d",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic transfer remains better with 10% paired calibration data in Stiffler",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-b07861ef",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic BLAT transfer beats linear calibration with 0.5% paired training data in Firnberg",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382455510676158,
+    "b": 0.22382455510676158,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.004476491102135232,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-19139a6c",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic BLAT transfer beats linear calibration with 0.5% paired training data in Stiffler",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8d49a6ad",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic transfer improves MAE at most evaluated Firnberg mutation sites",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382455510676158,
+    "b": 0.22382455510676158,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.004476491102135232,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-3dc9ea83",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic transfer improves MAE at most evaluated Stiffler mutation sites",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-8b420c96",
+   "kind": "finding",
+   "agent": "agent-4b155b22",
+   "title": "Regional mutation-property interactions strengthen KCNE1 expression prediction on unseen sites",
+   "status": "duplicate",
+   "reason": "same hidden-data predictions as findin-0887b9d6",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": "findin-0887b9d6",
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.15559386188324378,
+    "b": 0.1481382081176532,
+    "diff": -0.0074556537655906105,
+    "ci95": [
+     -0.012296346428558405,
+     -0.0031223294342898073
+    ],
+    "min_effect": 0.003111877237664876,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-db70a492",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c57a8453",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 function interactions outperform an equally tuned additive property model",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0244, 95% CI [-0.0375, -0.0108], beyond the minimum effect 0.0038)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.19190521342311245,
+    "b": 0.1674575294560478,
+    "diff": -0.02444768396706464,
+    "ci95": [
+     -0.03751836953797841,
+     -0.01081872219533448
+    ],
+    "min_effect": 0.003838104268462249,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-002e0171",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extended work is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-cdfba89f",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 expression interactions outperform an equally tuned additive property model",
+   "status": "accepted",
+   "reason": "hidden MAE: arm b beats the other arm (difference -0.0572, 95% CI [-0.0688, -0.0459], beyond the minimum effect 0.0043)",
+   "frontier": false,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": true
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 565,
+    "a": 0.212767186190165,
+    "b": 0.15559386188324378,
+    "diff": -0.057173324306921194,
+    "ci95": [
+     -0.06880307627706572,
+     -0.04589068477817437
+    ],
+    "min_effect": 0.0042553437238033,
+    "pass": true
+   },
+   "relations": [
+    {
+     "target": "findin-ed8d5f90",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "no consumed table to intervene on (code reuse or non-tabular input): dependency not ablated",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-70a58dbd",
+   "kind": "finding",
+   "agent": "agent-174b846b",
+   "title": "CASP3 smoothing advantage persists across repeated held-out-position splits",
+   "status": "rejected",
+   "reason": "test did not write the profile's prediction files ('predictions_a.csv')",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-23da9a0c",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-3748e473",
+   "kind": "null_result",
+   "agent": "agent-35b68dd8",
+   "title": "Fair paired-score tuning does not improve position-held-out KCNE1 expression prediction",
+   "status": "rejected",
+   "reason": "evidence exec exec-b21f1819 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-c0b078ab",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "null-76ae2126",
+   "kind": "null_result",
+   "agent": "agent-35b68dd8",
+   "title": "Fair paired-score tuning does not improve position-held-out KCNE1 function prediction",
+   "status": "rejected",
+   "reason": "evidence exec exec-5ba2b5f5 fails on rerun (exit 1)",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "prespec_before_evidence": true,
+    "re_execution": false
+   },
+   "duplicate_of": null,
+   "hidden": null,
+   "relations": [
+    {
+     "target": "findin-17982461",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-5c9cf3a5",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic transfer remains better with 10% paired calibration data in Firnberg",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0000, 95% CI [0.0000, 0.0000], needed below -0.0045",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 1124,
+    "a": 0.22382455510676158,
+    "b": 0.22382455510676158,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "min_effect": 0.004476491102135232,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-ab821980",
+   "kind": "finding",
+   "agent": "agent-c7b2d753",
+   "title": "Isotonic transfer remains better with 10% paired calibration data in Stiffler",
+   "status": "rejected",
+   "reason": "predictions cover only 0% of hidden inputs",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c5a8fce7",
+     "relation": "extends",
+     "cross_agent": true,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  },
+  {
+   "id": "findin-c0b08c65",
+   "kind": "finding",
+   "agent": "founder",
+   "title": "KCNE1 function interactions beat an additive property model at held-out positions",
+   "status": "rejected",
+   "reason": "did not replicate on hidden data by the minimum effect: difference +0.0291, 95% CI [0.0044, 0.0529], needed below -0.0038",
+   "frontier": null,
+   "fabrication": false,
+   "checks": {
+    "evidence_exists": true,
+    "evidence_succeeded": true,
+    "quantities_recorded": true,
+    "test_files_uploaded": true,
+    "targets_exist": true,
+    "used_inputs_consumed": true,
+    "re_execution": true,
+    "hidden_replication": false
+   },
+   "duplicate_of": null,
+   "hidden": {
+    "metric": "MAE",
+    "n": 557,
+    "a": 0.1919036840386474,
+    "b": 0.22099700294240338,
+    "diff": 0.029093318903755966,
+    "ci95": [
+     0.004420589185693517,
+     0.05291558248577379
+    ],
+    "min_effect": 0.0038380736807729484,
+    "pass": false
+   },
+   "relations": [
+    {
+     "target": "findin-c57a8453",
+     "relation": "extends",
+     "cross_agent": false,
+     "verified": false,
+     "reason": "the extension itself is not an accepted contribution",
+     "ablation_material": null
+    }
+   ]
+  }
+ ]
+}
